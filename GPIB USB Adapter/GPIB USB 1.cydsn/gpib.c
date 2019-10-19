@@ -266,9 +266,9 @@ int gpib_receive_byte(uint8_t *byte, int *eoi) {
 
 void gpib_interface_clear() {
     gpib_assert_line(IFC);
-    gpib_settle();              // TODO ... proper delay
+    CyDelayUs(150);
     gpib_unassert_line(IFC);
-    gpib_settle();              // TODO ... proper delay
+    CyDelayUs(150);                 // do we need to delay afterwards?
 }
 
 void gpib_LAD(uint8_t address) {
@@ -285,6 +285,31 @@ void gpib_UNL() {
 
 void gpib_UNT() {
     gpib_TAD(31);
+}
+
+// TODO: this all needs to be tidied and parameterised ... horrible!
+void gpib_send_SDC() {
+    gpib_assert_line(ATN);
+    gpib_settle();                  // do we need this?
+    gpib_send_byte(0x04, false);
+    gpib_unassert_line(ATN);
+    gpib_settle();                  // do we need this?
+}
+void gpib_send_LLO() {
+    gpib_assert_line(ATN);
+    gpib_settle();                  // do we need this?
+    gpib_send_byte(0x11, false);
+    gpib_unassert_line(ATN);
+    gpib_settle();                  // do we need this?
+}
+// need REN unasserted for this one...
+void gpib_send_GTL() {
+    gpib_unassert_line(REN);
+    gpib_assert_line(ATN);
+    gpib_settle();                  // do we need this?
+    gpib_send_byte(0x01, false);
+    gpib_unassert_line(ATN);
+    gpib_settle();                  // do we need this?
 }
 
 void gpib_address_listener(uint8_t address) {
@@ -338,48 +363,28 @@ void gpib_address_talker(uint8_t address) {
 /**
  * See if the talker has put some data on the bus...
  */
+// TODO: get rid of bool
 bool gpib_talking() {
     return gpib_read_line(DAV);
 }
 
-void gpib_send(uint8_t address, const char *buf) {
+/**
+ * Send a buffer over the GPIB interface, do the right thing with EO
+ * unless we have it disabled.
+ */
+// TODO: error checking and return
+// TODO: should separate the address listener and the send, so we can send
+//       multiple chunks??
+void gpib_send(uint8_t address, const uint8_t *buf, int len) {
     char *p = (char *)buf;
     
-    gpib_address_listener(address);
-    while(*p) {
-        gpib_send_byte(*p, (*(p+1) == 0));
-        p++;
-    }
-}
-
-/**
- * Read data from the currently addressed talker
- *
- * NOT USED -- Remove
- *
- * TODO: needs to return a buffer (from this file) with a length, but also
- *       and indication of whether we are done or not.
- *
- */
-int gpib_read(uint8_t *buf, int maxsize) {
-    int i = 0;
-    bool ok;
-    bool eoi;
+    int eoipos = (settings.eoi ? len-1 : -1);
     
-    //gpib_address_talker(address);
-    while(i < maxsize) {
-        ok = gpib_receive_byte(buf+i, &eoi);
-        if (!ok) {
-            buf[i] = 0;
-            return -1;
-        }
-        if (eoi) {
-            buf[i++] = 0;
-            return i;
-        }
-        i++;
+    gpib_address_listener(address);
+    
+    for (int i=0; i < len; i++) {
+        gpib_send_byte(buf[i], (i == eoipos));
     }
-    return -1;   // TODO!!
 }
 
 /**
@@ -393,8 +398,7 @@ int gpib_read(uint8_t *buf, int maxsize) {
  * return = number of chars
  *
  */
-
-int gpib_read2(int until, int *end) {
+int gpib_read(int until, int *end) {
     int         i = 0;
     int         ok;
     int         eoi;

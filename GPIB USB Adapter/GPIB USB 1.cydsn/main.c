@@ -92,9 +92,30 @@ int main(void)
                         
                         // TODO: if this was a ++auto command we need to change autoread????
                     } else {
+                        
+                        // We've already stripped CR/NL from the input, so now we can just add
+                        // whatever is needed...
+                        switch (settings.eos) {
+                            case 0:     // add CR + LF
+                                        buf[len++] = 13;
+                                        buf[len++] = 10;
+                                        break;
+                                        
+                            case 1:     // add CR
+                                        buf[len++] = 13;
+                                        break;
+                                        
+                            case 2:     // add LF
+                                        buf[len++] = 10;
+                                        break;
+                                        
+                            case 3:     // do nothing
+                                        break;
+                        }               
+                        
                         if (gpib_get_mode() == GPIB_RUNNING) {
-                            buf[len] = 0;
-                            gpib_send(settings.address, (char *)buf);
+                            //buf[len] = 0;
+                            gpib_send(settings.address, buf, len);
                             
                             // Only auto-query if we should
                             autoread = 0;
@@ -126,7 +147,7 @@ int main(void)
                 buf = gpib_get_buffer();
                 
                 do {
-                    len = gpib_read2(GPIB_EOI, &ended);
+                    len = gpib_read(GPIB_EOI, &ended);
 
                     // Remove CR/LF's...
                     len = chomp(buf, len);

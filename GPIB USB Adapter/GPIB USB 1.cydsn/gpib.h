@@ -34,14 +34,19 @@ void gpib_init_pins();
 
 uint16_t gpib_readall();
 
-void gpib_send(uint8_t address, const char *buf);
-int gpib_read(uint8_t *buf, int maxsize);
-int gpib_read2(int until, int *end);
+//void gpib_send(uint8_t address, const char *buf);
+void gpib_send(uint8_t address, const uint8_t *buf, int len);
+int gpib_read(int until, int *end);
 
 uint8_t *gpib_get_buffer();
 
 
 bool gpib_talking();
 void gpib_address_talker(uint8_t address);
+
+void gpib_interface_clear();
+void gpib_send_SDC();
+void gpib_send_LLO();
+void gpib_send_GTL();
 
 /* [] END OF FILE */

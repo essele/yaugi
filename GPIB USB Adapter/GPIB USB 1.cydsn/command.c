@@ -306,7 +306,7 @@ int cmd_read(char *argv[], int argc, const struct cmd *cmd) {
     gpib_address_talker(settings.address);
     
     do {
-        len = gpib_read2(until, &ended);
+        len = gpib_read(until, &ended);
         serial_add_string("GOT: ");
         serial_add(buf, len);
         serial_add_string("\r\n");
@@ -361,6 +361,26 @@ int helper_version() {
 int helper_gpiball() {
     uint16_t v = gpib_readall();
     serial_printf("pin status = %04x\r\n", v);
+    return 0;
+}
+
+/**
+ * Send the selected device clear command (needs to be tested)
+ */
+int helper_clr() {
+    gpib_send_SDC();
+    return 0;
+}
+int helper_ifc() {
+    gpib_interface_clear();
+    return 0;
+}
+int helper_llo() {
+    gpib_send_LLO();
+    return 0;
+}
+int helper_loc() {
+    gpib_send_GTL();
     return 0;
 }
 
@@ -433,6 +453,13 @@ const struct cmd commands[] = {
         auto_means,
         no_helper,
     },
+    { "clr", cmd_noargs,
+        no_setting,
+        "Send a selected device clear (SDC) message",
+        no_usage_args,
+        no_item_meanings,
+        helper_clr
+    },
     { "eoi", cmd_uint,
         &settings.autoread, 0, 1,
         "Assertion of EOI line with the last transmitted character",
@@ -441,7 +468,7 @@ const struct cmd commands[] = {
         no_helper,
     },
     { "eos", cmd_uint,
-        &settings.eos, 0, 1,
+        &settings.eos, 0, 3,
         "Append specific terminator to GPIB output",
         (const char *[]){ "[0|1|2|3]", NULL },
         eos_means,
@@ -476,7 +503,27 @@ const struct cmd commands[] = {
         no_item_meanings,
         no_helper,
     },
-    
+    { "ifc", cmd_noargs,
+        no_setting,
+        "Send an interface clear (IFC) message",
+        no_usage_args,
+        no_item_meanings,
+        helper_ifc
+    },
+    { "llo", cmd_noargs,
+        no_setting,
+        "Send a local lock out (LLO) message",
+        no_usage_args,
+        no_item_meanings,
+        helper_llo
+    },
+    { "loc", cmd_noargs,
+        no_setting,
+        "Send a go to local (GTL) message",
+        no_usage_args,
+        no_item_meanings,
+        helper_loc
+    },    
     { "read", cmd_read,
         no_setting,
         "Read from the device",

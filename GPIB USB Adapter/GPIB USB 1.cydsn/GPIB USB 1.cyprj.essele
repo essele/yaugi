@@ -167,59 +167,6 @@
 <file name=".\command.c" />
 <file name=".\command.h" />
 <file name=".\serial.h" />
-<file name=".\CortexM0\ARM_GCC_541\Debug\input.o">
-<dep name=".\Generated_Source\PSoC4\Clock_1.h" />
-<dep name=".\Generated_Source\PSoC4\Clock_2.h" />
-<dep name=".\Generated_Source\PSoC4\CyDMA.h" />
-<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\DIO.h" />
-<dep name=".\Generated_Source\PSoC4\DIO_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\EEPROM.h" />
-<dep name=".\Generated_Source\PSoC4\LED1.h" />
-<dep name=".\Generated_Source\PSoC4\LED1_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\LED2.h" />
-<dep name=".\Generated_Source\PSoC4\LED2_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
-<dep name=".\Generated_Source\PSoC4\SIG.h" />
-<dep name=".\Generated_Source\PSoC4\SIG_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\SW1.h" />
-<dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Timer1.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_Dm.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_Dm_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_Dp.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_Dp_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_audio.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_cdc.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_cydmac.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_hid.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_midi.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_msc.h" />
-<dep name=".\Generated_Source\PSoC4\USBUART_pvt.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
-<dep name=".\Generated_Source\PSoC4\cyPm.h" />
-<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\project.h" />
-<dep name=".\cyapicallbacks.h" />
-<dep name=".\input.c" />
-<dep name=".\input.h" />
-<dep name=".\serial.h" />
-</file>
-<file name=".\input.c" />
-<file name=".\input.h" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\main.o">
 <dep name=".\Generated_Source\PSoC4\Clock_1.h" />
 <dep name=".\Generated_Source\PSoC4\Clock_2.h" />
@@ -275,8 +222,61 @@
 <dep name=".\settings.h" />
 <dep name=".\utils.h" />
 </file>
+<file name=".\input.h" />
 <file name=".\main.c" />
 <file name=".\utils.h" />
+<file name=".\CortexM0\ARM_GCC_541\Debug\input.o">
+<dep name=".\Generated_Source\PSoC4\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC4\Clock_2.h" />
+<dep name=".\Generated_Source\PSoC4\CyDMA.h" />
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\DIO.h" />
+<dep name=".\Generated_Source\PSoC4\DIO_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\EEPROM.h" />
+<dep name=".\Generated_Source\PSoC4\LED1.h" />
+<dep name=".\Generated_Source\PSoC4\LED1_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\LED2.h" />
+<dep name=".\Generated_Source\PSoC4\LED2_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_1.h" />
+<dep name=".\Generated_Source\PSoC4\SIG.h" />
+<dep name=".\Generated_Source\PSoC4\SIG_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SW1.h" />
+<dep name=".\Generated_Source\PSoC4\SW1_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Timer1.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_Dm.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_Dm_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_Dp.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_Dp_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_audio.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_cdc.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_cydmac.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_hid.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_midi.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_msc.h" />
+<dep name=".\Generated_Source\PSoC4\USBUART_pvt.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0_psoc4.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\project.h" />
+<dep name=".\cyapicallbacks.h" />
+<dep name=".\input.c" />
+<dep name=".\input.h" />
+<dep name=".\serial.h" />
+</file>
+<file name=".\input.c" />
 <file name=".\CortexM0\ARM_GCC_541\Debug\settings.o">
 <dep name=".\Generated_Source\PSoC4\Clock_1.h" />
 <dep name=".\Generated_Source\PSoC4\Clock_2.h" />
@@ -1734,7 +1734,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="132159654626427941" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0" v="132159719642387272" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
