@@ -355,6 +355,8 @@ void gpib_send(uint8_t address, const char *buf) {
 /**
  * Read data from the currently addressed talker
  *
+ * NOT USED -- Remove
+ *
  * TODO: needs to return a buffer (from this file) with a length, but also
  *       and indication of whether we are done or not.
  *
@@ -381,33 +383,15 @@ int gpib_read(uint8_t *buf, int maxsize) {
 }
 
 /**
- * Read from the GPIB interface, look for EOI or the end character, we
- * return a buffer and the length used, and also a flag to say whether we
- * got an "end" status
+ * Read from the GPIB interface, can use different end states:
  *
- * rc = <len> valid bytes
- * rc = -1 = error
+ * until = GPIB_TIMEOUT -- keep going until we get a timeout
+ * until = GPIB_EOI     -- wait for the EOI indication
+ * until = <char>       -- wait until we get <char>
  *
- * need a buffer, a length, and a return code
+ * end = GPIB_TIMEOUT, or GPIB_ENDED, or GPIB_NOT_ENDED
+ * return = number of chars
  *
- *
- *
- *
- * rc = length
- *  end = 0 (GPIB_NOT_ENDED)
- *  end = 0x100 (GPIB_EOI)
- *  end = (char) (end cause)
- *  end = -1 (ERROR)
- *  end = -2 (TIMEOUT)
-
- * timeout with len, ended with len, not ended
-
- *
- * timeout
- * ended
- * not ended
- *
- * 
  */
 
 int gpib_read2(int until, int *end) {

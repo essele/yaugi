@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 2
 
 
   32              		@ link register save eliminated.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
   63 0002 C046     		.section	.text.gpib_readall,"ax",%progbits
   64              		.align	2
   65              		.global	gpib_readall
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 3
 
 
   66              		.code	16
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
   83 0008 1B68     		ldr	r3, [r3]
   84 000a FF22     		movs	r2, #255
   85 000c 1340     		ands	r3, r2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 4
 
 
   86 000e 0002     		lsls	r0, r0, #8
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  117              		.cfi_offset 14, -4
  110:gpib.c        ****     //uint8_t sig = (*(reg32 *)SIG__PS & 0xff);
  111:gpib.c        ****     int old_state = _gpib_mode;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 5
 
 
  118              		.loc 1 111 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  158              	.LVL6:
  125:gpib.c        ****         _gpib_mode = GPIB_INIT;
  159              		.loc 1 125 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 6
 
 
  160 002c 0122     		movs	r2, #1
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  206              	.LFB42:
  134:gpib.c        **** 
  135:gpib.c        **** int gpib_get_mode() {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 7
 
 
  207              		.loc 1 135 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  164:gpib.c        ****         if (gpib_read_line(line) == false) {
  165:gpib.c        ****             return true;
  166:gpib.c        ****         }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 8
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 8
 
 
  167:gpib.c        ****         if (Timer1_ReadCounter() > settings.read_tmo_ms) {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  270 0014 184B     		ldr	r3, .L26+4
  271 0016 1B68     		ldr	r3, [r3]
  272              	.LVL14:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 9
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 9
 
 
  273              	.LBE107:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  312              		.loc 1 74 0
  313 003e 2022     		movs	r2, #32
  314 0040 0C4B     		ldr	r3, .L26
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 10
 
 
  315 0042 1A60     		str	r2, [r3]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  194:gpib.c        ****     // Signal data is valie...
  195:gpib.c        ****     gpib_assert_line(DAV);
  196:gpib.c        ****     
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 11
 
 
  197:gpib.c        ****     // Wait until everyone has received it...
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  213:gpib.c        ****  * or 1 on success.
  214:gpib.c        ****  */
  215:gpib.c        **** int gpib_receive_byte(uint8_t *byte, int *eoi) {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 12
 
 
  396              		.loc 1 215 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  445 001c 9B06     		lsls	r3, r3, #26
  446 001e 07D5     		bpl	.L36
  150:gpib.c        ****             return false;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 13
 
 
  447              		.loc 1 150 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  480 003e 1A60     		str	r2, [r3]
  481              	.LVL38:
  482              	.LBE131:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 14
 
 
  483              	.LBE130:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  521              		.loc 1 246 0
  522 0062 2B78     		ldrb	r3, [r5]
  523 0064 0A2B     		cmp	r3, #10
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 15
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 15
 
 
  524 0066 01D1     		bne	.L33
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  571              	.LBB143:
   74:gpib.c        **** }
  572              		.loc 1 74 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 16
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 16
 
 
  573 008e 0822     		movs	r2, #8
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  608              		.section	.text.gpib_interface_clear,"ax",%progbits
  609              		.align	2
  610              		.global	gpib_interface_clear
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 17
 
 
  611              		.code	16
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  269:gpib.c        ****     gpib_settle();              // TODO ... proper delay
  270:gpib.c        ****     gpib_unassert_line(IFC);
  271:gpib.c        ****     gpib_settle();              // TODO ... proper delay
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 18
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 18
 
 
  272:gpib.c        **** }
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  277:gpib.c        **** 
  278:gpib.c        **** void gpib_TAD(uint8_t address) {
  707              		.loc 1 278 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 19
 
 
  708              		.cfi_startproc
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  756              		.align	2
  757              		.global	gpib_UNT
  758              		.code	16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 20
 
 
  759              		.thumb_func
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  806              		.loc 1 81 0
  807 0004 0F4C     		ldr	r4, .L47
  808 0006 1023     		movs	r3, #16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 21
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 21
 
 
  809 0008 2360     		str	r3, [r4]
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  296:gpib.c        ****     gpib_unassert_line(NDAC);
  297:gpib.c        ****     
  298:gpib.c        ****     gpib_assert_line(REN);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 22
 
 
  299:gpib.c        ****     gpib_settle();                  // do we need this?
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  893              		.cfi_endproc
  894              	.LFE52:
  895              		.size	gpib_address_listener, .-gpib_address_listener
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 23
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 23
 
 
  896              		.section	.text.gpib_address_talker,"ax",%progbits
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  946 001a 3360     		str	r3, [r6]
  947              	.LVL87:
  948              	.LBE175:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 24
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 24
 
 
  949              	.LBE174:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  988              	.LBE181:
  989              	.LBE180:
  990              	.LBB182:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 25
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 25
 
 
  991              	.LBB183:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1032              	.LFB54:
  337:gpib.c        **** 
  338:gpib.c        **** /**
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 26
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 26
 
 
  339:gpib.c        ****  * See if the talker has put some data on the bus...
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1078              	.LVL103:
  1079 0000 10B5     		push	{r4, lr}
  1080              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 27
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 27
 
 
  1081              		.cfi_offset 4, -8
@@ -1615,15 +1615,17 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  355:gpib.c        **** /**
  356:gpib.c        ****  * Read data from the currently addressed talker
  357:gpib.c        ****  *
- 358:gpib.c        ****  * TODO: needs to return a buffer (from this file) with a length, but also
- 359:gpib.c        ****  *       and indication of whether we are done or not.
- 360:gpib.c        ****  *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 28
+ 358:gpib.c        ****  * NOT USED -- Remove
+ 359:gpib.c        ****  *
+ 360:gpib.c        ****  * TODO: needs to return a buffer (from this file) with a length, but also
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 28
 
 
- 361:gpib.c        ****  */
- 362:gpib.c        **** int gpib_read(uint8_t *buf, int maxsize) {
- 1122              		.loc 1 362 0
+ 361:gpib.c        ****  *       and indication of whether we are done or not.
+ 362:gpib.c        ****  *
+ 363:gpib.c        ****  */
+ 364:gpib.c        **** int gpib_read(uint8_t *buf, int maxsize) {
+ 1122              		.loc 1 364 0
  1123              		.cfi_startproc
  1124              		@ args = 0, pretend = 0, frame = 8
  1125              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1640,83 +1642,83 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1136 0004 0700     		movs	r7, r0
  1137 0006 0E00     		movs	r6, r1
  1138              	.LVL111:
- 363:gpib.c        ****     int i = 0;
- 1139              		.loc 1 363 0
+ 365:gpib.c        ****     int i = 0;
+ 1139              		.loc 1 365 0
  1140 0008 0024     		movs	r4, #0
- 364:gpib.c        ****     bool ok;
- 365:gpib.c        ****     bool eoi;
- 366:gpib.c        ****     
- 367:gpib.c        ****     //gpib_address_talker(address);
- 368:gpib.c        ****     while(i < maxsize) {
- 1141              		.loc 1 368 0
+ 366:gpib.c        ****     bool ok;
+ 367:gpib.c        ****     bool eoi;
+ 368:gpib.c        ****     
+ 369:gpib.c        ****     //gpib_address_talker(address);
+ 370:gpib.c        ****     while(i < maxsize) {
+ 1141              		.loc 1 370 0
  1142 000a 15E0     		b	.L59
  1143              	.LVL112:
  1144              	.L63:
- 369:gpib.c        ****         ok = gpib_receive_byte(buf+i, &eoi);
- 1145              		.loc 1 369 0
+ 371:gpib.c        ****         ok = gpib_receive_byte(buf+i, &eoi);
+ 1145              		.loc 1 371 0
  1146 000c 3D19     		adds	r5, r7, r4
  1147 000e 6B46     		mov	r3, sp
  1148 0010 D91D     		adds	r1, r3, #7
  1149 0012 2800     		movs	r0, r5
  1150 0014 FFF7FEFF 		bl	gpib_receive_byte
  1151              	.LVL113:
- 370:gpib.c        ****         if (!ok) {
- 1152              		.loc 1 370 0
+ 372:gpib.c        ****         if (!ok) {
+ 1152              		.loc 1 372 0
  1153 0018 0028     		cmp	r0, #0
  1154 001a 03D1     		bne	.L60
- 371:gpib.c        ****             buf[i] = 0;
- 1155              		.loc 1 371 0
+ 373:gpib.c        ****             buf[i] = 0;
+ 1155              		.loc 1 373 0
  1156 001c 0023     		movs	r3, #0
  1157 001e 2B70     		strb	r3, [r5]
- 372:gpib.c        ****             return -1;
- 1158              		.loc 1 372 0
+ 374:gpib.c        ****             return -1;
+ 1158              		.loc 1 374 0
  1159 0020 0138     		subs	r0, r0, #1
  1160              	.LVL114:
  1161 0022 0DE0     		b	.L61
  1162              	.LVL115:
  1163              	.L60:
- 373:gpib.c        ****         }
- 374:gpib.c        ****         if (eoi) {
- 1164              		.loc 1 374 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 29
+ 375:gpib.c        ****         }
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 29
 
 
+ 376:gpib.c        ****         if (eoi) {
+ 1164              		.loc 1 376 0
  1165 0024 6B46     		mov	r3, sp
  1166 0026 0733     		adds	r3, r3, #7
  1167 0028 1B78     		ldrb	r3, [r3]
  1168 002a 002B     		cmp	r3, #0
  1169 002c 03D0     		beq	.L62
  1170              	.LVL116:
- 375:gpib.c        ****             buf[i++] = 0;
- 1171              		.loc 1 375 0
+ 377:gpib.c        ****             buf[i++] = 0;
+ 1171              		.loc 1 377 0
  1172 002e 0023     		movs	r3, #0
  1173 0030 2B70     		strb	r3, [r5]
- 376:gpib.c        ****             return i;
- 1174              		.loc 1 376 0
+ 378:gpib.c        ****             return i;
+ 1174              		.loc 1 378 0
  1175 0032 601C     		adds	r0, r4, #1
  1176              	.LVL117:
  1177 0034 04E0     		b	.L61
  1178              	.LVL118:
  1179              	.L62:
- 377:gpib.c        ****         }
- 378:gpib.c        ****         i++;
- 1180              		.loc 1 378 0
+ 379:gpib.c        ****         }
+ 380:gpib.c        ****         i++;
+ 1180              		.loc 1 380 0
  1181 0036 0134     		adds	r4, r4, #1
  1182              	.LVL119:
  1183              	.L59:
- 368:gpib.c        ****         ok = gpib_receive_byte(buf+i, &eoi);
- 1184              		.loc 1 368 0
+ 370:gpib.c        ****         ok = gpib_receive_byte(buf+i, &eoi);
+ 1184              		.loc 1 370 0
  1185 0038 B442     		cmp	r4, r6
  1186 003a E7DB     		blt	.L63
- 379:gpib.c        ****     }
- 380:gpib.c        ****     return -1;   // TODO!!
- 1187              		.loc 1 380 0
+ 381:gpib.c        ****     }
+ 382:gpib.c        ****     return -1;   // TODO!!
+ 1187              		.loc 1 382 0
  1188 003c 0120     		movs	r0, #1
  1189 003e 4042     		rsbs	r0, r0, #0
  1190              	.LVL120:
  1191              	.L61:
- 381:gpib.c        **** }
- 1192              		.loc 1 381 0
+ 383:gpib.c        **** }
+ 1192              		.loc 1 383 0
  1193 0040 03B0     		add	sp, sp, #12
  1194              		@ sp needed
  1195              	.LVL121:
@@ -1733,42 +1735,24 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1206              		.type	gpib_read2, %function
  1207              	gpib_read2:
  1208              	.LFB57:
- 382:gpib.c        **** 
- 383:gpib.c        **** /**
- 384:gpib.c        ****  * Read from the GPIB interface, look for EOI or the end character, we
- 385:gpib.c        ****  * return a buffer and the length used, and also a flag to say whether we
- 386:gpib.c        ****  * got an "end" status
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 30
+ 384:gpib.c        **** 
+ 385:gpib.c        **** /**
+ 386:gpib.c        ****  * Read from the GPIB interface, can use different end states:
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 30
 
 
  387:gpib.c        ****  *
- 388:gpib.c        ****  * rc = <len> valid bytes
- 389:gpib.c        ****  * rc = -1 = error
- 390:gpib.c        ****  *
- 391:gpib.c        ****  * need a buffer, a length, and a return code
- 392:gpib.c        ****  *
- 393:gpib.c        ****  *
+ 388:gpib.c        ****  * until = GPIB_TIMEOUT -- keep going until we get a timeout
+ 389:gpib.c        ****  * until = GPIB_EOI     -- wait for the EOI indication
+ 390:gpib.c        ****  * until = <char>       -- wait until we get <char>
+ 391:gpib.c        ****  *
+ 392:gpib.c        ****  * end = GPIB_TIMEOUT, or GPIB_ENDED, or GPIB_NOT_ENDED
+ 393:gpib.c        ****  * return = number of chars
  394:gpib.c        ****  *
- 395:gpib.c        ****  *
- 396:gpib.c        ****  * rc = length
- 397:gpib.c        ****  *  end = 0 (GPIB_NOT_ENDED)
- 398:gpib.c        ****  *  end = 0x100 (GPIB_EOI)
- 399:gpib.c        ****  *  end = (char) (end cause)
- 400:gpib.c        ****  *  end = -1 (ERROR)
- 401:gpib.c        ****  *  end = -2 (TIMEOUT)
- 402:gpib.c        **** 
- 403:gpib.c        ****  * timeout with len, ended with len, not ended
- 404:gpib.c        **** 
- 405:gpib.c        ****  *
- 406:gpib.c        ****  * timeout
- 407:gpib.c        ****  * ended
- 408:gpib.c        ****  * not ended
- 409:gpib.c        ****  *
- 410:gpib.c        ****  * 
- 411:gpib.c        ****  */
- 412:gpib.c        **** 
- 413:gpib.c        **** int gpib_read2(int until, int *end) {
- 1209              		.loc 1 413 0
+ 395:gpib.c        ****  */
+ 396:gpib.c        **** 
+ 397:gpib.c        **** int gpib_read2(int until, int *end) {
+ 1209              		.loc 1 397 0
  1210              		.cfi_startproc
  1211              		@ args = 0, pretend = 0, frame = 8
  1212              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1785,162 +1769,162 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1223 0004 0600     		movs	r6, r0
  1224 0006 0F00     		movs	r7, r1
  1225              	.LVL124:
- 414:gpib.c        ****     int         i = 0;
- 415:gpib.c        ****     int         ok;
- 416:gpib.c        ****     int         eoi;
- 417:gpib.c        ****     uint8_t     *buf;
- 418:gpib.c        ****     
- 419:gpib.c        ****     buf = gpib_buffer;
- 1226              		.loc 1 419 0
+ 398:gpib.c        ****     int         i = 0;
+ 399:gpib.c        ****     int         ok;
+ 400:gpib.c        ****     int         eoi;
+ 401:gpib.c        ****     uint8_t     *buf;
+ 402:gpib.c        ****     
+ 403:gpib.c        ****     buf = gpib_buffer;
+ 1226              		.loc 1 403 0
  1227 0008 1B4C     		ldr	r4, .L74
- 414:gpib.c        ****     int         i = 0;
- 1228              		.loc 1 414 0
+ 398:gpib.c        ****     int         i = 0;
+ 1228              		.loc 1 398 0
  1229 000a 0025     		movs	r5, #0
- 420:gpib.c        ****     
- 421:gpib.c        ****     while (i < (GPIB_BUF_SIZE-1)) {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 31
-
-
- 1230              		.loc 1 421 0
+ 404:gpib.c        ****     
+ 405:gpib.c        ****     while (i < (GPIB_BUF_SIZE-1)) {
+ 1230              		.loc 1 405 0
  1231 000c 2DE0     		b	.L65
  1232              	.LVL125:
  1233              	.L73:
- 422:gpib.c        ****         // First case is a potential timeout (no errors on read)
- 423:gpib.c        ****         if (!gpib_receive_byte(buf, &eoi)) {
- 1234              		.loc 1 423 0
+ 406:gpib.c        ****         // First case is a potential timeout (no errors on read)
+ 407:gpib.c        ****         if (!gpib_receive_byte(buf, &eoi)) {
+ 1234              		.loc 1 407 0
  1235 000e 01A9     		add	r1, sp, #4
  1236 0010 2000     		movs	r0, r4
  1237 0012 FFF7FEFF 		bl	gpib_receive_byte
  1238              	.LVL126:
  1239 0016 0028     		cmp	r0, #0
  1240 0018 03D1     		bne	.L66
- 424:gpib.c        ****             *end = GPIB_TIMEOUT;
- 1241              		.loc 1 424 0
+ 408:gpib.c        ****             *end = GPIB_TIMEOUT;
+ 1241              		.loc 1 408 0
  1242 001a 0223     		movs	r3, #2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 31
+
+
  1243 001c FF33     		adds	r3, r3, #255
  1244 001e 3B60     		str	r3, [r7]
- 425:gpib.c        ****             return i;
- 1245              		.loc 1 425 0
+ 409:gpib.c        ****             return i;
+ 1245              		.loc 1 409 0
  1246 0020 27E0     		b	.L67
  1247              	.L66:
- 426:gpib.c        ****         }
- 427:gpib.c        ****                
- 428:gpib.c        ****         // We assume is a valid character...
- 429:gpib.c        ****         i++;
- 1248              		.loc 1 429 0
+ 410:gpib.c        ****         }
+ 411:gpib.c        ****                
+ 412:gpib.c        ****         // We assume is a valid character...
+ 413:gpib.c        ****         i++;
+ 1248              		.loc 1 413 0
  1249 0022 6B1C     		adds	r3, r5, #1
  1250              	.LVL127:
- 430:gpib.c        **** 
- 431:gpib.c        ****         // If we get an EOI then we might need to add an extra char and
- 432:gpib.c        ****         // potentially end this read
- 433:gpib.c        ****         if (eoi) {
- 1251              		.loc 1 433 0
+ 414:gpib.c        **** 
+ 415:gpib.c        ****         // If we get an EOI then we might need to add an extra char and
+ 416:gpib.c        ****         // potentially end this read
+ 417:gpib.c        ****         if (eoi) {
+ 1251              		.loc 1 417 0
  1252 0024 019A     		ldr	r2, [sp, #4]
  1253 0026 002A     		cmp	r2, #0
  1254 0028 10D0     		beq	.L68
- 434:gpib.c        ****             if (settings.eot_enable) {
- 1255              		.loc 1 434 0
+ 418:gpib.c        ****             if (settings.eot_enable) {
+ 1255              		.loc 1 418 0
  1256 002a 144A     		ldr	r2, .L74+4
  1257 002c 128A     		ldrh	r2, [r2, #16]
  1258 002e 002A     		cmp	r2, #0
  1259 0030 04D0     		beq	.L69
  1260              	.LVL128:
- 435:gpib.c        ****                 *++buf = settings.eot_char;
- 1261              		.loc 1 435 0
+ 419:gpib.c        ****                 *++buf = settings.eot_char;
+ 1261              		.loc 1 419 0
  1262 0032 124B     		ldr	r3, .L74+4
  1263              	.LVL129:
  1264 0034 DB89     		ldrh	r3, [r3, #14]
  1265 0036 6370     		strb	r3, [r4, #1]
- 436:gpib.c        ****                 i++;
- 1266              		.loc 1 436 0
+ 420:gpib.c        ****                 i++;
+ 1266              		.loc 1 420 0
  1267 0038 AB1C     		adds	r3, r5, #2
  1268              	.LVL130:
- 435:gpib.c        ****                 *++buf = settings.eot_char;
- 1269              		.loc 1 435 0
+ 419:gpib.c        ****                 *++buf = settings.eot_char;
+ 1269              		.loc 1 419 0
  1270 003a 0134     		adds	r4, r4, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 32
-
-
  1271              	.LVL131:
  1272              	.L69:
- 437:gpib.c        ****             }
- 438:gpib.c        ****             if (until == GPIB_EOI) {
- 1273              		.loc 1 438 0
+ 421:gpib.c        ****             }
+ 422:gpib.c        ****             if (until == GPIB_EOI) {
+ 1273              		.loc 1 422 0
  1274 003c 8022     		movs	r2, #128
  1275 003e 5200     		lsls	r2, r2, #1
  1276 0040 9642     		cmp	r6, r2
  1277 0042 03D1     		bne	.L68
- 439:gpib.c        ****                 *end = GPIB_ENDED;
- 1278              		.loc 1 439 0
+ 423:gpib.c        ****                 *end = GPIB_ENDED;
+ 1278              		.loc 1 423 0
  1279 0044 FF3A     		subs	r2, r2, #255
  1280 0046 3A60     		str	r2, [r7]
- 440:gpib.c        ****                 return i;
- 1281              		.loc 1 440 0
+ 424:gpib.c        ****                 return i;
+ 1281              		.loc 1 424 0
  1282 0048 1D00     		movs	r5, r3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 32
+
+
  1283 004a 12E0     		b	.L67
  1284              	.L68:
- 441:gpib.c        ****             }
- 442:gpib.c        ****         }        
- 443:gpib.c        ****         
- 444:gpib.c        ****         // If we are only waiting for timeout, then loop...
- 445:gpib.c        ****         if (until == GPIB_TIMEOUT) {    
- 1285              		.loc 1 445 0
+ 425:gpib.c        ****             }
+ 426:gpib.c        ****         }        
+ 427:gpib.c        ****         
+ 428:gpib.c        ****         // If we are only waiting for timeout, then loop...
+ 429:gpib.c        ****         if (until == GPIB_TIMEOUT) {    
+ 1285              		.loc 1 429 0
  1286 004c 0222     		movs	r2, #2
  1287 004e FF32     		adds	r2, r2, #255
  1288 0050 9642     		cmp	r6, r2
  1289 0052 01D1     		bne	.L70
- 446:gpib.c        ****             buf++;
- 1290              		.loc 1 446 0
+ 430:gpib.c        ****             buf++;
+ 1290              		.loc 1 430 0
  1291 0054 0134     		adds	r4, r4, #1
  1292              	.LVL132:
- 447:gpib.c        ****             continue;
- 1293              		.loc 1 447 0
+ 431:gpib.c        ****             continue;
+ 1293              		.loc 1 431 0
  1294 0056 07E0     		b	.L71
  1295              	.L70:
- 448:gpib.c        ****         }
- 449:gpib.c        ****         
- 450:gpib.c        ****         // If we match the given end char
- 451:gpib.c        ****         if (until == *buf) {
- 1296              		.loc 1 451 0
+ 432:gpib.c        ****         }
+ 433:gpib.c        ****         
+ 434:gpib.c        ****         // If we match the given end char
+ 435:gpib.c        ****         if (until == *buf) {
+ 1296              		.loc 1 435 0
  1297 0058 2278     		ldrb	r2, [r4]
  1298 005a 9642     		cmp	r6, r2
  1299 005c 03D1     		bne	.L72
- 452:gpib.c        ****             *end = GPIB_ENDED;
- 1300              		.loc 1 452 0
+ 436:gpib.c        ****             *end = GPIB_ENDED;
+ 1300              		.loc 1 436 0
  1301 005e 0122     		movs	r2, #1
  1302 0060 3A60     		str	r2, [r7]
- 453:gpib.c        ****             return i;
- 1303              		.loc 1 453 0
+ 437:gpib.c        ****             return i;
+ 1303              		.loc 1 437 0
  1304 0062 1D00     		movs	r5, r3
  1305 0064 05E0     		b	.L67
  1306              	.L72:
- 454:gpib.c        ****         }     
- 455:gpib.c        ****         buf++;
- 1307              		.loc 1 455 0
+ 438:gpib.c        ****         }     
+ 439:gpib.c        ****         buf++;
+ 1307              		.loc 1 439 0
  1308 0066 0134     		adds	r4, r4, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 33
-
-
  1309              	.LVL133:
  1310              	.L71:
- 435:gpib.c        ****                 i++;
- 1311              		.loc 1 435 0
+ 419:gpib.c        ****                 i++;
+ 1311              		.loc 1 419 0
  1312 0068 1D00     		movs	r5, r3
  1313              	.LVL134:
  1314              	.L65:
- 421:gpib.c        ****         // First case is a potential timeout (no errors on read)
- 1315              		.loc 1 421 0
+ 405:gpib.c        ****         // First case is a potential timeout (no errors on read)
+ 1315              		.loc 1 405 0
  1316 006a FE2D     		cmp	r5, #254
  1317 006c CFDD     		ble	.L73
- 456:gpib.c        ****     }
- 457:gpib.c        ****     *end = GPIB_NOT_ENDED;
- 1318              		.loc 1 457 0
+ 440:gpib.c        ****     }
+ 441:gpib.c        ****     *end = GPIB_NOT_ENDED;
+ 1318              		.loc 1 441 0
  1319 006e 0023     		movs	r3, #0
  1320 0070 3B60     		str	r3, [r7]
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 33
+
+
  1321              	.L67:
- 458:gpib.c        ****     return i;
- 459:gpib.c        **** }
- 1322              		.loc 1 459 0
+ 442:gpib.c        ****     return i;
+ 443:gpib.c        **** }
+ 1322              		.loc 1 443 0
  1323 0072 2800     		movs	r0, r5
  1324 0074 03B0     		add	sp, sp, #12
  1325              		@ sp needed
@@ -1978,9 +1962,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1357              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
  1358              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
  1359              		.file 4 "Generated_Source\\PSoC4/cytypes.h"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 34
-
-
  1360              		.file 5 "settings.h"
  1361              		.file 6 "Generated_Source\\PSoC4/Timer1.h"
  1362              		.file 7 "Generated_Source\\PSoC4/CyLib.h"
@@ -1991,63 +1972,63 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1367 0006 00000000 		.4byte	.Ldebug_abbrev0
  1368 000a 04       		.byte	0x4
  1369 000b 01       		.uleb128 0x1
- 1370 000c C2000000 		.4byte	.LASF68
+ 1370 000c F8000000 		.4byte	.LASF68
  1371 0010 0C       		.byte	0xc
- 1372 0011 B4010000 		.4byte	.LASF69
- 1373 0015 13020000 		.4byte	.LASF70
+ 1372 0011 EA010000 		.4byte	.LASF69
+ 1373 0015 83000000 		.4byte	.LASF70
  1374 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1375 001d 00000000 		.4byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 34
+
+
  1376 0021 00000000 		.4byte	.Ldebug_line0
  1377 0025 02       		.uleb128 0x2
  1378 0026 01       		.byte	0x1
  1379 0027 06       		.byte	0x6
- 1380 0028 6F020000 		.4byte	.LASF0
+ 1380 0028 61020000 		.4byte	.LASF0
  1381 002c 03       		.uleb128 0x3
- 1382 002d C4010000 		.4byte	.LASF3
+ 1382 002d FA010000 		.4byte	.LASF3
  1383 0031 02       		.byte	0x2
  1384 0032 1D       		.byte	0x1d
  1385 0033 37000000 		.4byte	0x37
  1386 0037 02       		.uleb128 0x2
  1387 0038 01       		.byte	0x1
  1388 0039 08       		.byte	0x8
- 1389 003a E7010000 		.4byte	.LASF1
+ 1389 003a 1D020000 		.4byte	.LASF1
  1390 003e 02       		.uleb128 0x2
  1391 003f 02       		.byte	0x2
  1392 0040 05       		.byte	0x5
  1393 0041 57000000 		.4byte	.LASF2
  1394 0045 03       		.uleb128 0x3
- 1395 0046 AF000000 		.4byte	.LASF4
+ 1395 0046 E5000000 		.4byte	.LASF4
  1396 004a 02       		.byte	0x2
  1397 004b 2B       		.byte	0x2b
  1398 004c 50000000 		.4byte	0x50
  1399 0050 02       		.uleb128 0x2
  1400 0051 02       		.byte	0x2
  1401 0052 07       		.byte	0x7
- 1402 0053 F9020000 		.4byte	.LASF5
+ 1402 0053 EB020000 		.4byte	.LASF5
  1403 0057 02       		.uleb128 0x2
  1404 0058 04       		.byte	0x4
  1405 0059 05       		.byte	0x5
- 1406 005a AB010000 		.4byte	.LASF6
+ 1406 005a E1010000 		.4byte	.LASF6
  1407 005e 03       		.uleb128 0x3
- 1408 005f 83000000 		.4byte	.LASF7
+ 1408 005f A3030000 		.4byte	.LASF7
  1409 0063 02       		.byte	0x2
  1410 0064 41       		.byte	0x41
  1411 0065 69000000 		.4byte	0x69
  1412 0069 02       		.uleb128 0x2
  1413 006a 04       		.byte	0x4
  1414 006b 07       		.byte	0x7
- 1415 006c 85030000 		.4byte	.LASF8
+ 1415 006c 77030000 		.4byte	.LASF8
  1416 0070 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 35
-
-
  1417 0071 08       		.byte	0x8
  1418 0072 05       		.byte	0x5
- 1419 0073 91010000 		.4byte	.LASF9
+ 1419 0073 C7010000 		.4byte	.LASF9
  1420 0077 02       		.uleb128 0x2
  1421 0078 08       		.byte	0x8
  1422 0079 07       		.byte	0x7
- 1423 007a 7B020000 		.4byte	.LASF10
+ 1423 007a 6D020000 		.4byte	.LASF10
  1424 007e 04       		.uleb128 0x4
  1425 007f 04       		.byte	0x4
  1426 0080 05       		.byte	0x5
@@ -2055,41 +2036,44 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1428 0085 02       		.uleb128 0x2
  1429 0086 04       		.byte	0x4
  1430 0087 07       		.byte	0x7
- 1431 0088 9B020000 		.4byte	.LASF11
+ 1431 0088 8D020000 		.4byte	.LASF11
  1432 008c 03       		.uleb128 0x3
- 1433 008d 5A010000 		.4byte	.LASF12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 35
+
+
+ 1433 008d 90010000 		.4byte	.LASF12
  1434 0091 03       		.byte	0x3
  1435 0092 18       		.byte	0x18
  1436 0093 2C000000 		.4byte	0x2c
  1437 0097 03       		.uleb128 0x3
- 1438 0098 A8020000 		.4byte	.LASF13
+ 1438 0098 9A020000 		.4byte	.LASF13
  1439 009c 03       		.byte	0x3
  1440 009d 24       		.byte	0x24
  1441 009e 45000000 		.4byte	0x45
  1442 00a2 03       		.uleb128 0x3
- 1443 00a3 92020000 		.4byte	.LASF14
+ 1443 00a3 84020000 		.4byte	.LASF14
  1444 00a7 03       		.byte	0x3
  1445 00a8 30       		.byte	0x30
  1446 00a9 5E000000 		.4byte	0x5e
  1447 00ad 05       		.uleb128 0x5
- 1448 00ae 7E030000 		.4byte	.LASF15
+ 1448 00ae 70030000 		.4byte	.LASF15
  1449 00b2 04       		.byte	0x4
  1450 00b3 E601     		.2byte	0x1e6
  1451 00b5 69000000 		.4byte	0x69
  1452 00b9 02       		.uleb128 0x2
  1453 00ba 04       		.byte	0x4
  1454 00bb 04       		.byte	0x4
- 1455 00bc 78030000 		.4byte	.LASF16
+ 1455 00bc 6A030000 		.4byte	.LASF16
  1456 00c0 02       		.uleb128 0x2
  1457 00c1 08       		.byte	0x8
  1458 00c2 04       		.byte	0x4
- 1459 00c3 97030000 		.4byte	.LASF17
+ 1459 00c3 89030000 		.4byte	.LASF17
  1460 00c7 02       		.uleb128 0x2
  1461 00c8 01       		.byte	0x1
  1462 00c9 08       		.byte	0x8
- 1463 00ca 3D030000 		.4byte	.LASF18
+ 1463 00ca 2F030000 		.4byte	.LASF18
  1464 00ce 05       		.uleb128 0x5
- 1465 00cf EA020000 		.4byte	.LASF19
+ 1465 00cf DC020000 		.4byte	.LASF19
  1466 00d3 04       		.byte	0x4
  1467 00d4 9002     		.2byte	0x290
  1468 00d6 DA000000 		.4byte	0xda
@@ -2098,10 +2082,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1471 00df 02       		.uleb128 0x2
  1472 00e0 08       		.byte	0x8
  1473 00e1 04       		.byte	0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 36
-
-
- 1474 00e2 F5010000 		.4byte	.LASF20
+ 1474 00e2 2B020000 		.4byte	.LASF20
  1475 00e6 02       		.uleb128 0x2
  1476 00e7 04       		.byte	0x4
  1477 00e8 07       		.byte	0x7
@@ -2115,13 +2096,16 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1485 00f9 08       		.uleb128 0x8
  1486 00fa C7000000 		.4byte	0xc7
  1487 00fe 09       		.uleb128 0x9
- 1488 00ff 88010000 		.4byte	.LASF61
+ 1488 00ff BE010000 		.4byte	.LASF61
  1489 0103 14       		.byte	0x14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 36
+
+
  1490 0104 05       		.byte	0x5
  1491 0105 0D       		.byte	0xd
  1492 0106 77010000 		.4byte	0x177
  1493 010a 0A       		.uleb128 0xa
- 1494 010b DB030000 		.4byte	.LASF22
+ 1494 010b D8030000 		.4byte	.LASF22
  1495 010f 05       		.byte	0x5
  1496 0110 0E       		.byte	0xe
  1497 0111 A2000000 		.4byte	0xa2
@@ -2139,7 +2123,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1509 0129 97000000 		.4byte	0x97
  1510 012d 06       		.byte	0x6
  1511 012e 0A       		.uleb128 0xa
- 1512 012f 62010000 		.4byte	.LASF25
+ 1512 012f 98010000 		.4byte	.LASF25
  1513 0133 05       		.byte	0x5
  1514 0134 11       		.byte	0x11
  1515 0135 97000000 		.4byte	0x97
@@ -2157,26 +2141,26 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1527 014d 97000000 		.4byte	0x97
  1528 0151 0C       		.byte	0xc
  1529 0152 0A       		.uleb128 0xa
- 1530 0153 F0020000 		.4byte	.LASF26
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 37
-
-
+ 1530 0153 E2020000 		.4byte	.LASF26
  1531 0157 05       		.byte	0x5
  1532 0158 14       		.byte	0x14
  1533 0159 97000000 		.4byte	0x97
  1534 015d 0E       		.byte	0xe
  1535 015e 0A       		.uleb128 0xa
- 1536 015f 0C030000 		.4byte	.LASF27
+ 1536 015f FE020000 		.4byte	.LASF27
  1537 0163 05       		.byte	0x5
  1538 0164 15       		.byte	0x15
  1539 0165 97000000 		.4byte	0x97
  1540 0169 10       		.byte	0x10
  1541 016a 0A       		.uleb128 0xa
- 1542 016b 9F010000 		.4byte	.LASF28
+ 1542 016b D5010000 		.4byte	.LASF28
  1543 016f 05       		.byte	0x5
  1544 0170 16       		.byte	0x16
  1545 0171 97000000 		.4byte	0x97
  1546 0175 12       		.byte	0x12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 37
+
+
  1547 0176 00       		.byte	0
  1548 0177 0C       		.uleb128 0xc
  1549 0178 01       		.byte	0x1
@@ -2194,10 +2178,10 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1561 0190 49464300 		.ascii	"IFC\000"
  1562 0194 02       		.byte	0x2
  1563 0195 0E       		.uleb128 0xe
- 1564 0196 1D040000 		.4byte	.LASF29
+ 1564 0196 1A040000 		.4byte	.LASF29
  1565 019a 03       		.byte	0x3
  1566 019b 0E       		.uleb128 0xe
- 1567 019c 42030000 		.4byte	.LASF30
+ 1567 019c 34030000 		.4byte	.LASF30
  1568 01a0 04       		.byte	0x4
  1569 01a1 0D       		.uleb128 0xd
  1570 01a2 44415600 		.ascii	"DAV\000"
@@ -2215,17 +2199,14 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1582 01ba 23       		.byte	0x23
  1583 01bb 77010000 		.4byte	0x177
  1584 01bf 0F       		.uleb128 0xf
- 1585 01c0 F8030000 		.4byte	.LASF34
+ 1585 01c0 F5030000 		.4byte	.LASF34
  1586 01c4 01       		.byte	0x1
  1587 01c5 5E       		.byte	0x5e
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 38
-
-
  1588 01c6 E4010000 		.4byte	0x1e4
  1589 01ca 03       		.byte	0x3
  1590 01cb E4010000 		.4byte	0x1e4
  1591 01cf 10       		.uleb128 0x10
- 1592 01d0 6B010000 		.4byte	.LASF33
+ 1592 01d0 A1010000 		.4byte	.LASF33
  1593 01d4 01       		.byte	0x1
  1594 01d5 5E       		.byte	0x5e
  1595 01d6 B4010000 		.4byte	0x1b4
@@ -2237,66 +2218,69 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1601 01e3 00       		.byte	0
  1602 01e4 02       		.uleb128 0x2
  1603 01e5 01       		.byte	0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 38
+
+
  1604 01e6 02       		.byte	0x2
- 1605 01e7 67030000 		.4byte	.LASF32
+ 1605 01e7 59030000 		.4byte	.LASF32
  1606 01eb 12       		.uleb128 0x12
- 1607 01ec 56030000 		.4byte	.LASF36
+ 1607 01ec 48030000 		.4byte	.LASF36
  1608 01f0 01       		.byte	0x1
  1609 01f1 49       		.byte	0x49
  1610 01f2 03       		.byte	0x3
  1611 01f3 03020000 		.4byte	0x203
  1612 01f7 10       		.uleb128 0x10
- 1613 01f8 6B010000 		.4byte	.LASF33
+ 1613 01f8 A1010000 		.4byte	.LASF33
  1614 01fc 01       		.byte	0x1
  1615 01fd 49       		.byte	0x49
  1616 01fe B4010000 		.4byte	0x1b4
  1617 0202 00       		.byte	0
  1618 0203 0F       		.uleb128 0xf
- 1619 0204 C6020000 		.4byte	.LASF35
+ 1619 0204 B8020000 		.4byte	.LASF35
  1620 0208 01       		.byte	0x1
  1621 0209 9F       		.byte	0x9f
  1622 020a E4010000 		.4byte	0x1e4
  1623 020e 03       		.byte	0x3
  1624 020f 1F020000 		.4byte	0x21f
  1625 0213 10       		.uleb128 0x10
- 1626 0214 6B010000 		.4byte	.LASF33
+ 1626 0214 A1010000 		.4byte	.LASF33
  1627 0218 01       		.byte	0x1
  1628 0219 9F       		.byte	0x9f
  1629 021a B4010000 		.4byte	0x1b4
  1630 021e 00       		.byte	0
  1631 021f 13       		.uleb128 0x13
- 1632 0220 A3000000 		.4byte	.LASF71
+ 1632 0220 D9000000 		.4byte	.LASF71
  1633 0224 01       		.byte	0x1
  1634 0225 33       		.byte	0x33
  1635 0226 03       		.byte	0x3
  1636 0227 12       		.uleb128 0x12
- 1637 0228 9E030000 		.4byte	.LASF37
+ 1637 0228 90030000 		.4byte	.LASF37
  1638 022c 01       		.byte	0x1
  1639 022d 50       		.byte	0x50
  1640 022e 03       		.byte	0x3
  1641 022f 3F020000 		.4byte	0x23f
  1642 0233 10       		.uleb128 0x10
- 1643 0234 6B010000 		.4byte	.LASF33
+ 1643 0234 A1010000 		.4byte	.LASF33
  1644 0238 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 39
-
-
  1645 0239 50       		.byte	0x50
  1646 023a B4010000 		.4byte	0x1b4
  1647 023e 00       		.byte	0
  1648 023f 0F       		.uleb128 0xf
- 1649 0240 B1030000 		.4byte	.LASF38
+ 1649 0240 AE030000 		.4byte	.LASF38
  1650 0244 01       		.byte	0x1
  1651 0245 8E       		.byte	0x8e
  1652 0246 E4010000 		.4byte	0x1e4
  1653 024a 03       		.byte	0x3
  1654 024b 5B020000 		.4byte	0x25b
  1655 024f 10       		.uleb128 0x10
- 1656 0250 6B010000 		.4byte	.LASF33
+ 1656 0250 A1010000 		.4byte	.LASF33
  1657 0254 01       		.byte	0x1
  1658 0255 8E       		.byte	0x8e
  1659 0256 B4010000 		.4byte	0x1b4
  1660 025a 00       		.byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 39
+
+
  1661 025b 14       		.uleb128 0x14
  1662 025c 33000000 		.4byte	.LASF42
  1663 0260 01       		.byte	0x1
@@ -2310,7 +2294,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1671 0271 04       		.byte	0x4
  1672 0272 8C000000 		.4byte	0x8c
  1673 0276 15       		.uleb128 0x15
- 1674 0277 60020000 		.4byte	.LASF72
+ 1674 0277 52020000 		.4byte	.LASF72
  1675 027b 01       		.byte	0x1
  1676 027c 2F       		.byte	0x2f
  1677 027d 00000000 		.4byte	.LFB35
@@ -2318,7 +2302,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1679 0285 01       		.uleb128 0x1
  1680 0286 9C       		.byte	0x9c
  1681 0287 16       		.uleb128 0x16
- 1682 0288 10040000 		.4byte	.LASF39
+ 1682 0288 0D040000 		.4byte	.LASF39
  1683 028c 01       		.byte	0x1
  1684 028d 54       		.byte	0x54
  1685 028e 97000000 		.4byte	0x97
@@ -2335,12 +2319,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1696 02aa 00000000 		.4byte	.LLST0
  1697 02ae 00       		.byte	0
  1698 02af 16       		.uleb128 0x16
- 1699 02b0 E5030000 		.4byte	.LASF40
+ 1699 02b0 E2030000 		.4byte	.LASF40
  1700 02b4 01       		.byte	0x1
  1701 02b5 6D       		.byte	0x6d
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 40
-
-
  1702 02b6 7E000000 		.4byte	0x7e
  1703 02ba 00000000 		.4byte	.LFB41
  1704 02be 64000000 		.4byte	.LFE41-.LFB41
@@ -2348,7 +2329,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1706 02c3 9C       		.byte	0x9c
  1707 02c4 64030000 		.4byte	0x364
  1708 02c8 18       		.uleb128 0x18
- 1709 02c9 50010000 		.4byte	.LASF41
+ 1709 02c9 86010000 		.4byte	.LASF41
  1710 02cd 01       		.byte	0x1
  1711 02ce 6F       		.byte	0x6f
  1712 02cf 7E000000 		.4byte	0x7e
@@ -2357,6 +2338,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1715 02d8 61746E00 		.ascii	"atn\000"
  1716 02dc 01       		.byte	0x1
  1717 02dd 71       		.byte	0x71
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 40
+
+
  1718 02de E4010000 		.4byte	0x1e4
  1719 02e2 11       		.uleb128 0x11
  1720 02e3 69666300 		.ascii	"ifc\000"
@@ -2398,9 +2382,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1756 0343 01       		.uleb128 0x1
  1757 0344 53       		.byte	0x53
  1758 0345 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 41
-
-
  1759 0346 00       		.byte	0
  1760 0347 1E       		.uleb128 0x1e
  1761 0348 2C000000 		.4byte	.LVL6
@@ -2417,7 +2398,10 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1772 035f 680D0000 		.4byte	0xd68
  1773 0363 00       		.byte	0
  1774 0364 14       		.uleb128 0x14
- 1775 0365 7A010000 		.4byte	.LASF43
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 41
+
+
+ 1775 0365 B0010000 		.4byte	.LASF43
  1776 0369 01       		.byte	0x1
  1777 036a 87       		.byte	0x87
  1778 036b 7E000000 		.4byte	0x7e
@@ -2426,7 +2410,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1781 0377 01       		.uleb128 0x1
  1782 0378 9C       		.byte	0x9c
  1783 0379 21       		.uleb128 0x21
- 1784 037a 47030000 		.4byte	.LASF46
+ 1784 037a 39030000 		.4byte	.LASF46
  1785 037e 01       		.byte	0x1
  1786 037f B1       		.byte	0xb1
  1787 0380 E4010000 		.4byte	0x1e4
@@ -2436,13 +2420,13 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1791 038d 9C       		.byte	0x9c
  1792 038e 27050000 		.4byte	0x527
  1793 0392 22       		.uleb128 0x22
- 1794 0393 E2010000 		.4byte	.LASF44
+ 1794 0393 18020000 		.4byte	.LASF44
  1795 0397 01       		.byte	0x1
  1796 0398 B1       		.byte	0xb1
  1797 0399 8C000000 		.4byte	0x8c
  1798 039d 5D000000 		.4byte	.LLST4
  1799 03a1 22       		.uleb128 0x22
- 1800 03a2 E5020000 		.4byte	.LASF45
+ 1800 03a2 D7020000 		.4byte	.LASF45
  1801 03a6 01       		.byte	0x1
  1802 03a7 B1       		.byte	0xb1
  1803 03a8 E4010000 		.4byte	0x1e4
@@ -2454,13 +2438,10 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1809 03b6 E4010000 		.4byte	0x1e4
  1810 03ba 9F000000 		.4byte	.LLST6
  1811 03be 23       		.uleb128 0x23
- 1812 03bf 0B020000 		.4byte	.LASF73
+ 1812 03bf 41020000 		.4byte	.LASF73
  1813 03c3 01       		.byte	0x1
  1814 03c4 C8       		.byte	0xc8
  1815 03c5 60000000 		.4byte	.L22
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 42
-
-
  1816 03c9 19       		.uleb128 0x19
  1817 03ca EB010000 		.4byte	0x1eb
  1818 03ce 08000000 		.4byte	.LBB102
@@ -2477,6 +2458,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1829 03eb 0E000000 		.4byte	.LBB104
  1830 03ef 20000000 		.4byte	.LBE104-.LBB104
  1831 03f3 01       		.byte	0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 42
+
+
  1832 03f4 B9       		.byte	0xb9
  1833 03f5 4B040000 		.4byte	0x44b
  1834 03f9 1A       		.uleb128 0x1a
@@ -2518,9 +2502,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1870 0450 38000000 		.4byte	.LBB108
  1871 0454 06000000 		.4byte	.LBE108-.LBB108
  1872 0458 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 43
-
-
  1873 0459 C0       		.byte	0xc0
  1874 045a 6E040000 		.4byte	0x46e
  1875 045e 24       		.uleb128 0x24
@@ -2537,6 +2518,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1886 046f EB010000 		.4byte	0x1eb
  1887 0473 3E000000 		.4byte	.LBB110
  1888 0477 06000000 		.4byte	.LBE110-.LBB110
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 43
+
+
  1889 047b 01       		.byte	0x1
  1890 047c C3       		.byte	0xc3
  1891 047d 8B040000 		.4byte	0x48b
@@ -2578,9 +2562,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1927 04e0 1F       		.uleb128 0x1f
  1928 04e1 01       		.uleb128 0x1
  1929 04e2 50       		.byte	0x50
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 44
-
-
  1930 04e3 01       		.uleb128 0x1
  1931 04e4 30       		.byte	0x30
  1932 04e5 00       		.byte	0
@@ -2597,6 +2578,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1943 04ff 0D050000 		.4byte	0x50d
  1944 0503 1A       		.uleb128 0x1a
  1945 0504 33020000 		.4byte	0x233
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 44
+
+
  1946 0508 2A010000 		.4byte	.LLST13
  1947 050c 00       		.byte	0
  1948 050d 25       		.uleb128 0x25
@@ -2611,7 +2595,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1957 0525 00       		.byte	0
  1958 0526 00       		.byte	0
  1959 0527 21       		.uleb128 0x21
- 1960 0528 17030000 		.4byte	.LASF47
+ 1960 0528 09030000 		.4byte	.LASF47
  1961 052c 01       		.byte	0x1
  1962 052d D7       		.byte	0xd7
  1963 052e 7E000000 		.4byte	0x7e
@@ -2621,7 +2605,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1967 053b 9C       		.byte	0x9c
  1968 053c 4E070000 		.4byte	0x74e
  1969 0540 22       		.uleb128 0x22
- 1970 0541 E2010000 		.4byte	.LASF44
+ 1970 0541 18020000 		.4byte	.LASF44
  1971 0545 01       		.byte	0x1
  1972 0546 D7       		.byte	0xd7
  1973 0547 70020000 		.4byte	0x270
@@ -2638,9 +2622,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  1984 0563 D8       		.byte	0xd8
  1985 0564 7E000000 		.4byte	0x7e
  1986 0568 AA010000 		.4byte	.LLST17
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 45
-
-
  1987 056c 19       		.uleb128 0x19
  1988 056d EB010000 		.4byte	0x1eb
  1989 0571 06000000 		.4byte	.LBB120
@@ -2657,6 +2638,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2000 058e 0C000000 		.4byte	.LBB122
  2001 0592 06000000 		.4byte	.LBE122-.LBB122
  2002 0596 01       		.byte	0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 45
+
+
  2003 0597 E4       		.byte	0xe4
  2004 0598 A6050000 		.4byte	0x5a6
  2005 059c 1A       		.uleb128 0x1a
@@ -2698,9 +2682,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2041 05fc 01       		.uleb128 0x1
  2042 05fd 50       		.byte	0x50
  2043 05fe 01       		.uleb128 0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 46
-
-
  2044 05ff 30       		.byte	0x30
  2045 0600 00       		.byte	0
  2046 0601 20       		.uleb128 0x20
@@ -2717,6 +2698,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2057 061e 1A       		.uleb128 0x1a
  2058 061f 33020000 		.4byte	0x233
  2059 0623 1D020000 		.4byte	.LLST22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 46
+
+
  2060 0627 00       		.byte	0
  2061 0628 19       		.uleb128 0x19
  2062 0629 27020000 		.4byte	0x227
@@ -2758,9 +2742,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2098 068c 6D020000 		.4byte	.LLST26
  2099 0690 00       		.byte	0
  2100 0691 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 47
-
-
  2101 0692 19       		.uleb128 0x19
  2102 0693 27020000 		.4byte	0x227
  2103 0697 6C000000 		.4byte	.LBB136
@@ -2777,6 +2758,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2114 06b4 72000000 		.4byte	.LBB138
  2115 06b8 1C000000 		.4byte	.LBE138-.LBB138
  2116 06bc 01       		.byte	0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 47
+
+
  2117 06bd 0001     		.2byte	0x100
  2118 06bf 15070000 		.4byte	0x715
  2119 06c3 1A       		.uleb128 0x1a
@@ -2818,9 +2802,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2155 071a 8E000000 		.4byte	.LBB142
  2156 071e 06000000 		.4byte	.LBE142-.LBB142
  2157 0722 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 48
-
-
  2158 0723 0301     		.2byte	0x103
  2159 0725 33070000 		.4byte	0x733
  2160 0729 1A       		.uleb128 0x1a
@@ -2837,12 +2818,15 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2171 0744 33020000 		.4byte	0x233
  2172 0748 D0020000 		.4byte	.LLST31
  2173 074c 00       		.byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 48
+
+
  2174 074d 00       		.byte	0
  2175 074e 07       		.uleb128 0x7
  2176 074f 04       		.byte	0x4
  2177 0750 7E000000 		.4byte	0x7e
  2178 0754 2A       		.uleb128 0x2a
- 2179 0755 8E000000 		.4byte	.LASF50
+ 2179 0755 C4000000 		.4byte	.LASF50
  2180 0759 01       		.byte	0x1
  2181 075a 0B01     		.2byte	0x10b
  2182 075c 00000000 		.4byte	.LFB47
@@ -2878,9 +2862,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2212 07a9 32       		.byte	0x32
  2213 07aa 00       		.byte	0
  2214 07ab 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 49
-
-
  2215 07ac 28       		.uleb128 0x28
  2216 07ad 27020000 		.4byte	0x227
  2217 07b1 0E000000 		.4byte	.LBB150
@@ -2897,6 +2878,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2228 07cf 12000000 		.4byte	.LBB152
  2229 07d3 06000000 		.4byte	.LBE152-.LBB152
  2230 07d7 01       		.byte	0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 49
+
+
  2231 07d8 0F01     		.2byte	0x10f
  2232 07da 24       		.uleb128 0x24
  2233 07db 18000000 		.4byte	.LVL59
@@ -2910,7 +2894,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2241 07e9 00       		.byte	0
  2242 07ea 00       		.byte	0
  2243 07eb 2B       		.uleb128 0x2b
- 2244 07ec BB010000 		.4byte	.LASF48
+ 2244 07ec F1010000 		.4byte	.LASF48
  2245 07f0 01       		.byte	0x1
  2246 07f1 1201     		.2byte	0x112
  2247 07f3 00000000 		.4byte	.LFB48
@@ -2935,12 +2919,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2266 081f 00       		.byte	0
  2267 0820 00       		.byte	0
  2268 0821 2B       		.uleb128 0x2b
- 2269 0822 57020000 		.4byte	.LASF49
+ 2269 0822 49020000 		.4byte	.LASF49
  2270 0826 01       		.byte	0x1
  2271 0827 1601     		.2byte	0x116
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 50
-
-
  2272 0829 00000000 		.4byte	.LFB49
  2273 082d 0E000000 		.4byte	.LFE49-.LFB49
  2274 0831 01       		.uleb128 0x1
@@ -2957,13 +2938,16 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2285 084c 79030000 		.4byte	0x379
  2286 0850 1F       		.uleb128 0x1f
  2287 0851 01       		.uleb128 0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 50
+
+
  2288 0852 51       		.byte	0x51
  2289 0853 01       		.uleb128 0x1
  2290 0854 30       		.byte	0x30
  2291 0855 00       		.byte	0
  2292 0856 00       		.byte	0
  2293 0857 2A       		.uleb128 0x2a
- 2294 0858 EF030000 		.4byte	.LASF51
+ 2294 0858 EC030000 		.4byte	.LASF51
  2295 085c 01       		.byte	0x1
  2296 085d 1A01     		.2byte	0x11a
  2297 085f 00000000 		.4byte	.LFB50
@@ -2982,7 +2966,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2310 087b 00       		.byte	0
  2311 087c 00       		.byte	0
  2312 087d 2A       		.uleb128 0x2a
- 2313 087e 07040000 		.4byte	.LASF52
+ 2313 087e 04040000 		.4byte	.LASF52
  2314 0882 01       		.byte	0x1
  2315 0883 1E01     		.2byte	0x11e
  2316 0885 00000000 		.4byte	.LFB51
@@ -2998,9 +2982,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2326 089e 50       		.byte	0x50
  2327 089f 01       		.uleb128 0x1
  2328 08a0 4F       		.byte	0x4f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 51
-
-
  2329 08a1 00       		.byte	0
  2330 08a2 00       		.byte	0
  2331 08a3 2B       		.uleb128 0x2b
@@ -3017,6 +2998,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2342 08be 01       		.byte	0x1
  2343 08bf 2201     		.2byte	0x122
  2344 08c1 8C000000 		.4byte	0x8c
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 51
+
+
  2345 08c5 4E030000 		.4byte	.LLST36
  2346 08c9 28       		.uleb128 0x28
  2347 08ca 27020000 		.4byte	0x227
@@ -3058,9 +3042,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2383 0930 01       		.byte	0x1
  2384 0931 2B01     		.2byte	0x12b
  2385 0933 47090000 		.4byte	0x947
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 52
-
-
  2386 0937 24       		.uleb128 0x24
  2387 0938 1A000000 		.4byte	.LVL74
  2388 093c 740D0000 		.4byte	0xd74
@@ -3077,6 +3058,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2399 0950 04000000 		.4byte	.LBE162-.LBB162
  2400 0954 01       		.byte	0x1
  2401 0955 2D01     		.2byte	0x12d
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 52
+
+
  2402 0957 65090000 		.4byte	0x965
  2403 095b 1A       		.uleb128 0x1a
  2404 095c F7010000 		.4byte	0x1f7
@@ -3118,9 +3102,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2440 09b5 3601     		.2byte	0x136
  2441 09b7 CB090000 		.4byte	0x9cb
  2442 09bb 24       		.uleb128 0x24
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 53
-
-
  2443 09bc 42000000 		.4byte	.LVL82
  2444 09c0 740D0000 		.4byte	0xd74
  2445 09c4 1F       		.uleb128 0x1f
@@ -3137,6 +3118,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2456 09d5 2C000000 		.4byte	.LVL78
  2457 09d9 7D080000 		.4byte	0x87d
  2458 09dd 1E       		.uleb128 0x1e
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 53
+
+
  2459 09de 32000000 		.4byte	.LVL79
  2460 09e2 EB070000 		.4byte	0x7eb
  2461 09e6 F1090000 		.4byte	0x9f1
@@ -3152,7 +3136,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2471 09f6 21080000 		.4byte	0x821
  2472 09fa 00       		.byte	0
  2473 09fb 2B       		.uleb128 0x2b
- 2474 09fc CE010000 		.4byte	.LASF54
+ 2474 09fc 04020000 		.4byte	.LASF54
  2475 0a00 01       		.byte	0x1
  2476 0a01 3901     		.2byte	0x139
  2477 0a03 00000000 		.4byte	.LFB53
@@ -3178,9 +3162,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2497 0a3a F4030000 		.4byte	.LLST43
  2498 0a3e 00       		.byte	0
  2499 0a3f 28       		.uleb128 0x28
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 54
-
-
  2500 0a40 27020000 		.4byte	0x227
  2501 0a44 10000000 		.4byte	.LBB172
  2502 0a48 04000000 		.4byte	.LBE172-.LBB172
@@ -3197,6 +3178,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2513 0a66 08000000 		.4byte	.LBE174-.LBB174
  2514 0a6a 01       		.byte	0x1
  2515 0a6b 3F01     		.2byte	0x13f
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 54
+
+
  2516 0a6d 7B0A0000 		.4byte	0xa7b
  2517 0a71 1A       		.uleb128 0x1a
  2518 0a72 F7010000 		.4byte	0x1f7
@@ -3238,9 +3222,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2554 0acb 4801     		.2byte	0x148
  2555 0acd E10A0000 		.4byte	0xae1
  2556 0ad1 24       		.uleb128 0x24
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 55
-
-
  2557 0ad2 42000000 		.4byte	.LVL95
  2558 0ad6 740D0000 		.4byte	0xd74
  2559 0ada 1F       		.uleb128 0x1f
@@ -3257,6 +3238,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2570 0aee 01       		.byte	0x1
  2571 0aef 4B01     		.2byte	0x14b
  2572 0af1 FF0A0000 		.4byte	0xaff
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 55
+
+
  2573 0af5 1A       		.uleb128 0x1a
  2574 0af6 F7010000 		.4byte	0x1f7
  2575 0afa 44040000 		.4byte	.LLST47
@@ -3298,9 +3282,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2611 0b5f 1F       		.uleb128 0x1f
  2612 0b60 01       		.uleb128 0x1
  2613 0b61 50       		.byte	0x50
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 56
-
-
  2614 0b62 04       		.uleb128 0x4
  2615 0b63 91       		.byte	0x91
  2616 0b64 64       		.sleb128 -28
@@ -3309,7 +3290,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2619 0b67 00       		.byte	0
  2620 0b68 00       		.byte	0
  2621 0b69 2D       		.uleb128 0x2d
- 2622 0b6a CE030000 		.4byte	.LASF55
+ 2622 0b6a CB030000 		.4byte	.LASF55
  2623 0b6e 01       		.byte	0x1
  2624 0b6f 5501     		.2byte	0x155
  2625 0b71 E4010000 		.4byte	0x1e4
@@ -3317,6 +3298,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2627 0b79 18000000 		.4byte	.LFE54-.LFB54
  2628 0b7d 01       		.uleb128 0x1
  2629 0b7e 9C       		.byte	0x9c
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 56
+
+
  2630 0b7f B10B0000 		.4byte	0xbb1
  2631 0b83 29       		.uleb128 0x29
  2632 0b84 BF010000 		.4byte	0x1bf
@@ -3337,7 +3321,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2647 0baf 00       		.byte	0
  2648 0bb0 00       		.byte	0
  2649 0bb1 2B       		.uleb128 0x2b
- 2650 0bb2 70010000 		.4byte	.LASF56
+ 2650 0bb2 A6010000 		.4byte	.LASF56
  2651 0bb6 01       		.byte	0x1
  2652 0bb7 5901     		.2byte	0x159
  2653 0bb9 00000000 		.4byte	.LFB55
@@ -3358,9 +3342,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2668 0bdf F3000000 		.4byte	0xf3
  2669 0be3 C8040000 		.4byte	.LLST53
  2670 0be7 2F       		.uleb128 0x2f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 57
-
-
  2671 0be8 7000     		.ascii	"p\000"
  2672 0bea 01       		.byte	0x1
  2673 0beb 5A01     		.2byte	0x15a
@@ -3374,9 +3355,12 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2681 0c03 79030000 		.4byte	0x379
  2682 0c07 00       		.byte	0
  2683 0c08 30       		.uleb128 0x30
- 2684 0c09 BC020000 		.4byte	.LASF57
+ 2684 0c09 AE020000 		.4byte	.LASF57
  2685 0c0d 01       		.byte	0x1
- 2686 0c0e 6A01     		.2byte	0x16a
+ 2686 0c0e 6C01     		.2byte	0x16c
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 57
+
+
  2687 0c10 7E000000 		.4byte	0x7e
  2688 0c14 00000000 		.4byte	.LFB56
  2689 0c18 44000000 		.4byte	.LFE56-.LFB56
@@ -3386,31 +3370,31 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2693 0c22 2E       		.uleb128 0x2e
  2694 0c23 62756600 		.ascii	"buf\000"
  2695 0c27 01       		.byte	0x1
- 2696 0c28 6A01     		.2byte	0x16a
+ 2696 0c28 6C01     		.2byte	0x16c
  2697 0c2a 70020000 		.4byte	0x270
  2698 0c2e 12050000 		.4byte	.LLST55
  2699 0c32 2C       		.uleb128 0x2c
- 2700 0c33 BA000000 		.4byte	.LASF58
+ 2700 0c33 F0000000 		.4byte	.LASF58
  2701 0c37 01       		.byte	0x1
- 2702 0c38 6A01     		.2byte	0x16a
+ 2702 0c38 6C01     		.2byte	0x16c
  2703 0c3a 7E000000 		.4byte	0x7e
  2704 0c3e 3E050000 		.4byte	.LLST56
  2705 0c42 2F       		.uleb128 0x2f
  2706 0c43 6900     		.ascii	"i\000"
  2707 0c45 01       		.byte	0x1
- 2708 0c46 6B01     		.2byte	0x16b
+ 2708 0c46 6D01     		.2byte	0x16d
  2709 0c48 7E000000 		.4byte	0x7e
  2710 0c4c 6A050000 		.4byte	.LLST57
  2711 0c50 2F       		.uleb128 0x2f
  2712 0c51 6F6B00   		.ascii	"ok\000"
  2713 0c54 01       		.byte	0x1
- 2714 0c55 6C01     		.2byte	0x16c
+ 2714 0c55 6E01     		.2byte	0x16e
  2715 0c57 E4010000 		.4byte	0x1e4
  2716 0c5b AC050000 		.4byte	.LLST58
  2717 0c5f 31       		.uleb128 0x31
  2718 0c60 656F6900 		.ascii	"eoi\000"
  2719 0c64 01       		.byte	0x1
- 2720 0c65 6D01     		.2byte	0x16d
+ 2720 0c65 6F01     		.2byte	0x16f
  2721 0c67 E4010000 		.4byte	0x1e4
  2722 0c6b 02       		.uleb128 0x2
  2723 0c6c 91       		.byte	0x91
@@ -3418,9 +3402,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2725 0c6e 24       		.uleb128 0x24
  2726 0c6f 18000000 		.4byte	.LVL113
  2727 0c73 27050000 		.4byte	0x527
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 58
-
-
  2728 0c77 1F       		.uleb128 0x1f
  2729 0c78 01       		.uleb128 0x1
  2730 0c79 50       		.byte	0x50
@@ -3437,8 +3418,11 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2741 0c84 00       		.byte	0
  2742 0c85 30       		.uleb128 0x30
  2743 0c86 12000000 		.4byte	.LASF59
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 58
+
+
  2744 0c8a 01       		.byte	0x1
- 2745 0c8b 9D01     		.2byte	0x19d
+ 2745 0c8b 8D01     		.2byte	0x18d
  2746 0c8d 7E000000 		.4byte	0x7e
  2747 0c91 00000000 		.4byte	.LFB57
  2748 0c95 80000000 		.4byte	.LFE57-.LFB57
@@ -3448,41 +3432,38 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2752 0c9f 2C       		.uleb128 0x2c
  2753 0ca0 6A000000 		.4byte	.LASF60
  2754 0ca4 01       		.byte	0x1
- 2755 0ca5 9D01     		.2byte	0x19d
+ 2755 0ca5 8D01     		.2byte	0x18d
  2756 0ca7 7E000000 		.4byte	0x7e
  2757 0cab F1050000 		.4byte	.LLST59
  2758 0caf 2E       		.uleb128 0x2e
  2759 0cb0 656E6400 		.ascii	"end\000"
  2760 0cb4 01       		.byte	0x1
- 2761 0cb5 9D01     		.2byte	0x19d
+ 2761 0cb5 8D01     		.2byte	0x18d
  2762 0cb7 4E070000 		.4byte	0x74e
  2763 0cbb 1D060000 		.4byte	.LLST60
  2764 0cbf 2F       		.uleb128 0x2f
  2765 0cc0 6900     		.ascii	"i\000"
  2766 0cc2 01       		.byte	0x1
- 2767 0cc3 9E01     		.2byte	0x19e
+ 2767 0cc3 8E01     		.2byte	0x18e
  2768 0cc5 7E000000 		.4byte	0x7e
  2769 0cc9 49060000 		.4byte	.LLST61
  2770 0ccd 32       		.uleb128 0x32
  2771 0cce 6F6B00   		.ascii	"ok\000"
  2772 0cd1 01       		.byte	0x1
- 2773 0cd2 9F01     		.2byte	0x19f
+ 2773 0cd2 8F01     		.2byte	0x18f
  2774 0cd4 7E000000 		.4byte	0x7e
  2775 0cd8 31       		.uleb128 0x31
  2776 0cd9 656F6900 		.ascii	"eoi\000"
  2777 0cdd 01       		.byte	0x1
- 2778 0cde A001     		.2byte	0x1a0
+ 2778 0cde 9001     		.2byte	0x190
  2779 0ce0 7E000000 		.4byte	0x7e
  2780 0ce4 02       		.uleb128 0x2
  2781 0ce5 91       		.byte	0x91
  2782 0ce6 64       		.sleb128 -28
  2783 0ce7 2F       		.uleb128 0x2f
  2784 0ce8 62756600 		.ascii	"buf\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 59
-
-
  2785 0cec 01       		.byte	0x1
- 2786 0ced A101     		.2byte	0x1a1
+ 2786 0ced 9101     		.2byte	0x191
  2787 0cef 70020000 		.4byte	0x270
  2788 0cf3 A1060000 		.4byte	.LLST62
  2789 0cf7 24       		.uleb128 0x24
@@ -3497,13 +3478,16 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2798 0d06 1F       		.uleb128 0x1f
  2799 0d07 01       		.uleb128 0x1
  2800 0d08 51       		.byte	0x51
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 59
+
+
  2801 0d09 02       		.uleb128 0x2
  2802 0d0a 91       		.byte	0x91
  2803 0d0b 64       		.sleb128 -28
  2804 0d0c 00       		.byte	0
  2805 0d0d 00       		.byte	0
  2806 0d0e 33       		.uleb128 0x33
- 2807 0d0f 88010000 		.4byte	.LASF61
+ 2807 0d0f BE010000 		.4byte	.LASF61
  2808 0d13 05       		.byte	0x5
  2809 0d14 1A       		.byte	0x1a
  2810 0d15 FE000000 		.4byte	0xfe
@@ -3523,7 +3507,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2824 0d35 03       		.byte	0x3
  2825 0d36 00000000 		.4byte	gpib_buffer
  2826 0d3a 36       		.uleb128 0x36
- 2827 0d3b B1020000 		.4byte	.LASF63
+ 2827 0d3b A3020000 		.4byte	.LASF63
  2828 0d3f 01       		.byte	0x1
  2829 0d40 28       		.byte	0x28
  2830 0d41 8C000000 		.4byte	0x8c
@@ -3531,19 +3515,16 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2832 0d46 03       		.byte	0x3
  2833 0d47 00000000 		.4byte	my_address
  2834 0d4b 36       		.uleb128 0x36
- 2835 0d4c 6D030000 		.4byte	.LASF64
+ 2835 0d4c 5F030000 		.4byte	.LASF64
  2836 0d50 01       		.byte	0x1
  2837 0d51 40       		.byte	0x40
  2838 0d52 7E000000 		.4byte	0x7e
  2839 0d56 05       		.uleb128 0x5
  2840 0d57 03       		.byte	0x3
  2841 0d58 00000000 		.4byte	_gpib_mode
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 60
-
-
  2842 0d5c 37       		.uleb128 0x37
- 2843 0d5d 29030000 		.4byte	.LASF65
- 2844 0d61 29030000 		.4byte	.LASF65
+ 2843 0d5d 1B030000 		.4byte	.LASF65
+ 2844 0d61 1B030000 		.4byte	.LASF65
  2845 0d65 06       		.byte	0x6
  2846 0d66 4A01     		.2byte	0x14a
  2847 0d68 37       		.uleb128 0x37
@@ -3552,11 +3533,14 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2850 0d71 06       		.byte	0x6
  2851 0d72 4B01     		.2byte	0x14b
  2852 0d74 38       		.uleb128 0x38
- 2853 0d75 01020000 		.4byte	.LASF67
- 2854 0d79 01020000 		.4byte	.LASF67
+ 2853 0d75 37020000 		.4byte	.LASF67
+ 2854 0d79 37020000 		.4byte	.LASF67
  2855 0d7d 07       		.byte	0x7
  2856 0d7e DA       		.byte	0xda
  2857 0d7f 00       		.byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 60
+
+
  2858              		.section	.debug_abbrev,"",%progbits
  2859              	.Ldebug_abbrev0:
  2860 0000 01       		.uleb128 0x1
@@ -3598,9 +3582,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2896 0024 0B       		.uleb128 0xb
  2897 0025 3B       		.uleb128 0x3b
  2898 0026 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 61
-
-
  2899 0027 49       		.uleb128 0x49
  2900 0028 13       		.uleb128 0x13
  2901 0029 00       		.byte	0
@@ -3617,6 +3598,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2912 0034 00       		.byte	0
  2913 0035 00       		.byte	0
  2914 0036 05       		.uleb128 0x5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 61
+
+
  2915 0037 16       		.uleb128 0x16
  2916 0038 00       		.byte	0
  2917 0039 03       		.uleb128 0x3
@@ -3658,9 +3642,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2953 005d 03       		.uleb128 0x3
  2954 005e 0E       		.uleb128 0xe
  2955 005f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 62
-
-
  2956 0060 0B       		.uleb128 0xb
  2957 0061 3A       		.uleb128 0x3a
  2958 0062 0B       		.uleb128 0xb
@@ -3677,6 +3658,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  2969 006d 0E       		.uleb128 0xe
  2970 006e 3A       		.uleb128 0x3a
  2971 006f 0B       		.uleb128 0xb
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 62
+
+
  2972 0070 3B       		.uleb128 0x3b
  2973 0071 0B       		.uleb128 0xb
  2974 0072 49       		.uleb128 0x49
@@ -3718,9 +3702,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3010 0096 0D       		.uleb128 0xd
  3011 0097 28       		.uleb128 0x28
  3012 0098 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 63
-
-
  3013 0099 03       		.uleb128 0x3
  3014 009a 08       		.uleb128 0x8
  3015 009b 1C       		.uleb128 0x1c
@@ -3737,6 +3718,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3026 00a6 00       		.byte	0
  3027 00a7 00       		.byte	0
  3028 00a8 0F       		.uleb128 0xf
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 63
+
+
  3029 00a9 2E       		.uleb128 0x2e
  3030 00aa 01       		.byte	0x1
  3031 00ab 3F       		.uleb128 0x3f
@@ -3778,9 +3762,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3067 00cf 3A       		.uleb128 0x3a
  3068 00d0 0B       		.uleb128 0xb
  3069 00d1 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 64
-
-
  3070 00d2 0B       		.uleb128 0xb
  3071 00d3 49       		.uleb128 0x49
  3072 00d4 13       		.uleb128 0x13
@@ -3797,6 +3778,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3083 00df 0B       		.uleb128 0xb
  3084 00e0 3B       		.uleb128 0x3b
  3085 00e1 0B       		.uleb128 0xb
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 64
+
+
  3086 00e2 27       		.uleb128 0x27
  3087 00e3 19       		.uleb128 0x19
  3088 00e4 20       		.uleb128 0x20
@@ -3838,9 +3822,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3124 0108 12       		.uleb128 0x12
  3125 0109 06       		.uleb128 0x6
  3126 010a 40       		.uleb128 0x40
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 65
-
-
  3127 010b 18       		.uleb128 0x18
  3128 010c 9742     		.uleb128 0x2117
  3129 010e 19       		.uleb128 0x19
@@ -3857,6 +3838,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3140 0119 0B       		.uleb128 0xb
  3141 011a 3B       		.uleb128 0x3b
  3142 011b 0B       		.uleb128 0xb
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 65
+
+
  3143 011c 11       		.uleb128 0x11
  3144 011d 01       		.uleb128 0x1
  3145 011e 12       		.uleb128 0x12
@@ -3898,9 +3882,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3181 0144 03       		.uleb128 0x3
  3182 0145 08       		.uleb128 0x8
  3183 0146 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 66
-
-
  3184 0147 0B       		.uleb128 0xb
  3185 0148 3B       		.uleb128 0x3b
  3186 0149 0B       		.uleb128 0xb
@@ -3917,6 +3898,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3197 0154 0E       		.uleb128 0xe
  3198 0155 3A       		.uleb128 0x3a
  3199 0156 0B       		.uleb128 0xb
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 66
+
+
  3200 0157 3B       		.uleb128 0x3b
  3201 0158 0B       		.uleb128 0xb
  3202 0159 49       		.uleb128 0x49
@@ -3958,9 +3942,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3238 017d 01       		.uleb128 0x1
  3239 017e 12       		.uleb128 0x12
  3240 017f 06       		.uleb128 0x6
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 67
-
-
  3241 0180 00       		.byte	0
  3242 0181 00       		.byte	0
  3243 0182 1C       		.uleb128 0x1c
@@ -3977,6 +3958,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3254 018d 13       		.uleb128 0x13
  3255 018e 02       		.uleb128 0x2
  3256 018f 18       		.uleb128 0x18
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 67
+
+
  3257 0190 00       		.byte	0
  3258 0191 00       		.byte	0
  3259 0192 1E       		.uleb128 0x1e
@@ -4018,9 +4002,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3295 01bd 3A       		.uleb128 0x3a
  3296 01be 0B       		.uleb128 0xb
  3297 01bf 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 68
-
-
  3298 01c0 0B       		.uleb128 0xb
  3299 01c1 27       		.uleb128 0x27
  3300 01c2 19       		.uleb128 0x19
@@ -4037,6 +4018,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3311 01ce 01       		.uleb128 0x1
  3312 01cf 13       		.uleb128 0x13
  3313 01d0 00       		.byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 68
+
+
  3314 01d1 00       		.byte	0
  3315 01d2 22       		.uleb128 0x22
  3316 01d3 05       		.uleb128 0x5
@@ -4078,9 +4062,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3352 01f9 25       		.uleb128 0x25
  3353 01fa 1D       		.uleb128 0x1d
  3354 01fb 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 69
-
-
  3355 01fc 31       		.uleb128 0x31
  3356 01fd 13       		.uleb128 0x13
  3357 01fe 11       		.uleb128 0x11
@@ -4097,6 +4078,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3368 0209 05       		.uleb128 0x5
  3369 020a 00       		.byte	0
  3370 020b 03       		.uleb128 0x3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 69
+
+
  3371 020c 08       		.uleb128 0x8
  3372 020d 3A       		.uleb128 0x3a
  3373 020e 0B       		.uleb128 0xb
@@ -4138,9 +4122,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3409 0232 1D       		.uleb128 0x1d
  3410 0233 01       		.byte	0x1
  3411 0234 31       		.uleb128 0x31
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 70
-
-
  3412 0235 13       		.uleb128 0x13
  3413 0236 11       		.uleb128 0x11
  3414 0237 01       		.uleb128 0x1
@@ -4157,6 +4138,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3425 0242 01       		.byte	0x1
  3426 0243 3F       		.uleb128 0x3f
  3427 0244 19       		.uleb128 0x19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 70
+
+
  3428 0245 03       		.uleb128 0x3
  3429 0246 0E       		.uleb128 0xe
  3430 0247 3A       		.uleb128 0x3a
@@ -4198,9 +4182,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3466 026d 19       		.uleb128 0x19
  3467 026e 01       		.uleb128 0x1
  3468 026f 13       		.uleb128 0x13
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 71
-
-
  3469 0270 00       		.byte	0
  3470 0271 00       		.byte	0
  3471 0272 2C       		.uleb128 0x2c
@@ -4217,6 +4198,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3482 027d 02       		.uleb128 0x2
  3483 027e 17       		.uleb128 0x17
  3484 027f 00       		.byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 71
+
+
  3485 0280 00       		.byte	0
  3486 0281 2D       		.uleb128 0x2d
  3487 0282 2E       		.uleb128 0x2e
@@ -4258,9 +4242,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3523 02a7 17       		.uleb128 0x17
  3524 02a8 00       		.byte	0
  3525 02a9 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 72
-
-
  3526 02aa 2F       		.uleb128 0x2f
  3527 02ab 34       		.uleb128 0x34
  3528 02ac 00       		.byte	0
@@ -4277,6 +4258,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3539 02b7 00       		.byte	0
  3540 02b8 00       		.byte	0
  3541 02b9 30       		.uleb128 0x30
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 72
+
+
  3542 02ba 2E       		.uleb128 0x2e
  3543 02bb 01       		.byte	0x1
  3544 02bc 3F       		.uleb128 0x3f
@@ -4318,9 +4302,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3580 02e1 18       		.uleb128 0x18
  3581 02e2 00       		.byte	0
  3582 02e3 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 73
-
-
  3583 02e4 32       		.uleb128 0x32
  3584 02e5 34       		.uleb128 0x34
  3585 02e6 00       		.byte	0
@@ -4337,6 +4318,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3596 02f1 33       		.uleb128 0x33
  3597 02f2 34       		.uleb128 0x34
  3598 02f3 00       		.byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 73
+
+
  3599 02f4 03       		.uleb128 0x3
  3600 02f5 0E       		.uleb128 0xe
  3601 02f6 3A       		.uleb128 0x3a
@@ -4378,9 +4362,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3637 031a 0B       		.uleb128 0xb
  3638 031b 3B       		.uleb128 0x3b
  3639 031c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 74
-
-
  3640 031d 49       		.uleb128 0x49
  3641 031e 13       		.uleb128 0x13
  3642 031f 3F       		.uleb128 0x3f
@@ -4397,6 +4378,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3653 032a 3C       		.uleb128 0x3c
  3654 032b 19       		.uleb128 0x19
  3655 032c 6E       		.uleb128 0x6e
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 74
+
+
  3656 032d 0E       		.uleb128 0xe
  3657 032e 03       		.uleb128 0x3
  3658 032f 0E       		.uleb128 0xe
@@ -4438,9 +4422,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3694 000f 14000000 		.4byte	.LVL2
  3695 0013 20000000 		.4byte	.LFE39
  3696 0017 0100     		.2byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 75
-
-
  3697 0019 50       		.byte	0x50
  3698 001a 00000000 		.4byte	0
  3699 001e 00000000 		.4byte	0
@@ -4457,6 +4438,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3710 003d 0200     		.2byte	0x2
  3711 003f 30       		.byte	0x30
  3712 0040 9F       		.byte	0x9f
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 75
+
+
  3713 0041 00000000 		.4byte	0
  3714 0045 00000000 		.4byte	0
  3715              	.LLST3:
@@ -4498,9 +4482,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3751              	.LLST6:
  3752 009f 60000000 		.4byte	.LVL22
  3753 00a3 72000000 		.4byte	.LVL26
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 76
-
-
  3754 00a7 0100     		.2byte	0x1
  3755 00a9 55       		.byte	0x55
  3756 00aa 00000000 		.4byte	0
@@ -4517,6 +4498,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3767 00c6 0E000000 		.4byte	.LVL11
  3768 00ca 2E000000 		.4byte	.LVL16
  3769 00ce 0200     		.2byte	0x2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 76
+
+
  3770 00d0 34       		.byte	0x34
  3771 00d1 9F       		.byte	0x9f
  3772 00d2 00000000 		.4byte	0
@@ -4558,9 +4542,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3808 012e 66000000 		.4byte	.LVL23
  3809 0132 0200     		.2byte	0x2
  3810 0134 35       		.byte	0x35
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 77
-
-
  3811 0135 9F       		.byte	0x9f
  3812 0136 00000000 		.4byte	0
  3813 013a 00000000 		.4byte	0
@@ -4577,6 +4558,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3824 0156 14000000 		.4byte	.LVL31
  3825 015a 0100     		.2byte	0x1
  3826 015c 50       		.byte	0x50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 77
+
+
  3827 015d 14000000 		.4byte	.LVL31
  3828 0161 9C000000 		.4byte	.LVL53
  3829 0165 0100     		.2byte	0x1
@@ -4618,9 +4602,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3865 01b7 FF       		.byte	0xff
  3866 01b8 1A       		.byte	0x1a
  3867 01b9 9F       		.byte	0x9f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 78
-
-
  3868 01ba 8E000000 		.4byte	.LVL49
  3869 01be 9C000000 		.4byte	.LVL52
  3870 01c2 0100     		.2byte	0x1
@@ -4637,6 +4618,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3881 01dd 00000000 		.4byte	0
  3882              	.LLST19:
  3883 01e1 0C000000 		.4byte	.LVL29
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 78
+
+
  3884 01e5 12000000 		.4byte	.LVL30
  3885 01e9 0200     		.2byte	0x2
  3886 01eb 34       		.byte	0x34
@@ -4678,9 +4662,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3922              	.LLST24:
  3923 0245 44000000 		.4byte	.LVL39
  3924 0249 4A000000 		.4byte	.LVL40
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 79
-
-
  3925 024d 0200     		.2byte	0x2
  3926 024f 34       		.byte	0x34
  3927 0250 9F       		.byte	0x9f
@@ -4697,6 +4678,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3938              	.LLST26:
  3939 026d 5C000000 		.4byte	.LVL42
  3940 0271 60000000 		.4byte	.LVL43
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 79
+
+
  3941 0275 0100     		.2byte	0x1
  3942 0277 53       		.byte	0x53
  3943 0278 00000000 		.4byte	0
@@ -4738,9 +4722,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3979 02d4 9A000000 		.4byte	.LVL51
  3980 02d8 0200     		.2byte	0x2
  3981 02da 34       		.byte	0x34
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 80
-
-
  3982 02db 9F       		.byte	0x9f
  3983 02dc 00000000 		.4byte	0
  3984 02e0 00000000 		.4byte	0
@@ -4757,6 +4738,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  3995 02fc 12000000 		.4byte	.LVL58
  3996 0300 0200     		.2byte	0x2
  3997 0302 32       		.byte	0x32
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 80
+
+
  3998 0303 9F       		.byte	0x9f
  3999 0304 00000000 		.4byte	0
  4000 0308 00000000 		.4byte	0
@@ -4798,9 +4782,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4036 0361 0400     		.2byte	0x4
  4037 0363 F3       		.byte	0xf3
  4038 0364 01       		.uleb128 0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 81
-
-
  4039 0365 50       		.byte	0x50
  4040 0366 9F       		.byte	0x9f
  4041 0367 00000000 		.4byte	0
@@ -4817,6 +4798,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4052 0383 0A000000 		.4byte	.LVL70
  4053 0387 0E000000 		.4byte	.LVL71
  4054 038b 0200     		.2byte	0x2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 81
+
+
  4055 038d 33       		.byte	0x33
  4056 038e 9F       		.byte	0x9f
  4057 038f 00000000 		.4byte	0
@@ -4858,9 +4842,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4093 03ea 50       		.byte	0x50
  4094 03eb 9F       		.byte	0x9f
  4095 03ec 00000000 		.4byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 82
-
-
  4096 03f0 00000000 		.4byte	0
  4097              	.LLST43:
  4098 03f4 0A000000 		.4byte	.LVL84
@@ -4877,6 +4858,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4109 0412 33       		.byte	0x33
  4110 0413 9F       		.byte	0x9f
  4111 0414 00000000 		.4byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 82
+
+
  4112 0418 00000000 		.4byte	0
  4113              	.LLST45:
  4114 041c 14000000 		.4byte	.LVL86
@@ -4918,9 +4902,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4150 0477 9F       		.byte	0x9f
  4151 0478 00000000 		.4byte	0
  4152 047c 00000000 		.4byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 83
-
-
  4153              	.LLST50:
  4154 0480 00000000 		.4byte	.LVL99
  4155 0484 10000000 		.4byte	.LVL102
@@ -4937,6 +4918,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4166 049f 00000000 		.4byte	0
  4167 04a3 00000000 		.4byte	0
  4168              	.LLST52:
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 83
+
+
  4169 04a7 00000000 		.4byte	.LVL103
  4170 04ab 07000000 		.4byte	.LVL105-1
  4171 04af 0100     		.2byte	0x1
@@ -4978,9 +4962,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4207 0507 0100     		.2byte	0x1
  4208 0509 54       		.byte	0x54
  4209 050a 00000000 		.4byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 84
-
-
  4210 050e 00000000 		.4byte	0
  4211              	.LLST55:
  4212 0512 00000000 		.4byte	.LVL110
@@ -4997,6 +4978,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4223 0532 F3       		.byte	0xf3
  4224 0533 01       		.uleb128 0x1
  4225 0534 50       		.byte	0x50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 84
+
+
  4226 0535 9F       		.byte	0x9f
  4227 0536 00000000 		.4byte	0
  4228 053a 00000000 		.4byte	0
@@ -5038,9 +5022,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4264 0592 36000000 		.4byte	.LVL118
  4265 0596 0100     		.2byte	0x1
  4266 0598 50       		.byte	0x50
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 85
-
-
  4267 0599 36000000 		.4byte	.LVL118
  4268 059d 40000000 		.4byte	.LVL120
  4269 05a1 0100     		.2byte	0x1
@@ -5057,6 +5038,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4280 05b9 2E       		.byte	0x2e
  4281 05ba 9F       		.byte	0x9f
  4282 05bb 22000000 		.4byte	.LVL114
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 85
+
+
  4283 05bf 24000000 		.4byte	.LVL115
  4284 05c3 0600     		.2byte	0x6
  4285 05c5 70       		.byte	0x70
@@ -5098,9 +5082,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4321 0611 F3       		.byte	0xf3
  4322 0612 01       		.uleb128 0x1
  4323 0613 50       		.byte	0x50
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 86
-
-
  4324 0614 9F       		.byte	0x9f
  4325 0615 00000000 		.4byte	0
  4326 0619 00000000 		.4byte	0
@@ -5117,6 +5098,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4337 0637 80000000 		.4byte	.LFE57
  4338 063b 0400     		.2byte	0x4
  4339 063d F3       		.byte	0xf3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 86
+
+
  4340 063e 01       		.uleb128 0x1
  4341 063f 51       		.byte	0x51
  4342 0640 9F       		.byte	0x9f
@@ -5158,9 +5142,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4378 069d 00000000 		.4byte	0
  4379              	.LLST62:
  4380 06a1 08000000 		.4byte	.LVL124
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 87
-
-
  4381 06a5 0E000000 		.4byte	.LVL125
  4382 06a9 0600     		.2byte	0x6
  4383 06ab 03       		.byte	0x3
@@ -5177,6 +5158,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4394 06c7 01       		.sleb128 1
  4395 06c8 9F       		.byte	0x9f
  4396 06c9 3C000000 		.4byte	.LVL131
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 87
+
+
  4397 06cd 76000000 		.4byte	.LVL135
  4398 06d1 0100     		.2byte	0x1
  4399 06d3 54       		.byte	0x54
@@ -5218,9 +5202,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4435 0074 50000000 		.4byte	.LFE52-.LFB52
  4436 0078 00000000 		.4byte	.LFB53
  4437 007c 5C000000 		.4byte	.LFE53-.LFB53
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 88
-
-
  4438 0080 00000000 		.4byte	.LFB54
  4439 0084 18000000 		.4byte	.LFE54-.LFB54
  4440 0088 00000000 		.4byte	.LFB55
@@ -5237,6 +5218,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4451 0004 08000000 		.4byte	.LFE34
  4452 0008 00000000 		.4byte	.LFB35
  4453 000c 02000000 		.4byte	.LFE35
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 88
+
+
  4454 0010 00000000 		.4byte	.LFB39
  4455 0014 20000000 		.4byte	.LFE39
  4456 0018 00000000 		.4byte	.LFB41
@@ -5278,9 +5262,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4490      00000201 
  4490      FB0E0D00 
  4490      01010101 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 89
-
-
  4491              	.LASF31:
  4492 0000 67706962 		.ascii	"gpib_line\000"
  4492      5F6C696E 
@@ -5297,6 +5278,9 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4498      5F616464 
  4498      72657373 
  4498      5F6C6973 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 89
+
+
  4498      74656E65 
  4499              	.LASF42:
  4500 0033 67706962 		.ascii	"gpib_get_buffer\000"
@@ -5327,306 +5311,306 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 1
  4512      65616443 
  4512      6F756E74 
  4512      657200
- 4513              	.LASF7:
- 4514 0083 5F5F7569 		.ascii	"__uint32_t\000"
- 4514      6E743332 
- 4514      5F7400
- 4515              	.LASF50:
- 4516 008e 67706962 		.ascii	"gpib_interface_clear\000"
- 4516      5F696E74 
- 4516      65726661 
- 4516      63655F63 
- 4516      6C656172 
- 4517              	.LASF71:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 90
+ 4513              	.LASF70:
+ 4514 0083 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\dev\\yaugi\\GPIB USB Adap"
+ 4514      635C486F 
+ 4514      6D655C44 
+ 4514      6F63756D 
+ 4514      656E7473 
+ 4515 00af 7465725C 		.ascii	"ter\\GPIB USB 1.cydsn\000"
+ 4515      47504942 
+ 4515      20555342 
+ 4515      20312E63 
+ 4515      7964736E 
+ 4516              	.LASF50:
+ 4517 00c4 67706962 		.ascii	"gpib_interface_clear\000"
+ 4517      5F696E74 
+ 4517      65726661 
+ 4517      63655F63 
+ 4517      6C656172 
+ 4518              	.LASF71:
+ 4519 00d9 67706962 		.ascii	"gpib_settle\000"
+ 4519      5F736574 
+ 4519      746C6500 
+ 4520              	.LASF4:
+ 4521 00e5 5F5F7569 		.ascii	"__uint16_t\000"
+ 4521      6E743136 
+ 4521      5F7400
+ 4522              	.LASF58:
+ 4523 00f0 6D617873 		.ascii	"maxsize\000"
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 90
 
 
- 4518 00a3 67706962 		.ascii	"gpib_settle\000"
- 4518      5F736574 
- 4518      746C6500 
- 4519              	.LASF4:
- 4520 00af 5F5F7569 		.ascii	"__uint16_t\000"
- 4520      6E743136 
- 4520      5F7400
- 4521              	.LASF58:
- 4522 00ba 6D617873 		.ascii	"maxsize\000"
- 4522      697A6500 
- 4523              	.LASF68:
- 4524 00c2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 4524      43313120 
- 4524      352E342E 
- 4524      31203230 
- 4524      31363036 
- 4525 00f5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 4525      20726576 
- 4525      6973696F 
- 4525      6E203233 
- 4525      37373135 
- 4526 0128 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 4526      66756E63 
- 4526      74696F6E 
- 4526      2D736563 
- 4526      74696F6E 
- 4527              	.LASF41:
- 4528 0150 6F6C645F 		.ascii	"old_state\000"
- 4528      73746174 
- 4528      6500
- 4529              	.LASF12:
- 4530 015a 75696E74 		.ascii	"uint8_t\000"
- 4530      385F7400 
- 4531              	.LASF25:
- 4532 0162 6175746F 		.ascii	"autoread\000"
- 4532      72656164 
- 4532      00
- 4533              	.LASF33:
- 4534 016b 6C696E65 		.ascii	"line\000"
- 4534      00
- 4535              	.LASF56:
- 4536 0170 67706962 		.ascii	"gpib_send\000"
- 4536      5F73656E 
- 4536      6400
- 4537              	.LASF43:
- 4538 017a 67706962 		.ascii	"gpib_get_mode\000"
- 4538      5F676574 
- 4538      5F6D6F64 
- 4538      6500
- 4539              	.LASF61:
- 4540 0188 73657474 		.ascii	"settings\000"
- 4540      696E6773 
- 4540      00
- 4541              	.LASF9:
- 4542 0191 6C6F6E67 		.ascii	"long long int\000"
- 4542      206C6F6E 
- 4542      6720696E 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 91
+ 4523      697A6500 
+ 4524              	.LASF68:
+ 4525 00f8 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 4525      43313120 
+ 4525      352E342E 
+ 4525      31203230 
+ 4525      31363036 
+ 4526 012b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 4526      20726576 
+ 4526      6973696F 
+ 4526      6E203233 
+ 4526      37373135 
+ 4527 015e 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 4527      66756E63 
+ 4527      74696F6E 
+ 4527      2D736563 
+ 4527      74696F6E 
+ 4528              	.LASF41:
+ 4529 0186 6F6C645F 		.ascii	"old_state\000"
+ 4529      73746174 
+ 4529      6500
+ 4530              	.LASF12:
+ 4531 0190 75696E74 		.ascii	"uint8_t\000"
+ 4531      385F7400 
+ 4532              	.LASF25:
+ 4533 0198 6175746F 		.ascii	"autoread\000"
+ 4533      72656164 
+ 4533      00
+ 4534              	.LASF33:
+ 4535 01a1 6C696E65 		.ascii	"line\000"
+ 4535      00
+ 4536              	.LASF56:
+ 4537 01a6 67706962 		.ascii	"gpib_send\000"
+ 4537      5F73656E 
+ 4537      6400
+ 4538              	.LASF43:
+ 4539 01b0 67706962 		.ascii	"gpib_get_mode\000"
+ 4539      5F676574 
+ 4539      5F6D6F64 
+ 4539      6500
+ 4540              	.LASF61:
+ 4541 01be 73657474 		.ascii	"settings\000"
+ 4541      696E6773 
+ 4541      00
+ 4542              	.LASF9:
+ 4543 01c7 6C6F6E67 		.ascii	"long long int\000"
+ 4543      206C6F6E 
+ 4543      6720696E 
+ 4543      7400
+ 4544              	.LASF28:
+ 4545 01d5 72656164 		.ascii	"read_tmo_ms\000"
+ 4545      5F746D6F 
+ 4545      5F6D7300 
+ 4546              	.LASF6:
+ 4547 01e1 6C6F6E67 		.ascii	"long int\000"
+ 4547      20696E74 
+ 4547      00
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 91
 
 
- 4542      7400
- 4543              	.LASF28:
- 4544 019f 72656164 		.ascii	"read_tmo_ms\000"
- 4544      5F746D6F 
- 4544      5F6D7300 
- 4545              	.LASF6:
- 4546 01ab 6C6F6E67 		.ascii	"long int\000"
- 4546      20696E74 
- 4546      00
- 4547              	.LASF69:
- 4548 01b4 67706962 		.ascii	"gpib.c\000"
- 4548      2E6300
- 4549              	.LASF48:
- 4550 01bb 67706962 		.ascii	"gpib_LAD\000"
- 4550      5F4C4144 
- 4550      00
- 4551              	.LASF3:
- 4552 01c4 5F5F7569 		.ascii	"__uint8_t\000"
- 4552      6E74385F 
- 4552      7400
- 4553              	.LASF54:
- 4554 01ce 67706962 		.ascii	"gpib_address_talker\000"
- 4554      5F616464 
- 4554      72657373 
- 4554      5F74616C 
- 4554      6B657200 
- 4555              	.LASF44:
- 4556 01e2 62797465 		.ascii	"byte\000"
- 4556      00
- 4557              	.LASF1:
- 4558 01e7 756E7369 		.ascii	"unsigned char\000"
- 4558      676E6564 
- 4558      20636861 
- 4558      7200
- 4559              	.LASF20:
- 4560 01f5 6C6F6E67 		.ascii	"long double\000"
- 4560      20646F75 
- 4560      626C6500 
- 4561              	.LASF67:
- 4562 0201 43794465 		.ascii	"CyDelayUs\000"
- 4562      6C617955 
- 4562      7300
- 4563              	.LASF73:
- 4564 020b 636C6561 		.ascii	"cleanup\000"
- 4564      6E757000 
- 4565              	.LASF70:
- 4566 0213 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\PSoC Creator\\GPIB USB Ad"
- 4566      635C486F 
- 4566      6D655C44 
- 4566      6F63756D 
- 4566      656E7473 
- 4567 0240 61707465 		.ascii	"apter\\GPIB USB 1.cydsn\000"
- 4567      725C4750 
- 4567      49422055 
- 4567      53422031 
- 4567      2E637964 
- 4568              	.LASF49:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 92
+ 4548              	.LASF69:
+ 4549 01ea 67706962 		.ascii	"gpib.c\000"
+ 4549      2E6300
+ 4550              	.LASF48:
+ 4551 01f1 67706962 		.ascii	"gpib_LAD\000"
+ 4551      5F4C4144 
+ 4551      00
+ 4552              	.LASF3:
+ 4553 01fa 5F5F7569 		.ascii	"__uint8_t\000"
+ 4553      6E74385F 
+ 4553      7400
+ 4554              	.LASF54:
+ 4555 0204 67706962 		.ascii	"gpib_address_talker\000"
+ 4555      5F616464 
+ 4555      72657373 
+ 4555      5F74616C 
+ 4555      6B657200 
+ 4556              	.LASF44:
+ 4557 0218 62797465 		.ascii	"byte\000"
+ 4557      00
+ 4558              	.LASF1:
+ 4559 021d 756E7369 		.ascii	"unsigned char\000"
+ 4559      676E6564 
+ 4559      20636861 
+ 4559      7200
+ 4560              	.LASF20:
+ 4561 022b 6C6F6E67 		.ascii	"long double\000"
+ 4561      20646F75 
+ 4561      626C6500 
+ 4562              	.LASF67:
+ 4563 0237 43794465 		.ascii	"CyDelayUs\000"
+ 4563      6C617955 
+ 4563      7300
+ 4564              	.LASF73:
+ 4565 0241 636C6561 		.ascii	"cleanup\000"
+ 4565      6E757000 
+ 4566              	.LASF49:
+ 4567 0249 67706962 		.ascii	"gpib_TAD\000"
+ 4567      5F544144 
+ 4567      00
+ 4568              	.LASF72:
+ 4569 0252 67706962 		.ascii	"gpib_init_pins\000"
+ 4569      5F696E69 
+ 4569      745F7069 
+ 4569      6E7300
+ 4570              	.LASF0:
+ 4571 0261 7369676E 		.ascii	"signed char\000"
+ 4571      65642063 
+ 4571      68617200 
+ 4572              	.LASF10:
+ 4573 026d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 4573      206C6F6E 
+ 4573      6720756E 
+ 4573      7369676E 
+ 4573      65642069 
+ 4574              	.LASF14:
+ 4575 0284 75696E74 		.ascii	"uint32_t\000"
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 92
 
 
- 4569 0257 67706962 		.ascii	"gpib_TAD\000"
- 4569      5F544144 
- 4569      00
- 4570              	.LASF72:
- 4571 0260 67706962 		.ascii	"gpib_init_pins\000"
- 4571      5F696E69 
- 4571      745F7069 
- 4571      6E7300
- 4572              	.LASF0:
- 4573 026f 7369676E 		.ascii	"signed char\000"
- 4573      65642063 
- 4573      68617200 
- 4574              	.LASF10:
- 4575 027b 6C6F6E67 		.ascii	"long long unsigned int\000"
- 4575      206C6F6E 
- 4575      6720756E 
- 4575      7369676E 
- 4575      65642069 
- 4576              	.LASF14:
- 4577 0292 75696E74 		.ascii	"uint32_t\000"
- 4577      33325F74 
+ 4575      33325F74 
+ 4575      00
+ 4576              	.LASF11:
+ 4577 028d 756E7369 		.ascii	"unsigned int\000"
+ 4577      676E6564 
+ 4577      20696E74 
  4577      00
- 4578              	.LASF11:
- 4579 029b 756E7369 		.ascii	"unsigned int\000"
- 4579      676E6564 
- 4579      20696E74 
+ 4578              	.LASF13:
+ 4579 029a 75696E74 		.ascii	"uint16_t\000"
+ 4579      31365F74 
  4579      00
- 4580              	.LASF13:
- 4581 02a8 75696E74 		.ascii	"uint16_t\000"
- 4581      31365F74 
- 4581      00
- 4582              	.LASF63:
- 4583 02b1 6D795F61 		.ascii	"my_address\000"
- 4583      64647265 
- 4583      737300
- 4584              	.LASF57:
- 4585 02bc 67706962 		.ascii	"gpib_read\000"
- 4585      5F726561 
- 4585      6400
- 4586              	.LASF35:
- 4587 02c6 67706962 		.ascii	"gpib_wait_for_line_to_unassert\000"
- 4587      5F776169 
- 4587      745F666F 
- 4587      725F6C69 
- 4587      6E655F74 
- 4588              	.LASF45:
- 4589 02e5 6C617374 		.ascii	"last\000"
- 4589      00
- 4590              	.LASF19:
- 4591 02ea 72656733 		.ascii	"reg32\000"
- 4591      3200
- 4592              	.LASF26:
- 4593 02f0 656F745F 		.ascii	"eot_char\000"
- 4593      63686172 
- 4593      00
- 4594              	.LASF5:
- 4595 02f9 73686F72 		.ascii	"short unsigned int\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 93
+ 4580              	.LASF63:
+ 4581 02a3 6D795F61 		.ascii	"my_address\000"
+ 4581      64647265 
+ 4581      737300
+ 4582              	.LASF57:
+ 4583 02ae 67706962 		.ascii	"gpib_read\000"
+ 4583      5F726561 
+ 4583      6400
+ 4584              	.LASF35:
+ 4585 02b8 67706962 		.ascii	"gpib_wait_for_line_to_unassert\000"
+ 4585      5F776169 
+ 4585      745F666F 
+ 4585      725F6C69 
+ 4585      6E655F74 
+ 4586              	.LASF45:
+ 4587 02d7 6C617374 		.ascii	"last\000"
+ 4587      00
+ 4588              	.LASF19:
+ 4589 02dc 72656733 		.ascii	"reg32\000"
+ 4589      3200
+ 4590              	.LASF26:
+ 4591 02e2 656F745F 		.ascii	"eot_char\000"
+ 4591      63686172 
+ 4591      00
+ 4592              	.LASF5:
+ 4593 02eb 73686F72 		.ascii	"short unsigned int\000"
+ 4593      7420756E 
+ 4593      7369676E 
+ 4593      65642069 
+ 4593      6E7400
+ 4594              	.LASF27:
+ 4595 02fe 656F745F 		.ascii	"eot_enable\000"
+ 4595      656E6162 
+ 4595      6C6500
+ 4596              	.LASF47:
+ 4597 0309 67706962 		.ascii	"gpib_receive_byte\000"
+ 4597      5F726563 
+ 4597      65697665 
+ 4597      5F627974 
+ 4597      6500
+ 4598              	.LASF65:
+ 4599 031b 54696D65 		.ascii	"Timer1_WriteCounter\000"
+ 4599      72315F57 
+ 4599      72697465 
+ 4599      436F756E 
+ 4599      74657200 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 93
 
 
- 4595      7420756E 
- 4595      7369676E 
- 4595      65642069 
- 4595      6E7400
- 4596              	.LASF27:
- 4597 030c 656F745F 		.ascii	"eot_enable\000"
- 4597      656E6162 
- 4597      6C6500
- 4598              	.LASF47:
- 4599 0317 67706962 		.ascii	"gpib_receive_byte\000"
- 4599      5F726563 
- 4599      65697665 
- 4599      5F627974 
- 4599      6500
- 4600              	.LASF65:
- 4601 0329 54696D65 		.ascii	"Timer1_WriteCounter\000"
- 4601      72315F57 
- 4601      72697465 
- 4601      436F756E 
- 4601      74657200 
- 4602              	.LASF18:
- 4603 033d 63686172 		.ascii	"char\000"
+ 4600              	.LASF18:
+ 4601 032f 63686172 		.ascii	"char\000"
+ 4601      00
+ 4602              	.LASF30:
+ 4603 0334 4E524644 		.ascii	"NRFD\000"
  4603      00
- 4604              	.LASF30:
- 4605 0342 4E524644 		.ascii	"NRFD\000"
- 4605      00
- 4606              	.LASF46:
- 4607 0347 67706962 		.ascii	"gpib_send_byte\000"
- 4607      5F73656E 
- 4607      645F6279 
- 4607      746500
- 4608              	.LASF36:
- 4609 0356 67706962 		.ascii	"gpib_assert_line\000"
- 4609      5F617373 
- 4609      6572745F 
- 4609      6C696E65 
- 4609      00
- 4610              	.LASF32:
- 4611 0367 5F426F6F 		.ascii	"_Bool\000"
- 4611      6C00
- 4612              	.LASF64:
- 4613 036d 5F677069 		.ascii	"_gpib_mode\000"
- 4613      625F6D6F 
- 4613      646500
- 4614              	.LASF16:
- 4615 0378 666C6F61 		.ascii	"float\000"
- 4615      7400
- 4616              	.LASF15:
- 4617 037e 75696E74 		.ascii	"uint32\000"
- 4617      333200
- 4618              	.LASF8:
- 4619 0385 6C6F6E67 		.ascii	"long unsigned int\000"
- 4619      20756E73 
- 4619      69676E65 
- 4619      6420696E 
- 4619      7400
- 4620              	.LASF17:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccTQAImR.s 			page 94
-
-
- 4621 0397 646F7562 		.ascii	"double\000"
- 4621      6C6500
- 4622              	.LASF37:
- 4623 039e 67706962 		.ascii	"gpib_unassert_line\000"
- 4623      5F756E61 
- 4623      73736572 
- 4623      745F6C69 
- 4623      6E6500
+ 4604              	.LASF46:
+ 4605 0339 67706962 		.ascii	"gpib_send_byte\000"
+ 4605      5F73656E 
+ 4605      645F6279 
+ 4605      746500
+ 4606              	.LASF36:
+ 4607 0348 67706962 		.ascii	"gpib_assert_line\000"
+ 4607      5F617373 
+ 4607      6572745F 
+ 4607      6C696E65 
+ 4607      00
+ 4608              	.LASF32:
+ 4609 0359 5F426F6F 		.ascii	"_Bool\000"
+ 4609      6C00
+ 4610              	.LASF64:
+ 4611 035f 5F677069 		.ascii	"_gpib_mode\000"
+ 4611      625F6D6F 
+ 4611      646500
+ 4612              	.LASF16:
+ 4613 036a 666C6F61 		.ascii	"float\000"
+ 4613      7400
+ 4614              	.LASF15:
+ 4615 0370 75696E74 		.ascii	"uint32\000"
+ 4615      333200
+ 4616              	.LASF8:
+ 4617 0377 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4617      20756E73 
+ 4617      69676E65 
+ 4617      6420696E 
+ 4617      7400
+ 4618              	.LASF17:
+ 4619 0389 646F7562 		.ascii	"double\000"
+ 4619      6C6500
+ 4620              	.LASF37:
+ 4621 0390 67706962 		.ascii	"gpib_unassert_line\000"
+ 4621      5F756E61 
+ 4621      73736572 
+ 4621      745F6C69 
+ 4621      6E6500
+ 4622              	.LASF7:
+ 4623 03a3 5F5F7569 		.ascii	"__uint32_t\000"
+ 4623      6E743332 
+ 4623      5F7400
  4624              	.LASF38:
- 4625 03b1 67706962 		.ascii	"gpib_wait_for_line_to_assert\000"
+ 4625 03ae 67706962 		.ascii	"gpib_wait_for_line_to_assert\000"
  4625      5F776169 
  4625      745F666F 
  4625      725F6C69 
  4625      6E655F74 
  4626              	.LASF55:
- 4627 03ce 67706962 		.ascii	"gpib_talking\000"
+ 4627 03cb 67706962 		.ascii	"gpib_talking\000"
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfMXSaE.s 			page 94
+
+
  4627      5F74616C 
  4627      6B696E67 
  4627      00
  4628              	.LASF22:
- 4629 03db 7369676E 		.ascii	"signature\000"
+ 4629 03d8 7369676E 		.ascii	"signature\000"
  4629      61747572 
  4629      6500
  4630              	.LASF40:
- 4631 03e5 67706962 		.ascii	"gpib_poll\000"
+ 4631 03e2 67706962 		.ascii	"gpib_poll\000"
  4631      5F706F6C 
  4631      6C00
  4632              	.LASF51:
- 4633 03ef 67706962 		.ascii	"gpib_UNL\000"
+ 4633 03ec 67706962 		.ascii	"gpib_UNL\000"
  4633      5F554E4C 
  4633      00
  4634              	.LASF34:
- 4635 03f8 67706962 		.ascii	"gpib_read_line\000"
+ 4635 03f5 67706962 		.ascii	"gpib_read_line\000"
  4635      5F726561 
  4635      645F6C69 
  4635      6E6500
  4636              	.LASF52:
- 4637 0407 67706962 		.ascii	"gpib_UNT\000"
+ 4637 0404 67706962 		.ascii	"gpib_UNT\000"
  4637      5F554E54 
  4637      00
  4638              	.LASF39:
- 4639 0410 67706962 		.ascii	"gpib_readall\000"
+ 4639 040d 67706962 		.ascii	"gpib_readall\000"
  4639      5F726561 
  4639      64616C6C 
  4639      00
  4640              	.LASF29:
- 4641 041d 4E444143 		.ascii	"NDAC\000"
+ 4641 041a 4E444143 		.ascii	"NDAC\000"
  4641      00
  4642              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

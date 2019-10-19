@@ -1905,61 +1905,61 @@ END GROUP
  .debug_frame   0x00002ad0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-nano-msizer.o)
  .debug_frame   0x00002af0       0x48 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-reent.o)
 
-.debug_str      0x00000000     0x38da
+.debug_str      0x00000000     0x391b
  *(.debug_str)
  .debug_str     0x00000000      0x345 .\CortexM0\ARM_GCC_541\Debug\main.o
                                 0x3af (size before relaxing)
- .debug_str     0x00000345      0x1a8 .\CortexM0\ARM_GCC_541\Debug\gpib.o
-                                0x422 (size before relaxing)
- .debug_str     0x000004ed      0x12a .\CortexM0\ARM_GCC_541\Debug\serial.o
+ .debug_str     0x00000345      0x1e9 .\CortexM0\ARM_GCC_541\Debug\gpib.o
+                                0x41f (size before relaxing)
+ .debug_str     0x0000052e      0x12a .\CortexM0\ARM_GCC_541\Debug\serial.o
                                 0x2f2 (size before relaxing)
- .debug_str     0x00000617       0x88 .\CortexM0\ARM_GCC_541\Debug\input.o
+ .debug_str     0x00000658       0x88 .\CortexM0\ARM_GCC_541\Debug\input.o
                                 0x2ef (size before relaxing)
- .debug_str     0x0000069f      0x12a .\CortexM0\ARM_GCC_541\Debug\command.o
+ .debug_str     0x000006e0      0x12a .\CortexM0\ARM_GCC_541\Debug\command.o
                                 0x3d6 (size before relaxing)
- .debug_str     0x000007c9      0x17a .\CortexM0\ARM_GCC_541\Debug\settings.o
+ .debug_str     0x0000080a      0x17a .\CortexM0\ARM_GCC_541\Debug\settings.o
                                 0x38c (size before relaxing)
- .debug_str     0x00000943        0xf .\CortexM0\ARM_GCC_541\Debug\utils.o
+ .debug_str     0x00000984        0xf .\CortexM0\ARM_GCC_541\Debug\utils.o
                                 0x1b7 (size before relaxing)
- .debug_str     0x00000952      0x132 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_str     0x00000993      0x132 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
                                 0x2f1 (size before relaxing)
- .debug_str     0x00000a84       0x59 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x00000ac5       0x59 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
                                 0x1ca (size before relaxing)
- .debug_str     0x00000add      0x135 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_str     0x00000b1e      0x135 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
                                 0x303 (size before relaxing)
- .debug_str     0x00000c12      0x339 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(cy_em_eeprom.o)
+ .debug_str     0x00000c53      0x339 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(cy_em_eeprom.o)
                                 0x638 (size before relaxing)
- .debug_str     0x00000f4b       0xe2 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(CyFlash.o)
+ .debug_str     0x00000f8c       0xe2 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(CyFlash.o)
                                 0x2b2 (size before relaxing)
- .debug_str     0x0000102d      0x876 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(CyLib.o)
+ .debug_str     0x0000106e      0x876 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(CyLib.o)
                                 0xb28 (size before relaxing)
- .debug_str     0x000018a3      0x6e2 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(CyLFClk.o)
+ .debug_str     0x000018e4      0x6e2 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(CyLFClk.o)
                                 0x91f (size before relaxing)
- .debug_str     0x00001f85      0x48c .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART.o)
+ .debug_str     0x00001fc6      0x48c .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART.o)
                                 0x724 (size before relaxing)
- .debug_str     0x00002411      0x4ce .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_cdc.o)
+ .debug_str     0x00002452      0x4ce .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_cdc.o)
                                 0x7da (size before relaxing)
- .debug_str     0x000028df      0x291 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_drv.o)
+ .debug_str     0x00002920      0x291 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_drv.o)
                                 0x652 (size before relaxing)
- .debug_str     0x00002b70       0xf6 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_episr.o)
+ .debug_str     0x00002bb1       0xf6 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_episr.o)
                                 0x36c (size before relaxing)
- .debug_str     0x00002c66       0xf8 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_pm.o)
+ .debug_str     0x00002ca7       0xf8 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_pm.o)
                                 0x316 (size before relaxing)
- .debug_str     0x00002d5e      0x259 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_std.o)
+ .debug_str     0x00002d9f      0x259 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_std.o)
                                 0x81c (size before relaxing)
- .debug_str     0x00002fb7       0x25 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_vnd.o)
+ .debug_str     0x00002ff8       0x25 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_vnd.o)
                                 0x1f6 (size before relaxing)
- .debug_str     0x00002fdc       0xb4 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_Dp.o)
+ .debug_str     0x0000301d       0xb4 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_Dp.o)
                                 0x25b (size before relaxing)
- .debug_str     0x00003090      0x3c9 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(PWM_1.o)
+ .debug_str     0x000030d1      0x3c9 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(PWM_1.o)
                                 0x5b3 (size before relaxing)
- .debug_str     0x00003459       0x3b .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(EEPROM.o)
+ .debug_str     0x0000349a       0x3b .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(EEPROM.o)
                                 0x327 (size before relaxing)
- .debug_str     0x00003494      0x31d .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(Timer1.o)
+ .debug_str     0x000034d5      0x31d .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(Timer1.o)
                                 0x5dd (size before relaxing)
- .debug_str     0x000037b1       0x25 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_cls.o)
+ .debug_str     0x000037f2       0x25 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_cls.o)
                                 0x2b5 (size before relaxing)
- .debug_str     0x000037d6      0x104 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_descr.o)
+ .debug_str     0x00003817      0x104 .\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.a(USBUART_descr.o)
                                 0x35b (size before relaxing)
 
 .debug_loc      0x00000000     0x709d
