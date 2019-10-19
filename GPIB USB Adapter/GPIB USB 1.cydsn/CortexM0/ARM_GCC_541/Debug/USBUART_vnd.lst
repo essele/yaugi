@@ -1,0 +1,603 @@
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"USBUART_vnd.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.USBUART_HandleVendorRqst,"ax",%progbits
+  20              		.align	2
+  21              		.global	USBUART_HandleVendorRqst
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	USBUART_HandleVendorRqst, %function
+  25              	USBUART_HandleVendorRqst:
+  26              	.LFB1:
+  27              		.file 1 "Generated_Source\\PSoC4\\USBUART_vnd.c"
+   1:Generated_Source\PSoC4/USBUART_vnd.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC4/USBUART_vnd.c **** * \file USBUART_vnd.c
+   3:Generated_Source\PSoC4/USBUART_vnd.c **** * \version 3.20
+   4:Generated_Source\PSoC4/USBUART_vnd.c **** *
+   5:Generated_Source\PSoC4/USBUART_vnd.c **** * \brief
+   6:Generated_Source\PSoC4/USBUART_vnd.c **** *  This file contains the  USB vendor request handler.
+   7:Generated_Source\PSoC4/USBUART_vnd.c **** *
+   8:Generated_Source\PSoC4/USBUART_vnd.c **** ********************************************************************************
+   9:Generated_Source\PSoC4/USBUART_vnd.c **** * \copyright
+  10:Generated_Source\PSoC4/USBUART_vnd.c **** * Copyright 2008-2016, Cypress Semiconductor Corporation.  All rights reserved.
+  11:Generated_Source\PSoC4/USBUART_vnd.c **** * You may use this file only in accordance with the license, terms, conditions,
+  12:Generated_Source\PSoC4/USBUART_vnd.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  13:Generated_Source\PSoC4/USBUART_vnd.c **** * the software package with which this file was provided.
+  14:Generated_Source\PSoC4/USBUART_vnd.c **** *******************************************************************************/
+  15:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  16:Generated_Source\PSoC4/USBUART_vnd.c **** #include "USBUART_pvt.h"
+  17:Generated_Source\PSoC4/USBUART_vnd.c **** #include "cyapicallbacks.h"
+  18:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  19:Generated_Source\PSoC4/USBUART_vnd.c **** #if(USBUART_EXTERN_VND == USBUART_FALSE)
+  20:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  21:Generated_Source\PSoC4/USBUART_vnd.c **** /***************************************
+  22:Generated_Source\PSoC4/USBUART_vnd.c **** * Vendor Specific Declarations
+  23:Generated_Source\PSoC4/USBUART_vnd.c **** ***************************************/
+  24:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  25:Generated_Source\PSoC4/USBUART_vnd.c **** /* `#START VENDOR_SPECIFIC_DECLARATIONS` Place your declaration here */
+  26:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  27:Generated_Source\PSoC4/USBUART_vnd.c **** /* `#END` */
+  28:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  29:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  30:Generated_Source\PSoC4/USBUART_vnd.c **** /*******************************************************************************
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 2
+
+
+  31:Generated_Source\PSoC4/USBUART_vnd.c **** * Function Name: USBUART_HandleVendorRqst
+  32:Generated_Source\PSoC4/USBUART_vnd.c **** ****************************************************************************//**
+  33:Generated_Source\PSoC4/USBUART_vnd.c **** *
+  34:Generated_Source\PSoC4/USBUART_vnd.c **** *  This routine provide users with a method to implement vendor specific
+  35:Generated_Source\PSoC4/USBUART_vnd.c **** *  requests.
+  36:Generated_Source\PSoC4/USBUART_vnd.c **** *
+  37:Generated_Source\PSoC4/USBUART_vnd.c **** *  To implement vendor specific requests, add your code in this function to
+  38:Generated_Source\PSoC4/USBUART_vnd.c **** *  decode and disposition the request.  If the request is handled, your code
+  39:Generated_Source\PSoC4/USBUART_vnd.c **** *  must set the variable "requestHandled" to TRUE, indicating that the
+  40:Generated_Source\PSoC4/USBUART_vnd.c **** *  request has been handled.
+  41:Generated_Source\PSoC4/USBUART_vnd.c **** *
+  42:Generated_Source\PSoC4/USBUART_vnd.c **** * \return
+  43:Generated_Source\PSoC4/USBUART_vnd.c **** *  requestHandled.
+  44:Generated_Source\PSoC4/USBUART_vnd.c **** *
+  45:Generated_Source\PSoC4/USBUART_vnd.c **** * \reentrant
+  46:Generated_Source\PSoC4/USBUART_vnd.c **** *  No.
+  47:Generated_Source\PSoC4/USBUART_vnd.c **** *
+  48:Generated_Source\PSoC4/USBUART_vnd.c **** *******************************************************************************/
+  49:Generated_Source\PSoC4/USBUART_vnd.c **** uint8 USBUART_HandleVendorRqst(void) 
+  50:Generated_Source\PSoC4/USBUART_vnd.c **** {
+  28              		.loc 1 50 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+  51:Generated_Source\PSoC4/USBUART_vnd.c ****     uint8 requestHandled = USBUART_FALSE;
+  52:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  53:Generated_Source\PSoC4/USBUART_vnd.c ****     /* Check request direction: D2H or H2D. */
+  54:Generated_Source\PSoC4/USBUART_vnd.c ****     if (0u != (USBUART_bmRequestTypeReg & USBUART_RQST_DIR_D2H))
+  34              		.loc 1 54 0
+  35 0000 034B     		ldr	r3, .L3
+  36 0002 1B68     		ldr	r3, [r3]
+  37 0004 1B06     		lsls	r3, r3, #24
+  38 0006 01D5     		bpl	.L2
+  55:Generated_Source\PSoC4/USBUART_vnd.c ****     {
+  56:Generated_Source\PSoC4/USBUART_vnd.c ****         /* Handle direction from device to host. */
+  57:Generated_Source\PSoC4/USBUART_vnd.c ****         
+  58:Generated_Source\PSoC4/USBUART_vnd.c ****         switch (USBUART_bRequestReg)
+  39              		.loc 1 58 0
+  40 0008 014B     		ldr	r3, .L3
+  41 000a 5B68     		ldr	r3, [r3, #4]
+  42              	.L2:
+  59:Generated_Source\PSoC4/USBUART_vnd.c ****         {
+  60:Generated_Source\PSoC4/USBUART_vnd.c ****             case USBUART_GET_EXTENDED_CONFIG_DESCRIPTOR:
+  61:Generated_Source\PSoC4/USBUART_vnd.c ****             #if defined(USBUART_ENABLE_MSOS_STRING)
+  62:Generated_Source\PSoC4/USBUART_vnd.c ****                 USBUART_currentTD.pData = (volatile uint8 *) &USBUART_MSOS_CONFIGURATION_DESCR[0u];
+  63:Generated_Source\PSoC4/USBUART_vnd.c ****                 USBUART_currentTD.count = USBUART_MSOS_CONFIGURATION_DESCR[0u];
+  64:Generated_Source\PSoC4/USBUART_vnd.c ****                 requestHandled  = USBUART_InitControlRead();
+  65:Generated_Source\PSoC4/USBUART_vnd.c ****             #endif /* (USBUART_ENABLE_MSOS_STRING) */
+  66:Generated_Source\PSoC4/USBUART_vnd.c ****                 break;
+  67:Generated_Source\PSoC4/USBUART_vnd.c ****             
+  68:Generated_Source\PSoC4/USBUART_vnd.c ****             default:
+  69:Generated_Source\PSoC4/USBUART_vnd.c ****                 break;
+  70:Generated_Source\PSoC4/USBUART_vnd.c ****         }
+  71:Generated_Source\PSoC4/USBUART_vnd.c ****     }
+  72:Generated_Source\PSoC4/USBUART_vnd.c **** 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 3
+
+
+  73:Generated_Source\PSoC4/USBUART_vnd.c ****     /* `#START VENDOR_SPECIFIC_CODE` Place your vendor specific request here */
+  74:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  75:Generated_Source\PSoC4/USBUART_vnd.c ****     /* `#END` */
+  76:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  77:Generated_Source\PSoC4/USBUART_vnd.c **** #ifdef USBUART_HANDLE_VENDOR_RQST_CALLBACK
+  78:Generated_Source\PSoC4/USBUART_vnd.c ****     if (USBUART_FALSE == requestHandled)
+  79:Generated_Source\PSoC4/USBUART_vnd.c ****     {
+  80:Generated_Source\PSoC4/USBUART_vnd.c ****         requestHandled = USBUART_HandleVendorRqst_Callback();
+  81:Generated_Source\PSoC4/USBUART_vnd.c ****     }
+  82:Generated_Source\PSoC4/USBUART_vnd.c **** #endif /* (USBUART_HANDLE_VENDOR_RQST_CALLBACK) */
+  83:Generated_Source\PSoC4/USBUART_vnd.c **** 
+  84:Generated_Source\PSoC4/USBUART_vnd.c ****     return (requestHandled);
+  85:Generated_Source\PSoC4/USBUART_vnd.c **** }
+  43              		.loc 1 85 0
+  44 000c 0020     		movs	r0, #0
+  45              		@ sp needed
+  46 000e 7047     		bx	lr
+  47              	.L4:
+  48              		.align	2
+  49              	.L3:
+  50 0010 00002C40 		.word	1076625408
+  51              		.cfi_endproc
+  52              	.LFE1:
+  53              		.size	USBUART_HandleVendorRqst, .-USBUART_HandleVendorRqst
+  54              		.text
+  55              	.Letext0:
+  56              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+  57              		.file 3 "Generated_Source\\PSoC4\\USBUART.h"
+  58              		.section	.debug_info,"",%progbits
+  59              	.Ldebug_info0:
+  60 0000 F5000000 		.4byte	0xf5
+  61 0004 0400     		.2byte	0x4
+  62 0006 00000000 		.4byte	.Ldebug_abbrev0
+  63 000a 04       		.byte	0x4
+  64 000b 01       		.uleb128 0x1
+  65 000c 2A010000 		.4byte	.LASF17
+  66 0010 0C       		.byte	0xc
+  67 0011 37000000 		.4byte	.LASF18
+  68 0015 74000000 		.4byte	.LASF19
+  69 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  70 001d 00000000 		.4byte	0
+  71 0021 00000000 		.4byte	.Ldebug_line0
+  72 0025 02       		.uleb128 0x2
+  73 0026 01       		.byte	0x1
+  74 0027 06       		.byte	0x6
+  75 0028 CB010000 		.4byte	.LASF0
+  76 002c 02       		.uleb128 0x2
+  77 002d 01       		.byte	0x1
+  78 002e 08       		.byte	0x8
+  79 002f 29000000 		.4byte	.LASF1
+  80 0033 02       		.uleb128 0x2
+  81 0034 02       		.byte	0x2
+  82 0035 05       		.byte	0x5
+  83 0036 E3010000 		.4byte	.LASF2
+  84 003a 02       		.uleb128 0x2
+  85 003b 02       		.byte	0x2
+  86 003c 07       		.byte	0x7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 4
+
+
+  87 003d B8010000 		.4byte	.LASF3
+  88 0041 02       		.uleb128 0x2
+  89 0042 04       		.byte	0x4
+  90 0043 05       		.byte	0x5
+  91 0044 1A010000 		.4byte	.LASF4
+  92 0048 02       		.uleb128 0x2
+  93 0049 04       		.byte	0x4
+  94 004a 07       		.byte	0x7
+  95 004b BE000000 		.4byte	.LASF5
+  96 004f 02       		.uleb128 0x2
+  97 0050 08       		.byte	0x8
+  98 0051 05       		.byte	0x5
+  99 0052 00000000 		.4byte	.LASF6
+ 100 0056 02       		.uleb128 0x2
+ 101 0057 08       		.byte	0x8
+ 102 0058 07       		.byte	0x7
+ 103 0059 DF000000 		.4byte	.LASF7
+ 104 005d 03       		.uleb128 0x3
+ 105 005e 04       		.byte	0x4
+ 106 005f 05       		.byte	0x5
+ 107 0060 696E7400 		.ascii	"int\000"
+ 108 0064 02       		.uleb128 0x2
+ 109 0065 04       		.byte	0x4
+ 110 0066 07       		.byte	0x7
+ 111 0067 1C000000 		.4byte	.LASF8
+ 112 006b 04       		.uleb128 0x4
+ 113 006c B8000000 		.4byte	.LASF9
+ 114 0070 02       		.byte	0x2
+ 115 0071 E401     		.2byte	0x1e4
+ 116 0073 2C000000 		.4byte	0x2c
+ 117 0077 04       		.uleb128 0x4
+ 118 0078 0E000000 		.4byte	.LASF10
+ 119 007c 02       		.byte	0x2
+ 120 007d E601     		.2byte	0x1e6
+ 121 007f 48000000 		.4byte	0x48
+ 122 0083 02       		.uleb128 0x2
+ 123 0084 04       		.byte	0x4
+ 124 0085 04       		.byte	0x4
+ 125 0086 F6000000 		.4byte	.LASF11
+ 126 008a 02       		.uleb128 0x2
+ 127 008b 08       		.byte	0x8
+ 128 008c 04       		.byte	0x4
+ 129 008d 23010000 		.4byte	.LASF12
+ 130 0091 02       		.uleb128 0x2
+ 131 0092 01       		.byte	0x1
+ 132 0093 08       		.byte	0x8
+ 133 0094 15010000 		.4byte	.LASF13
+ 134 0098 02       		.uleb128 0x2
+ 135 0099 08       		.byte	0x8
+ 136 009a 04       		.byte	0x4
+ 137 009b D7010000 		.4byte	.LASF14
+ 138 009f 02       		.uleb128 0x2
+ 139 00a0 04       		.byte	0x4
+ 140 00a1 07       		.byte	0x7
+ 141 00a2 ED010000 		.4byte	.LASF15
+ 142 00a6 05       		.uleb128 0x5
+ 143 00a7 20       		.byte	0x20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 5
+
+
+ 144 00a8 03       		.byte	0x3
+ 145 00a9 C6       		.byte	0xc6
+ 146 00aa BB000000 		.4byte	0xbb
+ 147 00ae 06       		.uleb128 0x6
+ 148 00af 15000000 		.4byte	.LASF20
+ 149 00b3 03       		.byte	0x3
+ 150 00b4 C8       		.byte	0xc8
+ 151 00b5 BB000000 		.4byte	0xbb
+ 152 00b9 00       		.byte	0
+ 153 00ba 00       		.byte	0
+ 154 00bb 07       		.uleb128 0x7
+ 155 00bc 77000000 		.4byte	0x77
+ 156 00c0 CB000000 		.4byte	0xcb
+ 157 00c4 08       		.uleb128 0x8
+ 158 00c5 9F000000 		.4byte	0x9f
+ 159 00c9 07       		.byte	0x7
+ 160 00ca 00       		.byte	0
+ 161 00cb 09       		.uleb128 0x9
+ 162 00cc 5C000000 		.4byte	.LASF16
+ 163 00d0 03       		.byte	0x3
+ 164 00d1 C9       		.byte	0xc9
+ 165 00d2 A6000000 		.4byte	0xa6
+ 166 00d6 0A       		.uleb128 0xa
+ 167 00d7 FC000000 		.4byte	.LASF21
+ 168 00db 01       		.byte	0x1
+ 169 00dc 31       		.byte	0x31
+ 170 00dd 6B000000 		.4byte	0x6b
+ 171 00e1 00000000 		.4byte	.LFB1
+ 172 00e5 14000000 		.4byte	.LFE1-.LFB1
+ 173 00e9 01       		.uleb128 0x1
+ 174 00ea 9C       		.byte	0x9c
+ 175 00eb 0B       		.uleb128 0xb
+ 176 00ec D0000000 		.4byte	.LASF22
+ 177 00f0 01       		.byte	0x1
+ 178 00f1 33       		.byte	0x33
+ 179 00f2 6B000000 		.4byte	0x6b
+ 180 00f6 00       		.byte	0
+ 181 00f7 00       		.byte	0
+ 182 00f8 00       		.byte	0
+ 183              		.section	.debug_abbrev,"",%progbits
+ 184              	.Ldebug_abbrev0:
+ 185 0000 01       		.uleb128 0x1
+ 186 0001 11       		.uleb128 0x11
+ 187 0002 01       		.byte	0x1
+ 188 0003 25       		.uleb128 0x25
+ 189 0004 0E       		.uleb128 0xe
+ 190 0005 13       		.uleb128 0x13
+ 191 0006 0B       		.uleb128 0xb
+ 192 0007 03       		.uleb128 0x3
+ 193 0008 0E       		.uleb128 0xe
+ 194 0009 1B       		.uleb128 0x1b
+ 195 000a 0E       		.uleb128 0xe
+ 196 000b 55       		.uleb128 0x55
+ 197 000c 17       		.uleb128 0x17
+ 198 000d 11       		.uleb128 0x11
+ 199 000e 01       		.uleb128 0x1
+ 200 000f 10       		.uleb128 0x10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 6
+
+
+ 201 0010 17       		.uleb128 0x17
+ 202 0011 00       		.byte	0
+ 203 0012 00       		.byte	0
+ 204 0013 02       		.uleb128 0x2
+ 205 0014 24       		.uleb128 0x24
+ 206 0015 00       		.byte	0
+ 207 0016 0B       		.uleb128 0xb
+ 208 0017 0B       		.uleb128 0xb
+ 209 0018 3E       		.uleb128 0x3e
+ 210 0019 0B       		.uleb128 0xb
+ 211 001a 03       		.uleb128 0x3
+ 212 001b 0E       		.uleb128 0xe
+ 213 001c 00       		.byte	0
+ 214 001d 00       		.byte	0
+ 215 001e 03       		.uleb128 0x3
+ 216 001f 24       		.uleb128 0x24
+ 217 0020 00       		.byte	0
+ 218 0021 0B       		.uleb128 0xb
+ 219 0022 0B       		.uleb128 0xb
+ 220 0023 3E       		.uleb128 0x3e
+ 221 0024 0B       		.uleb128 0xb
+ 222 0025 03       		.uleb128 0x3
+ 223 0026 08       		.uleb128 0x8
+ 224 0027 00       		.byte	0
+ 225 0028 00       		.byte	0
+ 226 0029 04       		.uleb128 0x4
+ 227 002a 16       		.uleb128 0x16
+ 228 002b 00       		.byte	0
+ 229 002c 03       		.uleb128 0x3
+ 230 002d 0E       		.uleb128 0xe
+ 231 002e 3A       		.uleb128 0x3a
+ 232 002f 0B       		.uleb128 0xb
+ 233 0030 3B       		.uleb128 0x3b
+ 234 0031 05       		.uleb128 0x5
+ 235 0032 49       		.uleb128 0x49
+ 236 0033 13       		.uleb128 0x13
+ 237 0034 00       		.byte	0
+ 238 0035 00       		.byte	0
+ 239 0036 05       		.uleb128 0x5
+ 240 0037 13       		.uleb128 0x13
+ 241 0038 01       		.byte	0x1
+ 242 0039 0B       		.uleb128 0xb
+ 243 003a 0B       		.uleb128 0xb
+ 244 003b 3A       		.uleb128 0x3a
+ 245 003c 0B       		.uleb128 0xb
+ 246 003d 3B       		.uleb128 0x3b
+ 247 003e 0B       		.uleb128 0xb
+ 248 003f 01       		.uleb128 0x1
+ 249 0040 13       		.uleb128 0x13
+ 250 0041 00       		.byte	0
+ 251 0042 00       		.byte	0
+ 252 0043 06       		.uleb128 0x6
+ 253 0044 0D       		.uleb128 0xd
+ 254 0045 00       		.byte	0
+ 255 0046 03       		.uleb128 0x3
+ 256 0047 0E       		.uleb128 0xe
+ 257 0048 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 7
+
+
+ 258 0049 0B       		.uleb128 0xb
+ 259 004a 3B       		.uleb128 0x3b
+ 260 004b 0B       		.uleb128 0xb
+ 261 004c 49       		.uleb128 0x49
+ 262 004d 13       		.uleb128 0x13
+ 263 004e 38       		.uleb128 0x38
+ 264 004f 0B       		.uleb128 0xb
+ 265 0050 00       		.byte	0
+ 266 0051 00       		.byte	0
+ 267 0052 07       		.uleb128 0x7
+ 268 0053 01       		.uleb128 0x1
+ 269 0054 01       		.byte	0x1
+ 270 0055 49       		.uleb128 0x49
+ 271 0056 13       		.uleb128 0x13
+ 272 0057 01       		.uleb128 0x1
+ 273 0058 13       		.uleb128 0x13
+ 274 0059 00       		.byte	0
+ 275 005a 00       		.byte	0
+ 276 005b 08       		.uleb128 0x8
+ 277 005c 21       		.uleb128 0x21
+ 278 005d 00       		.byte	0
+ 279 005e 49       		.uleb128 0x49
+ 280 005f 13       		.uleb128 0x13
+ 281 0060 2F       		.uleb128 0x2f
+ 282 0061 0B       		.uleb128 0xb
+ 283 0062 00       		.byte	0
+ 284 0063 00       		.byte	0
+ 285 0064 09       		.uleb128 0x9
+ 286 0065 16       		.uleb128 0x16
+ 287 0066 00       		.byte	0
+ 288 0067 03       		.uleb128 0x3
+ 289 0068 0E       		.uleb128 0xe
+ 290 0069 3A       		.uleb128 0x3a
+ 291 006a 0B       		.uleb128 0xb
+ 292 006b 3B       		.uleb128 0x3b
+ 293 006c 0B       		.uleb128 0xb
+ 294 006d 49       		.uleb128 0x49
+ 295 006e 13       		.uleb128 0x13
+ 296 006f 00       		.byte	0
+ 297 0070 00       		.byte	0
+ 298 0071 0A       		.uleb128 0xa
+ 299 0072 2E       		.uleb128 0x2e
+ 300 0073 01       		.byte	0x1
+ 301 0074 3F       		.uleb128 0x3f
+ 302 0075 19       		.uleb128 0x19
+ 303 0076 03       		.uleb128 0x3
+ 304 0077 0E       		.uleb128 0xe
+ 305 0078 3A       		.uleb128 0x3a
+ 306 0079 0B       		.uleb128 0xb
+ 307 007a 3B       		.uleb128 0x3b
+ 308 007b 0B       		.uleb128 0xb
+ 309 007c 27       		.uleb128 0x27
+ 310 007d 19       		.uleb128 0x19
+ 311 007e 49       		.uleb128 0x49
+ 312 007f 13       		.uleb128 0x13
+ 313 0080 11       		.uleb128 0x11
+ 314 0081 01       		.uleb128 0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 8
+
+
+ 315 0082 12       		.uleb128 0x12
+ 316 0083 06       		.uleb128 0x6
+ 317 0084 40       		.uleb128 0x40
+ 318 0085 18       		.uleb128 0x18
+ 319 0086 9742     		.uleb128 0x2117
+ 320 0088 19       		.uleb128 0x19
+ 321 0089 00       		.byte	0
+ 322 008a 00       		.byte	0
+ 323 008b 0B       		.uleb128 0xb
+ 324 008c 34       		.uleb128 0x34
+ 325 008d 00       		.byte	0
+ 326 008e 03       		.uleb128 0x3
+ 327 008f 0E       		.uleb128 0xe
+ 328 0090 3A       		.uleb128 0x3a
+ 329 0091 0B       		.uleb128 0xb
+ 330 0092 3B       		.uleb128 0x3b
+ 331 0093 0B       		.uleb128 0xb
+ 332 0094 49       		.uleb128 0x49
+ 333 0095 13       		.uleb128 0x13
+ 334 0096 1C       		.uleb128 0x1c
+ 335 0097 0B       		.uleb128 0xb
+ 336 0098 00       		.byte	0
+ 337 0099 00       		.byte	0
+ 338 009a 00       		.byte	0
+ 339              		.section	.debug_aranges,"",%progbits
+ 340 0000 1C000000 		.4byte	0x1c
+ 341 0004 0200     		.2byte	0x2
+ 342 0006 00000000 		.4byte	.Ldebug_info0
+ 343 000a 04       		.byte	0x4
+ 344 000b 00       		.byte	0
+ 345 000c 0000     		.2byte	0
+ 346 000e 0000     		.2byte	0
+ 347 0010 00000000 		.4byte	.LFB1
+ 348 0014 14000000 		.4byte	.LFE1-.LFB1
+ 349 0018 00000000 		.4byte	0
+ 350 001c 00000000 		.4byte	0
+ 351              		.section	.debug_ranges,"",%progbits
+ 352              	.Ldebug_ranges0:
+ 353 0000 00000000 		.4byte	.LFB1
+ 354 0004 14000000 		.4byte	.LFE1
+ 355 0008 00000000 		.4byte	0
+ 356 000c 00000000 		.4byte	0
+ 357              		.section	.debug_line,"",%progbits
+ 358              	.Ldebug_line0:
+ 359 0000 6F000000 		.section	.debug_str,"MS",%progbits,1
+ 359      02005500 
+ 359      00000201 
+ 359      FB0E0D00 
+ 359      01010101 
+ 360              	.LASF6:
+ 361 0000 6C6F6E67 		.ascii	"long long int\000"
+ 361      206C6F6E 
+ 361      6720696E 
+ 361      7400
+ 362              	.LASF10:
+ 363 000e 75696E74 		.ascii	"uint32\000"
+ 363      333200
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 9
+
+
+ 364              	.LASF20:
+ 365 0015 65704461 		.ascii	"epData\000"
+ 365      746100
+ 366              	.LASF8:
+ 367 001c 756E7369 		.ascii	"unsigned int\000"
+ 367      676E6564 
+ 367      20696E74 
+ 367      00
+ 368              	.LASF1:
+ 369 0029 756E7369 		.ascii	"unsigned char\000"
+ 369      676E6564 
+ 369      20636861 
+ 369      7200
+ 370              	.LASF18:
+ 371 0037 47656E65 		.ascii	"Generated_Source\\PSoC4\\USBUART_vnd.c\000"
+ 371      72617465 
+ 371      645F536F 
+ 371      75726365 
+ 371      5C50536F 
+ 372              	.LASF16:
+ 373 005c 55534255 		.ascii	"USBUART_ep0_data_struct\000"
+ 373      4152545F 
+ 373      6570305F 
+ 373      64617461 
+ 373      5F737472 
+ 374              	.LASF19:
+ 375 0074 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\PSoC Creator\\GPIB USB Ad"
+ 375      635C486F 
+ 375      6D655C44 
+ 375      6F63756D 
+ 375      656E7473 
+ 376 00a1 61707465 		.ascii	"apter\\GPIB USB 1.cydsn\000"
+ 376      725C4750 
+ 376      49422055 
+ 376      53422031 
+ 376      2E637964 
+ 377              	.LASF9:
+ 378 00b8 75696E74 		.ascii	"uint8\000"
+ 378      3800
+ 379              	.LASF5:
+ 380 00be 6C6F6E67 		.ascii	"long unsigned int\000"
+ 380      20756E73 
+ 380      69676E65 
+ 380      6420696E 
+ 380      7400
+ 381              	.LASF22:
+ 382 00d0 72657175 		.ascii	"requestHandled\000"
+ 382      65737448 
+ 382      616E646C 
+ 382      656400
+ 383              	.LASF7:
+ 384 00df 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 384      206C6F6E 
+ 384      6720756E 
+ 384      7369676E 
+ 384      65642069 
+ 385              	.LASF11:
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 10
+
+
+ 386 00f6 666C6F61 		.ascii	"float\000"
+ 386      7400
+ 387              	.LASF21:
+ 388 00fc 55534255 		.ascii	"USBUART_HandleVendorRqst\000"
+ 388      4152545F 
+ 388      48616E64 
+ 388      6C655665 
+ 388      6E646F72 
+ 389              	.LASF13:
+ 390 0115 63686172 		.ascii	"char\000"
+ 390      00
+ 391              	.LASF4:
+ 392 011a 6C6F6E67 		.ascii	"long int\000"
+ 392      20696E74 
+ 392      00
+ 393              	.LASF12:
+ 394 0123 646F7562 		.ascii	"double\000"
+ 394      6C6500
+ 395              	.LASF17:
+ 396 012a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 396      43313120 
+ 396      352E342E 
+ 396      31203230 
+ 396      31363036 
+ 397 015d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 397      20726576 
+ 397      6973696F 
+ 397      6E203233 
+ 397      37373135 
+ 398 0190 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 398      66756E63 
+ 398      74696F6E 
+ 398      2D736563 
+ 398      74696F6E 
+ 399              	.LASF3:
+ 400 01b8 73686F72 		.ascii	"short unsigned int\000"
+ 400      7420756E 
+ 400      7369676E 
+ 400      65642069 
+ 400      6E7400
+ 401              	.LASF0:
+ 402 01cb 7369676E 		.ascii	"signed char\000"
+ 402      65642063 
+ 402      68617200 
+ 403              	.LASF14:
+ 404 01d7 6C6F6E67 		.ascii	"long double\000"
+ 404      20646F75 
+ 404      626C6500 
+ 405              	.LASF2:
+ 406 01e3 73686F72 		.ascii	"short int\000"
+ 406      7420696E 
+ 406      7400
+ 407              	.LASF15:
+ 408 01ed 73697A65 		.ascii	"sizetype\000"
+ 408      74797065 
+ 408      00
+ 409              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccPelpl5.s 			page 11
+
+

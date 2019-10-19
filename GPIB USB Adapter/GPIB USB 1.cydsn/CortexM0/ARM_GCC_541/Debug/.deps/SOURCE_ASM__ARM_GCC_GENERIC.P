@@ -1,0 +1,8 @@
+//Mac/Home/Documents/PSoC\ Creator/GPIB\ USB\ Adapter/GPIB\ USB\ 1.cydsn/CortexM0/ARM_GCC_541/Debug/CyBootAsmGnu.o : //Mac/Home/Documents/PSoC\ Creator/GPIB\ USB\ Adapter/GPIB\ USB\ 1.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s //Mac/Home/Documents/PSoC\ Creator/GPIB\ USB\ Adapter/GPIB\ USB\ 1.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc //Mac/Home/Documents/PSoC\ Creator/GPIB\ USB\ Adapter/GPIB\ USB\ 1.cydsn/Generated_Source/PSoC4/cyfittergnu.inc 
+
+//Mac/Home/Documents/PSoC\ Creator/GPIB\ USB\ Adapter/GPIB\ USB\ 1.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
+
+//Mac/Home/Documents/PSoC\ Creator/GPIB\ USB\ Adapter/GPIB\ USB\ 1.cydsn/Generated_Source/PSoC4/cydevicegnu_trm.inc : 
+
+//Mac/Home/Documents/PSoC\ Creator/GPIB\ USB\ Adapter/GPIB\ USB\ 1.cydsn/Generated_Source/PSoC4/cyfittergnu.inc : 
+

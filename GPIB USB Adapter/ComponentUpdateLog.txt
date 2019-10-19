@@ -1,0 +1,6 @@
+Last Modified Date & Time: 10/12/2019 19:20:02
+
+GPIB USB 1: TopDesign.cysch
+	EEPROM [v2.0] to [v2.20]
+
+
