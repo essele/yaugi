@@ -1,0 +1,106 @@
+1570190866257
+PL_resistors
+3296W_PL
+Bourns 3296W trimmer potentiometer
+
+0
+3
+3
+PL_resistors
+LINK_069A_065_PL
+Jumper link 0.65"
+
+0
+2
+2
+PL_resistors
+LINK_069A_0425_PL
+Jumper link 0.425"
+
+0
+2
+2
+PL_resistors
+R_AXIAL_0W5_PL
+Resistor Axial 1/2W 0.5"
+R
+0
+2
+2
+PL_resistors
+R_AXIAL_0W25_059A_05_PL
+Resistor Axial 1/4W 0.5"
+R
+0
+2
+2
+PL_resistors
+R_AXIAL_0W25_059A_PL
+Resistor Axial 1/4W 0.4"
+R
+0
+2
+2
+PL_resistors
+R_AXIAL_0W25_059Bi_PL
+Resistor Axial 1/4W 0.4"
+R
+0
+2
+2
+PL_resistors
+R_AXIAL_0W25_059Bo_PL
+Resistor Axial 1/4W 0.4"
+R
+0
+2
+2
+PL_resistors
+R_AXIAL_0W25_059C_PL
+Resistor Axial 1/4W 0.4"
+R
+0
+2
+2
+PL_resistors
+R_AXIAL_0W25_V_059A_PL
+1/4W resistor, vertical
+R
+0
+2
+2
+PL_resistors
+R_AXIAL_0W25_V_059Bo_PL
+1/4W resistor, vertical
+R
+0
+2
+2
+PL_resistors
+R_AXIAL_WW_069A_075_PL
+Resistor Axial Wirewound 0.75"
+R
+0
+2
+2
+PL_resistors
+R_BOX_DIVIDER_PL
+
+
+0
+3
+3
+PL_resistors
+R_BOX_PL
+
+
+0
+3
+2
+PL_resistors
+WXD3-13-2W_PL
+WXD3-13-2W 10-turn potentiometer (vertical, glued to PCB)
+
+0
+3
+3

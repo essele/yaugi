@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 112-024-113R001
+D I/O Connectors 24P Centronics male R/A dip solder
+F http://www.norcomp.net/rohspdfs/SCSI-050Ribbon/11Y/112/112-YYY-113R001.pdf
+$ENDCMP
+#
+#End Doc Library
