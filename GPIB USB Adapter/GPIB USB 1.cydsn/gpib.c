@@ -48,7 +48,7 @@ void gpib_init_pins() {
     
 }
 
-inline void gpib_settle() {
+void gpib_settle() {
     CyDelayUs(2);
 }
 
@@ -70,14 +70,14 @@ int _gpib_mode = GPIB_NODEVICE;
 /**
  * Assert means pulling a line low
  */
-inline void gpib_assert_line(gpib_line line) {
+void gpib_assert_line(gpib_line line) {
     (*(reg32 *)SIG__DR_CLR) = (1 << line);
 }
 
 /**
  * Unasserting means letting it float high
  */
-inline void gpib_unassert_line(gpib_line line) {
+void gpib_unassert_line(gpib_line line) {
     (*(reg32 *)SIG__DR_SET) = (1 << line);
 }
 
@@ -91,7 +91,7 @@ uint16_t gpib_readall() {
 /**
  * Read the status of a line ... true is low! false is high!
  */
-inline bool gpib_read_line(gpib_line line) {
+bool gpib_read_line(gpib_line line) {
     int v = ((*(reg32 *)SIG__PS) >> line) & 0x0001;
     return v == 0 ? true : false;
 }
@@ -139,7 +139,7 @@ int gpib_get_mode() {
 /**
  * Wait for a line to go low, if it doesn't within read_tmo_ms then timeout
  */
-inline bool gpib_wait_for_line_to_assert(gpib_line line) {
+bool gpib_wait_for_line_to_assert(gpib_line line) {
     // Prepare the counter...
     Timer1_WriteCounter(0);
     
@@ -156,7 +156,7 @@ inline bool gpib_wait_for_line_to_assert(gpib_line line) {
 /**
  * Wait for a line to go high, if it doesn't within read_tmo_ms then timeout
  */
-inline bool gpib_wait_for_line_to_unassert(gpib_line line) {
+bool gpib_wait_for_line_to_unassert(gpib_line line) {
     // Prepare the counter...
     Timer1_WriteCounter(0);
  
@@ -386,6 +386,13 @@ void gpib_send(uint8_t address, const uint8_t *buf, int len) {
         gpib_send_byte(buf[i], (i == eoipos));
     }
 }
+void gpib_send_bytes(const uint8_t *buf, int len, int last) {
+    int eoipos = (settings.eoi && last ? len-1 : -1);
+    
+    for (int i=0; i < len; i++) {
+        gpib_send_byte(buf[i], (i == eoipos));
+    }
+}
 
 /**
  * Read from the GPIB interface, can use different end states:
@@ -441,6 +448,28 @@ int gpib_read(int until, int *end) {
             return i;
         }     
         buf++;
+    }
+    *end = GPIB_NOT_ENDED;
+    return i;
+}
+
+/**
+ * Test routine ... assume EOI for now
+ */ 
+int gpib_read_bytes(uint8_t *dest, int maxlen, int *end) {
+    int eoi;
+    int i = 0;
+    
+    while (i < maxlen) {
+        if (!gpib_receive_byte(dest++, &eoi)) {
+            *end = GPIB_TIMEOUT;
+            return i;
+        }
+        i++;
+        if (eoi) {
+            *end = GPIB_ENDED;
+            return i;
+        }
     }
     *end = GPIB_NOT_ENDED;
     return i;

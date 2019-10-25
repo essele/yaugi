@@ -2,7 +2,7 @@
 --	Conversion of GPIB USB 1.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sat Oct 19 14:03:40 2019
+--	Fri Oct 25 10:24:55 2019
 --
 
 USE cypress.cypress.all;

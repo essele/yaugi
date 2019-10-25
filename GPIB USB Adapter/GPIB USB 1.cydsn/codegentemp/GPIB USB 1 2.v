@@ -1,6 +1,6 @@
 // ======================================================================
 // GPIB USB 1.v generated from TopDesign.cysch
-// 10/18/2019 at 17:27
+// 10/25/2019 at 10:22
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -591,8 +591,10 @@ endmodule
 // top
 module top ;
 
-          wire  Net_51;
-          wire  Net_50;
+          wire  Net_57;
+          wire  Net_56;
+          wire  Net_55;
+          wire  Net_54;
           wire  Net_45;
           wire  Net_40;
           wire  Net_39;

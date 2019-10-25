@@ -24,4 +24,7 @@ uint8_t serial_getbyte();
 void serial_printf(char *fmt, ...);
 void serial_vprintf(char *fmt, va_list args);
 
+void usbuart_reconfig();
+void usbuart_poll();
+
 /* [] END OF FILE */

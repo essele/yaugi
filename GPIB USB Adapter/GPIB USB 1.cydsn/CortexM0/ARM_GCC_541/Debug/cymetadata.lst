@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccaIrLFH.s 			page 1
 
 
    1              		.syntax unified
@@ -10,7 +10,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
    7              		.eabi_attribute 24, 1
    8              		.eabi_attribute 25, 1
    9              		.eabi_attribute 26, 1
-  10              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 30, 6
   11              		.eabi_attribute 34, 0
   12              		.eabi_attribute 18, 4
   13              		.thumb
@@ -19,46 +19,46 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.global	cy_meta_chipprotect
-  20              		.global	cy_metadata
-  21              		.global	cy_meta_flashprotect
-  22              		.section	.cychipprotect,"a",%progbits
-  23              		.align	2
-  24              		.type	cy_meta_chipprotect, %object
-  25              		.size	cy_meta_chipprotect, 1
-  26              	cy_meta_chipprotect:
-  27 0000 01       		.byte	1
-  28              		.section	.cymeta,"a",%progbits
-  29              		.align	2
-  30              		.type	cy_metadata, %object
-  31              		.size	cy_metadata, 12
-  32              	cy_metadata:
-  33 0000 00       		.byte	0
-  34 0001 02       		.byte	2
-  35 0002 10       		.byte	16
-  36 0003 00       		.byte	0
-  37 0004 11       		.byte	17
-  38 0005 A0       		.byte	-96
-  39 0006 00       		.byte	0
-  40 0007 01       		.byte	1
-  41 0008 00       		.byte	0
-  42 0009 00       		.byte	0
-  43 000a 00       		.byte	0
-  44 000b 00       		.byte	0
-  45              		.section	.cyflashprotect,"a",%progbits
+  19              		.global	cy_meta_flashprotect
+  20              		.section	.cyflashprotect,"a",%progbits
+  21              		.align	2
+  22              		.type	cy_meta_flashprotect, %object
+  23              		.size	cy_meta_flashprotect, 32
+  24              	cy_meta_flashprotect:
+  25 0000 00000000 		.space	32
+  25      00000000 
+  25      00000000 
+  25      00000000 
+  25      00000000 
+  26              		.global	cy_metadata
+  27              		.section	.cymeta,"a",%progbits
+  28              		.align	2
+  29              		.type	cy_metadata, %object
+  30              		.size	cy_metadata, 12
+  31              	cy_metadata:
+  32 0000 00       		.byte	0
+  33 0001 02       		.byte	2
+  34 0002 10       		.byte	16
+  35 0003 00       		.byte	0
+  36 0004 11       		.byte	17
+  37 0005 A0       		.byte	-96
+  38 0006 00       		.byte	0
+  39 0007 01       		.byte	1
+  40 0008 00       		.byte	0
+  41 0009 00       		.byte	0
+  42 000a 00       		.byte	0
+  43 000b 00       		.byte	0
+  44              		.global	cy_meta_chipprotect
+  45              		.section	.cychipprotect,"a",%progbits
   46              		.align	2
-  47              		.type	cy_meta_flashprotect, %object
-  48              		.size	cy_meta_flashprotect, 32
-  49              	cy_meta_flashprotect:
-  50 0000 00000000 		.space	32
-  50      00000000 
-  50      00000000 
-  50      00000000 
-  50      00000000 
+  47              		.type	cy_meta_chipprotect, %object
+  48              		.size	cy_meta_chipprotect, 1
+  49              	cy_meta_chipprotect:
+  50 0000 01       		.byte	1
   51              		.text
   52              	.Letext0:
   53              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccaIrLFH.s 			page 2
 
 
   54              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
@@ -70,15 +70,15 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
   60 0006 00000000 		.4byte	.Ldebug_abbrev0
   61 000a 04       		.byte	0x4
   62 000b 01       		.uleb128 0x1
-  63 000c 06010000 		.4byte	.LASF15
+  63 000c C2000000 		.4byte	.LASF15
   64 0010 0C       		.byte	0xc
-  65 0011 38000000 		.4byte	.LASF16
-  66 0015 AD000000 		.4byte	.LASF17
+  65 0011 4B000000 		.4byte	.LASF16
+  66 0015 81000000 		.4byte	.LASF17
   67 0019 00000000 		.4byte	.Ldebug_line0
   68 001d 02       		.uleb128 0x2
   69 001e 01       		.byte	0x1
   70 001f 06       		.byte	0x6
-  71 0020 BE010000 		.4byte	.LASF0
+  71 0020 BB010000 		.4byte	.LASF0
   72 0024 03       		.uleb128 0x3
   73 0025 00000000 		.4byte	.LASF9
   74 0029 01       		.byte	0x1
@@ -87,44 +87,44 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
   77 002f 02       		.uleb128 0x2
   78 0030 01       		.byte	0x1
   79 0031 08       		.byte	0x8
-  80 0032 2A000000 		.4byte	.LASF1
+  80 0032 3D000000 		.4byte	.LASF1
   81 0036 02       		.uleb128 0x2
   82 0037 02       		.byte	0x2
   83 0038 05       		.byte	0x5
-  84 0039 AB010000 		.4byte	.LASF2
+  84 0039 A8010000 		.4byte	.LASF2
   85 003d 02       		.uleb128 0x2
   86 003e 02       		.byte	0x2
   87 003f 07       		.byte	0x7
-  88 0040 6E000000 		.4byte	.LASF3
+  88 0040 1E000000 		.4byte	.LASF3
   89 0044 02       		.uleb128 0x2
   90 0045 04       		.byte	0x4
   91 0046 05       		.byte	0x5
-  92 0047 B5010000 		.4byte	.LASF4
+  92 0047 B2010000 		.4byte	.LASF4
   93 004b 02       		.uleb128 0x2
   94 004c 04       		.byte	0x4
   95 004d 07       		.byte	0x7
-  96 004e 5C000000 		.4byte	.LASF5
+  96 004e 6F000000 		.4byte	.LASF5
   97 0052 02       		.uleb128 0x2
   98 0053 08       		.byte	0x8
   99 0054 05       		.byte	0x5
- 100 0055 9D010000 		.4byte	.LASF6
+ 100 0055 9A010000 		.4byte	.LASF6
  101 0059 02       		.uleb128 0x2
  102 005a 08       		.byte	0x8
  103 005b 07       		.byte	0x7
- 104 005c 8E000000 		.4byte	.LASF7
+ 104 005c 5D010000 		.4byte	.LASF7
  105 0060 04       		.uleb128 0x4
  106 0061 04       		.byte	0x4
  107 0062 05       		.byte	0x5
  108 0063 696E7400 		.ascii	"int\000"
  109 0067 02       		.uleb128 0x2
  110 0068 04       		.byte	0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccaIrLFH.s 			page 3
 
 
  111 0069 07       		.byte	0x7
- 112 006a 81000000 		.4byte	.LASF8
+ 112 006a 50010000 		.4byte	.LASF8
  113 006e 03       		.uleb128 0x3
- 114 006f A5000000 		.4byte	.LASF10
+ 114 006f 74010000 		.4byte	.LASF10
  115 0073 02       		.byte	0x2
  116 0074 18       		.byte	0x18
  117 0075 24000000 		.4byte	0x24
@@ -138,11 +138,11 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
  125 0089 02       		.uleb128 0x2
  126 008a 04       		.byte	0x4
  127 008b 07       		.byte	0x7
- 128 008c 94010000 		.4byte	.LASF11
+ 128 008c 91010000 		.4byte	.LASF11
  129 0090 07       		.uleb128 0x7
  130 0091 6E000000 		.4byte	0x6e
  131 0095 08       		.uleb128 0x8
- 132 0096 F1000000 		.4byte	.LASF12
+ 132 0096 7C010000 		.4byte	.LASF12
  133 009a 03       		.byte	0x3
  134 009b 1F       		.byte	0x1f
  135 009c A6000000 		.4byte	0xa6
@@ -159,7 +159,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
  146 00b9 0B       		.byte	0xb
  147 00ba 00       		.byte	0
  148 00bb 08       		.uleb128 0x8
- 149 00bc 1E000000 		.4byte	.LASF13
+ 149 00bc 31000000 		.4byte	.LASF13
  150 00c0 03       		.byte	0x3
  151 00c1 30       		.byte	0x30
  152 00c2 CC000000 		.4byte	0xcc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
  165 00e1 08       		.uleb128 0x8
  166 00e2 0A000000 		.4byte	.LASF14
  167 00e6 03       		.byte	0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccaIrLFH.s 			page 4
 
 
  168 00e7 3F       		.byte	0x3f
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
  222 002c 3E       		.uleb128 0x3e
  223 002d 0B       		.uleb128 0xb
  224 002e 03       		.uleb128 0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccaIrLFH.s 			page 5
 
 
  225 002f 08       		.uleb128 0x8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
  279 0010 00000000 		.4byte	0
  280 0014 00000000 		.4byte	0
  281              		.section	.debug_line,"",%progbits
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccaIrLFH.s 			page 6
 
 
  282              	.Ldebug_line0:
@@ -317,102 +317,102 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 1
  287      63686970 
  287      70726F74 
  287      65637400 
- 288              	.LASF13:
- 289 001e 63795F6D 		.ascii	"cy_metadata\000"
- 289      65746164 
- 289      61746100 
- 290              	.LASF1:
- 291 002a 756E7369 		.ascii	"unsigned char\000"
- 291      676E6564 
- 291      20636861 
- 291      7200
- 292              	.LASF16:
- 293 0038 47656E65 		.ascii	"Generated_Source\\PSoC4\\cymetadata.c\000"
- 293      72617465 
- 293      645F536F 
- 293      75726365 
- 293      5C50536F 
- 294              	.LASF5:
- 295 005c 6C6F6E67 		.ascii	"long unsigned int\000"
- 295      20756E73 
- 295      69676E65 
- 295      6420696E 
- 295      7400
- 296              	.LASF3:
- 297 006e 73686F72 		.ascii	"short unsigned int\000"
- 297      7420756E 
- 297      7369676E 
- 297      65642069 
- 297      6E7400
- 298              	.LASF8:
- 299 0081 756E7369 		.ascii	"unsigned int\000"
- 299      676E6564 
- 299      20696E74 
- 299      00
- 300              	.LASF7:
- 301 008e 6C6F6E67 		.ascii	"long long unsigned int\000"
- 301      206C6F6E 
- 301      6720756E 
- 301      7369676E 
- 301      65642069 
- 302              	.LASF10:
- 303 00a5 75696E74 		.ascii	"uint8_t\000"
- 303      385F7400 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccfEiizE.s 			page 7
+ 288              	.LASF3:
+ 289 001e 73686F72 		.ascii	"short unsigned int\000"
+ 289      7420756E 
+ 289      7369676E 
+ 289      65642069 
+ 289      6E7400
+ 290              	.LASF13:
+ 291 0031 63795F6D 		.ascii	"cy_metadata\000"
+ 291      65746164 
+ 291      61746100 
+ 292              	.LASF1:
+ 293 003d 756E7369 		.ascii	"unsigned char\000"
+ 293      676E6564 
+ 293      20636861 
+ 293      7200
+ 294              	.LASF16:
+ 295 004b 47656E65 		.ascii	"Generated_Source\\PSoC4\\cymetadata.c\000"
+ 295      72617465 
+ 295      645F536F 
+ 295      75726365 
+ 295      5C50536F 
+ 296              	.LASF5:
+ 297 006f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 297      20756E73 
+ 297      69676E65 
+ 297      6420696E 
+ 297      7400
+ 298              	.LASF17:
+ 299 0081 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\dev\\yaugi\\GPIB USB Adap"
+ 299      635C486F 
+ 299      6D655C44 
+ 299      6F63756D 
+ 299      656E7473 
+ 300 00ad 7465725C 		.ascii	"ter\\GPIB USB 1.cydsn\000"
+ 300      47504942 
+ 300      20555342 
+ 300      20312E63 
+ 300      7964736E 
+ 301              	.LASF15:
+ 302 00c2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 302      43313120 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccaIrLFH.s 			page 7
 
 
- 304              	.LASF17:
- 305 00ad 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\PSoC Creator\\GPIB USB Ad"
- 305      635C486F 
- 305      6D655C44 
- 305      6F63756D 
- 305      656E7473 
- 306 00da 61707465 		.ascii	"apter\\GPIB USB 1.cydsn\000"
- 306      725C4750 
- 306      49422055 
- 306      53422031 
- 306      2E637964 
- 307              	.LASF12:
- 308 00f1 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 308      6574615F 
- 308      666C6173 
- 308      6870726F 
- 308      74656374 
- 309              	.LASF15:
- 310 0106 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 310      43313120 
- 310      352E342E 
- 310      31203230 
- 310      31363036 
- 311 0139 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 311      20726576 
- 311      6973696F 
- 311      6E203233 
- 311      37373135 
- 312 016c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 312      66756E63 
- 312      74696F6E 
- 312      2D736563 
- 312      74696F6E 
+ 302      352E342E 
+ 302      31203230 
+ 302      31363036 
+ 303 00f5 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 303      20726576 
+ 303      6973696F 
+ 303      6E203233 
+ 303      37373135 
+ 304 0128 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 304      66756E63 
+ 304      74696F6E 
+ 304      2D736563 
+ 304      74696F6E 
+ 305              	.LASF8:
+ 306 0150 756E7369 		.ascii	"unsigned int\000"
+ 306      676E6564 
+ 306      20696E74 
+ 306      00
+ 307              	.LASF7:
+ 308 015d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 308      206C6F6E 
+ 308      6720756E 
+ 308      7369676E 
+ 308      65642069 
+ 309              	.LASF10:
+ 310 0174 75696E74 		.ascii	"uint8_t\000"
+ 310      385F7400 
+ 311              	.LASF12:
+ 312 017c 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 312      6574615F 
+ 312      666C6173 
+ 312      6870726F 
+ 312      74656374 
  313              	.LASF11:
- 314 0194 73697A65 		.ascii	"sizetype\000"
+ 314 0191 73697A65 		.ascii	"sizetype\000"
  314      74797065 
  314      00
  315              	.LASF6:
- 316 019d 6C6F6E67 		.ascii	"long long int\000"
+ 316 019a 6C6F6E67 		.ascii	"long long int\000"
  316      206C6F6E 
  316      6720696E 
  316      7400
  317              	.LASF2:
- 318 01ab 73686F72 		.ascii	"short int\000"
+ 318 01a8 73686F72 		.ascii	"short int\000"
  318      7420696E 
  318      7400
  319              	.LASF4:
- 320 01b5 6C6F6E67 		.ascii	"long int\000"
+ 320 01b2 6C6F6E67 		.ascii	"long int\000"
  320      20696E74 
  320      00
  321              	.LASF0:
- 322 01be 7369676E 		.ascii	"signed char\000"
+ 322 01bb 7369676E 		.ascii	"signed char\000"
  322      65642063 
  322      68617200 
  323              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

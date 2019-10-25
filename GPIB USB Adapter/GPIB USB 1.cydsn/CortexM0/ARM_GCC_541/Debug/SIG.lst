@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 1
 
 
    1              		.syntax unified
@@ -10,7 +10,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
    7              		.eabi_attribute 24, 1
    8              		.eabi_attribute 25, 1
    9              		.eabi_attribute 26, 1
-  10              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 30, 6
   11              		.eabi_attribute 34, 0
   12              		.eabi_attribute 18, 4
   13              		.thumb
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
   28:Generated_Source\PSoC4/SIG.c **** #else
   29:Generated_Source\PSoC4/SIG.c ****     #if (CY_PSOC4_4200L)
   30:Generated_Source\PSoC4/SIG.c ****         #define SIG_SetP4PinDriveMode(shift, mode)  \
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 2
 
 
   31:Generated_Source\PSoC4/SIG.c ****         do { \
@@ -106,106 +106,153 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
   73:Generated_Source\PSoC4/SIG.c ****     {
   28              		.loc 1 73 0
   29              		.cfi_startproc
-  30              		@ args = 0, pretend = 0, frame = 0
-  31              		@ frame_needed = 0, uses_anonymous_args = 0
-  32              		@ link register save eliminated.
-  33              	.LVL0:
+  30              		@ args = 0, pretend = 0, frame = 8
+  31              		@ frame_needed = 1, uses_anonymous_args = 0
+  32 0000 80B5     		push	{r7, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 7, -8
+  35              		.cfi_offset 14, -4
+  36 0002 82B0     		sub	sp, sp, #8
+  37              		.cfi_def_cfa_offset 16
+  38 0004 00AF     		add	r7, sp, #0
+  39              		.cfi_def_cfa_register 7
+  40 0006 0200     		movs	r2, r0
+  41 0008 FB1D     		adds	r3, r7, #7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 3
+
+
+  42 000a 1A70     		strb	r2, [r3]
   74:Generated_Source\PSoC4/SIG.c **** 		SIG_SetP4PinDriveMode(SIG__0__SHIFT, mode);
-  34              		.loc 1 74 0
-  35 0000 184B     		ldr	r3, .L2
-  36 0002 1A68     		ldr	r2, [r3]
-  37 0004 0721     		movs	r1, #7
-  38 0006 8A43     		bics	r2, r1
-  39 0008 0243     		orrs	r2, r0
-  40 000a 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 3
-
-
+  43              		.loc 1 74 0
+  44 000c 2A4B     		ldr	r3, .L2
+  45 000e 2A4A     		ldr	r2, .L2
+  46 0010 1268     		ldr	r2, [r2]
+  47 0012 0721     		movs	r1, #7
+  48 0014 8A43     		bics	r2, r1
+  49 0016 1100     		movs	r1, r2
+  50 0018 FA1D     		adds	r2, r7, #7
+  51 001a 1278     		ldrb	r2, [r2]
+  52 001c 0A43     		orrs	r2, r1
+  53 001e 1A60     		str	r2, [r3]
   75:Generated_Source\PSoC4/SIG.c **** 		SIG_SetP4PinDriveMode(SIG__1__SHIFT, mode);
-  41              		.loc 1 75 0
-  42 000c 1A68     		ldr	r2, [r3]
-  43 000e 3131     		adds	r1, r1, #49
-  44 0010 8A43     		bics	r2, r1
-  45 0012 C100     		lsls	r1, r0, #3
-  46 0014 0A43     		orrs	r2, r1
-  47 0016 1A60     		str	r2, [r3]
+  54              		.loc 1 75 0
+  55 0020 254B     		ldr	r3, .L2
+  56 0022 254A     		ldr	r2, .L2
+  57 0024 1268     		ldr	r2, [r2]
+  58 0026 3821     		movs	r1, #56
+  59 0028 8A43     		bics	r2, r1
+  60 002a 1100     		movs	r1, r2
+  61 002c FA1D     		adds	r2, r7, #7
+  62 002e 1278     		ldrb	r2, [r2]
+  63 0030 D200     		lsls	r2, r2, #3
+  64 0032 0A43     		orrs	r2, r1
+  65 0034 1A60     		str	r2, [r3]
   76:Generated_Source\PSoC4/SIG.c **** 		SIG_SetP4PinDriveMode(SIG__2__SHIFT, mode);
-  48              		.loc 1 76 0
-  49 0018 1968     		ldr	r1, [r3]
-  50 001a 134A     		ldr	r2, .L2+4
-  51 001c 0A40     		ands	r2, r1
-  52 001e 8101     		lsls	r1, r0, #6
-  53 0020 0A43     		orrs	r2, r1
-  54 0022 1A60     		str	r2, [r3]
+  66              		.loc 1 76 0
+  67 0036 204B     		ldr	r3, .L2
+  68 0038 1F4A     		ldr	r2, .L2
+  69 003a 1268     		ldr	r2, [r2]
+  70 003c 1F49     		ldr	r1, .L2+4
+  71 003e 1140     		ands	r1, r2
+  72 0040 FA1D     		adds	r2, r7, #7
+  73 0042 1278     		ldrb	r2, [r2]
+  74 0044 9201     		lsls	r2, r2, #6
+  75 0046 0A43     		orrs	r2, r1
+  76 0048 1A60     		str	r2, [r3]
   77:Generated_Source\PSoC4/SIG.c **** 		SIG_SetP4PinDriveMode(SIG__3__SHIFT, mode);
-  55              		.loc 1 77 0
-  56 0024 1968     		ldr	r1, [r3]
-  57 0026 114A     		ldr	r2, .L2+8
-  58 0028 0A40     		ands	r2, r1
-  59 002a 4102     		lsls	r1, r0, #9
-  60 002c 0A43     		orrs	r2, r1
-  61 002e 1A60     		str	r2, [r3]
+  77              		.loc 1 77 0
+  78 004a 1B4B     		ldr	r3, .L2
+  79 004c 1A4A     		ldr	r2, .L2
+  80 004e 1268     		ldr	r2, [r2]
+  81 0050 1B49     		ldr	r1, .L2+8
+  82 0052 1140     		ands	r1, r2
+  83 0054 FA1D     		adds	r2, r7, #7
+  84 0056 1278     		ldrb	r2, [r2]
+  85 0058 5202     		lsls	r2, r2, #9
+  86 005a 0A43     		orrs	r2, r1
+  87 005c 1A60     		str	r2, [r3]
   78:Generated_Source\PSoC4/SIG.c **** 		SIG_SetP4PinDriveMode(SIG__4__SHIFT, mode);
-  62              		.loc 1 78 0
-  63 0030 1968     		ldr	r1, [r3]
-  64 0032 0F4A     		ldr	r2, .L2+12
-  65 0034 0A40     		ands	r2, r1
-  66 0036 0103     		lsls	r1, r0, #12
-  67 0038 0A43     		orrs	r2, r1
-  68 003a 1A60     		str	r2, [r3]
+  88              		.loc 1 78 0
+  89 005e 164B     		ldr	r3, .L2
+  90 0060 154A     		ldr	r2, .L2
+  91 0062 1268     		ldr	r2, [r2]
+  92 0064 1749     		ldr	r1, .L2+12
+  93 0066 1140     		ands	r1, r2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 4
+
+
+  94 0068 FA1D     		adds	r2, r7, #7
+  95 006a 1278     		ldrb	r2, [r2]
+  96 006c 1203     		lsls	r2, r2, #12
+  97 006e 0A43     		orrs	r2, r1
+  98 0070 1A60     		str	r2, [r3]
   79:Generated_Source\PSoC4/SIG.c **** 		SIG_SetP4PinDriveMode(SIG__5__SHIFT, mode);
-  69              		.loc 1 79 0
-  70 003c 1968     		ldr	r1, [r3]
-  71 003e 0D4A     		ldr	r2, .L2+16
-  72 0040 0A40     		ands	r2, r1
-  73 0042 C103     		lsls	r1, r0, #15
-  74 0044 0A43     		orrs	r2, r1
-  75 0046 1A60     		str	r2, [r3]
+  99              		.loc 1 79 0
+ 100 0072 114B     		ldr	r3, .L2
+ 101 0074 104A     		ldr	r2, .L2
+ 102 0076 1268     		ldr	r2, [r2]
+ 103 0078 1349     		ldr	r1, .L2+16
+ 104 007a 1140     		ands	r1, r2
+ 105 007c FA1D     		adds	r2, r7, #7
+ 106 007e 1278     		ldrb	r2, [r2]
+ 107 0080 D203     		lsls	r2, r2, #15
+ 108 0082 0A43     		orrs	r2, r1
+ 109 0084 1A60     		str	r2, [r3]
   80:Generated_Source\PSoC4/SIG.c **** 		SIG_SetP4PinDriveMode(SIG__6__SHIFT, mode);
-  76              		.loc 1 80 0
-  77 0048 1968     		ldr	r1, [r3]
-  78 004a 0B4A     		ldr	r2, .L2+20
-  79 004c 0A40     		ands	r2, r1
-  80 004e 8104     		lsls	r1, r0, #18
-  81 0050 0A43     		orrs	r2, r1
-  82 0052 1A60     		str	r2, [r3]
+ 110              		.loc 1 80 0
+ 111 0086 0C4B     		ldr	r3, .L2
+ 112 0088 0B4A     		ldr	r2, .L2
+ 113 008a 1268     		ldr	r2, [r2]
+ 114 008c 0F49     		ldr	r1, .L2+20
+ 115 008e 1140     		ands	r1, r2
+ 116 0090 FA1D     		adds	r2, r7, #7
+ 117 0092 1278     		ldrb	r2, [r2]
+ 118 0094 9204     		lsls	r2, r2, #18
+ 119 0096 0A43     		orrs	r2, r1
+ 120 0098 1A60     		str	r2, [r3]
   81:Generated_Source\PSoC4/SIG.c **** 		SIG_SetP4PinDriveMode(SIG__7__SHIFT, mode);
-  83              		.loc 1 81 0
-  84 0054 1968     		ldr	r1, [r3]
-  85 0056 094A     		ldr	r2, .L2+24
-  86 0058 0A40     		ands	r2, r1
-  87 005a 4005     		lsls	r0, r0, #21
-  88              	.LVL1:
-  89 005c 1043     		orrs	r0, r2
-  90 005e 1860     		str	r0, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 4
-
-
+ 121              		.loc 1 81 0
+ 122 009a 074B     		ldr	r3, .L2
+ 123 009c 064A     		ldr	r2, .L2
+ 124 009e 1268     		ldr	r2, [r2]
+ 125 00a0 0B49     		ldr	r1, .L2+24
+ 126 00a2 1140     		ands	r1, r2
+ 127 00a4 FA1D     		adds	r2, r7, #7
+ 128 00a6 1278     		ldrb	r2, [r2]
+ 129 00a8 5205     		lsls	r2, r2, #21
+ 130 00aa 0A43     		orrs	r2, r1
+ 131 00ac 1A60     		str	r2, [r3]
   82:Generated_Source\PSoC4/SIG.c ****     }
-  91              		.loc 1 82 0
-  92              		@ sp needed
-  93 0060 7047     		bx	lr
-  94              	.L3:
-  95 0062 C046     		.align	2
-  96              	.L2:
-  97 0064 08010440 		.word	1074004232
-  98 0068 3FFEFFFF 		.word	-449
-  99 006c FFF1FFFF 		.word	-3585
- 100 0070 FF8FFFFF 		.word	-28673
- 101 0074 FF7FFCFF 		.word	-229377
- 102 0078 FFFFE3FF 		.word	-1835009
- 103 007c FFFF1FFF 		.word	-14680065
- 104              		.cfi_endproc
- 105              	.LFE0:
- 106              		.size	SIG_SetDriveMode, .-SIG_SetDriveMode
- 107              		.section	.text.SIG_Write,"ax",%progbits
- 108              		.align	2
- 109              		.global	SIG_Write
- 110              		.code	16
- 111              		.thumb_func
- 112              		.type	SIG_Write, %function
- 113              	SIG_Write:
- 114              	.LFB1:
+ 132              		.loc 1 82 0
+ 133 00ae C046     		nop
+ 134 00b0 BD46     		mov	sp, r7
+ 135 00b2 02B0     		add	sp, sp, #8
+ 136              		@ sp needed
+ 137 00b4 80BD     		pop	{r7, pc}
+ 138              	.L3:
+ 139 00b6 C046     		.align	2
+ 140              	.L2:
+ 141 00b8 08010440 		.word	1074004232
+ 142 00bc 3FFEFFFF 		.word	-449
+ 143 00c0 FFF1FFFF 		.word	-3585
+ 144 00c4 FF8FFFFF 		.word	-28673
+ 145 00c8 FF7FFCFF 		.word	-229377
+ 146 00cc FFFFE3FF 		.word	-1835009
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 5
+
+
+ 147 00d0 FFFF1FFF 		.word	-14680065
+ 148              		.cfi_endproc
+ 149              	.LFE0:
+ 150              		.size	SIG_SetDriveMode, .-SIG_SetDriveMode
+ 151              		.section	.text.SIG_Write,"ax",%progbits
+ 152              		.align	2
+ 153              		.global	SIG_Write
+ 154              		.code	16
+ 155              		.thumb_func
+ 156              		.type	SIG_Write, %function
+ 157              	SIG_Write:
+ 158              	.LFB1:
   83:Generated_Source\PSoC4/SIG.c **** #endif
   84:Generated_Source\PSoC4/SIG.c **** 
   85:Generated_Source\PSoC4/SIG.c **** 
@@ -238,50 +285,82 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
  112:Generated_Source\PSoC4/SIG.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
  113:Generated_Source\PSoC4/SIG.c **** *  this function.
  114:Generated_Source\PSoC4/SIG.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 5
-
-
  115:Generated_Source\PSoC4/SIG.c **** * \funcusage
  116:Generated_Source\PSoC4/SIG.c **** *  \snippet SIG_SUT.c usage_SIG_Write
  117:Generated_Source\PSoC4/SIG.c **** *******************************************************************************/
  118:Generated_Source\PSoC4/SIG.c **** void SIG_Write(uint8 value)
  119:Generated_Source\PSoC4/SIG.c **** {
- 115              		.loc 1 119 0
- 116              		.cfi_startproc
- 117              		@ args = 0, pretend = 0, frame = 0
- 118              		@ frame_needed = 0, uses_anonymous_args = 0
- 119              		@ link register save eliminated.
- 120              	.LVL2:
+ 159              		.loc 1 119 0
+ 160              		.cfi_startproc
+ 161              		@ args = 0, pretend = 0, frame = 16
+ 162              		@ frame_needed = 1, uses_anonymous_args = 0
+ 163 0000 80B5     		push	{r7, lr}
+ 164              		.cfi_def_cfa_offset 8
+ 165              		.cfi_offset 7, -8
+ 166              		.cfi_offset 14, -4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 6
+
+
+ 167 0002 84B0     		sub	sp, sp, #16
+ 168              		.cfi_def_cfa_offset 24
+ 169 0004 00AF     		add	r7, sp, #0
+ 170              		.cfi_def_cfa_register 7
+ 171 0006 0200     		movs	r2, r0
+ 172 0008 FB1D     		adds	r3, r7, #7
+ 173 000a 1A70     		strb	r2, [r3]
  120:Generated_Source\PSoC4/SIG.c ****     uint8 drVal = (uint8)(SIG_DR & (uint8)(~SIG_MASK));
- 121              		.loc 1 120 0
- 122 0000 014B     		ldr	r3, .L5
- 123 0002 1A68     		ldr	r2, [r3]
- 124              	.LVL3:
+ 174              		.loc 1 120 0
+ 175 000c 0B4B     		ldr	r3, .L5
+ 176 000e 1B68     		ldr	r3, [r3]
+ 177 0010 0F23     		movs	r3, #15
+ 178 0012 FB18     		adds	r3, r7, r3
+ 179 0014 0022     		movs	r2, #0
+ 180 0016 1A70     		strb	r2, [r3]
  121:Generated_Source\PSoC4/SIG.c ****     drVal = (drVal | ((uint8)(value << SIG_SHIFT) & SIG_MASK));
+ 181              		.loc 1 121 0
+ 182 0018 0F23     		movs	r3, #15
+ 183 001a FB18     		adds	r3, r7, r3
+ 184 001c 0F22     		movs	r2, #15
+ 185 001e B918     		adds	r1, r7, r2
+ 186 0020 FA1D     		adds	r2, r7, #7
+ 187 0022 0978     		ldrb	r1, [r1]
+ 188 0024 1278     		ldrb	r2, [r2]
+ 189 0026 0A43     		orrs	r2, r1
+ 190 0028 1A70     		strb	r2, [r3]
  122:Generated_Source\PSoC4/SIG.c ****     SIG_DR = (uint32)drVal;
- 125              		.loc 1 122 0
- 126 0004 1860     		str	r0, [r3]
+ 191              		.loc 1 122 0
+ 192 002a 044B     		ldr	r3, .L5
+ 193 002c 0F22     		movs	r2, #15
+ 194 002e BA18     		adds	r2, r7, r2
+ 195 0030 1278     		ldrb	r2, [r2]
+ 196 0032 1A60     		str	r2, [r3]
  123:Generated_Source\PSoC4/SIG.c **** }
- 127              		.loc 1 123 0
- 128              		@ sp needed
- 129 0006 7047     		bx	lr
- 130              	.L6:
- 131              		.align	2
- 132              	.L5:
- 133 0008 00010440 		.word	1074004224
- 134              		.cfi_endproc
- 135              	.LFE1:
- 136              		.size	SIG_Write, .-SIG_Write
- 137              		.section	.text.SIG_Read,"ax",%progbits
- 138              		.align	2
- 139              		.global	SIG_Read
- 140              		.code	16
- 141              		.thumb_func
- 142              		.type	SIG_Read, %function
- 143              	SIG_Read:
- 144              	.LFB2:
+ 197              		.loc 1 123 0
+ 198 0034 C046     		nop
+ 199 0036 BD46     		mov	sp, r7
+ 200 0038 04B0     		add	sp, sp, #16
+ 201              		@ sp needed
+ 202 003a 80BD     		pop	{r7, pc}
+ 203              	.L6:
+ 204              		.align	2
+ 205              	.L5:
+ 206 003c 00010440 		.word	1074004224
+ 207              		.cfi_endproc
+ 208              	.LFE1:
+ 209              		.size	SIG_Write, .-SIG_Write
+ 210              		.section	.text.SIG_Read,"ax",%progbits
+ 211              		.align	2
+ 212              		.global	SIG_Read
+ 213              		.code	16
+ 214              		.thumb_func
+ 215              		.type	SIG_Read, %function
+ 216              	SIG_Read:
+ 217              	.LFB2:
  124:Generated_Source\PSoC4/SIG.c **** 
  125:Generated_Source\PSoC4/SIG.c **** 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 7
+
+
  126:Generated_Source\PSoC4/SIG.c **** /*******************************************************************************
  127:Generated_Source\PSoC4/SIG.c **** * Function Name: SIG_Read
  128:Generated_Source\PSoC4/SIG.c **** ****************************************************************************//**
@@ -298,43 +377,50 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
  139:Generated_Source\PSoC4/SIG.c **** *
  140:Generated_Source\PSoC4/SIG.c **** * \funcusage
  141:Generated_Source\PSoC4/SIG.c **** *  \snippet SIG_SUT.c usage_SIG_Read  
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 6
-
-
  142:Generated_Source\PSoC4/SIG.c **** *******************************************************************************/
  143:Generated_Source\PSoC4/SIG.c **** uint8 SIG_Read(void)
  144:Generated_Source\PSoC4/SIG.c **** {
- 145              		.loc 1 144 0
- 146              		.cfi_startproc
- 147              		@ args = 0, pretend = 0, frame = 0
- 148              		@ frame_needed = 0, uses_anonymous_args = 0
- 149              		@ link register save eliminated.
+ 218              		.loc 1 144 0
+ 219              		.cfi_startproc
+ 220              		@ args = 0, pretend = 0, frame = 0
+ 221              		@ frame_needed = 1, uses_anonymous_args = 0
+ 222 0000 80B5     		push	{r7, lr}
+ 223              		.cfi_def_cfa_offset 8
+ 224              		.cfi_offset 7, -8
+ 225              		.cfi_offset 14, -4
+ 226 0002 00AF     		add	r7, sp, #0
+ 227              		.cfi_def_cfa_register 7
  145:Generated_Source\PSoC4/SIG.c ****     return (uint8)((SIG_PS & SIG_MASK) >> SIG_SHIFT);
- 150              		.loc 1 145 0
- 151 0000 014B     		ldr	r3, .L8
- 152 0002 1868     		ldr	r0, [r3]
- 153 0004 C0B2     		uxtb	r0, r0
+ 228              		.loc 1 145 0
+ 229 0004 024B     		ldr	r3, .L9
+ 230 0006 1B68     		ldr	r3, [r3]
+ 231 0008 DBB2     		uxtb	r3, r3
  146:Generated_Source\PSoC4/SIG.c **** }
- 154              		.loc 1 146 0
- 155              		@ sp needed
- 156 0006 7047     		bx	lr
- 157              	.L9:
- 158              		.align	2
- 159              	.L8:
- 160 0008 04010440 		.word	1074004228
- 161              		.cfi_endproc
- 162              	.LFE2:
- 163              		.size	SIG_Read, .-SIG_Read
- 164              		.section	.text.SIG_ReadDataReg,"ax",%progbits
- 165              		.align	2
- 166              		.global	SIG_ReadDataReg
- 167              		.code	16
- 168              		.thumb_func
- 169              		.type	SIG_ReadDataReg, %function
- 170              	SIG_ReadDataReg:
- 171              	.LFB3:
+ 232              		.loc 1 146 0
+ 233 000a 1800     		movs	r0, r3
+ 234 000c BD46     		mov	sp, r7
+ 235              		@ sp needed
+ 236 000e 80BD     		pop	{r7, pc}
+ 237              	.L10:
+ 238              		.align	2
+ 239              	.L9:
+ 240 0010 04010440 		.word	1074004228
+ 241              		.cfi_endproc
+ 242              	.LFE2:
+ 243              		.size	SIG_Read, .-SIG_Read
+ 244              		.section	.text.SIG_ReadDataReg,"ax",%progbits
+ 245              		.align	2
+ 246              		.global	SIG_ReadDataReg
+ 247              		.code	16
+ 248              		.thumb_func
+ 249              		.type	SIG_ReadDataReg, %function
+ 250              	SIG_ReadDataReg:
+ 251              	.LFB3:
  147:Generated_Source\PSoC4/SIG.c **** 
  148:Generated_Source\PSoC4/SIG.c **** 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 8
+
+
  149:Generated_Source\PSoC4/SIG.c **** /*******************************************************************************
  150:Generated_Source\PSoC4/SIG.c **** * Function Name: SIG_ReadDataReg
  151:Generated_Source\PSoC4/SIG.c **** ****************************************************************************//**
@@ -358,39 +444,46 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
  169:Generated_Source\PSoC4/SIG.c **** *  \snippet SIG_SUT.c usage_SIG_ReadDataReg 
  170:Generated_Source\PSoC4/SIG.c **** *******************************************************************************/
  171:Generated_Source\PSoC4/SIG.c **** uint8 SIG_ReadDataReg(void)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 7
-
-
  172:Generated_Source\PSoC4/SIG.c **** {
- 172              		.loc 1 172 0
- 173              		.cfi_startproc
- 174              		@ args = 0, pretend = 0, frame = 0
- 175              		@ frame_needed = 0, uses_anonymous_args = 0
- 176              		@ link register save eliminated.
+ 252              		.loc 1 172 0
+ 253              		.cfi_startproc
+ 254              		@ args = 0, pretend = 0, frame = 0
+ 255              		@ frame_needed = 1, uses_anonymous_args = 0
+ 256 0000 80B5     		push	{r7, lr}
+ 257              		.cfi_def_cfa_offset 8
+ 258              		.cfi_offset 7, -8
+ 259              		.cfi_offset 14, -4
+ 260 0002 00AF     		add	r7, sp, #0
+ 261              		.cfi_def_cfa_register 7
  173:Generated_Source\PSoC4/SIG.c ****     return (uint8)((SIG_DR & SIG_MASK) >> SIG_SHIFT);
- 177              		.loc 1 173 0
- 178 0000 014B     		ldr	r3, .L11
- 179 0002 1868     		ldr	r0, [r3]
- 180 0004 C0B2     		uxtb	r0, r0
+ 262              		.loc 1 173 0
+ 263 0004 024B     		ldr	r3, .L13
+ 264 0006 1B68     		ldr	r3, [r3]
+ 265 0008 DBB2     		uxtb	r3, r3
  174:Generated_Source\PSoC4/SIG.c **** }
- 181              		.loc 1 174 0
- 182              		@ sp needed
- 183 0006 7047     		bx	lr
- 184              	.L12:
- 185              		.align	2
- 186              	.L11:
- 187 0008 00010440 		.word	1074004224
- 188              		.cfi_endproc
- 189              	.LFE3:
- 190              		.size	SIG_ReadDataReg, .-SIG_ReadDataReg
- 191              		.section	.text.SIG_SetInterruptMode,"ax",%progbits
- 192              		.align	2
- 193              		.global	SIG_SetInterruptMode
- 194              		.code	16
- 195              		.thumb_func
- 196              		.type	SIG_SetInterruptMode, %function
- 197              	SIG_SetInterruptMode:
- 198              	.LFB4:
+ 266              		.loc 1 174 0
+ 267 000a 1800     		movs	r0, r3
+ 268 000c BD46     		mov	sp, r7
+ 269              		@ sp needed
+ 270 000e 80BD     		pop	{r7, pc}
+ 271              	.L14:
+ 272              		.align	2
+ 273              	.L13:
+ 274 0010 00010440 		.word	1074004224
+ 275              		.cfi_endproc
+ 276              	.LFE3:
+ 277              		.size	SIG_ReadDataReg, .-SIG_ReadDataReg
+ 278              		.section	.text.SIG_SetInterruptMode,"ax",%progbits
+ 279              		.align	2
+ 280              		.global	SIG_SetInterruptMode
+ 281              		.code	16
+ 282              		.thumb_func
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 9
+
+
+ 283              		.type	SIG_SetInterruptMode, %function
+ 284              	SIG_SetInterruptMode:
+ 285              	.LFB4:
  175:Generated_Source\PSoC4/SIG.c **** 
  176:Generated_Source\PSoC4/SIG.c **** 
  177:Generated_Source\PSoC4/SIG.c **** /*******************************************************************************
@@ -418,9 +511,6 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
  199:Generated_Source\PSoC4/SIG.c **** *  Interrupt mode for the selected pins. Valid options are documented in
  200:Generated_Source\PSoC4/SIG.c **** *  \ref intrMode.
  201:Generated_Source\PSoC4/SIG.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 8
-
-
  202:Generated_Source\PSoC4/SIG.c **** * \return 
  203:Generated_Source\PSoC4/SIG.c **** *  None
  204:Generated_Source\PSoC4/SIG.c **** *  
@@ -435,54 +525,82 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
  213:Generated_Source\PSoC4/SIG.c **** *******************************************************************************/
  214:Generated_Source\PSoC4/SIG.c **** void SIG_SetInterruptMode(uint16 position, uint16 mode)
  215:Generated_Source\PSoC4/SIG.c **** {
- 199              		.loc 1 215 0
- 200              		.cfi_startproc
- 201              		@ args = 0, pretend = 0, frame = 0
- 202              		@ frame_needed = 0, uses_anonymous_args = 0
- 203              		@ link register save eliminated.
- 204              	.LVL4:
+ 286              		.loc 1 215 0
+ 287              		.cfi_startproc
+ 288              		@ args = 0, pretend = 0, frame = 16
+ 289              		@ frame_needed = 1, uses_anonymous_args = 0
+ 290 0000 80B5     		push	{r7, lr}
+ 291              		.cfi_def_cfa_offset 8
+ 292              		.cfi_offset 7, -8
+ 293              		.cfi_offset 14, -4
+ 294 0002 84B0     		sub	sp, sp, #16
+ 295              		.cfi_def_cfa_offset 24
+ 296 0004 00AF     		add	r7, sp, #0
+ 297              		.cfi_def_cfa_register 7
+ 298 0006 0200     		movs	r2, r0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 10
+
+
+ 299 0008 BB1D     		adds	r3, r7, #6
+ 300 000a 1A80     		strh	r2, [r3]
+ 301 000c 3B1D     		adds	r3, r7, #4
+ 302 000e 0A1C     		adds	r2, r1, #0
+ 303 0010 1A80     		strh	r2, [r3]
  216:Generated_Source\PSoC4/SIG.c ****     uint32 intrCfg;
  217:Generated_Source\PSoC4/SIG.c ****     
  218:Generated_Source\PSoC4/SIG.c ****     intrCfg =  SIG_INTCFG & (uint32)(~(uint32)position);
- 205              		.loc 1 218 0
- 206 0000 034A     		ldr	r2, .L14
- 207 0002 1368     		ldr	r3, [r2]
- 208 0004 8343     		bics	r3, r0
- 209              	.LVL5:
+ 304              		.loc 1 218 0
+ 305 0012 0B4B     		ldr	r3, .L16
+ 306 0014 1B68     		ldr	r3, [r3]
+ 307 0016 BA1D     		adds	r2, r7, #6
+ 308 0018 1288     		ldrh	r2, [r2]
+ 309 001a D243     		mvns	r2, r2
+ 310 001c 1340     		ands	r3, r2
+ 311 001e FB60     		str	r3, [r7, #12]
  219:Generated_Source\PSoC4/SIG.c ****     SIG_INTCFG = intrCfg | ((uint32)position & (uint32)mode);
- 210              		.loc 1 219 0
- 211 0006 0840     		ands	r0, r1
- 212              	.LVL6:
- 213 0008 1843     		orrs	r0, r3
- 214 000a 1060     		str	r0, [r2]
+ 312              		.loc 1 219 0
+ 313 0020 074B     		ldr	r3, .L16
+ 314 0022 BA1D     		adds	r2, r7, #6
+ 315 0024 391D     		adds	r1, r7, #4
+ 316 0026 1288     		ldrh	r2, [r2]
+ 317 0028 0988     		ldrh	r1, [r1]
+ 318 002a 0A40     		ands	r2, r1
+ 319 002c 92B2     		uxth	r2, r2
+ 320 002e 1100     		movs	r1, r2
+ 321 0030 FA68     		ldr	r2, [r7, #12]
+ 322 0032 0A43     		orrs	r2, r1
+ 323 0034 1A60     		str	r2, [r3]
  220:Generated_Source\PSoC4/SIG.c **** }
- 215              		.loc 1 220 0
- 216              		@ sp needed
- 217 000c 7047     		bx	lr
- 218              	.L15:
- 219 000e C046     		.align	2
- 220              	.L14:
- 221 0010 0C010440 		.word	1074004236
- 222              		.cfi_endproc
- 223              	.LFE4:
- 224              		.size	SIG_SetInterruptMode, .-SIG_SetInterruptMode
- 225              		.section	.text.SIG_ClearInterrupt,"ax",%progbits
- 226              		.align	2
- 227              		.global	SIG_ClearInterrupt
- 228              		.code	16
- 229              		.thumb_func
- 230              		.type	SIG_ClearInterrupt, %function
- 231              	SIG_ClearInterrupt:
- 232              	.LFB5:
+ 324              		.loc 1 220 0
+ 325 0036 C046     		nop
+ 326 0038 BD46     		mov	sp, r7
+ 327 003a 04B0     		add	sp, sp, #16
+ 328              		@ sp needed
+ 329 003c 80BD     		pop	{r7, pc}
+ 330              	.L17:
+ 331 003e C046     		.align	2
+ 332              	.L16:
+ 333 0040 0C010440 		.word	1074004236
+ 334              		.cfi_endproc
+ 335              	.LFE4:
+ 336              		.size	SIG_SetInterruptMode, .-SIG_SetInterruptMode
+ 337              		.section	.text.SIG_ClearInterrupt,"ax",%progbits
+ 338              		.align	2
+ 339              		.global	SIG_ClearInterrupt
+ 340              		.code	16
+ 341              		.thumb_func
+ 342              		.type	SIG_ClearInterrupt, %function
+ 343              	SIG_ClearInterrupt:
+ 344              	.LFB5:
  221:Generated_Source\PSoC4/SIG.c **** 
  222:Generated_Source\PSoC4/SIG.c **** 
  223:Generated_Source\PSoC4/SIG.c **** /*******************************************************************************
  224:Generated_Source\PSoC4/SIG.c **** * Function Name: SIG_ClearInterrupt
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 9
-
-
  225:Generated_Source\PSoC4/SIG.c **** ****************************************************************************//**
  226:Generated_Source\PSoC4/SIG.c **** *
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 11
+
+
  227:Generated_Source\PSoC4/SIG.c **** * \brief Clears any active interrupts attached with the component and returns 
  228:Generated_Source\PSoC4/SIG.c **** *  the value of the interrupt status register allowing determination of which
  229:Generated_Source\PSoC4/SIG.c **** *  pins generated an interrupt event.
@@ -501,672 +619,650 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 1
  242:Generated_Source\PSoC4/SIG.c **** *******************************************************************************/
  243:Generated_Source\PSoC4/SIG.c **** uint8 SIG_ClearInterrupt(void)
  244:Generated_Source\PSoC4/SIG.c **** {
- 233              		.loc 1 244 0
- 234              		.cfi_startproc
- 235              		@ args = 0, pretend = 0, frame = 0
- 236              		@ frame_needed = 0, uses_anonymous_args = 0
- 237              		@ link register save eliminated.
+ 345              		.loc 1 244 0
+ 346              		.cfi_startproc
+ 347              		@ args = 0, pretend = 0, frame = 8
+ 348              		@ frame_needed = 1, uses_anonymous_args = 0
+ 349 0000 80B5     		push	{r7, lr}
+ 350              		.cfi_def_cfa_offset 8
+ 351              		.cfi_offset 7, -8
+ 352              		.cfi_offset 14, -4
+ 353 0002 82B0     		sub	sp, sp, #8
+ 354              		.cfi_def_cfa_offset 16
+ 355 0004 00AF     		add	r7, sp, #0
+ 356              		.cfi_def_cfa_register 7
  245:Generated_Source\PSoC4/SIG.c **** 	uint8 maskedStatus = (uint8)(SIG_INTSTAT & SIG_MASK);
- 238              		.loc 1 245 0
- 239 0000 034A     		ldr	r2, .L17
- 240 0002 1368     		ldr	r3, [r2]
- 241 0004 D8B2     		uxtb	r0, r3
- 242              	.LVL7:
- 243 0006 FF21     		movs	r1, #255
- 244 0008 0B40     		ands	r3, r1
+ 357              		.loc 1 245 0
+ 358 0006 074B     		ldr	r3, .L20
+ 359 0008 1A68     		ldr	r2, [r3]
+ 360 000a FB1D     		adds	r3, r7, #7
+ 361 000c 1A70     		strb	r2, [r3]
  246:Generated_Source\PSoC4/SIG.c **** 	SIG_INTSTAT = maskedStatus;
- 245              		.loc 1 246 0
- 246 000a 1360     		str	r3, [r2]
+ 362              		.loc 1 246 0
+ 363 000e 054B     		ldr	r3, .L20
+ 364 0010 FA1D     		adds	r2, r7, #7
+ 365 0012 1278     		ldrb	r2, [r2]
+ 366 0014 1A60     		str	r2, [r3]
  247:Generated_Source\PSoC4/SIG.c ****     return maskedStatus >> SIG_SHIFT;
+ 367              		.loc 1 247 0
+ 368 0016 FB1D     		adds	r3, r7, #7
+ 369 0018 1B78     		ldrb	r3, [r3]
  248:Generated_Source\PSoC4/SIG.c **** }
- 247              		.loc 1 248 0
- 248              		@ sp needed
- 249 000c 7047     		bx	lr
- 250              	.L18:
- 251 000e C046     		.align	2
- 252              	.L17:
- 253 0010 10010440 		.word	1074004240
- 254              		.cfi_endproc
- 255              	.LFE5:
- 256              		.size	SIG_ClearInterrupt, .-SIG_ClearInterrupt
- 257              		.text
- 258              	.Letext0:
- 259              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
- 260              		.section	.debug_info,"",%progbits
- 261              	.Ldebug_info0:
- 262 0000 93010000 		.4byte	0x193
- 263 0004 0400     		.2byte	0x4
- 264 0006 00000000 		.4byte	.Ldebug_abbrev0
- 265 000a 04       		.byte	0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 10
+ 370              		.loc 1 248 0
+ 371 001a 1800     		movs	r0, r3
+ 372 001c BD46     		mov	sp, r7
+ 373 001e 02B0     		add	sp, sp, #8
+ 374              		@ sp needed
+ 375 0020 80BD     		pop	{r7, pc}
+ 376              	.L21:
+ 377 0022 C046     		.align	2
+ 378              	.L20:
+ 379 0024 10010440 		.word	1074004240
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 12
 
 
- 266 000b 01       		.uleb128 0x1
- 267 000c 4D010000 		.4byte	.LASF28
- 268 0010 0C       		.byte	0xc
- 269 0011 C0000000 		.4byte	.LASF29
- 270 0015 F9000000 		.4byte	.LASF30
- 271 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 272 001d 00000000 		.4byte	0
- 273 0021 00000000 		.4byte	.Ldebug_line0
- 274 0025 02       		.uleb128 0x2
- 275 0026 01       		.byte	0x1
- 276 0027 06       		.byte	0x6
- 277 0028 1E020000 		.4byte	.LASF0
- 278 002c 02       		.uleb128 0x2
- 279 002d 01       		.byte	0x1
- 280 002e 08       		.byte	0x8
- 281 002f 58000000 		.4byte	.LASF1
- 282 0033 02       		.uleb128 0x2
- 283 0034 02       		.byte	0x2
- 284 0035 05       		.byte	0x5
- 285 0036 05020000 		.4byte	.LASF2
- 286 003a 02       		.uleb128 0x2
- 287 003b 02       		.byte	0x2
- 288 003c 07       		.byte	0x7
- 289 003d 7E000000 		.4byte	.LASF3
- 290 0041 02       		.uleb128 0x2
- 291 0042 04       		.byte	0x4
- 292 0043 05       		.byte	0x5
- 293 0044 15020000 		.4byte	.LASF4
- 294 0048 02       		.uleb128 0x2
- 295 0049 04       		.byte	0x4
- 296 004a 07       		.byte	0x7
- 297 004b 6C000000 		.4byte	.LASF5
- 298 004f 02       		.uleb128 0x2
- 299 0050 08       		.byte	0x8
- 300 0051 05       		.byte	0x5
- 301 0052 DB010000 		.4byte	.LASF6
- 302 0056 02       		.uleb128 0x2
- 303 0057 08       		.byte	0x8
- 304 0058 07       		.byte	0x7
- 305 0059 DD000000 		.4byte	.LASF7
- 306 005d 03       		.uleb128 0x3
- 307 005e 04       		.byte	0x4
- 308 005f 05       		.byte	0x5
- 309 0060 696E7400 		.ascii	"int\000"
- 310 0064 02       		.uleb128 0x2
- 311 0065 04       		.byte	0x4
- 312 0066 07       		.byte	0x7
- 313 0067 45000000 		.4byte	.LASF8
- 314 006b 04       		.uleb128 0x4
- 315 006c 0F020000 		.4byte	.LASF9
- 316 0070 02       		.byte	0x2
- 317 0071 E401     		.2byte	0x1e4
- 318 0073 2C000000 		.4byte	0x2c
- 319 0077 04       		.uleb128 0x4
- 320 0078 A1000000 		.4byte	.LASF10
- 321 007c 02       		.byte	0x2
- 322 007d E501     		.2byte	0x1e5
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 11
+ 380              		.cfi_endproc
+ 381              	.LFE5:
+ 382              		.size	SIG_ClearInterrupt, .-SIG_ClearInterrupt
+ 383              		.text
+ 384              	.Letext0:
+ 385              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 386              		.section	.debug_info,"",%progbits
+ 387              	.Ldebug_info0:
+ 388 0000 96010000 		.4byte	0x196
+ 389 0004 0400     		.2byte	0x4
+ 390 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 391 000a 04       		.byte	0x4
+ 392 000b 01       		.uleb128 0x1
+ 393 000c D2000000 		.4byte	.LASF28
+ 394 0010 0C       		.byte	0xc
+ 395 0011 8F010000 		.4byte	.LASF29
+ 396 0015 91000000 		.4byte	.LASF30
+ 397 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 398 001d 00000000 		.4byte	0
+ 399 0021 00000000 		.4byte	.Ldebug_line0
+ 400 0025 02       		.uleb128 0x2
+ 401 0026 01       		.byte	0x1
+ 402 0027 06       		.byte	0x6
+ 403 0028 1B020000 		.4byte	.LASF0
+ 404 002c 02       		.uleb128 0x2
+ 405 002d 01       		.byte	0x1
+ 406 002e 08       		.byte	0x8
+ 407 002f 6B000000 		.4byte	.LASF1
+ 408 0033 02       		.uleb128 0x2
+ 409 0034 02       		.byte	0x2
+ 410 0035 05       		.byte	0x5
+ 411 0036 02020000 		.4byte	.LASF2
+ 412 003a 02       		.uleb128 0x2
+ 413 003b 02       		.byte	0x2
+ 414 003c 07       		.byte	0x7
+ 415 003d 34000000 		.4byte	.LASF3
+ 416 0041 02       		.uleb128 0x2
+ 417 0042 04       		.byte	0x4
+ 418 0043 05       		.byte	0x5
+ 419 0044 12020000 		.4byte	.LASF4
+ 420 0048 02       		.uleb128 0x2
+ 421 0049 04       		.byte	0x4
+ 422 004a 07       		.byte	0x7
+ 423 004b 7F000000 		.4byte	.LASF5
+ 424 004f 02       		.uleb128 0x2
+ 425 0050 08       		.byte	0x8
+ 426 0051 05       		.byte	0x5
+ 427 0052 D8010000 		.4byte	.LASF6
+ 428 0056 02       		.uleb128 0x2
+ 429 0057 08       		.byte	0x8
+ 430 0058 07       		.byte	0x7
+ 431 0059 AC010000 		.4byte	.LASF7
+ 432 005d 03       		.uleb128 0x3
+ 433 005e 04       		.byte	0x4
+ 434 005f 05       		.byte	0x5
+ 435 0060 696E7400 		.ascii	"int\000"
+ 436 0064 02       		.uleb128 0x2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 13
 
 
- 323 007f 3A000000 		.4byte	0x3a
- 324 0083 04       		.uleb128 0x4
- 325 0084 B1000000 		.4byte	.LASF11
- 326 0088 02       		.byte	0x2
- 327 0089 E601     		.2byte	0x1e6
- 328 008b 48000000 		.4byte	0x48
- 329 008f 02       		.uleb128 0x2
- 330 0090 04       		.byte	0x4
- 331 0091 04       		.byte	0x4
- 332 0092 52000000 		.4byte	.LASF12
- 333 0096 02       		.uleb128 0x2
- 334 0097 08       		.byte	0x8
- 335 0098 04       		.byte	0x4
- 336 0099 91000000 		.4byte	.LASF13
- 337 009d 02       		.uleb128 0x2
- 338 009e 01       		.byte	0x1
- 339 009f 08       		.byte	0x8
- 340 00a0 F6010000 		.4byte	.LASF14
- 341 00a4 04       		.uleb128 0x4
- 342 00a5 15000000 		.4byte	.LASF15
- 343 00a9 02       		.byte	0x2
- 344 00aa 9002     		.2byte	0x290
- 345 00ac B0000000 		.4byte	0xb0
- 346 00b0 05       		.uleb128 0x5
- 347 00b1 83000000 		.4byte	0x83
- 348 00b5 06       		.uleb128 0x6
- 349 00b6 34000000 		.4byte	.LASF16
- 350 00ba 01       		.byte	0x1
- 351 00bb 48       		.byte	0x48
- 352 00bc 00000000 		.4byte	.LFB0
- 353 00c0 80000000 		.4byte	.LFE0-.LFB0
- 354 00c4 01       		.uleb128 0x1
- 355 00c5 9C       		.byte	0x9c
- 356 00c6 DA000000 		.4byte	0xda
- 357 00ca 07       		.uleb128 0x7
- 358 00cb F4000000 		.4byte	.LASF18
- 359 00cf 01       		.byte	0x1
- 360 00d0 48       		.byte	0x48
- 361 00d1 6B000000 		.4byte	0x6b
- 362 00d5 00000000 		.4byte	.LLST0
- 363 00d9 00       		.byte	0
- 364 00da 06       		.uleb128 0x6
- 365 00db FB010000 		.4byte	.LASF17
- 366 00df 01       		.byte	0x1
- 367 00e0 76       		.byte	0x76
- 368 00e1 00000000 		.4byte	.LFB1
- 369 00e5 0C000000 		.4byte	.LFE1-.LFB1
- 370 00e9 01       		.uleb128 0x1
- 371 00ea 9C       		.byte	0x9c
- 372 00eb 0A010000 		.4byte	0x10a
- 373 00ef 08       		.uleb128 0x8
- 374 00f0 1B000000 		.4byte	.LASF19
- 375 00f4 01       		.byte	0x1
- 376 00f5 76       		.byte	0x76
- 377 00f6 6B000000 		.4byte	0x6b
- 378 00fa 01       		.uleb128 0x1
- 379 00fb 50       		.byte	0x50
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 12
+ 437 0065 04       		.byte	0x4
+ 438 0066 07       		.byte	0x7
+ 439 0067 58000000 		.4byte	.LASF8
+ 440 006b 04       		.uleb128 0x4
+ 441 006c 0C020000 		.4byte	.LASF9
+ 442 0070 02       		.byte	0x2
+ 443 0071 E401     		.2byte	0x1e4
+ 444 0073 2C000000 		.4byte	0x2c
+ 445 0077 04       		.uleb128 0x4
+ 446 0078 70010000 		.4byte	.LASF10
+ 447 007c 02       		.byte	0x2
+ 448 007d E501     		.2byte	0x1e5
+ 449 007f 3A000000 		.4byte	0x3a
+ 450 0083 04       		.uleb128 0x4
+ 451 0084 80010000 		.4byte	.LASF11
+ 452 0088 02       		.byte	0x2
+ 453 0089 E601     		.2byte	0x1e6
+ 454 008b 48000000 		.4byte	0x48
+ 455 008f 02       		.uleb128 0x2
+ 456 0090 04       		.byte	0x4
+ 457 0091 04       		.byte	0x4
+ 458 0092 65000000 		.4byte	.LASF12
+ 459 0096 02       		.uleb128 0x2
+ 460 0097 08       		.byte	0x8
+ 461 0098 04       		.byte	0x4
+ 462 0099 60010000 		.4byte	.LASF13
+ 463 009d 02       		.uleb128 0x2
+ 464 009e 01       		.byte	0x1
+ 465 009f 08       		.byte	0x8
+ 466 00a0 F3010000 		.4byte	.LASF14
+ 467 00a4 04       		.uleb128 0x4
+ 468 00a5 15000000 		.4byte	.LASF15
+ 469 00a9 02       		.byte	0x2
+ 470 00aa 9002     		.2byte	0x290
+ 471 00ac B0000000 		.4byte	0xb0
+ 472 00b0 05       		.uleb128 0x5
+ 473 00b1 83000000 		.4byte	0x83
+ 474 00b5 06       		.uleb128 0x6
+ 475 00b6 47000000 		.4byte	.LASF16
+ 476 00ba 01       		.byte	0x1
+ 477 00bb 48       		.byte	0x48
+ 478 00bc 00000000 		.4byte	.LFB0
+ 479 00c0 D4000000 		.4byte	.LFE0-.LFB0
+ 480 00c4 01       		.uleb128 0x1
+ 481 00c5 9C       		.byte	0x9c
+ 482 00c6 D9000000 		.4byte	0xd9
+ 483 00ca 07       		.uleb128 0x7
+ 484 00cb C3010000 		.4byte	.LASF18
+ 485 00cf 01       		.byte	0x1
+ 486 00d0 48       		.byte	0x48
+ 487 00d1 6B000000 		.4byte	0x6b
+ 488 00d5 02       		.uleb128 0x2
+ 489 00d6 91       		.byte	0x91
+ 490 00d7 77       		.sleb128 -9
+ 491 00d8 00       		.byte	0
+ 492 00d9 06       		.uleb128 0x6
+ 493 00da F8010000 		.4byte	.LASF17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 14
 
 
- 380 00fc 09       		.uleb128 0x9
- 381 00fd 66000000 		.4byte	.LASF24
- 382 0101 01       		.byte	0x1
- 383 0102 78       		.byte	0x78
- 384 0103 6B000000 		.4byte	0x6b
- 385 0107 01       		.uleb128 0x1
- 386 0108 50       		.byte	0x50
- 387 0109 00       		.byte	0
- 388 010a 0A       		.uleb128 0xa
- 389 010b 98000000 		.4byte	.LASF20
- 390 010f 01       		.byte	0x1
- 391 0110 8F       		.byte	0x8f
- 392 0111 6B000000 		.4byte	0x6b
- 393 0115 00000000 		.4byte	.LFB2
- 394 0119 0C000000 		.4byte	.LFE2-.LFB2
- 395 011d 01       		.uleb128 0x1
- 396 011e 9C       		.byte	0x9c
- 397 011f 0A       		.uleb128 0xa
- 398 0120 3D010000 		.4byte	.LASF21
- 399 0124 01       		.byte	0x1
- 400 0125 AB       		.byte	0xab
- 401 0126 6B000000 		.4byte	0x6b
- 402 012a 00000000 		.4byte	.LFB3
- 403 012e 0C000000 		.4byte	.LFE3-.LFB3
- 404 0132 01       		.uleb128 0x1
- 405 0133 9C       		.byte	0x9c
- 406 0134 06       		.uleb128 0x6
- 407 0135 00000000 		.4byte	.LASF22
- 408 0139 01       		.byte	0x1
- 409 013a D6       		.byte	0xd6
- 410 013b 00000000 		.4byte	.LFB4
- 411 013f 14000000 		.4byte	.LFE4-.LFB4
- 412 0143 01       		.uleb128 0x1
- 413 0144 9C       		.byte	0x9c
- 414 0145 73010000 		.4byte	0x173
- 415 0149 07       		.uleb128 0x7
- 416 014a A8000000 		.4byte	.LASF23
- 417 014e 01       		.byte	0x1
- 418 014f D6       		.byte	0xd6
- 419 0150 77000000 		.4byte	0x77
- 420 0154 21000000 		.4byte	.LLST1
- 421 0158 08       		.uleb128 0x8
- 422 0159 F4000000 		.4byte	.LASF18
- 423 015d 01       		.byte	0x1
- 424 015e D6       		.byte	0xd6
- 425 015f 77000000 		.4byte	0x77
- 426 0163 01       		.uleb128 0x1
- 427 0164 51       		.byte	0x51
- 428 0165 09       		.uleb128 0x9
- 429 0166 B8000000 		.4byte	.LASF25
- 430 016a 01       		.byte	0x1
- 431 016b D8       		.byte	0xd8
- 432 016c 83000000 		.4byte	0x83
- 433 0170 01       		.uleb128 0x1
- 434 0171 53       		.byte	0x53
- 435 0172 00       		.byte	0
- 436 0173 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 13
+ 494 00de 01       		.byte	0x1
+ 495 00df 76       		.byte	0x76
+ 496 00e0 00000000 		.4byte	.LFB1
+ 497 00e4 40000000 		.4byte	.LFE1-.LFB1
+ 498 00e8 01       		.uleb128 0x1
+ 499 00e9 9C       		.byte	0x9c
+ 500 00ea 0B010000 		.4byte	0x10b
+ 501 00ee 07       		.uleb128 0x7
+ 502 00ef 1B000000 		.4byte	.LASF19
+ 503 00f3 01       		.byte	0x1
+ 504 00f4 76       		.byte	0x76
+ 505 00f5 6B000000 		.4byte	0x6b
+ 506 00f9 02       		.uleb128 0x2
+ 507 00fa 91       		.byte	0x91
+ 508 00fb 6F       		.sleb128 -17
+ 509 00fc 08       		.uleb128 0x8
+ 510 00fd 79000000 		.4byte	.LASF24
+ 511 0101 01       		.byte	0x1
+ 512 0102 78       		.byte	0x78
+ 513 0103 6B000000 		.4byte	0x6b
+ 514 0107 02       		.uleb128 0x2
+ 515 0108 91       		.byte	0x91
+ 516 0109 77       		.sleb128 -9
+ 517 010a 00       		.byte	0
+ 518 010b 09       		.uleb128 0x9
+ 519 010c 67010000 		.4byte	.LASF20
+ 520 0110 01       		.byte	0x1
+ 521 0111 8F       		.byte	0x8f
+ 522 0112 6B000000 		.4byte	0x6b
+ 523 0116 00000000 		.4byte	.LFB2
+ 524 011a 14000000 		.4byte	.LFE2-.LFB2
+ 525 011e 01       		.uleb128 0x1
+ 526 011f 9C       		.byte	0x9c
+ 527 0120 09       		.uleb128 0x9
+ 528 0121 C8010000 		.4byte	.LASF21
+ 529 0125 01       		.byte	0x1
+ 530 0126 AB       		.byte	0xab
+ 531 0127 6B000000 		.4byte	0x6b
+ 532 012b 00000000 		.4byte	.LFB3
+ 533 012f 14000000 		.4byte	.LFE3-.LFB3
+ 534 0133 01       		.uleb128 0x1
+ 535 0134 9C       		.byte	0x9c
+ 536 0135 06       		.uleb128 0x6
+ 537 0136 00000000 		.4byte	.LASF22
+ 538 013a 01       		.byte	0x1
+ 539 013b D6       		.byte	0xd6
+ 540 013c 00000000 		.4byte	.LFB4
+ 541 0140 44000000 		.4byte	.LFE4-.LFB4
+ 542 0144 01       		.uleb128 0x1
+ 543 0145 9C       		.byte	0x9c
+ 544 0146 75010000 		.4byte	0x175
+ 545 014a 07       		.uleb128 0x7
+ 546 014b 77010000 		.4byte	.LASF23
+ 547 014f 01       		.byte	0x1
+ 548 0150 D6       		.byte	0xd6
+ 549 0151 77000000 		.4byte	0x77
+ 550 0155 02       		.uleb128 0x2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 15
 
 
- 437 0174 21000000 		.4byte	.LASF26
- 438 0178 01       		.byte	0x1
- 439 0179 F3       		.byte	0xf3
- 440 017a 6B000000 		.4byte	0x6b
- 441 017e 00000000 		.4byte	.LFB5
- 442 0182 14000000 		.4byte	.LFE5-.LFB5
- 443 0186 01       		.uleb128 0x1
- 444 0187 9C       		.byte	0x9c
- 445 0188 09       		.uleb128 0x9
- 446 0189 E9010000 		.4byte	.LASF27
- 447 018d 01       		.byte	0x1
- 448 018e F5       		.byte	0xf5
- 449 018f 6B000000 		.4byte	0x6b
- 450 0193 01       		.uleb128 0x1
- 451 0194 50       		.byte	0x50
- 452 0195 00       		.byte	0
- 453 0196 00       		.byte	0
- 454              		.section	.debug_abbrev,"",%progbits
- 455              	.Ldebug_abbrev0:
- 456 0000 01       		.uleb128 0x1
- 457 0001 11       		.uleb128 0x11
- 458 0002 01       		.byte	0x1
- 459 0003 25       		.uleb128 0x25
- 460 0004 0E       		.uleb128 0xe
- 461 0005 13       		.uleb128 0x13
- 462 0006 0B       		.uleb128 0xb
- 463 0007 03       		.uleb128 0x3
- 464 0008 0E       		.uleb128 0xe
- 465 0009 1B       		.uleb128 0x1b
- 466 000a 0E       		.uleb128 0xe
- 467 000b 55       		.uleb128 0x55
- 468 000c 17       		.uleb128 0x17
- 469 000d 11       		.uleb128 0x11
- 470 000e 01       		.uleb128 0x1
- 471 000f 10       		.uleb128 0x10
- 472 0010 17       		.uleb128 0x17
- 473 0011 00       		.byte	0
- 474 0012 00       		.byte	0
- 475 0013 02       		.uleb128 0x2
- 476 0014 24       		.uleb128 0x24
- 477 0015 00       		.byte	0
- 478 0016 0B       		.uleb128 0xb
- 479 0017 0B       		.uleb128 0xb
- 480 0018 3E       		.uleb128 0x3e
- 481 0019 0B       		.uleb128 0xb
- 482 001a 03       		.uleb128 0x3
- 483 001b 0E       		.uleb128 0xe
- 484 001c 00       		.byte	0
- 485 001d 00       		.byte	0
- 486 001e 03       		.uleb128 0x3
- 487 001f 24       		.uleb128 0x24
- 488 0020 00       		.byte	0
- 489 0021 0B       		.uleb128 0xb
- 490 0022 0B       		.uleb128 0xb
- 491 0023 3E       		.uleb128 0x3e
- 492 0024 0B       		.uleb128 0xb
- 493 0025 03       		.uleb128 0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 14
+ 551 0156 91       		.byte	0x91
+ 552 0157 6E       		.sleb128 -18
+ 553 0158 07       		.uleb128 0x7
+ 554 0159 C3010000 		.4byte	.LASF18
+ 555 015d 01       		.byte	0x1
+ 556 015e D6       		.byte	0xd6
+ 557 015f 77000000 		.4byte	0x77
+ 558 0163 02       		.uleb128 0x2
+ 559 0164 91       		.byte	0x91
+ 560 0165 6C       		.sleb128 -20
+ 561 0166 08       		.uleb128 0x8
+ 562 0167 87010000 		.4byte	.LASF25
+ 563 016b 01       		.byte	0x1
+ 564 016c D8       		.byte	0xd8
+ 565 016d 83000000 		.4byte	0x83
+ 566 0171 02       		.uleb128 0x2
+ 567 0172 91       		.byte	0x91
+ 568 0173 74       		.sleb128 -12
+ 569 0174 00       		.byte	0
+ 570 0175 0A       		.uleb128 0xa
+ 571 0176 21000000 		.4byte	.LASF26
+ 572 017a 01       		.byte	0x1
+ 573 017b F3       		.byte	0xf3
+ 574 017c 6B000000 		.4byte	0x6b
+ 575 0180 00000000 		.4byte	.LFB5
+ 576 0184 28000000 		.4byte	.LFE5-.LFB5
+ 577 0188 01       		.uleb128 0x1
+ 578 0189 9C       		.byte	0x9c
+ 579 018a 08       		.uleb128 0x8
+ 580 018b E6010000 		.4byte	.LASF27
+ 581 018f 01       		.byte	0x1
+ 582 0190 F5       		.byte	0xf5
+ 583 0191 6B000000 		.4byte	0x6b
+ 584 0195 02       		.uleb128 0x2
+ 585 0196 91       		.byte	0x91
+ 586 0197 77       		.sleb128 -9
+ 587 0198 00       		.byte	0
+ 588 0199 00       		.byte	0
+ 589              		.section	.debug_abbrev,"",%progbits
+ 590              	.Ldebug_abbrev0:
+ 591 0000 01       		.uleb128 0x1
+ 592 0001 11       		.uleb128 0x11
+ 593 0002 01       		.byte	0x1
+ 594 0003 25       		.uleb128 0x25
+ 595 0004 0E       		.uleb128 0xe
+ 596 0005 13       		.uleb128 0x13
+ 597 0006 0B       		.uleb128 0xb
+ 598 0007 03       		.uleb128 0x3
+ 599 0008 0E       		.uleb128 0xe
+ 600 0009 1B       		.uleb128 0x1b
+ 601 000a 0E       		.uleb128 0xe
+ 602 000b 55       		.uleb128 0x55
+ 603 000c 17       		.uleb128 0x17
+ 604 000d 11       		.uleb128 0x11
+ 605 000e 01       		.uleb128 0x1
+ 606 000f 10       		.uleb128 0x10
+ 607 0010 17       		.uleb128 0x17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 16
 
 
- 494 0026 08       		.uleb128 0x8
- 495 0027 00       		.byte	0
- 496 0028 00       		.byte	0
- 497 0029 04       		.uleb128 0x4
- 498 002a 16       		.uleb128 0x16
- 499 002b 00       		.byte	0
- 500 002c 03       		.uleb128 0x3
- 501 002d 0E       		.uleb128 0xe
- 502 002e 3A       		.uleb128 0x3a
- 503 002f 0B       		.uleb128 0xb
- 504 0030 3B       		.uleb128 0x3b
- 505 0031 05       		.uleb128 0x5
- 506 0032 49       		.uleb128 0x49
- 507 0033 13       		.uleb128 0x13
- 508 0034 00       		.byte	0
- 509 0035 00       		.byte	0
- 510 0036 05       		.uleb128 0x5
- 511 0037 35       		.uleb128 0x35
- 512 0038 00       		.byte	0
- 513 0039 49       		.uleb128 0x49
- 514 003a 13       		.uleb128 0x13
- 515 003b 00       		.byte	0
- 516 003c 00       		.byte	0
- 517 003d 06       		.uleb128 0x6
- 518 003e 2E       		.uleb128 0x2e
- 519 003f 01       		.byte	0x1
- 520 0040 3F       		.uleb128 0x3f
- 521 0041 19       		.uleb128 0x19
- 522 0042 03       		.uleb128 0x3
- 523 0043 0E       		.uleb128 0xe
- 524 0044 3A       		.uleb128 0x3a
- 525 0045 0B       		.uleb128 0xb
- 526 0046 3B       		.uleb128 0x3b
- 527 0047 0B       		.uleb128 0xb
- 528 0048 27       		.uleb128 0x27
- 529 0049 19       		.uleb128 0x19
- 530 004a 11       		.uleb128 0x11
- 531 004b 01       		.uleb128 0x1
- 532 004c 12       		.uleb128 0x12
- 533 004d 06       		.uleb128 0x6
- 534 004e 40       		.uleb128 0x40
- 535 004f 18       		.uleb128 0x18
- 536 0050 9742     		.uleb128 0x2117
- 537 0052 19       		.uleb128 0x19
- 538 0053 01       		.uleb128 0x1
- 539 0054 13       		.uleb128 0x13
- 540 0055 00       		.byte	0
- 541 0056 00       		.byte	0
- 542 0057 07       		.uleb128 0x7
- 543 0058 05       		.uleb128 0x5
- 544 0059 00       		.byte	0
- 545 005a 03       		.uleb128 0x3
- 546 005b 0E       		.uleb128 0xe
- 547 005c 3A       		.uleb128 0x3a
- 548 005d 0B       		.uleb128 0xb
- 549 005e 3B       		.uleb128 0x3b
- 550 005f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 15
+ 608 0011 00       		.byte	0
+ 609 0012 00       		.byte	0
+ 610 0013 02       		.uleb128 0x2
+ 611 0014 24       		.uleb128 0x24
+ 612 0015 00       		.byte	0
+ 613 0016 0B       		.uleb128 0xb
+ 614 0017 0B       		.uleb128 0xb
+ 615 0018 3E       		.uleb128 0x3e
+ 616 0019 0B       		.uleb128 0xb
+ 617 001a 03       		.uleb128 0x3
+ 618 001b 0E       		.uleb128 0xe
+ 619 001c 00       		.byte	0
+ 620 001d 00       		.byte	0
+ 621 001e 03       		.uleb128 0x3
+ 622 001f 24       		.uleb128 0x24
+ 623 0020 00       		.byte	0
+ 624 0021 0B       		.uleb128 0xb
+ 625 0022 0B       		.uleb128 0xb
+ 626 0023 3E       		.uleb128 0x3e
+ 627 0024 0B       		.uleb128 0xb
+ 628 0025 03       		.uleb128 0x3
+ 629 0026 08       		.uleb128 0x8
+ 630 0027 00       		.byte	0
+ 631 0028 00       		.byte	0
+ 632 0029 04       		.uleb128 0x4
+ 633 002a 16       		.uleb128 0x16
+ 634 002b 00       		.byte	0
+ 635 002c 03       		.uleb128 0x3
+ 636 002d 0E       		.uleb128 0xe
+ 637 002e 3A       		.uleb128 0x3a
+ 638 002f 0B       		.uleb128 0xb
+ 639 0030 3B       		.uleb128 0x3b
+ 640 0031 05       		.uleb128 0x5
+ 641 0032 49       		.uleb128 0x49
+ 642 0033 13       		.uleb128 0x13
+ 643 0034 00       		.byte	0
+ 644 0035 00       		.byte	0
+ 645 0036 05       		.uleb128 0x5
+ 646 0037 35       		.uleb128 0x35
+ 647 0038 00       		.byte	0
+ 648 0039 49       		.uleb128 0x49
+ 649 003a 13       		.uleb128 0x13
+ 650 003b 00       		.byte	0
+ 651 003c 00       		.byte	0
+ 652 003d 06       		.uleb128 0x6
+ 653 003e 2E       		.uleb128 0x2e
+ 654 003f 01       		.byte	0x1
+ 655 0040 3F       		.uleb128 0x3f
+ 656 0041 19       		.uleb128 0x19
+ 657 0042 03       		.uleb128 0x3
+ 658 0043 0E       		.uleb128 0xe
+ 659 0044 3A       		.uleb128 0x3a
+ 660 0045 0B       		.uleb128 0xb
+ 661 0046 3B       		.uleb128 0x3b
+ 662 0047 0B       		.uleb128 0xb
+ 663 0048 27       		.uleb128 0x27
+ 664 0049 19       		.uleb128 0x19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 17
 
 
- 551 0060 49       		.uleb128 0x49
- 552 0061 13       		.uleb128 0x13
- 553 0062 02       		.uleb128 0x2
- 554 0063 17       		.uleb128 0x17
- 555 0064 00       		.byte	0
- 556 0065 00       		.byte	0
- 557 0066 08       		.uleb128 0x8
- 558 0067 05       		.uleb128 0x5
- 559 0068 00       		.byte	0
- 560 0069 03       		.uleb128 0x3
- 561 006a 0E       		.uleb128 0xe
- 562 006b 3A       		.uleb128 0x3a
- 563 006c 0B       		.uleb128 0xb
- 564 006d 3B       		.uleb128 0x3b
- 565 006e 0B       		.uleb128 0xb
- 566 006f 49       		.uleb128 0x49
- 567 0070 13       		.uleb128 0x13
- 568 0071 02       		.uleb128 0x2
- 569 0072 18       		.uleb128 0x18
- 570 0073 00       		.byte	0
- 571 0074 00       		.byte	0
- 572 0075 09       		.uleb128 0x9
- 573 0076 34       		.uleb128 0x34
- 574 0077 00       		.byte	0
- 575 0078 03       		.uleb128 0x3
- 576 0079 0E       		.uleb128 0xe
- 577 007a 3A       		.uleb128 0x3a
- 578 007b 0B       		.uleb128 0xb
- 579 007c 3B       		.uleb128 0x3b
- 580 007d 0B       		.uleb128 0xb
- 581 007e 49       		.uleb128 0x49
- 582 007f 13       		.uleb128 0x13
- 583 0080 02       		.uleb128 0x2
- 584 0081 18       		.uleb128 0x18
- 585 0082 00       		.byte	0
- 586 0083 00       		.byte	0
- 587 0084 0A       		.uleb128 0xa
- 588 0085 2E       		.uleb128 0x2e
- 589 0086 00       		.byte	0
- 590 0087 3F       		.uleb128 0x3f
- 591 0088 19       		.uleb128 0x19
- 592 0089 03       		.uleb128 0x3
- 593 008a 0E       		.uleb128 0xe
- 594 008b 3A       		.uleb128 0x3a
- 595 008c 0B       		.uleb128 0xb
- 596 008d 3B       		.uleb128 0x3b
- 597 008e 0B       		.uleb128 0xb
- 598 008f 27       		.uleb128 0x27
- 599 0090 19       		.uleb128 0x19
- 600 0091 49       		.uleb128 0x49
- 601 0092 13       		.uleb128 0x13
- 602 0093 11       		.uleb128 0x11
- 603 0094 01       		.uleb128 0x1
- 604 0095 12       		.uleb128 0x12
- 605 0096 06       		.uleb128 0x6
- 606 0097 40       		.uleb128 0x40
- 607 0098 18       		.uleb128 0x18
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 16
+ 665 004a 11       		.uleb128 0x11
+ 666 004b 01       		.uleb128 0x1
+ 667 004c 12       		.uleb128 0x12
+ 668 004d 06       		.uleb128 0x6
+ 669 004e 40       		.uleb128 0x40
+ 670 004f 18       		.uleb128 0x18
+ 671 0050 9742     		.uleb128 0x2117
+ 672 0052 19       		.uleb128 0x19
+ 673 0053 01       		.uleb128 0x1
+ 674 0054 13       		.uleb128 0x13
+ 675 0055 00       		.byte	0
+ 676 0056 00       		.byte	0
+ 677 0057 07       		.uleb128 0x7
+ 678 0058 05       		.uleb128 0x5
+ 679 0059 00       		.byte	0
+ 680 005a 03       		.uleb128 0x3
+ 681 005b 0E       		.uleb128 0xe
+ 682 005c 3A       		.uleb128 0x3a
+ 683 005d 0B       		.uleb128 0xb
+ 684 005e 3B       		.uleb128 0x3b
+ 685 005f 0B       		.uleb128 0xb
+ 686 0060 49       		.uleb128 0x49
+ 687 0061 13       		.uleb128 0x13
+ 688 0062 02       		.uleb128 0x2
+ 689 0063 18       		.uleb128 0x18
+ 690 0064 00       		.byte	0
+ 691 0065 00       		.byte	0
+ 692 0066 08       		.uleb128 0x8
+ 693 0067 34       		.uleb128 0x34
+ 694 0068 00       		.byte	0
+ 695 0069 03       		.uleb128 0x3
+ 696 006a 0E       		.uleb128 0xe
+ 697 006b 3A       		.uleb128 0x3a
+ 698 006c 0B       		.uleb128 0xb
+ 699 006d 3B       		.uleb128 0x3b
+ 700 006e 0B       		.uleb128 0xb
+ 701 006f 49       		.uleb128 0x49
+ 702 0070 13       		.uleb128 0x13
+ 703 0071 02       		.uleb128 0x2
+ 704 0072 18       		.uleb128 0x18
+ 705 0073 00       		.byte	0
+ 706 0074 00       		.byte	0
+ 707 0075 09       		.uleb128 0x9
+ 708 0076 2E       		.uleb128 0x2e
+ 709 0077 00       		.byte	0
+ 710 0078 3F       		.uleb128 0x3f
+ 711 0079 19       		.uleb128 0x19
+ 712 007a 03       		.uleb128 0x3
+ 713 007b 0E       		.uleb128 0xe
+ 714 007c 3A       		.uleb128 0x3a
+ 715 007d 0B       		.uleb128 0xb
+ 716 007e 3B       		.uleb128 0x3b
+ 717 007f 0B       		.uleb128 0xb
+ 718 0080 27       		.uleb128 0x27
+ 719 0081 19       		.uleb128 0x19
+ 720 0082 49       		.uleb128 0x49
+ 721 0083 13       		.uleb128 0x13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 18
 
 
- 608 0099 9742     		.uleb128 0x2117
- 609 009b 19       		.uleb128 0x19
- 610 009c 00       		.byte	0
- 611 009d 00       		.byte	0
- 612 009e 0B       		.uleb128 0xb
- 613 009f 2E       		.uleb128 0x2e
- 614 00a0 01       		.byte	0x1
- 615 00a1 3F       		.uleb128 0x3f
- 616 00a2 19       		.uleb128 0x19
- 617 00a3 03       		.uleb128 0x3
- 618 00a4 0E       		.uleb128 0xe
- 619 00a5 3A       		.uleb128 0x3a
- 620 00a6 0B       		.uleb128 0xb
- 621 00a7 3B       		.uleb128 0x3b
- 622 00a8 0B       		.uleb128 0xb
- 623 00a9 27       		.uleb128 0x27
- 624 00aa 19       		.uleb128 0x19
- 625 00ab 49       		.uleb128 0x49
- 626 00ac 13       		.uleb128 0x13
- 627 00ad 11       		.uleb128 0x11
- 628 00ae 01       		.uleb128 0x1
- 629 00af 12       		.uleb128 0x12
- 630 00b0 06       		.uleb128 0x6
- 631 00b1 40       		.uleb128 0x40
- 632 00b2 18       		.uleb128 0x18
- 633 00b3 9742     		.uleb128 0x2117
- 634 00b5 19       		.uleb128 0x19
- 635 00b6 00       		.byte	0
- 636 00b7 00       		.byte	0
- 637 00b8 00       		.byte	0
- 638              		.section	.debug_loc,"",%progbits
- 639              	.Ldebug_loc0:
- 640              	.LLST0:
- 641 0000 00000000 		.4byte	.LVL0
- 642 0004 5C000000 		.4byte	.LVL1
- 643 0008 0100     		.2byte	0x1
- 644 000a 50       		.byte	0x50
- 645 000b 5C000000 		.4byte	.LVL1
- 646 000f 80000000 		.4byte	.LFE0
- 647 0013 0400     		.2byte	0x4
- 648 0015 F3       		.byte	0xf3
- 649 0016 01       		.uleb128 0x1
- 650 0017 50       		.byte	0x50
- 651 0018 9F       		.byte	0x9f
- 652 0019 00000000 		.4byte	0
- 653 001d 00000000 		.4byte	0
- 654              	.LLST1:
- 655 0021 00000000 		.4byte	.LVL4
- 656 0025 08000000 		.4byte	.LVL6
- 657 0029 0100     		.2byte	0x1
- 658 002b 50       		.byte	0x50
- 659 002c 08000000 		.4byte	.LVL6
- 660 0030 14000000 		.4byte	.LFE4
- 661 0034 0400     		.2byte	0x4
- 662 0036 F3       		.byte	0xf3
- 663 0037 01       		.uleb128 0x1
- 664 0038 50       		.byte	0x50
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 17
+ 722 0084 11       		.uleb128 0x11
+ 723 0085 01       		.uleb128 0x1
+ 724 0086 12       		.uleb128 0x12
+ 725 0087 06       		.uleb128 0x6
+ 726 0088 40       		.uleb128 0x40
+ 727 0089 18       		.uleb128 0x18
+ 728 008a 9742     		.uleb128 0x2117
+ 729 008c 19       		.uleb128 0x19
+ 730 008d 00       		.byte	0
+ 731 008e 00       		.byte	0
+ 732 008f 0A       		.uleb128 0xa
+ 733 0090 2E       		.uleb128 0x2e
+ 734 0091 01       		.byte	0x1
+ 735 0092 3F       		.uleb128 0x3f
+ 736 0093 19       		.uleb128 0x19
+ 737 0094 03       		.uleb128 0x3
+ 738 0095 0E       		.uleb128 0xe
+ 739 0096 3A       		.uleb128 0x3a
+ 740 0097 0B       		.uleb128 0xb
+ 741 0098 3B       		.uleb128 0x3b
+ 742 0099 0B       		.uleb128 0xb
+ 743 009a 27       		.uleb128 0x27
+ 744 009b 19       		.uleb128 0x19
+ 745 009c 49       		.uleb128 0x49
+ 746 009d 13       		.uleb128 0x13
+ 747 009e 11       		.uleb128 0x11
+ 748 009f 01       		.uleb128 0x1
+ 749 00a0 12       		.uleb128 0x12
+ 750 00a1 06       		.uleb128 0x6
+ 751 00a2 40       		.uleb128 0x40
+ 752 00a3 18       		.uleb128 0x18
+ 753 00a4 9742     		.uleb128 0x2117
+ 754 00a6 19       		.uleb128 0x19
+ 755 00a7 00       		.byte	0
+ 756 00a8 00       		.byte	0
+ 757 00a9 00       		.byte	0
+ 758              		.section	.debug_aranges,"",%progbits
+ 759 0000 44000000 		.4byte	0x44
+ 760 0004 0200     		.2byte	0x2
+ 761 0006 00000000 		.4byte	.Ldebug_info0
+ 762 000a 04       		.byte	0x4
+ 763 000b 00       		.byte	0
+ 764 000c 0000     		.2byte	0
+ 765 000e 0000     		.2byte	0
+ 766 0010 00000000 		.4byte	.LFB0
+ 767 0014 D4000000 		.4byte	.LFE0-.LFB0
+ 768 0018 00000000 		.4byte	.LFB1
+ 769 001c 40000000 		.4byte	.LFE1-.LFB1
+ 770 0020 00000000 		.4byte	.LFB2
+ 771 0024 14000000 		.4byte	.LFE2-.LFB2
+ 772 0028 00000000 		.4byte	.LFB3
+ 773 002c 14000000 		.4byte	.LFE3-.LFB3
+ 774 0030 00000000 		.4byte	.LFB4
+ 775 0034 44000000 		.4byte	.LFE4-.LFB4
+ 776 0038 00000000 		.4byte	.LFB5
+ 777 003c 28000000 		.4byte	.LFE5-.LFB5
+ 778 0040 00000000 		.4byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 19
 
 
- 665 0039 9F       		.byte	0x9f
- 666 003a 00000000 		.4byte	0
- 667 003e 00000000 		.4byte	0
- 668              		.section	.debug_aranges,"",%progbits
- 669 0000 44000000 		.4byte	0x44
- 670 0004 0200     		.2byte	0x2
- 671 0006 00000000 		.4byte	.Ldebug_info0
- 672 000a 04       		.byte	0x4
- 673 000b 00       		.byte	0
- 674 000c 0000     		.2byte	0
- 675 000e 0000     		.2byte	0
- 676 0010 00000000 		.4byte	.LFB0
- 677 0014 80000000 		.4byte	.LFE0-.LFB0
- 678 0018 00000000 		.4byte	.LFB1
- 679 001c 0C000000 		.4byte	.LFE1-.LFB1
- 680 0020 00000000 		.4byte	.LFB2
- 681 0024 0C000000 		.4byte	.LFE2-.LFB2
- 682 0028 00000000 		.4byte	.LFB3
- 683 002c 0C000000 		.4byte	.LFE3-.LFB3
- 684 0030 00000000 		.4byte	.LFB4
- 685 0034 14000000 		.4byte	.LFE4-.LFB4
- 686 0038 00000000 		.4byte	.LFB5
- 687 003c 14000000 		.4byte	.LFE5-.LFB5
- 688 0040 00000000 		.4byte	0
- 689 0044 00000000 		.4byte	0
- 690              		.section	.debug_ranges,"",%progbits
- 691              	.Ldebug_ranges0:
- 692 0000 00000000 		.4byte	.LFB0
- 693 0004 80000000 		.4byte	.LFE0
- 694 0008 00000000 		.4byte	.LFB1
- 695 000c 0C000000 		.4byte	.LFE1
- 696 0010 00000000 		.4byte	.LFB2
- 697 0014 0C000000 		.4byte	.LFE2
- 698 0018 00000000 		.4byte	.LFB3
- 699 001c 0C000000 		.4byte	.LFE3
- 700 0020 00000000 		.4byte	.LFB4
- 701 0024 14000000 		.4byte	.LFE4
- 702 0028 00000000 		.4byte	.LFB5
- 703 002c 14000000 		.4byte	.LFE5
- 704 0030 00000000 		.4byte	0
- 705 0034 00000000 		.4byte	0
- 706              		.section	.debug_line,"",%progbits
- 707              	.Ldebug_line0:
- 708 0000 BC000000 		.section	.debug_str,"MS",%progbits,1
- 708      02004000 
- 708      00000201 
- 708      FB0E0D00 
- 708      01010101 
- 709              	.LASF22:
- 710 0000 5349475F 		.ascii	"SIG_SetInterruptMode\000"
- 710      53657449 
- 710      6E746572 
- 710      72757074 
- 710      4D6F6465 
- 711              	.LASF15:
- 712 0015 72656733 		.ascii	"reg32\000"
- 712      3200
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 18
+ 779 0044 00000000 		.4byte	0
+ 780              		.section	.debug_ranges,"",%progbits
+ 781              	.Ldebug_ranges0:
+ 782 0000 00000000 		.4byte	.LFB0
+ 783 0004 D4000000 		.4byte	.LFE0
+ 784 0008 00000000 		.4byte	.LFB1
+ 785 000c 40000000 		.4byte	.LFE1
+ 786 0010 00000000 		.4byte	.LFB2
+ 787 0014 14000000 		.4byte	.LFE2
+ 788 0018 00000000 		.4byte	.LFB3
+ 789 001c 14000000 		.4byte	.LFE3
+ 790 0020 00000000 		.4byte	.LFB4
+ 791 0024 44000000 		.4byte	.LFE4
+ 792 0028 00000000 		.4byte	.LFB5
+ 793 002c 28000000 		.4byte	.LFE5
+ 794 0030 00000000 		.4byte	0
+ 795 0034 00000000 		.4byte	0
+ 796              		.section	.debug_line,"",%progbits
+ 797              	.Ldebug_line0:
+ 798 0000 BE000000 		.section	.debug_str,"MS",%progbits,1
+ 798      02004000 
+ 798      00000201 
+ 798      FB0E0D00 
+ 798      01010101 
+ 799              	.LASF22:
+ 800 0000 5349475F 		.ascii	"SIG_SetInterruptMode\000"
+ 800      53657449 
+ 800      6E746572 
+ 800      72757074 
+ 800      4D6F6465 
+ 801              	.LASF15:
+ 802 0015 72656733 		.ascii	"reg32\000"
+ 802      3200
+ 803              	.LASF19:
+ 804 001b 76616C75 		.ascii	"value\000"
+ 804      6500
+ 805              	.LASF26:
+ 806 0021 5349475F 		.ascii	"SIG_ClearInterrupt\000"
+ 806      436C6561 
+ 806      72496E74 
+ 806      65727275 
+ 806      707400
+ 807              	.LASF3:
+ 808 0034 73686F72 		.ascii	"short unsigned int\000"
+ 808      7420756E 
+ 808      7369676E 
+ 808      65642069 
+ 808      6E7400
+ 809              	.LASF16:
+ 810 0047 5349475F 		.ascii	"SIG_SetDriveMode\000"
+ 810      53657444 
+ 810      72697665 
+ 810      4D6F6465 
+ 810      00
+ 811              	.LASF8:
+ 812 0058 756E7369 		.ascii	"unsigned int\000"
+ 812      676E6564 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 20
 
 
- 713              	.LASF19:
- 714 001b 76616C75 		.ascii	"value\000"
- 714      6500
- 715              	.LASF26:
- 716 0021 5349475F 		.ascii	"SIG_ClearInterrupt\000"
- 716      436C6561 
- 716      72496E74 
- 716      65727275 
- 716      707400
- 717              	.LASF16:
- 718 0034 5349475F 		.ascii	"SIG_SetDriveMode\000"
- 718      53657444 
- 718      72697665 
- 718      4D6F6465 
- 718      00
- 719              	.LASF8:
- 720 0045 756E7369 		.ascii	"unsigned int\000"
- 720      676E6564 
- 720      20696E74 
- 720      00
- 721              	.LASF12:
- 722 0052 666C6F61 		.ascii	"float\000"
- 722      7400
- 723              	.LASF1:
- 724 0058 756E7369 		.ascii	"unsigned char\000"
- 724      676E6564 
- 724      20636861 
- 724      7200
- 725              	.LASF24:
- 726 0066 64725661 		.ascii	"drVal\000"
- 726      6C00
- 727              	.LASF5:
- 728 006c 6C6F6E67 		.ascii	"long unsigned int\000"
- 728      20756E73 
- 728      69676E65 
- 728      6420696E 
- 728      7400
- 729              	.LASF3:
- 730 007e 73686F72 		.ascii	"short unsigned int\000"
- 730      7420756E 
- 730      7369676E 
- 730      65642069 
- 730      6E7400
- 731              	.LASF13:
- 732 0091 646F7562 		.ascii	"double\000"
- 732      6C6500
- 733              	.LASF20:
- 734 0098 5349475F 		.ascii	"SIG_Read\000"
- 734      52656164 
- 734      00
- 735              	.LASF10:
- 736 00a1 75696E74 		.ascii	"uint16\000"
- 736      313600
- 737              	.LASF23:
- 738 00a8 706F7369 		.ascii	"position\000"
- 738      74696F6E 
- 738      00
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 19
+ 812      20696E74 
+ 812      00
+ 813              	.LASF12:
+ 814 0065 666C6F61 		.ascii	"float\000"
+ 814      7400
+ 815              	.LASF1:
+ 816 006b 756E7369 		.ascii	"unsigned char\000"
+ 816      676E6564 
+ 816      20636861 
+ 816      7200
+ 817              	.LASF24:
+ 818 0079 64725661 		.ascii	"drVal\000"
+ 818      6C00
+ 819              	.LASF5:
+ 820 007f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 820      20756E73 
+ 820      69676E65 
+ 820      6420696E 
+ 820      7400
+ 821              	.LASF30:
+ 822 0091 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\dev\\yaugi\\GPIB USB Adap"
+ 822      635C486F 
+ 822      6D655C44 
+ 822      6F63756D 
+ 822      656E7473 
+ 823 00bd 7465725C 		.ascii	"ter\\GPIB USB 1.cydsn\000"
+ 823      47504942 
+ 823      20555342 
+ 823      20312E63 
+ 823      7964736E 
+ 824              	.LASF28:
+ 825 00d2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 825      43313120 
+ 825      352E342E 
+ 825      31203230 
+ 825      31363036 
+ 826 0105 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 826      20726576 
+ 826      6973696F 
+ 826      6E203233 
+ 826      37373135 
+ 827 0138 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 827      66756E63 
+ 827      74696F6E 
+ 827      2D736563 
+ 827      74696F6E 
+ 828              	.LASF13:
+ 829 0160 646F7562 		.ascii	"double\000"
+ 829      6C6500
+ 830              	.LASF20:
+ 831 0167 5349475F 		.ascii	"SIG_Read\000"
+ 831      52656164 
+ 831      00
+ 832              	.LASF10:
+ 833 0170 75696E74 		.ascii	"uint16\000"
+ 833      313600
+ 834              	.LASF23:
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 21
 
 
- 739              	.LASF11:
- 740 00b1 75696E74 		.ascii	"uint32\000"
- 740      333200
- 741              	.LASF25:
- 742 00b8 696E7472 		.ascii	"intrCfg\000"
- 742      43666700 
- 743              	.LASF29:
- 744 00c0 47656E65 		.ascii	"Generated_Source\\PSoC4\\SIG.c\000"
- 744      72617465 
- 744      645F536F 
- 744      75726365 
- 744      5C50536F 
- 745              	.LASF7:
- 746 00dd 6C6F6E67 		.ascii	"long long unsigned int\000"
- 746      206C6F6E 
- 746      6720756E 
- 746      7369676E 
- 746      65642069 
- 747              	.LASF18:
- 748 00f4 6D6F6465 		.ascii	"mode\000"
- 748      00
- 749              	.LASF30:
- 750 00f9 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\PSoC Creator\\GPIB USB Ad"
- 750      635C486F 
- 750      6D655C44 
- 750      6F63756D 
- 750      656E7473 
- 751 0126 61707465 		.ascii	"apter\\GPIB USB 1.cydsn\000"
- 751      725C4750 
- 751      49422055 
- 751      53422031 
- 751      2E637964 
- 752              	.LASF21:
- 753 013d 5349475F 		.ascii	"SIG_ReadDataReg\000"
- 753      52656164 
- 753      44617461 
- 753      52656700 
- 754              	.LASF28:
- 755 014d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 755      43313120 
- 755      352E342E 
- 755      31203230 
- 755      31363036 
- 756 0180 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 756      20726576 
- 756      6973696F 
- 756      6E203233 
- 756      37373135 
- 757 01b3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 757      66756E63 
- 757      74696F6E 
- 757      2D736563 
- 757      74696F6E 
- 758              	.LASF6:
- 759 01db 6C6F6E67 		.ascii	"long long int\000"
- 759      206C6F6E 
- 759      6720696E 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccYPnSYT.s 			page 20
+ 835 0177 706F7369 		.ascii	"position\000"
+ 835      74696F6E 
+ 835      00
+ 836              	.LASF11:
+ 837 0180 75696E74 		.ascii	"uint32\000"
+ 837      333200
+ 838              	.LASF25:
+ 839 0187 696E7472 		.ascii	"intrCfg\000"
+ 839      43666700 
+ 840              	.LASF29:
+ 841 018f 47656E65 		.ascii	"Generated_Source\\PSoC4\\SIG.c\000"
+ 841      72617465 
+ 841      645F536F 
+ 841      75726365 
+ 841      5C50536F 
+ 842              	.LASF7:
+ 843 01ac 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 843      206C6F6E 
+ 843      6720756E 
+ 843      7369676E 
+ 843      65642069 
+ 844              	.LASF18:
+ 845 01c3 6D6F6465 		.ascii	"mode\000"
+ 845      00
+ 846              	.LASF21:
+ 847 01c8 5349475F 		.ascii	"SIG_ReadDataReg\000"
+ 847      52656164 
+ 847      44617461 
+ 847      52656700 
+ 848              	.LASF6:
+ 849 01d8 6C6F6E67 		.ascii	"long long int\000"
+ 849      206C6F6E 
+ 849      6720696E 
+ 849      7400
+ 850              	.LASF27:
+ 851 01e6 6D61736B 		.ascii	"maskedStatus\000"
+ 851      65645374 
+ 851      61747573 
+ 851      00
+ 852              	.LASF14:
+ 853 01f3 63686172 		.ascii	"char\000"
+ 853      00
+ 854              	.LASF17:
+ 855 01f8 5349475F 		.ascii	"SIG_Write\000"
+ 855      57726974 
+ 855      6500
+ 856              	.LASF2:
+ 857 0202 73686F72 		.ascii	"short int\000"
+ 857      7420696E 
+ 857      7400
+ 858              	.LASF9:
+ 859 020c 75696E74 		.ascii	"uint8\000"
+ 859      3800
+ 860              	.LASF4:
+ 861 0212 6C6F6E67 		.ascii	"long int\000"
+ 861      20696E74 
+ 861      00
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccm52bDd.s 			page 22
 
 
- 759      7400
- 760              	.LASF27:
- 761 01e9 6D61736B 		.ascii	"maskedStatus\000"
- 761      65645374 
- 761      61747573 
- 761      00
- 762              	.LASF14:
- 763 01f6 63686172 		.ascii	"char\000"
- 763      00
- 764              	.LASF17:
- 765 01fb 5349475F 		.ascii	"SIG_Write\000"
- 765      57726974 
- 765      6500
- 766              	.LASF2:
- 767 0205 73686F72 		.ascii	"short int\000"
- 767      7420696E 
- 767      7400
- 768              	.LASF9:
- 769 020f 75696E74 		.ascii	"uint8\000"
- 769      3800
- 770              	.LASF4:
- 771 0215 6C6F6E67 		.ascii	"long int\000"
- 771      20696E74 
- 771      00
- 772              	.LASF0:
- 773 021e 7369676E 		.ascii	"signed char\000"
- 773      65642063 
- 773      68617200 
- 774              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 862              	.LASF0:
+ 863 021b 7369676E 		.ascii	"signed char\000"
+ 863      65642063 
+ 863      68617200 
+ 864              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

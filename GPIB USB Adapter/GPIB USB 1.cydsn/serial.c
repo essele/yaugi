@@ -9,9 +9,30 @@
  *
  * ========================================
 */
+#include "project.h"
+#include <stdio.h>
+
+// We only include this file if we have a UART device configured...
+#if defined(USBUART_TRUE) || defined(USBCOMP_TRUE)
 
 #include "serial.h"
-#include <stdio.h>
+#include "input.h"
+#include "gpib.h"
+#include "command.h"
+#include "settings.h"
+#include "utils.h"
+    
+#if defined(USBCOMP_TRUE)
+    
+// Map functions...
+#define USBUART_CDCIsReady(args...)         USBCOMP_CDCIsReady(args)   
+#define USBUART_PutData(args...)            USBCOMP_PutData(args)   
+#define USBUART_DataIsReady(args...)        USBCOMP_DataIsReady(args)   
+#define USBUART_GetAll(args...)             USBCOMP_GetAll(args)   
+#define USBUART_CDC_Init(args...)           USBCOMP_CDC_Init(args) 
+
+#endif 
+
 
 #define MAX_BUF          64
 #define MAX(a,b)        (a > b ? a : b)
@@ -23,6 +44,10 @@ int     output_free = MAX_BUF;
 uint8_t input_buffer[MAX_BUF];
 int     input_avail = 0;
 uint8_t *input_p = input_buffer;
+
+// Persist autoread from query to reply
+int autoread = 0;    
+
 
 
 #define GEN_BUF_SIZE          512
@@ -42,6 +67,8 @@ void serial_vprintf(char *fmt, va_list args) {
     serial_add_string((char *)general_buffer);
     serial_flush();
 }
+
+
 
 
 // TODO: some kind of serial_error("fmt", v, v, v); //
@@ -111,5 +138,92 @@ uint8_t serial_getbyte() {
 
 
 
+/**
+ * Handle USB configuration changes
+ */
+void usbuart_reconfig() {
+    USBUART_CDC_Init();
+}    
+
+/**
+ * Main poll function for uart support
+ */
+void usbuart_poll() {
+    // Process all the incoming serial data...
+    while (serial_available()) {
+        // Do we have a full line of input?
+        if (input_data() == 1) {
+            uint8_t *buf = input_getbuffer();
+            unsigned int len = input_getlength();
+                    
+            if (len == 0) {
+                // Empty ... just reprompt
+            } else if (len >= 2 && buf[0] == '+' && buf[1] == '+') {
+                cmd_process(buf, len);
+                        
+                // TODO: if this was a ++auto command we need to change autoread????
+            } else {
+                
+                // We've already stripped CR/NL from the input, so now we can just add
+                // whatever is needed...
+                switch (settings.eos) {
+                    case 0:     // add CR + LF
+                                buf[len++] = 13;
+                                buf[len++] = 10;
+                                break;
+                                
+                    case 1:     // add CR
+                                buf[len++] = 13;
+                                break;
+                                
+                    case 2:     // add LF
+                                buf[len++] = 10;
+                                break;
+                                
+                    case 3:     // do nothing
+                                break;
+                }               
+                
+                if (gpib_get_mode() == GPIB_RUNNING) {
+                    //buf[len] = 0;
+                    gpib_send(settings.address, buf, len);
+                    
+                    // Only auto-query if we should
+                    autoread = 0;
+                    if (settings.autoread) {
+                        if (settings.autoread == 1 || (settings.autoread == 2 && contains_byte(buf, len, '?'))) {
+                            gpib_address_talker(settings.address);
+                            autoread = 1;
+                        }
+                    }                            
+                } else {
+                    serial_printf("<no GPIB device connected>\r\n");
+                }
+            }
+            input_start();
+        }    
+    }
+            
+    if (autoread && gpib_get_mode() == GPIB_RUNNING && gpib_talking()) {                
+        uint8_t *buf;
+        int     len;
+        int     ended;
+        
+        buf = gpib_get_buffer();
+        
+        do {
+            len = gpib_read(GPIB_EOI, &ended);
+
+            // Remove CR/LF's...
+            len = chomp(buf, len);
+                              
+            input_show_output(buf, len);
+            
+        } while(ended == GPIB_NOT_ENDED);   
+    }        
+}
+
+
+#endif
 
 /* [] END OF FILE */
