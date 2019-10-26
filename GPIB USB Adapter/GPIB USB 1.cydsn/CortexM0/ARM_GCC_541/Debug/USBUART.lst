@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
   22:Generated_Source\PSoC4/USBUART.c **** #include "USBUART_cydmac.h"
   23:Generated_Source\PSoC4/USBUART.c **** #include "USBUART_hid.h"
   24:Generated_Source\PSoC4/USBUART.c **** #include "USBUART_Dp.h"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 2
 
 
   25:Generated_Source\PSoC4/USBUART.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
   79:Generated_Source\PSoC4/USBUART.c ****      
   80:Generated_Source\PSoC4/USBUART.c ****     /* DMA trigger mux output for usb.dma_req[0-7]. */
   81:Generated_Source\PSoC4/USBUART.c ****     const uint8 USBUART_DmaReqOut[USBUART_MAX_EP] =
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 3
 
 
   82:Generated_Source\PSoC4/USBUART.c ****     {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  136:Generated_Source\PSoC4/USBUART.c **** *
  137:Generated_Source\PSoC4/USBUART.c **** *   This function performs all required initialization for the USBFS component.
  138:Generated_Source\PSoC4/USBUART.c **** *   After this function call, the USB device initiates communication with the
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 4
 
 
  139:Generated_Source\PSoC4/USBUART.c **** *   host by pull-up D+ line. This is the preferred method to begin component
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
   39              		.cfi_def_cfa_offset 8
   40              		.cfi_offset 7, -8
   41              		.cfi_offset 14, -4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 5
 
 
   42 0002 82B0     		sub	sp, sp, #8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
   88              		.code	16
   89              		.thumb_func
   90              		.type	USBUART_Init, %function
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 6
 
 
   91              	USBUART_Init:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  225:Generated_Source\PSoC4/USBUART.c ****     USBUART_BUS_RST_CNT_REG = USBUART_DEFUALT_BUS_RST_CNT;
  116              		.loc 1 225 0
  117 0016 2A4B     		ldr	r3, .L8+8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 7
 
 
  118 0018 0A22     		movs	r2, #10
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  156              	.L6:
  157              		.loc 1 241 0 discriminator 2
  158 005a 0023     		movs	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 8
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 8
 
 
  159              	.L7:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  285:Generated_Source\PSoC4/USBUART.c ****     CyDelayUs(USBUART_WAIT_VREF_RESTORE);
  286:Generated_Source\PSoC4/USBUART.c ****     /* Ensure single-ended disable bits are low (PRT15.INP_DIS[7:6])(input receiver enabled). */
  287:Generated_Source\PSoC4/USBUART.c ****     USBUART_DM_INP_DIS_REG &= (uint8) ~USBUART_DM_MASK;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 9
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 9
 
 
  288:Generated_Source\PSoC4/USBUART.c ****     USBUART_DP_INP_DIS_REG &= (uint8) ~USBUART_DP_MASK;
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  324:Generated_Source\PSoC4/USBUART.c **** 
  325:Generated_Source\PSoC4/USBUART.c ****     /* Configure med_int: set handler and priority (routed through DSI). */
  326:Generated_Source\PSoC4/USBUART.c ****     CyIntSetPriority     (USBUART_INTR_MED_VECT_NUM,  USBUART_INTR_MED_PRIORITY);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 10
 
 
  188              		.loc 1 326 0 discriminator 4
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  372:Generated_Source\PSoC4/USBUART.c ****     #endif /* (USBUART_EP5_ISR_ACTIVE) */
  373:Generated_Source\PSoC4/USBUART.c **** 
  374:Generated_Source\PSoC4/USBUART.c ****     /* Set Data Endpoint 6 Interrupt. */
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 11
 
 
  375:Generated_Source\PSoC4/USBUART.c ****     #if (USBUART_EP6_ISR_ACTIVE)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  216 00c0 30032C40 		.word	1076626224
  217 00c4 00202C40 		.word	1076633600
  218 00c8 03000004 		.word	67108867
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 12
 
 
  219 00cc 0C0000B8 		.word	-1207959540
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  444:Generated_Source\PSoC4/USBUART.c **** *   \ref USBUART_device
  445:Generated_Source\PSoC4/USBUART.c **** *   \ref USBUART_transferState
  446:Generated_Source\PSoC4/USBUART.c **** *   \ref USBUART_configuration
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 13
 
 
  447:Generated_Source\PSoC4/USBUART.c **** *   \ref USBUART_deviceStatus
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  478:Generated_Source\PSoC4/USBUART.c ****     /* Reset component internal variables. */
  479:Generated_Source\PSoC4/USBUART.c ****     USBUART_transferState   = USBUART_TRANS_STATE_IDLE;
  262              		.loc 1 479 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 14
 
 
  263 001a 294B     		ldr	r3, .L16+4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  498:Generated_Source\PSoC4/USBUART.c ****     #endif /* (USBUART_SOF_ISR_ACTIVE) */
  499:Generated_Source\PSoC4/USBUART.c **** 
  500:Generated_Source\PSoC4/USBUART.c ****     #if (USBUART_EP1_ISR_ACTIVE)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 15
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 15
 
 
  501:Generated_Source\PSoC4/USBUART.c ****         CyIntEnable(USBUART_EP_1_VECT_NUM);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  555:Generated_Source\PSoC4/USBUART.c ****     #endif /* (CY_PSOC4) */
  556:Generated_Source\PSoC4/USBUART.c **** 
  557:Generated_Source\PSoC4/USBUART.c ****     #if (USBUART_EP_MANAGEMENT_DMA_AUTO)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 16
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 16
 
 
  558:Generated_Source\PSoC4/USBUART.c ****         #if (CY_PSOC4)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  327              	.L15:
  584:Generated_Source\PSoC4/USBUART.c **** 
  585:Generated_Source\PSoC4/USBUART.c ****     default: /* Check DWR settings of USB power supply. */
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 17
 
 
  586:Generated_Source\PSoC4/USBUART.c ****     #if (USBUART_VDDD_MV < USBUART_3500MV)
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  615:Generated_Source\PSoC4/USBUART.c ****         else
  616:Generated_Source\PSoC4/USBUART.c ****         {
  617:Generated_Source\PSoC4/USBUART.c ****             /* Disable LPM for active device. */
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 18
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 18
 
 
  618:Generated_Source\PSoC4/USBUART.c ****             USBUART_LPM_CTRL_REG &= (uint32) ~USBUART_LPM_CTRL_LPM_EN;
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  388              		.global	USBUART_ReInitComponent
  389              		.code	16
  390              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 19
 
 
  391              		.type	USBUART_ReInitComponent, %function
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  678:Generated_Source\PSoC4/USBUART.c **** 
  679:Generated_Source\PSoC4/USBUART.c ****     for (i = 0u; i < USBUART_MAX_INTERFACES_NUMBER; i++)
  680:Generated_Source\PSoC4/USBUART.c ****     {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 20
 
 
  681:Generated_Source\PSoC4/USBUART.c ****         USBUART_hidProtocol[i] = USBUART_PROTOCOL_REPORT;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  703:Generated_Source\PSoC4/USBUART.c ****     USBUART_CR0_REG = USBUART_DEFUALT_CR0;
  436              		.loc 1 703 0
  437 0034 0A4B     		ldr	r3, .L19+32
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 21
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 21
 
 
  438 0036 8022     		movs	r2, #128
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  728:Generated_Source\PSoC4/USBUART.c **** *******************************************************************************/
  729:Generated_Source\PSoC4/USBUART.c **** void USBUART_Stop(void) 
  730:Generated_Source\PSoC4/USBUART.c **** {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 22
 
 
  468              		.loc 1 730 0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  504 002e 5200     		lsls	r2, r2, #1
  505 0030 5208     		lsrs	r2, r2, #1
  506 0032 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 23
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 23
 
 
  749:Generated_Source\PSoC4/USBUART.c **** #else
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  789:Generated_Source\PSoC4/USBUART.c ****     #if (USBUART_EP4_ISR_ACTIVE)
  790:Generated_Source\PSoC4/USBUART.c ****         CyIntDisable(USBUART_EP_4_VECT_NUM);
  791:Generated_Source\PSoC4/USBUART.c ****     #endif /* (USBUART_EP4_ISR_ACTIVE) */
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 24
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 24
 
 
  792:Generated_Source\PSoC4/USBUART.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  541              		.loc 1 825 0
  542 006e 0B4B     		ldr	r3, .L22+32
  543 0070 0022     		movs	r2, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 25
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 25
 
 
  544 0072 1A70     		strb	r2, [r3]
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  850:Generated_Source\PSoC4/USBUART.c **** {
  574              		.loc 1 850 0
  575              		.cfi_startproc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 26
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 26
 
 
  576              		@ args = 0, pretend = 0, frame = 8
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  622              		.align	2
  623              		.global	USBUART_GetConfiguration
  624              		.code	16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 27
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 27
 
 
  625              		.thumb_func
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  662              	.LFB8:
  876:Generated_Source\PSoC4/USBUART.c **** 
  877:Generated_Source\PSoC4/USBUART.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 28
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 28
 
 
  878:Generated_Source\PSoC4/USBUART.c **** /*******************************************************************************
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  905:Generated_Source\PSoC4/USBUART.c ****         USBUART_configurationChanged = 0u;
  690              		.loc 1 905 0
  691 001e 044B     		ldr	r3, .L37
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 29
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 29
 
 
  692 0020 0022     		movs	r2, #0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  722              		@ frame_needed = 1, uses_anonymous_args = 0
  723 0000 80B5     		push	{r7, lr}
  724              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 30
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 30
 
 
  725              		.cfi_offset 7, -8
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  948:Generated_Source\PSoC4/USBUART.c **** *  Return Value           | Description
  949:Generated_Source\PSoC4/USBUART.c **** *  -----------------------|-----------------------------------------------------
  950:Generated_Source\PSoC4/USBUART.c **** *  USBFS_NO_EVENT_PENDING |The endpoint is awaiting SIE action
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 31
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 31
 
 
  951:Generated_Source\PSoC4/USBUART.c **** *  USBFS_EVENT_PENDING    |The endpoint is awaiting CPU action
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  803              		.global	USBUART_GetEPCount
  804              		.code	16
  805              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 32
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 32
 
 
  806              		.type	USBUART_GetEPCount, %function
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  836 001e 1B78     		ldrb	r3, [r3]
  837 0020 082B     		cmp	r3, #8
  838 0022 24D8     		bhi	.L48
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 33
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 33
 
 
  987:Generated_Source\PSoC4/USBUART.c ****     {
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  884              		.loc 1 995 0
  885 0074 1800     		movs	r0, r3
  886 0076 BD46     		mov	sp, r7
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 34
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 34
 
 
  887 0078 04B0     		add	sp, sp, #16
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1032:Generated_Source\PSoC4/USBUART.c ****     #endif /* (USBUART_DMA6_ACTIVE) */
 1033:Generated_Source\PSoC4/USBUART.c **** 
 1034:Generated_Source\PSoC4/USBUART.c ****     #if (USBUART_DMA7_ACTIVE)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 35
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 35
 
 
 1035:Generated_Source\PSoC4/USBUART.c ****         CYDMA_CH_CTL_BASE.ctl[USBUART_ep7_dma_CHANNEL] = USBUART_ep7_dma_CHANNEL_CFG;
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1089:Generated_Source\PSoC4/USBUART.c ****     *  This function is automatically called from the USBFS_LoadInEP() and USBFS_ReadOutEP() APIs.
 1090:Generated_Source\PSoC4/USBUART.c ****     *
 1091:Generated_Source\PSoC4/USBUART.c ****     *  \param epNumber Contains the data endpoint number.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 36
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 36
 
 
 1092:Generated_Source\PSoC4/USBUART.c ****     *            Valid values are between 1 and 8.
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1146:Generated_Source\PSoC4/USBUART.c ****     #if (USBUART_DMA4_ACTIVE)
 1147:Generated_Source\PSoC4/USBUART.c ****             case USBUART_EP4:
 1148:Generated_Source\PSoC4/USBUART.c ****                 USBUART_DmaChan[epNumber] = USBUART_ep4_DmaInitialize(USBUART_DMA_BYTES_PER_BURST,
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 37
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 37
 
 
 1149:Generated_Source\PSoC4/USBUART.c ****                                                                                         USBUART_DMA
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1203:Generated_Source\PSoC4/USBUART.c ****     *  function when endpoint direction is changed from IN to OUT or vice versa 
 1204:Generated_Source\PSoC4/USBUART.c ****     *  to trigger DMA re-configuration when USBUART_LoadInEP() or 
 1205:Generated_Source\PSoC4/USBUART.c ****     *  USBUART_ReadOutEP() functions are called the first time. 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 38
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 38
 
 
 1206:Generated_Source\PSoC4/USBUART.c ****     *  
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1260:Generated_Source\PSoC4/USBUART.c ****     *  This internal function is used for IN endpoint DMA reconfiguration in
 1261:Generated_Source\PSoC4/USBUART.c ****     *  Auto DMA mode.
 1262:Generated_Source\PSoC4/USBUART.c ****     *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 39
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 39
 
 
 1263:Generated_Source\PSoC4/USBUART.c ****     * Parameters:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1317:Generated_Source\PSoC4/USBUART.c **** *
 1318:Generated_Source\PSoC4/USBUART.c **** *  *DMA with Manual Buffer Management:*
 1319:Generated_Source\PSoC4/USBUART.c **** *  Configures DMA for a data transfer from system RAM to endpoint buffer.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 40
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 40
 
 
 1320:Generated_Source\PSoC4/USBUART.c **** *  Generates request for a transfer.
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  933              	.LCB779:
  934              		.loc 1 1345 0 is_stmt 0 discriminator 1
  935 0020 FB1D     		adds	r3, r7, #7
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 41
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 41
 
 
  936 0022 1B78     		ldrb	r3, [r3]
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  979              		.loc 1 1356 0
  980 0070 344D     		ldr	r5, .L59+4
  981 0072 FB1D     		adds	r3, r7, #7
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 42
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 42
 
 
  982 0074 1978     		ldrb	r1, [r3]
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1366:Generated_Source\PSoC4/USBUART.c ****                 USBUART_ARB_EP_BASE.arbEp[epNumber].rwDr = pData[i];
  1027              		.loc 1 1366 0 discriminator 3
  1028 00c4 2048     		ldr	r0, .L59+8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 43
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 43
 
 
  1029 00c6 FB1D     		adds	r3, r7, #7
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1073 0110 0C4C     		ldr	r4, .L59+4
  1074 0112 FB1D     		adds	r3, r7, #7
  1075 0114 1978     		ldrb	r1, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 44
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 44
 
 
  1076 0116 FB1D     		adds	r3, r7, #7
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1412:Generated_Source\PSoC4/USBUART.c ****             #else
 1413:Generated_Source\PSoC4/USBUART.c ****                 /* Configure DMA to transfer data. */
 1414:Generated_Source\PSoC4/USBUART.c ****                 (void) CyDmaChDisable(USBUART_DmaChan[epNumber]);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 45
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 45
 
 
 1415:Generated_Source\PSoC4/USBUART.c ****                 (void) CyDmaTdSetConfiguration(USBUART_DmaTd[epNumber], length, CY_DMA_DISABLE_TD, 
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1469:Generated_Source\PSoC4/USBUART.c **** 
 1470:Generated_Source\PSoC4/USBUART.c ****                 #if (USBUART_EP_DMA_AUTO_OPT == 0u)
 1471:Generated_Source\PSoC4/USBUART.c ****                     USBUART_inLength[epNumber] = length;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 46
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 46
 
 
 1472:Generated_Source\PSoC4/USBUART.c ****                     USBUART_inDataPointer[epNumber] = pData;
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1526:Generated_Source\PSoC4/USBUART.c **** 
 1527:Generated_Source\PSoC4/USBUART.c ****                     /* Adjust number of data elements transferred in last burst. */
 1528:Generated_Source\PSoC4/USBUART.c ****                     USBUART_DmaEpLastBurstEl[epNumber] = (0u != USBUART_DmaEpLastBurstEl[epNumber])
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 47
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 47
 
 
 1529:Generated_Source\PSoC4/USBUART.c ****                                                                           (USBUART_DmaEpLastBurstEl
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1583:Generated_Source\PSoC4/USBUART.c ****                     /* Enable DMA. */
 1584:Generated_Source\PSoC4/USBUART.c ****                     (void) CyDmaChSetInitialTd(USBUART_DmaChan[epNumber], USBUART_DmaTd[epNumber]);
 1585:Generated_Source\PSoC4/USBUART.c ****                     (void) CyDmaChEnable(USBUART_DmaChan[epNumber], 1u);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 48
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 48
 
 
 1586:Generated_Source\PSoC4/USBUART.c ****                 #endif /* (CY_PSOC4) */
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1617:Generated_Source\PSoC4/USBUART.c **** *   system RAM. The number of bytes actually transferred from endpoint buffer to
 1618:Generated_Source\PSoC4/USBUART.c **** *   system RAM is the lesser of the actual number of bytes sent by the host or
 1619:Generated_Source\PSoC4/USBUART.c **** *   the number of bytes requested by the length parameter.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 49
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 49
 
 
 1620:Generated_Source\PSoC4/USBUART.c **** *
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1134 0012 0A1C     		adds	r2, r1, #0
  1135 0014 1A80     		strh	r2, [r3]
 1656:Generated_Source\PSoC4/USBUART.c ****     if ((pData != NULL) && (epNumber > USBUART_EP0) && (epNumber < USBUART_MAX_EP))
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 50
 
 
  1136              		.loc 1 1656 0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1179 005a 0E23     		movs	r3, #14
  1180 005c FB18     		adds	r3, r7, r3
  1181 005e 0022     		movs	r2, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 51
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 51
 
 
  1182 0060 1A80     		strh	r2, [r3]
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1677:Generated_Source\PSoC4/USBUART.c ****         #if (CY_PSOC3 || CY_PSOC5LP)
 1678:Generated_Source\PSoC4/USBUART.c ****             /* Initialize DMA if it was not initialized. */
 1679:Generated_Source\PSoC4/USBUART.c ****             if (DMA_INVALID_TD == USBUART_DmaTd[epNumber])
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 52
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 52
 
 
 1680:Generated_Source\PSoC4/USBUART.c ****             {
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1734:Generated_Source\PSoC4/USBUART.c ****             /* Get number of full bursts. */
 1735:Generated_Source\PSoC4/USBUART.c ****             USBUART_DmaEpBurstCnt[epNumber] = (uint8) (length / USBUART_DMA_BYTES_PER_BURST);
 1736:Generated_Source\PSoC4/USBUART.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 53
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 53
 
 
 1737:Generated_Source\PSoC4/USBUART.c ****             /* Get number of elements in the last burst. */
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1791:Generated_Source\PSoC4/USBUART.c ****             {
 1792:Generated_Source\PSoC4/USBUART.c ****                 USBUART_CyDmaValidateDescriptor(channelNum, USBUART_DMA_DESCR1);
 1793:Generated_Source\PSoC4/USBUART.c ****             }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 54
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 54
 
 
 1794:Generated_Source\PSoC4/USBUART.c **** 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1248              		.global	USBUART_LoadInEP16
  1249              		.code	16
  1250              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 55
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 55
 
 
  1251              		.type	USBUART_LoadInEP16, %function
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1263              		.cfi_offset 14, -4
  1264 0002 84B0     		sub	sp, sp, #16
  1265              		.cfi_def_cfa_offset 32
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 56
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 56
 
 
  1266 0004 00AF     		add	r7, sp, #0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1312 0050 9BB2     		uxth	r3, r3
  1313 0052 1A00     		movs	r2, r3
  1314 0054 8023     		movs	r3, #128
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 57
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 57
 
 
  1315 0056 9B00     		lsls	r3, r3, #2
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1882:Generated_Source\PSoC4/USBUART.c ****         USBUART_SIE_EP_BASE.sieEp[epNumber].epCnt1 = (uint32) LO8(length);
  1362              		.loc 1 1882 0
  1363 00ae 3049     		ldr	r1, .L79+4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 58
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 58
 
 
  1364 00b0 FB1D     		adds	r3, r7, #7
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1403 00f0 0E22     		movs	r2, #14
  1404 00f2 BA18     		adds	r2, r7, r2
  1405 00f4 1288     		ldrh	r2, [r2]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 59
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 59
 
 
  1406 00f6 5200     		lsls	r2, r2, #1
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1450 0140 1978     		ldrb	r1, [r3]
  1451 0142 FB1D     		adds	r3, r7, #7
  1452 0144 1A78     		ldrb	r2, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 60
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 60
 
 
  1453 0146 0948     		ldr	r0, .L79
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 1945:Generated_Source\PSoC4/USBUART.c ****             }
 1946:Generated_Source\PSoC4/USBUART.c ****         #endif /* (USBUART_EP_MANAGEMENT_DMA_MANUAL) */
 1947:Generated_Source\PSoC4/USBUART.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 61
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 61
 
 
 1948:Generated_Source\PSoC4/USBUART.c ****         #if (USBUART_EP_MANAGEMENT_DMA_AUTO)
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2002:Generated_Source\PSoC4/USBUART.c ****                     lengthDescr0 = (1u == USBUART_DmaEpBurstCnt[epNumber]) ? USBUART_DmaEpLastBurst
 2003:Generated_Source\PSoC4/USBUART.c ****                     lengthDescr1 = (2u == USBUART_DmaEpBurstCnt[epNumber]) ? USBUART_DmaEpLastBurst
 2004:Generated_Source\PSoC4/USBUART.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 62
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 62
 
 
 2005:Generated_Source\PSoC4/USBUART.c ****                     /* Mark which descriptor is last one to execute. */
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1473 0168 B0BD     		pop	{r4, r5, r7, pc}
  1474              	.L80:
  1475 016a C046     		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 63
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 63
 
 
  1476              	.L79:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2093:Generated_Source\PSoC4/USBUART.c **** *         loads it into data array. Valid values are between 0 and 1023. The
 2094:Generated_Source\PSoC4/USBUART.c **** *         function moves fewer than the requested number of bytes if the host
 2095:Generated_Source\PSoC4/USBUART.c **** *         sends fewer bytes than requested.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 64
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 64
 
 
 2096:Generated_Source\PSoC4/USBUART.c **** *
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1529              		.loc 1 2111 0 discriminator 2
  1530 0032 FB1D     		adds	r3, r7, #7
  1531 0034 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 65
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 65
 
 
  1532 0036 082B     		cmp	r3, #8
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1573 007a FB60     		str	r3, [r7, #12]
 2125:Generated_Source\PSoC4/USBUART.c **** 
 2126:Generated_Source\PSoC4/USBUART.c ****             /* Copy data using 16-bits arbiter data register. */
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 66
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 66
 
 
 2127:Generated_Source\PSoC4/USBUART.c ****             uint16 i;
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1617 00c2 1B78     		ldrb	r3, [r3]
  1618 00c4 1800     		movs	r0, r3
  1619 00c6 FFF7FEFF 		bl	USBUART_EnableOutEP
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 67
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 67
 
 
  1620 00ca 02E0     		b	.L88
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2188:Generated_Source\PSoC4/USBUART.c ****             /* Get number of data elements to transfer for descriptor 0 and 1. */
 2189:Generated_Source\PSoC4/USBUART.c ****             lengthDescr0 = (1u == USBUART_DmaEpBurstCnt[epNumber]) ? USBUART_DmaEpLastBurstEl[epNum
 2190:Generated_Source\PSoC4/USBUART.c ****             lengthDescr1 = (2u == USBUART_DmaEpBurstCnt[epNumber]) ? USBUART_DmaEpLastBurstEl[epNum
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 68
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 68
 
 
 2191:Generated_Source\PSoC4/USBUART.c **** 
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2245:Generated_Source\PSoC4/USBUART.c ****         #endif /* (USBUART_EP_MANAGEMENT_DMA_AUTO) */
 2246:Generated_Source\PSoC4/USBUART.c ****     #endif /* (USBUART_EP_MANAGEMENT_MANUAL) */
 2247:Generated_Source\PSoC4/USBUART.c ****     }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 69
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 69
 
 
 2248:Generated_Source\PSoC4/USBUART.c ****     else
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2273:Generated_Source\PSoC4/USBUART.c **** *  No.
 2274:Generated_Source\PSoC4/USBUART.c **** *
 2275:Generated_Source\PSoC4/USBUART.c **** *******************************************************************************/
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 70
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 70
 
 
 2276:Generated_Source\PSoC4/USBUART.c **** void USBUART_EnableOutEP(uint8 epNumber) 
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1697 0040 5B00     		lsls	r3, r3, #1
  1698 0042 9B18     		adds	r3, r3, r2
  1699 0044 9B00     		lsls	r3, r3, #2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 71
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 71
 
 
  1700 0046 C318     		adds	r3, r0, r3
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1736 0000 80B5     		push	{r7, lr}
  1737              		.cfi_def_cfa_offset 8
  1738              		.cfi_offset 7, -8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 72
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 72
 
 
  1739              		.cfi_offset 14, -4
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1787              	.LFB18:
 2308:Generated_Source\PSoC4/USBUART.c **** 
 2309:Generated_Source\PSoC4/USBUART.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 73
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 73
 
 
 2310:Generated_Source\PSoC4/USBUART.c **** /*******************************************************************************
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1815              		.align	2
  1816              	.L103:
  1817 001c 40002C40 		.word	1076625472
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 74
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 74
 
 
  1818              		.cfi_endproc
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  1849 0012 1B78     		ldrb	r3, [r3]
  1850 0014 002B     		cmp	r3, #0
  1851 0016 0DD0     		beq	.L106
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 75
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 75
 
 
  1852              		.loc 1 2359 0 is_stmt 0 discriminator 1
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2373:Generated_Source\PSoC4/USBUART.c **** *  GET_STATUS requests based on this value. This allows the device to properly
 2374:Generated_Source\PSoC4/USBUART.c **** *  report its status for USB Chapter 9 compliance. Devices can change their
 2375:Generated_Source\PSoC4/USBUART.c **** *  power source from self powered to bus powered at any time and report their
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 76
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 76
 
 
 2376:Generated_Source\PSoC4/USBUART.c **** *  current power source as part of the device status. You should call this
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2401:Generated_Source\PSoC4/USBUART.c ****     }
 2402:Generated_Source\PSoC4/USBUART.c ****     else
 2403:Generated_Source\PSoC4/USBUART.c ****     {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 77
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 77
 
 
 2404:Generated_Source\PSoC4/USBUART.c ****         USBUART_deviceStatus &= (uint8) ~USBUART_DEVICE_STATUS_SELF_POWERED;
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2423:Generated_Source\PSoC4/USBUART.c ****     *
 2424:Generated_Source\PSoC4/USBUART.c ****     *
 2425:Generated_Source\PSoC4/USBUART.c ****     ***************************************************************************/
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 78
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 78
 
 
 2426:Generated_Source\PSoC4/USBUART.c ****     uint8 USBUART_VBusPresent(void) 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
 2442:Generated_Source\PSoC4/USBUART.c **** *  force the appropriate J and K states onto the USB bus, signaling a remote
 2443:Generated_Source\PSoC4/USBUART.c **** *  wakeup.
 2444:Generated_Source\PSoC4/USBUART.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 79
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 79
 
 
 2445:Generated_Source\PSoC4/USBUART.c **** *
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2029 0028 02B0     		add	sp, sp, #8
  2030              		@ sp needed
  2031 002a 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 80
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 80
 
 
  2032              	.L124:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2069              	.L128:
  2070 0016 C046     		.align	2
  2071              	.L127:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 81
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 81
 
 
  2072 0018 20002C40 		.word	1076625440
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2104              		@ sp needed
  2105 0014 80BD     		pop	{r7, pc}
  2106              	.L131:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 82
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 82
 
 
  2107 0016 C046     		.align	2
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2139 0010 C046     		nop
  2140 0012 BD46     		mov	sp, r7
  2141              		@ sp needed
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 83
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 83
 
 
  2142 0014 80BD     		pop	{r7, pc}
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2196 0052 04010000 		.4byte	.LASF6
  2197 0056 02       		.uleb128 0x2
  2198 0057 08       		.byte	0x8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 84
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 84
 
 
  2199 0058 07       		.byte	0x7
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2253 00c8 06       		.uleb128 0x6
  2254 00c9 0C       		.byte	0xc
  2255 00ca 03       		.byte	0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 85
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 85
 
 
  2256 00cb 8E       		.byte	0x8e
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2310 0137 6B000000 		.4byte	0x6b
  2311 013b 0A       		.byte	0xa
  2312 013c 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 86
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 86
 
 
  2313 013d 08       		.uleb128 0x8
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2367 01a9 03       		.byte	0x3
  2368 01aa E9       		.byte	0xe9
  2369 01ab 83000000 		.4byte	0x83
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 87
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 87
 
 
  2370 01af 00       		.byte	0
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2424 021b 24       		.byte	0x24
  2425 021c 00       		.byte	0
  2426 021d 0A       		.uleb128 0xa
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 88
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 88
 
 
  2427 021e 83000000 		.4byte	0x83
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2481 0291 83000000 		.4byte	0x83
  2482 0295 A0020000 		.4byte	0x2a0
  2483 0299 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 89
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 89
 
 
  2484 029a C1000000 		.4byte	0xc1
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2538 030e 1801     		.2byte	0x118
  2539 0310 E0020000 		.4byte	0x2e0
  2540 0314 0F       		.uleb128 0xf
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 90
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 90
 
 
  2541 0315 4002     		.2byte	0x240
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2595 0385 F0000000 		.4byte	.LFE2-.LFB2
  2596 0389 01       		.uleb128 0x1
  2597 038a 9C       		.byte	0x9c
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 91
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 91
 
 
  2598 038b 13       		.uleb128 0x13
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2652 03fd 01       		.byte	0x1
  2653 03fe 5103     		.2byte	0x351
  2654 0400 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 92
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 92
 
 
  2655 0404 00000000 		.4byte	.LFB6
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2709 0481 01       		.byte	0x1
  2710 0482 9F03     		.2byte	0x39f
  2711 0484 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 93
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 93
 
 
  2712 0488 02       		.uleb128 0x2
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2766 04f7 00000000 		.4byte	.LFB12
  2767 04fb 4C010000 		.4byte	.LFE12-.LFB12
  2768 04ff 01       		.uleb128 0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 94
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 94
 
 
  2769 0500 9C       		.byte	0x9c
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2823 056f 14       		.uleb128 0x14
  2824 0570 C6000000 		.4byte	.LASF67
  2825 0574 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 95
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 95
 
 
  2826 0575 7506     		.2byte	0x675
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2880 05df 14       		.uleb128 0x14
  2881 05e0 29020000 		.4byte	.LASF71
  2882 05e4 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 96
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 96
 
 
  2883 05e5 4907     		.2byte	0x749
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2937 0655 02       		.uleb128 0x2
  2938 0656 91       		.byte	0x91
  2939 0657 67       		.sleb128 -25
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 97
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 97
 
 
  2940 0658 14       		.uleb128 0x14
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  2994 06c2 01       		.uleb128 0x1
  2995 06c3 9C       		.byte	0x9c
  2996 06c4 D8060000 		.4byte	0x6d8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 98
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 98
 
 
  2997 06c8 14       		.uleb128 0x14
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3051 073a 5C070000 		.4byte	0x75c
  3052 073e 14       		.uleb128 0x14
  3053 073f C6000000 		.4byte	.LASF67
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 99
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 99
 
 
  3054 0743 01       		.byte	0x1
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3108 07b7 01       		.byte	0x1
  3109 07b8 9709     		.2byte	0x997
  3110 07ba 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 100
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 100
 
 
  3111 07be 02       		.uleb128 0x2
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3165 0836 03       		.byte	0x3
  3166 0837 D602     		.2byte	0x2d6
  3167 0839 A4000000 		.4byte	0xa4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 101
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 101
 
 
  3168 083d 20       		.uleb128 0x20
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3222 0001 11       		.uleb128 0x11
  3223 0002 01       		.byte	0x1
  3224 0003 25       		.uleb128 0x25
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 102
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 102
 
 
  3225 0004 0E       		.uleb128 0xe
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3279 003a 13       		.uleb128 0x13
  3280 003b 00       		.byte	0
  3281 003c 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 103
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 103
 
 
  3282 003d 06       		.uleb128 0x6
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3336 0073 00       		.byte	0
  3337 0074 00       		.byte	0
  3338 0075 0A       		.uleb128 0xa
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 104
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 104
 
 
  3339 0076 01       		.uleb128 0x1
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3393 00ac 49       		.uleb128 0x49
  3394 00ad 13       		.uleb128 0x13
  3395 00ae 38       		.uleb128 0x38
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 105
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 105
 
 
  3396 00af 0B       		.uleb128 0xb
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3450 00e6 00       		.byte	0
  3451 00e7 00       		.byte	0
  3452 00e8 12       		.uleb128 0x12
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 106
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 106
 
 
  3453 00e9 2E       		.uleb128 0x2e
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3507 0121 3B       		.uleb128 0x3b
  3508 0122 05       		.uleb128 0x5
  3509 0123 49       		.uleb128 0x49
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 107
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 107
 
 
  3510 0124 13       		.uleb128 0x13
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3564 015b 27       		.uleb128 0x27
  3565 015c 19       		.uleb128 0x19
  3566 015d 49       		.uleb128 0x49
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 108
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 108
 
 
  3567 015e 13       		.uleb128 0x13
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3621 0196 2E       		.uleb128 0x2e
  3622 0197 01       		.byte	0x1
  3623 0198 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 109
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 109
 
 
  3624 0199 19       		.uleb128 0x19
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3678 01d0 0B       		.uleb128 0xb
  3679 01d1 3B       		.uleb128 0x3b
  3680 01d2 05       		.uleb128 0x5
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 110
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 110
 
 
  3681 01d3 27       		.uleb128 0x27
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3735 020a 0E       		.uleb128 0xe
  3736 020b 3A       		.uleb128 0x3a
  3737 020c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 111
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 111
 
 
  3738 020d 3B       		.uleb128 0x3b
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3792 009c 20000000 		.4byte	.LFE18-.LFB18
  3793 00a0 00000000 		.4byte	.LFB19
  3794 00a4 44000000 		.4byte	.LFE19-.LFB19
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 112
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 112
 
 
  3795 00a8 00000000 		.4byte	.LFB20
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3849 0098 00000000 		.4byte	.LFB20
  3850 009c 44000000 		.4byte	.LFE20
  3851 00a0 00000000 		.4byte	.LFB21
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 113
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 113
 
 
  3852 00a4 1C000000 		.4byte	.LFE21
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3879      496E4550 
  3879      00
  3880              	.LASF7:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 114
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 114
 
 
  3881 008b 6C6F6E67 		.ascii	"long long unsigned int\000"
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3905      50313600 
  3906              	.LASF78:
  3907 0132 55534255 		.ascii	"USBUART_EnableOutEP\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 115
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 115
 
 
  3907      4152545F 
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3931      626C6553 
  3931      6F66496E 
  3932              	.LASF83:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 116
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 116
 
 
  3933 01de 55534255 		.ascii	"USBUART_SetPowerStatus\000"
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3957      7420756E 
  3957      7369676E 
  3957      65642069 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 117
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 117
 
 
  3957      6E7400
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  3979      64657669 
  3979      63654164 
  3979      64726573 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 118
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 118
 
 
  3980              	.LASF41:
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  4007      4F757445 
  4007      5000
  4008              	.LASF19:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 119
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 119
 
 
  4009 0435 61706945 		.ascii	"apiEpState\000"
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  4034              	.LASF54:
  4035 04d6 6D6F6465 		.ascii	"mode\000"
  4035      00
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 120
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 120
 
 
  4036              	.LASF25:
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  4055              	.LASF60:
  4056 05b0 656E6162 		.ascii	"enableInterrupts\000"
  4056      6C65496E 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 121
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 121
 
 
  4056      74657272 
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 1
  4078 0670 55534255 		.ascii	"USBUART_configurationChanged\000"
  4078      4152545F 
  4078      636F6E66 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cco8jCga.s 			page 122
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccxeE6ff.s 			page 122
 
 
  4078      69677572 

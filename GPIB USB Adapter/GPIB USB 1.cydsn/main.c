@@ -75,9 +75,7 @@ int main(void)
     #endif
     
 
-    gpib_init_pins();
-    
-    CyDelay(500);
+//    CyDelay(500);
     
     /* Wait until device is enumerated by host. */
 

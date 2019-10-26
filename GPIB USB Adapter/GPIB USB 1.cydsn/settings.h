@@ -20,6 +20,9 @@ struct settings {
     uint16_t    eot_char;
     uint16_t    eot_enable;
     uint16_t    read_tmo_ms;        // read timeout in ms
+    
+    // Extra settings...
+    uint16_t    interact;           // 0 = non-interactive, 1 = interactive
 };
 
 

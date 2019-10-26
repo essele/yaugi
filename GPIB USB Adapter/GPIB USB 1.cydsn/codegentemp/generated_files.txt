@@ -13,6 +13,29 @@
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART.h" value="HEADER;;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_audio.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_audio.h" value="HEADER;;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_boot.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_cdc.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_cdc.h" value="HEADER;;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_cls.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_descr.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_drv.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_episr.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_hid.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_hid.h" value="HEADER;;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_pm.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_std.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_vnd.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_cdc.inf" value="OTHER;;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_midi.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_midi.h" value="HEADER;;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_pvt.h" value="HEADER;;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_cydmac.h" value="HEADER;;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_msc.c" value="SOURCE_C;CortexM0;;;;USBUART" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_msc.h" value="HEADER;;;;;USBUART" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\DIO.c" value="SOURCE_C;CortexM0;;;;DIO" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\DIO.h" value="HEADER;;;;;DIO" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\DIO_aliases.h" value="HEADER;;;;;DIO" />
@@ -45,37 +68,14 @@
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\Timer1_PM.c" value="SOURCE_C;CortexM0;;;;Timer1" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\Clock_2.c" value="SOURCE_C;CortexM0;;;;Clock_2" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\Clock_2.h" value="HEADER;;;;;Clock_2" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC.h" value="HEADER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_audio.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_audio.h" value="HEADER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_boot.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_cdc.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_cdc.h" value="HEADER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_cls.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_descr.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_drv.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_episr.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_hid.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_hid.h" value="HEADER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_pm.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_std.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_vnd.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_cdc.inf" value="OTHER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_midi.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_midi.h" value="HEADER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_pvt.h" value="HEADER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_cydmac.h" value="HEADER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_msc.c" value="SOURCE_C;CortexM0;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_msc.h" value="HEADER;;;;;USBTMC" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_Dp.c" value="SOURCE_C;CortexM0;;;;USBTMC_Dp" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_Dp.h" value="HEADER;;;;;USBTMC_Dp" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_Dp_aliases.h" value="HEADER;;;;;USBTMC_Dp" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_Dp_PM.c" value="SOURCE_C;CortexM0;;;;USBTMC_Dp" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_Dm.c" value="SOURCE_C;CortexM0;;;;USBTMC_Dm" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_Dm.h" value="HEADER;;;;;USBTMC_Dm" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_Dm_aliases.h" value="HEADER;;;;;USBTMC_Dm" />
-  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBTMC_Dm_PM.c" value="SOURCE_C;CortexM0;;;;USBTMC_Dm" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_Dp.c" value="SOURCE_C;CortexM0;;;;USBUART_Dp" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_Dp.h" value="HEADER;;;;;USBUART_Dp" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_Dp_aliases.h" value="HEADER;;;;;USBUART_Dp" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_Dp_PM.c" value="SOURCE_C;CortexM0;;;;USBUART_Dp" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_Dm.c" value="SOURCE_C;CortexM0;;;;USBUART_Dm" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_Dm.h" value="HEADER;;;;;USBUART_Dm" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_Dm_aliases.h" value="HEADER;;;;;USBUART_Dm" />
+  <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\USBUART_Dm_PM.c" value="SOURCE_C;CortexM0;;;;USBUART_Dm" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM0;;;;Em_EEPROM_Dynamic" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\cy_em_eeprom.h" value="HEADER;;;;;Em_EEPROM_Dynamic" />
   <file name="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\codegentemp\cm0gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />

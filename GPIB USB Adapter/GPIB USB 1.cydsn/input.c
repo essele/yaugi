@@ -210,4 +210,16 @@ void input_show_output(uint8_t *output, int len) {
     serial_flush();
 }
 
+void input_remove_cmdline() {
+    serial_add_string("\r\x1b[K");
+}
+
+void input_redraw_cmdline() {
+    serial_add_string("\r\n");
+    serial_add_string(PROMPT);
+    serial_add(input_buf, input_buf_len);
+    serial_flush();
+}
+
+
 /* [] END OF FILE */

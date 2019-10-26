@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
   22:Generated_Source\PSoC4/Timer1.c **** 
   23:Generated_Source\PSoC4/Timer1.c **** 
   24:Generated_Source\PSoC4/Timer1.c **** /*******************************************************************************
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 2
 
 
   25:Generated_Source\PSoC4/Timer1.c **** * Function Name: Timer1_Init
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
   51 000e 0C22     		movs	r2, #12
   52 0010 1A60     		str	r2, [r3]
   62:Generated_Source\PSoC4/Timer1.c ****     
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 3
 
 
   63:Generated_Source\PSoC4/Timer1.c ****         /* Set values from customizer to INTR */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  107:Generated_Source\PSoC4/Timer1.c ****         #if (Timer1__PWM_DT == Timer1_PWM_MODE)
  108:Generated_Source\PSoC4/Timer1.c ****             Timer1_CONTROL_REG |= Timer1_CTRL_PWM_DEAD_TIME_CYCLE;
  109:Generated_Source\PSoC4/Timer1.c ****         #endif  /* (Timer1__PWM_DT == Timer1_PWM_MODE) */
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 4
 
 
  110:Generated_Source\PSoC4/Timer1.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
   66              		@ sp needed
   67 002a 80BD     		pop	{r7, pc}
   68              	.L3:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 5
 
 
   69              		.align	2
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  102 000e 2370     		strb	r3, [r4]
  182:Generated_Source\PSoC4/Timer1.c ****     Timer1_BLOCK_CONTROL_REG |= Timer1_MASK;
  103              		.loc 1 182 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 6
 
 
  104 0010 094B     		ldr	r3, .L5
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  137              		.type	Timer1_Start, %function
  138              	Timer1_Start:
  139              	.LFB3:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 7
 
 
  204:Generated_Source\PSoC4/Timer1.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  236:Generated_Source\PSoC4/Timer1.c ****     }
  237:Generated_Source\PSoC4/Timer1.c **** 
  238:Generated_Source\PSoC4/Timer1.c ****     Timer1_Enable();
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 8
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 8
 
 
  162              		.loc 1 238 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  258:Generated_Source\PSoC4/Timer1.c ****     uint8 enableInterrupts;
  259:Generated_Source\PSoC4/Timer1.c **** 
  260:Generated_Source\PSoC4/Timer1.c ****     enableInterrupts = CyEnterCriticalSection();
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 9
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 9
 
 
  197              		.loc 1 260 0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  277:Generated_Source\PSoC4/Timer1.c **** * Parameters:
  278:Generated_Source\PSoC4/Timer1.c **** *  mode: Mode for the Timer1 to operate in
  279:Generated_Source\PSoC4/Timer1.c **** *   Values:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 10
 
 
  280:Generated_Source\PSoC4/Timer1.c **** *   - Timer1_MODE_TIMER_COMPARE - Timer / Counter with
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  268 002a 1A60     		str	r2, [r3]
  301:Generated_Source\PSoC4/Timer1.c **** 
  302:Generated_Source\PSoC4/Timer1.c ****     CyExitCriticalSection(enableInterrupts);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 11
 
 
  269              		.loc 1 302 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  298              		.cfi_startproc
  299              		@ args = 0, pretend = 0, frame = 16
  300              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 12
 
 
  301 0000 90B5     		push	{r4, r7, lr}
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  346 0040 00012040 		.word	1075839232
  347 0044 FFFF8FFF 		.word	-7340033
  348              		.cfi_endproc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 13
 
 
  349              	.LFE6:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  367:Generated_Source\PSoC4/Timer1.c ****     enableInterrupts = CyEnterCriticalSection();
  373              		.loc 1 367 0
  374 0008 0F23     		movs	r3, #15
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 14
 
 
  375 000a FC18     		adds	r4, r7, r3
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  376:Generated_Source\PSoC4/Timer1.c **** /*******************************************************************************
  377:Generated_Source\PSoC4/Timer1.c **** * Function Name: Timer1_SetOneShot
  378:Generated_Source\PSoC4/Timer1.c **** ********************************************************************************
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 15
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 15
 
 
  379:Generated_Source\PSoC4/Timer1.c **** *
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  451 0024 1168     		ldr	r1, [r2]
  452 0026 7A68     		ldr	r2, [r7, #4]
  453 0028 9004     		lsls	r0, r2, #18
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 16
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 16
 
 
  454 002a 8022     		movs	r2, #128
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  424:Generated_Source\PSoC4/Timer1.c **** *     - CC_MATCH_SET        - Set on comparison match
  425:Generated_Source\PSoC4/Timer1.c **** *     - CC_MATCH_CLEAR      - Clear on comparison match
  426:Generated_Source\PSoC4/Timer1.c **** *     - CC_MATCH_INVERT     - Invert on comparison match
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 17
 
 
  427:Generated_Source\PSoC4/Timer1.c **** *     - CC_MATCH_NO_CHANGE  - No change on comparison match
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  515 001c 28012040 		.word	1075839272
  516              		.cfi_endproc
  517              	.LFE9:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 18
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 18
 
 
  518              		.size	Timer1_SetPWMMode, .-Timer1_SetPWMMode
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  538 0004 00AF     		add	r7, sp, #0
  539              		.cfi_def_cfa_register 7
  540 0006 7860     		str	r0, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 19
 
 
  487:Generated_Source\PSoC4/Timer1.c ****     uint8 enableInterrupts;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  585              		.global	Timer1_SetPWMStopOnKill
  586              		.code	16
  587              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 20
 
 
  588              		.type	Timer1_SetPWMStopOnKill, %function
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  613 0016 0C4A     		ldr	r2, .L33
  614 0018 1268     		ldr	r2, [r2]
  615 001a 0821     		movs	r1, #8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 21
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 21
 
 
  616 001c 8A43     		bics	r2, r1
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  541:Generated_Source\PSoC4/Timer1.c **** *  only applicable to the PWM in the dead time mode.
  542:Generated_Source\PSoC4/Timer1.c **** 
  543:Generated_Source\PSoC4/Timer1.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 22
 
 
  544:Generated_Source\PSoC4/Timer1.c **** * Parameters:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  561:Generated_Source\PSoC4/Timer1.c **** 
  562:Generated_Source\PSoC4/Timer1.c ****     CyExitCriticalSection(enableInterrupts);
  692              		.loc 1 562 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 23
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 23
 
 
  693 0032 0F23     		movs	r3, #15
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  723              		@ frame_needed = 1, uses_anonymous_args = 0
  724 0000 90B5     		push	{r4, r7, lr}
  725              		.cfi_def_cfa_offset 12
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 24
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 24
 
 
  726              		.cfi_offset 4, -12
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  771              		.cfi_endproc
  772              	.LFE13:
  773              		.size	Timer1_SetPWMInvert, .-Timer1_SetPWMInvert
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 25
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 25
 
 
  774              		.section	.text.Timer1_WriteCounter,"ax",%progbits
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  805              		@ sp needed
  806 0018 80BD     		pop	{r7, pc}
  807              	.L43:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 26
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 26
 
 
  808 001a C046     		.align	2
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  842              	.L47:
  843 0012 C046     		.align	2
  844              	.L46:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 27
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 27
 
 
  845 0014 08012040 		.word	1075839240
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  667:Generated_Source\PSoC4/Timer1.c **** 
  668:Generated_Source\PSoC4/Timer1.c ****     enableInterrupts = CyEnterCriticalSection();
  871              		.loc 1 668 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 28
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 28
 
 
  872 0008 0F23     		movs	r3, #15
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  676:Generated_Source\PSoC4/Timer1.c **** 
  677:Generated_Source\PSoC4/Timer1.c **** /*******************************************************************************
  678:Generated_Source\PSoC4/Timer1.c **** * Function Name: Timer1_WritePeriod
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 29
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 29
 
 
  679:Generated_Source\PSoC4/Timer1.c **** ********************************************************************************
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  955              		.thumb_func
  956              		.type	Timer1_ReadPeriod, %function
  957              	Timer1_ReadPeriod:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 30
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 30
 
 
  958              	.LFB18:
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  992              	Timer1_SetCompareSwap:
  993              	.LFB19:
  717:Generated_Source\PSoC4/Timer1.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 31
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 31
 
 
  718:Generated_Source\PSoC4/Timer1.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1020 001e 1A60     		str	r2, [r3]
  746:Generated_Source\PSoC4/Timer1.c ****     Timer1_CONTROL_REG |= (swapEnable & Timer1_1BIT_MASK);
  1021              		.loc 1 746 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 32
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 32
 
 
  1022 0020 084B     		ldr	r3, .L59
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  766:Generated_Source\PSoC4/Timer1.c **** void Timer1_WritePeriodBuf(uint32 periodBuf)
  767:Generated_Source\PSoC4/Timer1.c **** {
  1057              		.loc 1 767 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 33
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 33
 
 
  1058              		.cfi_startproc
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  783:Generated_Source\PSoC4/Timer1.c **** *  Period value
  784:Generated_Source\PSoC4/Timer1.c **** *
  785:Generated_Source\PSoC4/Timer1.c **** *******************************************************************************/
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 34
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 34
 
 
  786:Generated_Source\PSoC4/Timer1.c **** uint32 Timer1_ReadPeriodBuf(void)
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  805:Generated_Source\PSoC4/Timer1.c **** *     - 0 - Disable swap
  806:Generated_Source\PSoC4/Timer1.c **** *     - 1 - Enable swap
  807:Generated_Source\PSoC4/Timer1.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 35
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 35
 
 
  808:Generated_Source\PSoC4/Timer1.c **** * Return:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1171 0034 FB18     		adds	r3, r7, r3
  1172 0036 1B78     		ldrb	r3, [r3]
  1173 0038 1800     		movs	r0, r3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 36
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 36
 
 
  1174 003a FFF7FEFF 		bl	CyExitCriticalSection
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1200 0000 80B5     		push	{r7, lr}
  1201              		.cfi_def_cfa_offset 8
  1202              		.cfi_offset 7, -8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 37
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 37
 
 
  1203              		.cfi_offset 14, -4
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1233              		.type	Timer1_ReadCompare, %function
  1234              	Timer1_ReadCompare:
  1235              	.LFB24:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 38
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 38
 
 
  875:Generated_Source\PSoC4/Timer1.c **** 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  919:Generated_Source\PSoC4/Timer1.c ****         }
  920:Generated_Source\PSoC4/Timer1.c ****         else
  921:Generated_Source\PSoC4/Timer1.c ****         {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 39
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 39
 
 
  922:Generated_Source\PSoC4/Timer1.c ****         }
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  951:Generated_Source\PSoC4/Timer1.c **** *  compare value in the Down counting mode (except 0xFFFFu).
  952:Generated_Source\PSoC4/Timer1.c **** *
  953:Generated_Source\PSoC4/Timer1.c **** *******************************************************************************/
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 40
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 40
 
 
  954:Generated_Source\PSoC4/Timer1.c **** void Timer1_WriteCompareBuf(uint32 compareBuf)
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1301              	.LFE25:
  1302              		.size	Timer1_WriteCompareBuf, .-Timer1_WriteCompareBuf
  1303              		.section	.text.Timer1_ReadCompareBuf,"ax",%progbits
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 41
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 41
 
 
  1304              		.align	2
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1015:Generated_Source\PSoC4/Timer1.c ****         }
 1016:Generated_Source\PSoC4/Timer1.c ****         else if (((uint32)Timer1__COUNT_UP == currentMode) && (0xFFFFu != regVal))
 1017:Generated_Source\PSoC4/Timer1.c ****         {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 42
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 42
 
 
 1018:Generated_Source\PSoC4/Timer1.c ****             regVal++;
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1047:Generated_Source\PSoC4/Timer1.c **** {
  1346              		.loc 1 1047 0
  1347              		.cfi_startproc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 43
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 43
 
 
  1348              		@ args = 0, pretend = 0, frame = 0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1381              		.loc 1 1068 0
  1382              		.cfi_startproc
  1383              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 44
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 44
 
 
  1384              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1091:Generated_Source\PSoC4/Timer1.c **** *  None
 1092:Generated_Source\PSoC4/Timer1.c **** *
 1093:Generated_Source\PSoC4/Timer1.c **** *******************************************************************************/
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 45
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 45
 
 
 1094:Generated_Source\PSoC4/Timer1.c **** void Timer1_SetCaptureMode(uint32 triggerMode)
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1459 003c 05B0     		add	sp, sp, #20
  1460              		@ sp needed
  1461 003e 90BD     		pop	{r4, r7, pc}
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 46
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 46
 
 
  1462              	.L95:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1130:Generated_Source\PSoC4/Timer1.c **** 
 1131:Generated_Source\PSoC4/Timer1.c ****     enableInterrupts = CyEnterCriticalSection();
  1491              		.loc 1 1131 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 47
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 47
 
 
  1492 0008 0F23     		movs	r3, #15
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1139:Generated_Source\PSoC4/Timer1.c **** 
 1140:Generated_Source\PSoC4/Timer1.c **** /*******************************************************************************
 1141:Generated_Source\PSoC4/Timer1.c **** * Function Name: Timer1_SetStartMode
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 48
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 48
 
 
 1142:Generated_Source\PSoC4/Timer1.c **** ********************************************************************************
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1567 0020 084B     		ldr	r3, .L100
  1568 0022 084A     		ldr	r2, .L100
  1569 0024 1168     		ldr	r1, [r2]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 49
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 49
 
 
  1570 0026 7A68     		ldr	r2, [r7, #4]
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1190:Generated_Source\PSoC4/Timer1.c **** *
 1191:Generated_Source\PSoC4/Timer1.c **** *******************************************************************************/
 1192:Generated_Source\PSoC4/Timer1.c **** void Timer1_SetStopMode(uint32 triggerMode)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 50
 
 
 1193:Generated_Source\PSoC4/Timer1.c **** {
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1646 003e 05B0     		add	sp, sp, #20
  1647              		@ sp needed
  1648 0040 90BD     		pop	{r4, r7, pc}
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 51
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 51
 
 
  1649              	.L104:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1228:Generated_Source\PSoC4/Timer1.c **** 
 1229:Generated_Source\PSoC4/Timer1.c ****     enableInterrupts = CyEnterCriticalSection();
  1678              		.loc 1 1229 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 52
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 52
 
 
  1679 0008 0F23     		movs	r3, #15
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1237:Generated_Source\PSoC4/Timer1.c **** 
 1238:Generated_Source\PSoC4/Timer1.c **** /*******************************************************************************
 1239:Generated_Source\PSoC4/Timer1.c **** * Function Name: Timer1_TriggerCommand
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 53
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 53
 
 
 1240:Generated_Source\PSoC4/Timer1.c **** ********************************************************************************
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1748 0016 084B     		ldr	r3, .L109
  1749 0018 7968     		ldr	r1, [r7, #4]
  1750 001a 3A68     		ldr	r2, [r7]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 54
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 54
 
 
  1751 001c 9140     		lsls	r1, r1, r2
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  1781              		.loc 1 1295 0
  1782              		.cfi_startproc
  1783              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 55
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 55
 
 
  1784              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1311:Generated_Source\PSoC4/Timer1.c **** *   Values:
 1312:Generated_Source\PSoC4/Timer1.c **** *     - Timer1_INTR_MASK_TC       - Terminal count mask
 1313:Generated_Source\PSoC4/Timer1.c **** *     - Timer1_INTR_MASK_CC_MATCH - Compare count / capture mask
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 56
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 56
 
 
 1314:Generated_Source\PSoC4/Timer1.c **** *
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1330:Generated_Source\PSoC4/Timer1.c **** *  Gets the interrupt requests masked by the interrupt mask.
 1331:Generated_Source\PSoC4/Timer1.c **** *
 1332:Generated_Source\PSoC4/Timer1.c **** * Parameters:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 57
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 57
 
 
 1333:Generated_Source\PSoC4/Timer1.c **** *   None
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1354:Generated_Source\PSoC4/Timer1.c **** *
 1355:Generated_Source\PSoC4/Timer1.c **** * Parameters:
 1356:Generated_Source\PSoC4/Timer1.c **** *  None
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 58
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 58
 
 
 1357:Generated_Source\PSoC4/Timer1.c **** *
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1378:Generated_Source\PSoC4/Timer1.c **** * Parameters:
 1379:Generated_Source\PSoC4/Timer1.c **** *   interruptMask: Mask of interrupts to clear
 1380:Generated_Source\PSoC4/Timer1.c **** *   Values:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 59
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 59
 
 
 1381:Generated_Source\PSoC4/Timer1.c **** *     - Timer1_INTR_MASK_TC       - Terminal count mask
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
 1397:Generated_Source\PSoC4/Timer1.c **** *
 1398:Generated_Source\PSoC4/Timer1.c **** * Summary:
 1399:Generated_Source\PSoC4/Timer1.c **** *  Sets a software interrupt request.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 60
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 60
 
 
 1400:Generated_Source\PSoC4/Timer1.c **** *
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2003 000b 01       		.uleb128 0x1
  2004 000c 8D020000 		.4byte	.LASF77
  2005 0010 0C       		.byte	0xc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 61
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 61
 
 
  2006 0011 8B000000 		.4byte	.LASF78
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2060 007f 48000000 		.4byte	0x48
  2061 0083 02       		.uleb128 0x2
  2062 0084 04       		.byte	0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 62
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 62
 
 
  2063 0085 04       		.byte	0x4
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2117 00f2 E6       		.byte	0xe6
  2118 00f3 00000000 		.4byte	.LFB3
  2119 00f7 24000000 		.4byte	.LFE3-.LFB3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 63
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 63
 
 
  2120 00fb 01       		.uleb128 0x1
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2174 016a 8D010000 		.4byte	0x18d
  2175 016e 0B       		.uleb128 0xb
  2176 016f AB000000 		.4byte	.LASF25
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 64
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 64
 
 
  2177 0173 01       		.byte	0x1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2231 01e0 77000000 		.4byte	0x77
  2232 01e4 02       		.uleb128 0x2
  2233 01e5 91       		.byte	0x91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 65
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 65
 
 
  2234 01e6 64       		.sleb128 -28
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2288 0252 09       		.uleb128 0x9
  2289 0253 77050000 		.4byte	.LASF34
  2290 0257 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 66
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 66
 
 
  2291 0258 0702     		.2byte	0x207
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2345 02c8 48000000 		.4byte	.LFE13-.LFB13
  2346 02cc 01       		.uleb128 0x1
  2347 02cd 9C       		.byte	0x9c
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 67
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 67
 
 
  2348 02ce F1020000 		.4byte	0x2f1
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2402 0343 0B       		.uleb128 0xb
  2403 0344 59040000 		.4byte	.LASF43
  2404 0348 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 68
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 68
 
 
  2405 0349 9802     		.2byte	0x298
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2459 03bc 77000000 		.4byte	0x77
  2460 03c0 02       		.uleb128 0x2
  2461 03c1 91       		.byte	0x91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 69
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 69
 
 
  2462 03c2 64       		.sleb128 -28
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2516 0434 0A       		.uleb128 0xa
  2517 0435 D3040000 		.4byte	.LASF21
  2518 0439 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 70
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 70
 
 
  2519 043a 2E03     		.2byte	0x32e
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2573 04ac E803     		.2byte	0x3e8
  2574 04ae 77000000 		.4byte	0x77
  2575 04b2 00000000 		.4byte	.LFB26
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 71
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 71
 
 
  2576 04b6 18000000 		.4byte	.LFE26-.LFB26
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2630 052e 9C       		.byte	0x9c
  2631 052f 52050000 		.4byte	0x552
  2632 0533 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 72
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 72
 
 
  2633 0534 7B010000 		.4byte	.LASF63
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2687 05a3 A804     		.2byte	0x4a8
  2688 05a5 77000000 		.4byte	0x77
  2689 05a9 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 73
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 73
 
 
  2690 05aa 91       		.byte	0x91
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2744 0616 0B       		.uleb128 0xb
  2745 0617 F3010000 		.4byte	.LASF69
  2746 061b 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 74
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 74
 
 
  2747 061c F104     		.2byte	0x4f1
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2801 068f 77000000 		.4byte	0x77
  2802 0693 00000000 		.4byte	.LFB38
  2803 0697 14000000 		.4byte	.LFE38-.LFB38
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 75
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 75
 
 
  2804 069b 01       		.uleb128 0x1
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2858 0005 13       		.uleb128 0x13
  2859 0006 0B       		.uleb128 0xb
  2860 0007 03       		.uleb128 0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 76
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 76
 
 
  2861 0008 0E       		.uleb128 0xe
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2915 003e 2E       		.uleb128 0x2e
  2916 003f 00       		.byte	0
  2917 0040 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 77
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 77
 
 
  2918 0041 19       		.uleb128 0x19
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  2972 0079 13       		.uleb128 0x13
  2973 007a 02       		.uleb128 0x2
  2974 007b 18       		.uleb128 0x18
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 78
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 78
 
 
  2975 007c 00       		.byte	0
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3029 00b3 18       		.uleb128 0x18
  3030 00b4 00       		.byte	0
  3031 00b5 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 79
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 79
 
 
  3032 00b6 0C       		.uleb128 0xc
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3086 00ee 0E       		.uleb128 0xe
  3087 00ef 3A       		.uleb128 0x3a
  3088 00f0 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 80
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 80
 
 
  3089 00f1 3B       		.uleb128 0x3b
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3143 009c 18000000 		.4byte	.LFE18-.LFB18
  3144 00a0 00000000 		.4byte	.LFB19
  3145 00a4 48000000 		.4byte	.LFE19-.LFB19
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 81
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 81
 
 
  3146 00a8 00000000 		.4byte	.LFB20
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3200 0020 00000000 		.4byte	.LFB5
  3201 0024 48000000 		.4byte	.LFE5
  3202 0028 00000000 		.4byte	.LFB6
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 82
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 82
 
 
  3203 002c 48000000 		.4byte	.LFE6
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3257 0104 48000000 		.4byte	.LFE33
  3258 0108 00000000 		.4byte	.LFB34
  3259 010c 3C000000 		.4byte	.LFE34
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 83
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 83
 
 
  3260 0110 00000000 		.4byte	.LFB35
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3290      65537761 
  3291              	.LASF73:
  3292 006b 54696D65 		.ascii	"Timer1_GetInterruptSourceMasked\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 84
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 84
 
 
  3292      72315F47 
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3312      6F6400
  3313              	.LASF71:
  3314 0134 54696D65 		.ascii	"Timer1_SetInterruptMode\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 85
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 85
 
 
  3314      72315F53 
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3338      6C656172 
  3338      496E7465 
  3338      72727570 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 86
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 86
 
 
  3339              	.LASF8:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3360 028d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  3360      43313120 
  3360      352E342E 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 87
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 87
 
 
  3360      31203230 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3380      6572696F 
  3380      64427566 
  3381              	.LASF11:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 88
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 88
 
 
  3382 03ab 666C6F61 		.ascii	"float\000"
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3404 0442 54696D65 		.ascii	"Timer1_ReadStatus\000"
  3404      72315F52 
  3404      65616453 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 89
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 89
 
 
  3404      74617475 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 1
  3425      4B696C6C 
  3425      456E6162 
  3425      6C6500
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccFEBuWf.s 			page 90
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccsBCxeP.s 			page 90
 
 
  3426              	.LASF67:

@@ -13,6 +13,7 @@
 #include "serial.h"
 #include "settings.h"
 #include "gpib.h"
+#include "utils.h"
 #include <stdio.h>
 
 #define MAJOR_VERSION 1
@@ -146,8 +147,6 @@ int to_int(char *v) {
  * called only when the first two characters are ++, so we can skip those here
  */
 void cmd_process(uint8_t *buf, int len) {
-//    buf += 2;
-//    len -= 2;
     int argc = tokenise(buf, len);
 
     // We will always have the command a minimum, so return if 0
@@ -279,8 +278,9 @@ int cmd_help(char *argv[], int argc, const struct cmd *cmd) {
  */
 int cmd_read(char *argv[], int argc, const struct cmd *cmd) {
     int until = GPIB_TIMEOUT;
-    uint8_t *buf = gpib_get_buffer();
-    int     len;
+//    uint8_t *buf = gpib_get_buffer();
+//    int     len;
+    uint8_t buf[16];
     int     ended;
     
     if (argc > 2) {
@@ -306,11 +306,15 @@ int cmd_read(char *argv[], int argc, const struct cmd *cmd) {
     gpib_address_talker(settings.address);
     
     do {
-        len = gpib_read(until, &ended);
-        serial_add_string("GOT: ");
+        int len = gpib_read_bytes(buf, 16, &ended);
+        if (settings.interact) {
+            len = chomp(buf, len);   
+        }
         serial_add(buf, len);
-        serial_add_string("\r\n");
     } while (ended == GPIB_NOT_ENDED);
+    if (settings.interact) {
+        serial_add_string("\r\n");
+    }
     serial_flush();
     return 0;
 }
@@ -509,6 +513,13 @@ const struct cmd commands[] = {
         no_usage_args,
         no_item_meanings,
         helper_ifc
+    },
+    { "interact", cmd_uint,
+        &settings.interact, 0, 1,
+        "Use interactive input mode",
+        enable_disable_usage,
+        enable_disable_means,
+        no_helper,
     },
     { "llo", cmd_noargs,
         no_setting,

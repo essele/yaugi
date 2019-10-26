@@ -18,17 +18,6 @@
 #define GPIB_INIT_TIME      3000
 
 /**
- * The internal gpib buffer
- */
-#define GPIB_BUF_SIZE       256
-uint8_t gpib_buffer[GPIB_BUF_SIZE];
-
-uint8_t *gpib_get_buffer() {
-    return gpib_buffer;
-}
-
-
-/**
  * Definitions of the various lines (for bitbanging)
  */
 typedef enum {
@@ -46,15 +35,10 @@ uint8_t my_address = 21;
 int listening = -1;
 int talking = -1;
 
-/**
- * Ensure the pin settings are correct for all of the pins. This should be
- * open drain, with a drive low. (This will be done by the design)
- *
- */
-void gpib_init_pins() {
-    
-}
 
+/**
+ * Delay for letting data settle ... will need to revisit when we rework for performance
+ */
 void gpib_settle() {
     CyDelayUs(2);
 }
@@ -67,12 +51,7 @@ void gpib_settle() {
  * TODO: we should only really do this check when we are not driving anything, otherwise
  * we might get strange results.
  */
-
 int _gpib_mode = GPIB_NODEVICE;
-
-
-
-
 
 /**
  * Assert means pulling a line low
@@ -94,7 +73,6 @@ uint16_t gpib_readall() {
     return rc;
 }
 
-
 /**
  * Read the status of a line ... true is low! false is high!
  */
@@ -102,7 +80,6 @@ bool gpib_read_line(gpib_line line) {
     int v = ((*(reg32 *)SIG__PS) >> line) & 0x0001;
     return v == 0 ? true : false;
 }
-
 
 /**
  * Called periodically, will announce state changes, return value of 1 indicates we have
@@ -396,17 +373,6 @@ bool gpib_talking() {
  * unless we have it disabled.
  */
 // TODO: error checking and return
-// TODO: should separate the address listener and the send, so we can send
-//       multiple chunks??
-void gpib_send(uint8_t address, const uint8_t *buf, int len) {
-    int eoipos = (settings.eoi ? len-1 : -1);
-    
-    gpib_address_listener(address);
-    
-    for (int i=0; i < len; i++) {
-        gpib_send_byte(buf[i], (i == eoipos));
-    }
-}
 void gpib_send_bytes(const uint8_t *buf, int len, int last) {
     int eoipos = (settings.eoi && last ? len-1 : -1);
     
@@ -426,6 +392,7 @@ void gpib_send_bytes(const uint8_t *buf, int len, int last) {
  * return = number of chars
  *
  */
+/*
 int gpib_read(int until, int *end) {
     int         i = 0;
     int         eoi;
@@ -472,14 +439,19 @@ int gpib_read(int until, int *end) {
     *end = GPIB_NOT_ENDED;
     return i;
 }
+*/
 
 /**
- * Test routine ... assume EOI for now
+ * Test routine ... assume EOI for now // TODO -- match end char
  */ 
 int gpib_read_bytes(uint8_t *dest, int maxlen, int *end) {
     int eoi;
     int i = 0;
     
+    // Allow for extra eot_char if needed
+    maxlen -= settings.eot_enable;
+    
+    // Keep one byte free just in case we need to add a char...
     while (i < maxlen) {
         if (!gpib_receive_byte(dest++, &eoi)) {
             *end = GPIB_TIMEOUT;
@@ -487,6 +459,10 @@ int gpib_read_bytes(uint8_t *dest, int maxlen, int *end) {
         }
         i++;
         if (eoi) {
+            if (settings.eot_enable) {
+                *dest++ = settings.eot_char;
+                i++;
+            }
             *end = GPIB_ENDED;
             return i;
         }
@@ -494,21 +470,5 @@ int gpib_read_bytes(uint8_t *dest, int maxlen, int *end) {
     *end = GPIB_NOT_ENDED;
     return i;
 }
-
-
-/*
-void gpib_test() {
-    uint8_t buf[256];
- 
-    gpib_send(1, "*IDN?");
-//    gpib_readfrom(1, buf, 256);
-    CyDelay(500);
-    
-//    gpib_send(1, "DEEVBLOG@@@X");
-//    CyDelay(2000);
-}
-*/
-
-
 
 /* [] END OF FILE */

@@ -29,6 +29,8 @@ void defaults() {
     settings.eot_enable = 1;
     settings.eot_char = '*';
     settings.read_tmo_ms = 1000;
+    
+    settings.interact = 1;
  }
 
 /**

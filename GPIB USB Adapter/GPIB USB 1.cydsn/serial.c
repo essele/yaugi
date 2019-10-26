@@ -68,13 +68,6 @@ void serial_vprintf(char *fmt, va_list args) {
     serial_flush();
 }
 
-
-
-
-// TODO: some kind of serial_error("fmt", v, v, v); //
-
-
-
 /**
  * Add some data to the serial output buffer, if we have enough to fill the
  * buffer then we will send, otherwise we'll save for the call to flush.
@@ -135,15 +128,77 @@ uint8_t serial_getbyte() {
     return *input_p++;
 }
 
-
-
-
 /**
- * Handle USB configuration changes
+ * For interactive mode we provide a bit of command line editing, but we don't put any
+ * effort into performance.
  */
-void usbuart_reconfig() {
-    USBUART_CDC_Init();
-}    
+void interactive() {
+   while (serial_available()) {
+        // Do we have a full line of input?
+        if (input_data() == 1) {
+            uint8_t *buf = input_getbuffer();
+            unsigned int len = input_getlength();
+                    
+            if (len == 0) {
+                // Empty ... just reprompt
+            } else if (len >= 2 && buf[0] == '+' && buf[1] == '+') {
+                cmd_process(buf+2, len-2);
+            } else {
+                // We've already stripped CR/NL from the input, so now we can just add
+                // whatever is needed...
+                switch (settings.eos) {
+                    case 0:     // add CR + LF
+                                buf[len++] = 13;
+                                buf[len++] = 10;
+                                break;
+                                
+                    case 1:     // add CR
+                                buf[len++] = 13;
+                                break;
+                                
+                    case 2:     // add LF
+                                buf[len++] = 10;
+                                break;
+                                
+                    case 3:     // do nothing
+                                break;
+                }               
+                
+                if (gpib_get_mode() == GPIB_RUNNING) {
+                    gpib_address_listener(settings.address);
+                    gpib_send_bytes(buf, len, 1);
+                    
+                    // Only auto-query if we should
+                    autoread = 0;
+                    if (settings.autoread == 1 || (settings.autoread == 2 && contains_byte(buf, len, '?'))) {
+                        gpib_address_talker(settings.address);
+                        autoread = 1;
+                    }
+                } else {
+                    serial_printf("<no GPIB device connected>\r\n");
+                }
+            }
+            input_start();
+        }    
+    }
+            
+    if (autoread && gpib_get_mode() == GPIB_RUNNING && gpib_talking()) {
+        uint8_t buf[16];
+        int     len;
+        int     ended;
+        
+        input_remove_cmdline();
+        do {
+            len = gpib_read_bytes(buf, 16, &ended);
+            
+            // Remove CR/LF's...
+            len = chomp(buf, len);
+                              
+            serial_add(buf, len);
+        } while(ended == GPIB_NOT_ENDED);
+        input_redraw_cmdline();
+    }        
+}
 
 /**
  * For non-interactive mode we need to read the serial port, we need to catch "+" and
@@ -212,15 +267,11 @@ void non_interactive() {
             if (charmode == CMD) {
                 if (*s == '\r' || *s == '\n') {
                     if (cmdbuf_len == CMD_BUF_SIZE) {
-                        // this is an overrun
+                        // this is an overrun TODO
                         serial_printf("CMD overrun\r\n");
                         serial_flush();                        
                     } else {
                         // process a command
-                        serial_printf("got cmd=");
-                        serial_add(cmdbuf, cmdbuf_len);
-                        serial_printf("*\r\n");
-                        serial_flush();
                         cmd_process(cmdbuf, cmdbuf_len);
                     }
                     charmode = NORMAL;
@@ -263,15 +314,29 @@ void non_interactive() {
                 case '\n':
                     if (last != '\r' && last != '\n') {
                         int len = d - input_buffer;
-                        gpib_address_listener(settings.address);
-                        if (len == 0) {
-                            // We can add a NL if we really have to (shouldn't really happen in non interactive)
-                            // TODO: settings based termination
-                            gpib_send_bytes((uint8_t *)"\n", 1, 1);
-                        } else {
-                            gpib_send_bytes(input_buffer, len, 1);
-                        }
+                        int ended = (len > 0 && settings.eos == 3);
                         
+                        gpib_address_listener(settings.address);
+                        if (len > 0) {
+                            gpib_send_bytes(input_buffer, len, ended);
+                        }                        
+                        switch(settings.eos) {
+                            case 0:
+                                gpib_send_bytes((uint8_t *)"\r\n", 2, 1);
+                                break;
+                            case 1:
+                                gpib_send_bytes((uint8_t *)"\r", 2, 1);
+                                break;
+                            case 2:
+                                gpib_send_bytes((uint8_t *)"\n", 2, 1);
+                                break;
+                            default:
+                                // If we had nothing to send earlier, we have to end it now
+                                // so we'll just send a linefeed.
+                                if (len == 0) {
+                                    gpib_send_bytes((uint8_t *)"\n", 2, 1);
+                                }
+                        }
                         if (settings.autoread == 1 || (settings.autoread == 2 && was_query)) {                        
                             gpib_address_talker(settings.address);
                             mode = TO_HOST;
@@ -338,84 +403,20 @@ void non_interactive() {
  */
 void usbuart_poll() {
     // Process all the incoming serial data...
-    
-    non_interactive();
-    return;
-    
-    
-    while (serial_available()) {
-        // Do we have a full line of input?
-        if (input_data() == 1) {
-            uint8_t *buf = input_getbuffer();
-            unsigned int len = input_getlength();
-                    
-            if (len == 0) {
-                // Empty ... just reprompt
-            } else if (len >= 2 && buf[0] == '+' && buf[1] == '+') {
-                cmd_process(buf, len);
-                        
-                // TODO: if this was a ++auto command we need to change autoread????
-            } else {
-                
-                // We've already stripped CR/NL from the input, so now we can just add
-                // whatever is needed...
-                switch (settings.eos) {
-                    case 0:     // add CR + LF
-                                buf[len++] = 13;
-                                buf[len++] = 10;
-                                break;
-                                
-                    case 1:     // add CR
-                                buf[len++] = 13;
-                                break;
-                                
-                    case 2:     // add LF
-                                buf[len++] = 10;
-                                break;
-                                
-                    case 3:     // do nothing
-                                break;
-                }               
-                
-                if (gpib_get_mode() == GPIB_RUNNING) {
-                    //buf[len] = 0;
-                    gpib_send(settings.address, buf, len);
-                    
-                    // Only auto-query if we should
-                    autoread = 0;
-                    if (settings.autoread) {
-                        if (settings.autoread == 1 || (settings.autoread == 2 && contains_byte(buf, len, '?'))) {
-                            gpib_address_talker(settings.address);
-                            autoread = 1;
-                        }
-                    }                            
-                } else {
-                    serial_printf("<no GPIB device connected>\r\n");
-                }
-            }
-            input_start();
-        }    
-    }
-            
-    if (autoread && gpib_get_mode() == GPIB_RUNNING && gpib_talking()) {                
-        uint8_t *buf;
-        int     len;
-        int     ended;
-        
-        buf = gpib_get_buffer();
-        
-        do {
-            len = gpib_read(GPIB_EOI, &ended);
 
-            // Remove CR/LF's...
-            len = chomp(buf, len);
-                              
-            input_show_output(buf, len);
-            
-        } while(ended == GPIB_NOT_ENDED);   
-    }        
+    if (settings.interact) {
+        interactive();
+    } else {
+        non_interactive();
+    }
 }
 
+/**
+ * Handle USB configuration changes
+ */
+void usbuart_reconfig() {
+    USBUART_CDC_Init();
+}    
 
 #endif
 

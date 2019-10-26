@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
   55 007c 00000000 		.word	CyDmaDefaultInterruptCallback
   56              		.bss
   57              		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 2
 
 
   58              	CyDmaChannelUsedMask:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
   44:Generated_Source\PSoC4/CyDMA.c **** 
   45:Generated_Source\PSoC4/CyDMA.c **** /* The live status of all DMA channels usage. Bit i is associated to channel i,
   46:Generated_Source\PSoC4/CyDMA.c **** * with i = 0..CYDMA_CH_NR-1. '0' - channel is free. '1' - channel is in use.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 3
 
 
   47:Generated_Source\PSoC4/CyDMA.c **** * All the channels allocated for DMA instances placed on a schematic are in use
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
   88              		.loc 1 81 0
   89 0014 0321     		movs	r1, #3
   90 0016 0E20     		movs	r0, #14
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 4
 
 
   91 0018 FFF7FEFF 		bl	CyIntSetPriority
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  103:Generated_Source\PSoC4/CyDMA.c **** *
  104:Generated_Source\PSoC4/CyDMA.c **** *******************************************************************************/
  105:Generated_Source\PSoC4/CyDMA.c **** void CyDmaDisable(void)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 5
 
 
  106:Generated_Source\PSoC4/CyDMA.c **** {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  125:Generated_Source\PSoC4/CyDMA.c **** *
  126:Generated_Source\PSoC4/CyDMA.c **** * Side effect:
  127:Generated_Source\PSoC4/CyDMA.c **** *  The series of function calls CyDmaGetActiveSrcAddress(),
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 6
 
 
  128:Generated_Source\PSoC4/CyDMA.c **** *  CyDmaGetActiveDstAddress(), CyDmaGetStatus() are not atomic, the DMA
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  149:Generated_Source\PSoC4/CyDMA.c **** *                   
  150:Generated_Source\PSoC4/CyDMA.c **** * Return:
  151:Generated_Source\PSoC4/CyDMA.c **** *  Bit field of active and pending channels. 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 7
 
 
  152:Generated_Source\PSoC4/CyDMA.c **** *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  173:Generated_Source\PSoC4/CyDMA.c **** *  Source address currently being used by the DMA transfer engine.
  174:Generated_Source\PSoC4/CyDMA.c **** *
  175:Generated_Source\PSoC4/CyDMA.c **** * Side effect:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 8
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 8
 
 
  176:Generated_Source\PSoC4/CyDMA.c **** *  The series of function calls CyDmaGetActiveSrcAddress(),
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  197:Generated_Source\PSoC4/CyDMA.c **** * Parameters:
  198:Generated_Source\PSoC4/CyDMA.c **** *  None.
  199:Generated_Source\PSoC4/CyDMA.c **** *                   
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 9
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 9
 
 
  200:Generated_Source\PSoC4/CyDMA.c **** * Return:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  221:Generated_Source\PSoC4/CyDMA.c **** *  Sets the function that will be called by the DMA interrupt. Note, calling
  222:Generated_Source\PSoC4/CyDMA.c **** *  CyDmaEnable() for the first time overrides any effect this API could have.
  223:Generated_Source\PSoC4/CyDMA.c **** *  Call CyDmaSetInterruptVector() after calling CyDmaEnable() to change
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 10
 
 
  224:Generated_Source\PSoC4/CyDMA.c **** *  the default ISR.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  243:Generated_Source\PSoC4/CyDMA.c **** 
  244:Generated_Source\PSoC4/CyDMA.c **** 
  245:Generated_Source\PSoC4/CyDMA.c **** /*******************************************************************************
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 11
 
 
  246:Generated_Source\PSoC4/CyDMA.c **** * Function Name: CyDmaGetInterruptSource
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  267:Generated_Source\PSoC4/CyDMA.c **** ********************************************************************************
  268:Generated_Source\PSoC4/CyDMA.c **** *
  269:Generated_Source\PSoC4/CyDMA.c **** * Summary:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 12
 
 
  270:Generated_Source\PSoC4/CyDMA.c **** *  Clears the pending interrupts.
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  286:Generated_Source\PSoC4/CyDMA.c **** * Function Name: CyDmaSetInterruptSourceMask
  287:Generated_Source\PSoC4/CyDMA.c **** ********************************************************************************
  288:Generated_Source\PSoC4/CyDMA.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 13
 
 
  289:Generated_Source\PSoC4/CyDMA.c **** * Summary:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  305:Generated_Source\PSoC4/CyDMA.c **** /*******************************************************************************
  306:Generated_Source\PSoC4/CyDMA.c **** * Function Name: CyDmaGetInterruptSourceMask
  307:Generated_Source\PSoC4/CyDMA.c **** ********************************************************************************
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 14
 
 
  308:Generated_Source\PSoC4/CyDMA.c **** *
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  329:Generated_Source\PSoC4/CyDMA.c **** * Summary:
  330:Generated_Source\PSoC4/CyDMA.c **** *  Returns the bitwise AND of the interrupt source and the interrupt mask.
  331:Generated_Source\PSoC4/CyDMA.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 15
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 15
 
 
  332:Generated_Source\PSoC4/CyDMA.c **** * Parameters:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  353:Generated_Source\PSoC4/CyDMA.c **** *
  354:Generated_Source\PSoC4/CyDMA.c **** * Parameters:
  355:Generated_Source\PSoC4/CyDMA.c **** *  channel:  Channel used by this function.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 16
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 16
 
 
  356:Generated_Source\PSoC4/CyDMA.c **** *  callback: Pointer to the user defined callback function.
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  542 002e FB60     		str	r3, [r7, #12]
  369:Generated_Source\PSoC4/CyDMA.c ****     CyDmaInterruptCallback[channel] = callback;
  543              		.loc 1 369 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 17
 
 
  544 0030 044B     		ldr	r3, .L48
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  577              		.cfi_def_cfa_offset 8
  578              		.cfi_offset 7, -8
  579              		.cfi_offset 14, -4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 18
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 18
 
 
  580 0002 82B0     		sub	sp, sp, #8
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  630              		.type	CyDmaInterrupt, %function
  631              	CyDmaInterrupt:
  632              	.LFB15:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 19
 
 
  395:Generated_Source\PSoC4/CyDMA.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  426:Generated_Source\PSoC4/CyDMA.c **** 
  427:Generated_Source\PSoC4/CyDMA.c ****     /* Call user defined callback functions for triggered interrupt sources. */
  428:Generated_Source\PSoC4/CyDMA.c ****     while(0u != intr)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 20
 
 
  656              		.loc 1 428 0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  700              		.align	2
  701              		.code	16
  702              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 21
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 21
 
 
  703              		.type	CyDmaDefaultInterruptCallback, %function
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  728              		.align	2
  729              		.global	CyDmaChAlloc
  730              		.code	16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 22
 
 
  731              		.thumb_func
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  760 0016 3A68     		ldr	r2, [r7]
  761 0018 1340     		ands	r3, r2
  762 001a 06D1     		bne	.L66
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 23
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 23
 
 
  492:Generated_Source\PSoC4/CyDMA.c ****         {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  806              		.thumb_func
  807              		.type	CyDmaChFree, %function
  808              	CyDmaChFree:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 24
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 24
 
 
  809              	.LFB18:
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  839 001c 0023     		movs	r3, #0
  840              	.L74:
  841              		.loc 1 525 0 discriminator 6
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 25
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 25
 
 
  842 001e 002B     		cmp	r3, #0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  882              		.global	CyDmaChEnable
  883              		.code	16
  884              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 26
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 26
 
 
  885              		.type	CyDmaChEnable, %function
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  915              	.L81:
  916              		.loc 1 563 0 discriminator 6
  917 001a 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 27
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 27
 
 
  918 001c 02D1     		bne	.L82
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  580:Generated_Source\PSoC4/CyDMA.c **** *  None.
  581:Generated_Source\PSoC4/CyDMA.c **** *
  582:Generated_Source\PSoC4/CyDMA.c **** * Side effect:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 28
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 28
 
 
  583:Generated_Source\PSoC4/CyDMA.c **** *  If this function is called during a DMA transfer the transfer is aborted. 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  591:Generated_Source\PSoC4/CyDMA.c **** }
  1002              		.loc 1 591 0
  1003 0038 C046     		nop
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 29
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 29
 
 
  1004 003a BD46     		mov	sp, r7
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  614:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT((channel >= 0) && (channel < CYDMA_CH_NR));
  1036              		.loc 1 614 0
  1037 0008 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 30
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 30
 
 
  1038 000a 002B     		cmp	r3, #0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1089              		.type	CyDmaSetPriority, %function
  1090              	CyDmaSetPriority:
  1091              	.LFB22:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 31
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 31
 
 
  618:Generated_Source\PSoC4/CyDMA.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1120              	.L99:
  1121              		.loc 1 643 0 discriminator 6
  1122 001c 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 32
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 32
 
 
  1123 001e 02D1     		bne	.L100
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1172 0066 80BD     		pop	{r7, pc}
  1173              	.L105:
  1174              		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 33
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 33
 
 
  1175              	.L104:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1208 0010 1F2B     		cmp	r3, #31
  1209 0012 01DC     		bgt	.L107
  1210              		.loc 1 669 0 discriminator 3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 34
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 34
 
 
  1211 0014 0123     		movs	r3, #1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  678:Generated_Source\PSoC4/CyDMA.c **** ********************************************************************************
  679:Generated_Source\PSoC4/CyDMA.c **** *
  680:Generated_Source\PSoC4/CyDMA.c **** * Summary:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 35
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 35
 
 
  681:Generated_Source\PSoC4/CyDMA.c **** *  Sets the descriptor that should be run the next time the channel is
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1292              	.L116:
  700:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT((descriptor >= 0) && (descriptor < CYDMA_DESCR_NR));
  1293              		.loc 1 700 0 is_stmt 1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 36
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 36
 
 
  1294 0026 3B68     		ldr	r3, [r7]
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1344              	.LFE24:
  1345              		.size	CyDmaSetNextDescriptor, .-CyDmaSetNextDescriptor
  1346              		.section	.text.CyDmaGetNextDescriptor,"ax",%progbits
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 37
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 37
 
 
  1347              		.align	2
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1379              		.loc 1 726 0 discriminator 4
  1380 0018 0023     		movs	r3, #0
  1381              	.L124:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 38
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 38
 
 
  1382              		.loc 1 726 0 discriminator 6
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  741:Generated_Source\PSoC4/CyDMA.c **** *  channel:    DMA channel modified by this function.
  742:Generated_Source\PSoC4/CyDMA.c **** *  descriptor: Descriptor (0 or 1) modified by this function.
  743:Generated_Source\PSoC4/CyDMA.c **** *  config:     Pointer to a configuration structure. Refer to cydma_init_struct
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 39
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 39
 
 
  744:Generated_Source\PSoC4/CyDMA.c **** *              structure definition in CyDMA_P4.h and/or DMA channel datasheet
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1459              		.loc 1 760 0 is_stmt 1
  1460 0028 BB68     		ldr	r3, [r7, #8]
  1461 002a 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 40
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 40
 
 
  1462 002c 04DB     		blt	.L133
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1513              		.loc 1 763 0 discriminator 7
  1514 0072 0020     		movs	r0, #0
  1515 0074 FFF7FEFF 		bl	CyHalt
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 41
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 41
 
 
  1516              	.L139:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1565 00c4 FFF7FEFF 		bl	CyHalt
  1566              	.L144:
  769:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT(0u == (config->actions             & (uint32)~CYDMA_POST_COMPLETE_ACTIONS));
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 42
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 42
 
 
  1567              		.loc 1 769 0 is_stmt 1
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1608 00fe 7B68     		ldr	r3, [r7, #4]
  1609 0100 9B69     		ldr	r3, [r3, #24]
  776:Generated_Source\PSoC4/CyDMA.c ****                                                            config->transferMode        |
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 43
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 43
 
 
  1610              		.loc 1 776 0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1658              		.align	2
  1659              		.global	CyDmaValidateDescriptor
  1660              		.code	16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 44
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 44
 
 
  1661              		.thumb_func
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1689 0018 00E0     		b	.L150
  1690              	.L149:
  1691              		.loc 1 807 0 discriminator 4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 45
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 45
 
 
  1692 001a 0023     		movs	r3, #0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1742              		.align	2
  1743              	.L155:
  1744 0060 00181040 		.word	1074796544
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 46
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 46
 
 
  1745              		.cfi_endproc
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1777 0014 01DC     		bgt	.L158
  1778              		.loc 1 833 0 discriminator 3
  1779 0016 0123     		movs	r3, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 47
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 47
 
 
  1780 0018 00E0     		b	.L159
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1830              	.L166:
  1831              		.align	2
  1832              	.L165:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 48
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 48
 
 
  1833 005c 00181040 		.word	1074796544
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1862 000e 002B     		cmp	r3, #0
  1863 0010 04DB     		blt	.L168
  1864              		.loc 1 862 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 49
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 49
 
 
  1865 0012 FB68     		ldr	r3, [r7, #12]
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1915 0056 BD46     		mov	sp, r7
  1916 0058 04B0     		add	sp, sp, #16
  1917              		@ sp needed
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 50
 
 
  1918 005a 80BD     		pop	{r7, pc}
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  1951 000e 04DB     		blt	.L177
  1952              		.loc 1 887 0 is_stmt 0 discriminator 1
  1953 0010 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 51
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 51
 
 
  1954 0012 1F2B     		cmp	r3, #31
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2004              		@ sp needed
  2005 0056 80BD     		pop	{r7, pc}
  2006              	.L185:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 52
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 52
 
 
  2007              		.align	2
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2036              		.loc 1 916 0
  2037 000c FB68     		ldr	r3, [r7, #12]
  2038 000e 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 53
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 53
 
 
  2039 0010 04DB     		blt	.L187
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2090 0056 1A60     		str	r2, [r3]
  920:Generated_Source\PSoC4/CyDMA.c **** }
  2091              		.loc 1 920 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 54
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 54
 
 
  2092 0058 C046     		nop
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  941:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT((channel    >= 0) && (channel    < CYDMA_CH_NR));
  2126              		.loc 1 941 0
  2127 000a 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 55
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 55
 
 
  2128 000c 002B     		cmp	r3, #0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2179 0052 1B68     		ldr	r3, [r3]
  945:Generated_Source\PSoC4/CyDMA.c **** }
  2180              		.loc 1 945 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 56
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 56
 
 
  2181 0054 1800     		movs	r0, r3
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2207              		.cfi_offset 7, -8
  2208              		.cfi_offset 14, -4
  2209 0002 86B0     		sub	sp, sp, #24
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 57
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 57
 
 
  2210              		.cfi_def_cfa_offset 32
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  978:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT(0u == (dataElementSize & (uint32)~CYDMA_DATA_SIZE));
  2260              		.loc 1 978 0 is_stmt 1
  2261 0044 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 58
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 58
 
 
  2262 0046 114A     		ldr	r2, .L213
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2312              		.code	16
  2313              		.thumb_func
  2314              		.type	CyDmaGetDataElementSize, %function
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 59
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 59
 
 
  2315              	CyDmaGetDataElementSize:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2341 0018 00E0     		b	.L217
  2342              	.L216:
  2343              		.loc 1 1010 0 discriminator 4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 60
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 60
 
 
  2344 001a 0023     		movs	r3, #0
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2394              	.L224:
  2395 0062 C046     		.align	2
  2396              	.L223:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 61
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 61
 
 
  2397 0064 00181040 		.word	1074796544
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
 1042:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT((channel        >= 0) && (channel         <  CYDMA_CH_NR));
  2424              		.loc 1 1042 0
  2425 000c FB68     		ldr	r3, [r7, #12]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 62
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 62
 
 
  2426 000e 002B     		cmp	r3, #0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2478              		.loc 1 1044 0 discriminator 3
  2479 0054 0123     		movs	r3, #1
  2480 0056 00E0     		b	.L233
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 63
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 63
 
 
  2481              	.L232:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2530              	.L235:
  2531 00a4 00181040 		.word	1074796544
  2532              		.cfi_endproc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 64
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 64
 
 
  2533              	.LFE35:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2562 0010 7B68     		ldr	r3, [r7, #4]
  2563 0012 1F2B     		cmp	r3, #31
  2564 0014 01DC     		bgt	.L238
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 65
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 65
 
 
  2565              		.loc 1 1074 0 discriminator 3
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2615              		.loc 1 1078 0
  2616 005c FB68     		ldr	r3, [r7, #12]
 1079:Generated_Source\PSoC4/CyDMA.c **** }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 66
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 66
 
 
  2617              		.loc 1 1079 0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2640              		@ args = 0, pretend = 0, frame = 24
  2641              		@ frame_needed = 1, uses_anonymous_args = 0
  2642 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 67
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 67
 
 
  2643              		.cfi_def_cfa_offset 8
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2693              		.loc 1 1114 0 discriminator 7
  2694 003e 0020     		movs	r0, #0
  2695 0040 FFF7FEFF 		bl	CyHalt
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 68
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 68
 
 
  2696              	.L253:
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2745              		.size	CyDmaSetSrcDstTransferWidth, .-CyDmaSetSrcDstTransferWidth
  2746              		.section	.text.CyDmaGetSrcDstTransferWidth,"ax",%progbits
  2747              		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 69
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 69
 
 
  2748              		.global	CyDmaGetSrcDstTransferWidth
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2779              	.L258:
  2780              		.loc 1 1142 0 discriminator 4
  2781 001a 0023     		movs	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 70
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 70
 
 
  2782              	.L259:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2833              	.L265:
  2834 0064 00181040 		.word	1074796544
  2835              		.cfi_endproc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 71
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 71
 
 
  2836              	.LFE38:
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2860 000a 7A60     		str	r2, [r7, #4]
 1176:Generated_Source\PSoC4/CyDMA.c ****     uint32 regValue;
 1177:Generated_Source\PSoC4/CyDMA.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 72
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 72
 
 
 1178:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT((channel    >= 0) && (channel    < CYDMA_CH_NR));
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2912 004e FFF7FEFF 		bl	CyHalt
  2913              	.L274:
 1181:Generated_Source\PSoC4/CyDMA.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 73
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 73
 
 
 1182:Generated_Source\PSoC4/CyDMA.c ****     regValue = CYDMA_DESCR_BASE.descriptor[channel][descriptor].ctl & (uint32)~CYDMA_ADDR_INCR;
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
 1188:Generated_Source\PSoC4/CyDMA.c **** * Function Name: CyDmaGetAddressIncrement
 1189:Generated_Source\PSoC4/CyDMA.c **** ********************************************************************************
 1190:Generated_Source\PSoC4/CyDMA.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 74
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 74
 
 
 1191:Generated_Source\PSoC4/CyDMA.c **** * Summary:
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  2998              		.loc 1 1208 0 is_stmt 1
  2999 0026 3B68     		ldr	r3, [r7]
  3000 0028 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 75
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 75
 
 
  3001 002a 04DB     		blt	.L281
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3052              	CyDmaSetTriggerType:
  3053              	.LFB41:
 1212:Generated_Source\PSoC4/CyDMA.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 76
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 76
 
 
 1213:Generated_Source\PSoC4/CyDMA.c **** 
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3078 0018 0123     		movs	r3, #1
  3079 001a 00E0     		b	.L289
  3080              	.L288:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 77
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 77
 
 
  3081              		.loc 1 1242 0 discriminator 4
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3131 0062 1B68     		ldr	r3, [r3]
  3132 0064 094A     		ldr	r2, .L295
  3133 0066 1340     		ands	r3, r2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 78
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 78
 
 
  3134 0068 7B61     		str	r3, [r7, #20]
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
 1265:Generated_Source\PSoC4/CyDMA.c **** *  CyDMA_P4.h or the API description in the DMA channel datasheet for more
 1266:Generated_Source\PSoC4/CyDMA.c **** *  information.
 1267:Generated_Source\PSoC4/CyDMA.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 79
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 79
 
 
 1268:Generated_Source\PSoC4/CyDMA.c **** *******************************************************************************/
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3219 0036 0023     		movs	r3, #0
  3220              	.L302:
  3221              		.loc 1 1272 0 discriminator 6
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 80
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 80
 
 
  3222 0038 002B     		cmp	r3, #0
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
 1287:Generated_Source\PSoC4/CyDMA.c **** *  channel:      Channel used by this function.
 1288:Generated_Source\PSoC4/CyDMA.c **** *  descriptor:   Descriptor (0 or 1) modified by this function.
 1289:Generated_Source\PSoC4/CyDMA.c **** *  transferMode: Specifies the DMA transfer mode settings. Refer to the API bit
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 81
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 81
 
 
 1290:Generated_Source\PSoC4/CyDMA.c **** *                field definitions in CyDMA_P4.h or the API description in the
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3299              		.loc 1 1306 0 is_stmt 1
  3300 0028 BB68     		ldr	r3, [r7, #8]
  3301 002a 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 82
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 82
 
 
  3302 002c 04DB     		blt	.L311
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3352 007a 1B01     		lsls	r3, r3, #4
  3353 007c C318     		adds	r3, r0, r3
  3354 007e 0833     		adds	r3, r3, #8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 83
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 83
 
 
  3355 0080 1A60     		str	r2, [r3]
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3386              		.cfi_def_cfa_offset 16
  3387 0004 00AF     		add	r7, sp, #0
  3388              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 84
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 84
 
 
  3389 0006 7860     		str	r0, [r7, #4]
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3439 0048 3B68     		ldr	r3, [r7]
  3440 004a D318     		adds	r3, r2, r3
  3441 004c 1B01     		lsls	r3, r3, #4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 85
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 85
 
 
  3442 004e CB18     		adds	r3, r1, r3
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3469              		.cfi_startproc
  3470              		@ args = 0, pretend = 0, frame = 24
  3471              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 86
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 86
 
 
  3472 0000 80B5     		push	{r7, lr}
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3522 003c 02D1     		bne	.L333
  3523              		.loc 1 1368 0 discriminator 7
  3524 003e 0020     		movs	r0, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 87
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 87
 
 
  3525 0040 FFF7FEFF 		bl	CyHalt
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3574              	.LFE45:
  3575              		.size	CyDmaSetPreemptable, .-CyDmaSetPreemptable
  3576              		.section	.text.CyDmaGetPreemptable,"ax",%progbits
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 88
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 88
 
 
  3577              		.align	2
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3609              	.L338:
  3610              		.loc 1 1395 0 discriminator 4
  3611 001a 0023     		movs	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 89
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 89
 
 
  3612              	.L339:
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3662 0062 C046     		.align	2
  3663              	.L345:
  3664 0064 00181040 		.word	1074796544
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 90
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 90
 
 
  3665              		.cfi_endproc
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
 1428:Generated_Source\PSoC4/CyDMA.c ****     CYASSERT((channel    >= 0) && (channel    < CYDMA_CH_NR));
  3691              		.loc 1 1428 0
  3692 000c FB68     		ldr	r3, [r7, #12]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 91
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 91
 
 
  3693 000e 002B     		cmp	r3, #0
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
 1432:Generated_Source\PSoC4/CyDMA.c ****     regValue = CYDMA_DESCR_BASE.descriptor[channel][descriptor].ctl & (uint32)~CYDMA_POST_COMPLETE_
  3744              		.loc 1 1432 0 is_stmt 1
  3745 0052 0F49     		ldr	r1, .L355+4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 92
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 92
 
 
  3746 0054 FB68     		ldr	r3, [r7, #12]
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
 1441:Generated_Source\PSoC4/CyDMA.c **** * Summary:
 1442:Generated_Source\PSoC4/CyDMA.c **** *  Returns the post descriptor action settings as set by 
 1443:Generated_Source\PSoC4/CyDMA.c **** *  CyDmaSetPostCompletionActions() or CyDmaSetConfiguration().
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 93
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 93
 
 
 1444:Generated_Source\PSoC4/CyDMA.c **** *
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3831 002a 04DB     		blt	.L361
  3832              		.loc 1 1458 0 is_stmt 0 discriminator 1
  3833 002c 3B68     		ldr	r3, [r7]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 94
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 94
 
 
  3834 002e 012B     		cmp	r3, #1
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3885 0004 000102C0 		.word	-1073610496
  3886 0008 000202C0 		.word	-1073610240
  3887 000c 080202C0 		.word	-1073610232
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 95
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 95
 
 
  3888              		.text
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3942 0064 02       		.uleb128 0x2
  3943 0065 04       		.byte	0x4
  3944 0066 07       		.byte	0x7
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 96
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 96
 
 
  3945 0067 46020000 		.4byte	.LASF8
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  3999 00dc 09       		.uleb128 0x9
  4000 00dd 63746C00 		.ascii	"ctl\000"
  4001 00e1 03       		.byte	0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 97
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 97
 
 
  4002 00e2 28       		.byte	0x28
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4056 014b 03       		.byte	0x3
  4057 014c 32       		.byte	0x32
  4058 014d 0B010000 		.4byte	0x10b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 98
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 98
 
 
  4059 0151 0F       		.uleb128 0xf
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4113 01bb 77000000 		.4byte	0x77
  4114 01bf 0C       		.byte	0xc
  4115 01c0 0D       		.uleb128 0xd
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 99
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 99
 
 
  4116 01c1 D2010000 		.4byte	.LASF28
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4170 0230 04000000 		.4byte	initIntrVector.5066
  4171 0234 00       		.byte	0
  4172 0235 12       		.uleb128 0x12
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 100
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 100
 
 
  4173 0236 94010000 		.4byte	.LASF105
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4227 02b4 01       		.byte	0x1
  4228 02b5 EF       		.byte	0xef
  4229 02b6 C1000000 		.4byte	0xc1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 101
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 101
 
 
  4230 02ba 02       		.uleb128 0x2
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4284 032c 00000000 		.4byte	.LFB11
  4285 0330 14000000 		.4byte	.LFE11-.LFB11
  4286 0334 01       		.uleb128 0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 102
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 102
 
 
  4287 0335 9C       		.byte	0x9c
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4341 03aa BE030000 		.4byte	0x3be
  4342 03ae 17       		.uleb128 0x17
  4343 03af 79050000 		.4byte	.LASF48
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 103
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 103
 
 
  4344 03b3 01       		.byte	0x1
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4398 0425 E601     		.2byte	0x1e6
  4399 0427 83000000 		.4byte	0x83
  4400 042b 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 104
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 104
 
 
  4401 042c 91       		.byte	0x91
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4455 0498 AC040000 		.4byte	0x4ac
  4456 049c 17       		.uleb128 0x17
  4457 049d 79050000 		.4byte	.LASF48
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 105
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 105
 
 
  4458 04a1 01       		.byte	0x1
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4512 0513 0B       		.uleb128 0xb
  4513 0514 F9000000 		.4byte	0xf9
  4514 0518 03       		.byte	0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 106
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 106
 
 
  4515 0519 00       		.byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4569 058e 02       		.uleb128 0x2
  4570 058f 91       		.byte	0x91
  4571 0590 6C       		.sleb128 -20
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 107
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 107
 
 
  4572 0591 19       		.uleb128 0x19
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4626 0600 79050000 		.4byte	.LASF48
  4627 0604 01       		.byte	0x1
  4628 0605 D202     		.2byte	0x2d2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 108
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 108
 
 
  4629 0607 83000000 		.4byte	0x83
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4683 0672 01       		.byte	0x1
  4684 0673 2503     		.2byte	0x325
  4685 0675 00000000 		.4byte	.LFB27
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 109
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 109
 
 
  4686 0679 64000000 		.4byte	.LFE27-.LFB27
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4740 06eb 01       		.uleb128 0x1
  4741 06ec 9C       		.byte	0x9c
  4742 06ed 1F070000 		.4byte	0x71f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 110
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 110
 
 
  4743 06f1 17       		.uleb128 0x17
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4797 075d 01       		.byte	0x1
  4798 075e 9203     		.2byte	0x392
  4799 0760 00000000 		.4byte	.LFB31
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 111
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 111
 
 
  4800 0764 64000000 		.4byte	.LFE31-.LFB31
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4854 07d3 70       		.sleb128 -16
  4855 07d4 00       		.byte	0
  4856 07d5 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 112
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 112
 
 
  4857 07d6 85040000 		.4byte	.LASF82
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4911 0848 F003     		.2byte	0x3f0
  4912 084a 83000000 		.4byte	0x83
  4913 084e 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 113
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 113
 
 
  4914 084f 91       		.byte	0x91
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  4968 08b5 EB000000 		.4byte	.LASF85
  4969 08b9 01       		.byte	0x1
  4970 08ba 2E04     		.2byte	0x42e
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 114
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 114
 
 
  4971 08bc 83000000 		.4byte	0x83
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5025 092e 91       		.byte	0x91
  5026 092f 68       		.sleb128 -24
  5027 0930 17       		.uleb128 0x17
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 115
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 115
 
 
  5028 0931 17070000 		.4byte	.LASF88
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5082 09a3 01       		.byte	0x1
  5083 09a4 9604     		.2byte	0x496
  5084 09a6 83000000 		.4byte	0x83
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 116
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 116
 
 
  5085 09aa 02       		.uleb128 0x2
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5139 0a13 00       		.byte	0
  5140 0a14 1A       		.uleb128 0x1a
  5141 0a15 63070000 		.4byte	.LASF92
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 117
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 117
 
 
  5142 0a19 01       		.byte	0x1
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5196 0a89 83000000 		.4byte	0x83
  5197 0a8d 02       		.uleb128 0x2
  5198 0a8e 91       		.byte	0x91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 118
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 118
 
 
  5199 0a8f 74       		.sleb128 -12
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5253 0af8 01       		.byte	0x1
  5254 0af9 3405     		.2byte	0x534
  5255 0afb 77000000 		.4byte	0x77
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 119
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 119
 
 
  5256 0aff 00000000 		.4byte	.LFB44
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5310 0b6e 64       		.sleb128 -28
  5311 0b6f 19       		.uleb128 0x19
  5312 0b70 EB010000 		.4byte	.LASF67
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 120
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 120
 
 
  5313 0b74 01       		.byte	0x1
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5367 0be3 9005     		.2byte	0x590
  5368 0be5 83000000 		.4byte	0x83
  5369 0be9 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 121
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 121
 
 
  5370 0bea 91       		.byte	0x91
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5424 0c55 E4040000 		.4byte	.LASF100
  5425 0c59 01       		.byte	0x1
  5426 0c5a 1A       		.byte	0x1a
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 122
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 122
 
 
  5427 0c5b 440C0000 		.4byte	0xc44
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5481 0027 00       		.byte	0
  5482 0028 00       		.byte	0
  5483 0029 04       		.uleb128 0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 123
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 123
 
 
  5484 002a 16       		.uleb128 0x16
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5538 0060 0B       		.uleb128 0xb
  5539 0061 3B       		.uleb128 0x3b
  5540 0062 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 124
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 124
 
 
  5541 0063 49       		.uleb128 0x49
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5595 0099 00       		.byte	0
  5596 009a 0B       		.uleb128 0xb
  5597 009b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 125
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 125
 
 
  5598 009c 00       		.byte	0
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5652 00d3 00       		.byte	0
  5653 00d4 12       		.uleb128 0x12
  5654 00d5 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 126
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 126
 
 
  5655 00d6 00       		.byte	0
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5709 010e 0B       		.uleb128 0xb
  5710 010f 49       		.uleb128 0x49
  5711 0110 13       		.uleb128 0x13
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 127
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 127
 
 
  5712 0111 02       		.uleb128 0x2
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5766 0149 17       		.uleb128 0x17
  5767 014a 05       		.uleb128 0x5
  5768 014b 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 128
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 128
 
 
  5769 014c 03       		.uleb128 0x3
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5823 0183 1A       		.uleb128 0x1a
  5824 0184 2E       		.uleb128 0x2e
  5825 0185 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 129
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 129
 
 
  5826 0186 3F       		.uleb128 0x3f
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5880 01be 27       		.uleb128 0x27
  5881 01bf 19       		.uleb128 0x19
  5882 01c0 49       		.uleb128 0x49
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 130
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 130
 
 
  5883 01c1 13       		.uleb128 0x13
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5937 0074 48000000 		.4byte	.LFE13-.LFB13
  5938 0078 00000000 		.4byte	.LFB14
  5939 007c 38000000 		.4byte	.LFE14-.LFB14
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 131
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 131
 
 
  5940 0080 00000000 		.4byte	.LFB15
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  5994 0158 00000000 		.4byte	.LFB42
  5995 015c 68000000 		.4byte	.LFE42-.LFB42
  5996 0160 00000000 		.4byte	.LFB43
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 132
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 132
 
 
  5997 0164 90000000 		.4byte	.LFE43-.LFB43
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6051 009c 44000000 		.4byte	.LFE20
  6052 00a0 00000000 		.4byte	.LFB21
  6053 00a4 4C000000 		.4byte	.LFE21
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 133
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 133
 
 
  6054 00a8 00000000 		.4byte	.LFB22
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6108 0180 00000000 		.4byte	0
  6109 0184 00000000 		.4byte	0
  6110              		.section	.debug_line,"",%progbits
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 134
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 134
 
 
  6111              	.Ldebug_line0:
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6130      65642069 
  6131              	.LASF43:
  6132 00a2 696E7465 		.ascii	"interruptVector\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 135
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 135
 
 
  6132      72727570 
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6154 0155 696E6974 		.ascii	"initIntrVector\000"
  6154      496E7472 
  6154      56656374 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 136
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 136
 
 
  6154      6F7200
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6179              	.LASF32:
  6180 0210 6379646D 		.ascii	"cydma_init_struct\000"
  6180      615F696E 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 137
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 137
 
 
  6180      69745F73 
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6200 02d1 63616C6C 		.ascii	"callback\000"
  6200      6261636B 
  6200      00
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 138
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 138
 
 
  6201              	.LASF66:
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6220      626C6500 
  6221              	.LASF55:
  6222 03ec 696E7472 		.ascii	"intr\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 139
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 139
 
 
  6222      00
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6242      72697479 
  6242      00
  6243              	.LASF24:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 140
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 140
 
 
  6244 04bd 64617461 		.ascii	"dataElementSize\000"
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6264      6F7200
  6265              	.LASF48:
  6266 0579 6368616E 		.ascii	"channel\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 141
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 141
 
 
  6266      6E656C00 
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6288      616E7366 
  6289              	.LASF74:
  6290 0635 4379446D 		.ascii	"CyDmaValidateDescriptor\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 142
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 142
 
 
  6290      6156616C 
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 1
  6309      61747573 
  6309      00
  6310              	.LASF88:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccvzbtLk.s 			page 143
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccSDKg6c.s 			page 143
 
 
  6311 0717 7472616E 		.ascii	"transferWidth\000"

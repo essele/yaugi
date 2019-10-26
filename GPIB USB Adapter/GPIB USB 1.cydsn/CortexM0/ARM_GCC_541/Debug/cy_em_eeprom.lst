@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
   28:Generated_Source\PSoC4/cy_em_eeprom.c **** 
   29:Generated_Source\PSoC4/cy_em_eeprom.c **** 
   30:Generated_Source\PSoC4/cy_em_eeprom.c **** #if defined(__cplusplus)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 2
 
 
   31:Generated_Source\PSoC4/cy_em_eeprom.c **** extern "C" {
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
   85:Generated_Source\PSoC4/cy_em_eeprom.c **** * datasheet.
   86:Generated_Source\PSoC4/cy_em_eeprom.c **** *
   87:Generated_Source\PSoC4/cy_em_eeprom.c **** * \sideeffect 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 3
 
 
   88:Generated_Source\PSoC4/cy_em_eeprom.c **** * If the "Redundant Copy" option is used, the function performs a number of 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
   68 002e 7B68     		ldr	r3, [r7, #4]
   69 0030 1B68     		ldr	r3, [r3]
   70 0032 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 4
 
 
   71 0034 58D0     		beq	.L2
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  112 0078 7B68     		ldr	r3, [r7, #4]
  113 007a 1B68     		ldr	r3, [r3]
  114 007c DA09     		lsrs	r2, r3, #7
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 5
 
 
  115 007e 7B68     		ldr	r3, [r7, #4]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  162 00c8 0ED0     		beq	.L2
  120:Generated_Source\PSoC4/cy_em_eeprom.c ****             {
  121:Generated_Source\PSoC4/cy_em_eeprom.c ****                 /* Call the function only after device reprogramming in case
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 6
 
 
  122:Generated_Source\PSoC4/cy_em_eeprom.c ****                 * if redundant copy is enabled.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  138:Generated_Source\PSoC4/cy_em_eeprom.c **** ****************************************************************************//**
  139:Generated_Source\PSoC4/cy_em_eeprom.c **** *
  140:Generated_Source\PSoC4/cy_em_eeprom.c **** * This function takes the logical EEPROM address, converts it to the actual
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 7
 
 
  141:Generated_Source\PSoC4/cy_em_eeprom.c **** * physical address where the data is stored and returns the data to the user.
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  221 0010 FB18     		adds	r3, r7, r3
  222 0012 0122     		movs	r2, #1
  223 0014 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 8
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 8
 
 
  175:Generated_Source\PSoC4/cy_em_eeprom.c ****     uint32 i;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  191:Generated_Source\PSoC4/cy_em_eeprom.c ****         uint32 seqNum = CY_EM_EEPROM_GET_SEQ_NUM(context->lastWrRowAddr);
  262              		.loc 1 191 0
  263 004a 3B68     		ldr	r3, [r7]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 9
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 9
 
 
  264 004c 9B68     		ldr	r3, [r3, #8]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  301 0088 5B68     		ldr	r3, [r3, #4]
  205:Generated_Source\PSoC4/cy_em_eeprom.c ****                               (CY_EM_EEPROM_FLASH_SIZEOF_ROW * context->numberOfRows)) *
  302              		.loc 1 205 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 10
 
 
  303 008a 5343     		muls	r3, r2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  346              		.loc 1 216 0
  347 00c6 07E0     		b	.L12
  348              	.L11:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 11
 
 
  210:Generated_Source\PSoC4/cy_em_eeprom.c ****         {
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  388 0102 9A42     		cmp	r2, r3
  389 0104 01D9     		bls	.L16
  390              		.loc 1 229 0 discriminator 3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 12
 
 
  391 0106 0123     		movs	r3, #1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  430 0138 7F22     		movs	r2, #127
  431 013a 1340     		ands	r3, r2
  432 013c 8022     		movs	r2, #128
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 13
 
 
  433 013e D31A     		subs	r3, r2, r3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  470 0176 CB1A     		subs	r3, r1, r3
  471 0178 1B02     		lsls	r3, r3, #8
  260:Generated_Source\PSoC4/cy_em_eeprom.c ****                         ((context->numberOfRows - curRdEepromRowNum) * CY_EM_EEPROM_FLASH_SIZEOF_RO
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 14
 
 
  472              		.loc 1 260 0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  506 01ae 3A6D     		ldr	r2, [r7, #80]
  507 01b0 3B6A     		ldr	r3, [r7, #32]
  508 01b2 D318     		adds	r3, r2, r3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 15
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 15
 
 
  280:Generated_Source\PSoC4/cy_em_eeprom.c ****                              (void *)(startRowAddr + curRowOffset),
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  549              	.L25:
  293:Generated_Source\PSoC4/cy_em_eeprom.c ****         }
  294:Generated_Source\PSoC4/cy_em_eeprom.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 16
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 16
 
 
  295:Generated_Source\PSoC4/cy_em_eeprom.c ****         /* This code block will copy the latest data from the EEPROM headers into the
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  588 022a 1800     		movs	r0, r3
  589 022c FFF7FEFF 		bl	GetRowAddrBySeqNum
  590 0230 0300     		movs	r3, r0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 17
 
 
  591 0232 3B65     		str	r3, [r7, #80]
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  636              	.LBB5:
  320:Generated_Source\PSoC4/cy_em_eeprom.c ****                     {
  321:Generated_Source\PSoC4/cy_em_eeprom.c ****                         uint32 srcOffset = (startAddr > addr) ? (0u) : (addr - startAddr);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 18
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 18
 
 
  637              		.loc 1 321 0 is_stmt 1
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  684 02b6 D318     		adds	r3, r2, r3
  685 02b8 BA69     		ldr	r2, [r7, #24]
  686 02ba 9342     		cmp	r3, r2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 19
 
 
  687 02bc 00D9     		bls	.L37
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  345:Generated_Source\PSoC4/cy_em_eeprom.c ****                             }
  346:Generated_Source\PSoC4/cy_em_eeprom.c ****                         }
  347:Generated_Source\PSoC4/cy_em_eeprom.c ****                         else
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 20
 
 
  348:Generated_Source\PSoC4/cy_em_eeprom.c ****                         {
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  766              		.code	16
  767              		.thumb_func
  768              		.type	Cy_Em_EEPROM_Write, %function
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 21
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 21
 
 
  769              	Cy_Em_EEPROM_Write:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  411:Generated_Source\PSoC4/cy_em_eeprom.c **** cy_en_em_eeprom_status_t Cy_Em_EEPROM_Write(uint32 addr,
  412:Generated_Source\PSoC4/cy_em_eeprom.c ****                                             void * eepromData,
  413:Generated_Source\PSoC4/cy_em_eeprom.c ****                                             uint32 size,
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 22
 
 
  414:Generated_Source\PSoC4/cy_em_eeprom.c ****                                             cy_stc_eeprom_context_t * context)
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  428:Generated_Source\PSoC4/cy_em_eeprom.c **** 
  429:Generated_Source\PSoC4/cy_em_eeprom.c ****     /* Check if the EEPROM data does not exceed the EEPROM capacity */
  430:Generated_Source\PSoC4/cy_em_eeprom.c ****     if((0u != size) && ((addr + size) <= (context->eepromSize)) && (NULL != eepromData))
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 23
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 23
 
 
  811              		.loc 1 430 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  858              		.loc 1 437 0
  859 0078 0023     		movs	r3, #0
  860 007a 9C22     		movs	r2, #156
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 24
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 24
 
 
  861 007c 5200     		lsls	r2, r2, #1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  453:Generated_Source\PSoC4/cy_em_eeprom.c ****             writeRamBuffer[CY_EM_EEPROM_HEADER_SEQ_NUM_OFFSET_U32] = seqNum;
  900              		.loc 1 453 0
  901 00c6 C34B     		ldr	r3, .L64
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 25
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 25
 
 
  902 00c8 A822     		movs	r2, #168
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  948 011c 6344     		add	r3, r3, ip
  949 011e 7A68     		ldr	r2, [r7, #4]
  950 0120 9A60     		str	r2, [r3, #8]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 26
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 26
 
 
  951 0122 16E0     		b	.L45
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  988 015e 9A68     		ldr	r2, [r3, #8]
  476:Generated_Source\PSoC4/cy_em_eeprom.c ****                          tmpData,
  989              		.loc 1 476 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 27
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 27
 
 
  990 0160 9623     		movs	r3, #150
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1029 01a6 BA18     		adds	r2, r7, r2
  1030 01a8 1268     		ldr	r2, [r2]
  1031 01aa D31A     		subs	r3, r2, r3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 28
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 28
 
 
  1032 01ac 0133     		adds	r3, r3, #1
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1069 01e2 5B00     		lsls	r3, r3, #1
  1070 01e4 FB18     		adds	r3, r7, r3
  1071 01e6 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 29
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 29
 
 
  1072 01e8 1100     		movs	r1, r2
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1111 0230 1A68     		ldr	r2, [r3]
  524:Generated_Source\PSoC4/cy_em_eeprom.c ****                                               *(uint32 *)(tmpRowAddr + CY_EM_EEPROM_HEADER_LEN_OFFS
  1112              		.loc 1 524 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 30
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 30
 
 
  1113 0232 A023     		movs	r3, #160
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1157 0282 1B68     		ldr	r3, [r3]
  1158 0284 002B     		cmp	r3, #0
  1159 0286 20D1     		bne	.L54
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 31
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 31
 
 
  1160              	.LBB8:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1202 02d0 0FD0     		beq	.L55
  546:Generated_Source\PSoC4/cy_em_eeprom.c ****                 {
  547:Generated_Source\PSoC4/cy_em_eeprom.c ****                     writeRamBuffer[CY_EM_EEPROM_HEADER_CHECKSUM_OFFSET_U32] = (uint32)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 32
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 32
 
 
  548:Generated_Source\PSoC4/cy_em_eeprom.c ****                         CalcChecksum((uint8 *) &writeRamBuffer[CY_EM_EEPROM_EEPROM_DATA_OFFSET_U32]
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1247 031c 5022     		movs	r2, #80
  1248 031e FF32     		adds	r2, r2, #255
  1249 0320 BC18     		adds	r4, r7, r2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 33
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 33
 
 
  1250 0322 3A68     		ldr	r2, [r7]
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1294 0372 A023     		movs	r3, #160
  1295 0374 5B00     		lsls	r3, r3, #1
  1296 0376 FB18     		adds	r3, r7, r3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 34
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 34
 
 
  1297 0378 1B68     		ldr	r3, [r3]
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1341              	.LBB9:
  573:Generated_Source\PSoC4/cy_em_eeprom.c ****             }
  574:Generated_Source\PSoC4/cy_em_eeprom.c ****             else
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 35
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 35
 
 
  575:Generated_Source\PSoC4/cy_em_eeprom.c ****             {
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  598:Generated_Source\PSoC4/cy_em_eeprom.c **** * The pointer to the EEPROM context structure \ref cy_stc_eeprom_context_t.
  599:Generated_Source\PSoC4/cy_em_eeprom.c **** *
  600:Generated_Source\PSoC4/cy_em_eeprom.c **** * \return
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 36
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 36
 
 
  601:Generated_Source\PSoC4/cy_em_eeprom.c **** * This function returns \ref cy_en_em_eeprom_status_t.
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  634:Generated_Source\PSoC4/cy_em_eeprom.c ****     uint32 emEepromRowRdAddr;
  635:Generated_Source\PSoC4/cy_em_eeprom.c ****     cy_en_em_eeprom_status_t ret = CY_EM_EEPROM_WRITE_FAIL;
  1394              		.loc 1 635 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 37
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 37
 
 
  1395 0014 1C23     		movs	r3, #28
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1435 005c 1B69     		ldr	r3, [r3, #16]
  1436 005e 5343     		muls	r3, r2
  1437 0060 8822     		movs	r2, #136
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 38
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 38
 
 
  1438 0062 5200     		lsls	r2, r2, #1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  669:Generated_Source\PSoC4/cy_em_eeprom.c ****             * erased.
  670:Generated_Source\PSoC4/cy_em_eeprom.c ****             */
  671:Generated_Source\PSoC4/cy_em_eeprom.c ****             if(0u != emEepromRowAddr)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 39
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 39
 
 
  672:Generated_Source\PSoC4/cy_em_eeprom.c ****             {
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1506 00da 1A4B     		ldr	r3, .L72
  1507 00dc 9022     		movs	r2, #144
  1508 00de 5200     		lsls	r2, r2, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 40
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 40
 
 
  1509 00e0 9446     		mov	ip, r2
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  697:Generated_Source\PSoC4/cy_em_eeprom.c ****         if(CY_EM_EEPROM_SUCCESS == ret)
  698:Generated_Source\PSoC4/cy_em_eeprom.c ****         {
  699:Generated_Source\PSoC4/cy_em_eeprom.c ****             writeRamBuffer[0u] = storedSeqNum;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 41
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 41
 
 
  700:Generated_Source\PSoC4/cy_em_eeprom.c **** 
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  728:Generated_Source\PSoC4/cy_em_eeprom.c **** * \return
  729:Generated_Source\PSoC4/cy_em_eeprom.c **** * The number of writes performed to the EEPROM.
  730:Generated_Source\PSoC4/cy_em_eeprom.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 42
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 42
 
 
  731:Generated_Source\PSoC4/cy_em_eeprom.c **** *******************************************************************************/
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  752:Generated_Source\PSoC4/cy_em_eeprom.c **** * The pointer to a memory where the last written row will be returned.
  753:Generated_Source\PSoC4/cy_em_eeprom.c **** *
  754:Generated_Source\PSoC4/cy_em_eeprom.c **** * \param context
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 43
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 43
 
 
  755:Generated_Source\PSoC4/cy_em_eeprom.c **** * The pointer to the EEPROM context structure \ref cy_stc_eeprom_context_t.
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1653 002a BB68     		ldr	r3, [r7, #8]
  1654 002c 002B     		cmp	r3, #0
  1655 002e 08D0     		beq	.L78
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 44
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 44
 
 
  1656              		.loc 1 770 0 is_stmt 0 discriminator 1
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1696              		.size	FindLastWrittenRow, .-FindLastWrittenRow
  1697              		.section	.text.GetRowAddrBySeqNum,"ax",%progbits
  1698              		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 45
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 45
 
 
  1699              		.code	16
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1726 0012 FB68     		ldr	r3, [r7, #12]
  1727 0014 0133     		adds	r3, r3, #1
  1728 0016 FF33     		adds	r3, r3, #255
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 46
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 46
 
 
  1729 0018 FB60     		str	r3, [r7, #12]
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  823:Generated_Source\PSoC4/cy_em_eeprom.c **** 
  824:Generated_Source\PSoC4/cy_em_eeprom.c **** /*******************************************************************************
  825:Generated_Source\PSoC4/cy_em_eeprom.c **** * Function Name: GetNextRowToWrite
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 47
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 47
 
 
  826:Generated_Source\PSoC4/cy_em_eeprom.c **** ****************************************************************************//**
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1790 0016 1B68     		ldr	r3, [r3]
  1791 0018 5A1C     		adds	r2, r3, #1
  1792 001a FF32     		adds	r2, r2, #255
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 48
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 48
 
 
  1793 001c BB68     		ldr	r3, [r7, #8]
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  879:Generated_Source\PSoC4/cy_em_eeprom.c ****         {
  880:Generated_Source\PSoC4/cy_em_eeprom.c ****             /* The read row address should be taken from an EEPROM copy that became
  881:Generated_Source\PSoC4/cy_em_eeprom.c ****             * inactive recently. This condition check handles that.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 49
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 49
 
 
  882:Generated_Source\PSoC4/cy_em_eeprom.c ****             */
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  895:Generated_Source\PSoC4/cy_em_eeprom.c ****         else
  896:Generated_Source\PSoC4/cy_em_eeprom.c ****         {
  897:Generated_Source\PSoC4/cy_em_eeprom.c ****             /* If no wear leveling, always read from the same flash row that
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 50
 
 
  898:Generated_Source\PSoC4/cy_em_eeprom.c ****             * should be written.
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  909:Generated_Source\PSoC4/cy_em_eeprom.c **** *
  910:Generated_Source\PSoC4/cy_em_eeprom.c **** * Implements CRC-8 that is used in checksum calculation for the redundant copy
  911:Generated_Source\PSoC4/cy_em_eeprom.c **** * algorithm.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 51
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 51
 
 
  912:Generated_Source\PSoC4/cy_em_eeprom.c **** *
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1938 0028 0F23     		movs	r3, #15
  1939 002a FB18     		adds	r3, r7, r3
  1940 002c 0F22     		movs	r2, #15
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 52
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 52
 
 
  1941 002e BA18     		adds	r2, r7, r2
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  1990              		.loc 1 932 0 is_stmt 0 discriminator 2
  1991 007c 0E23     		movs	r3, #14
  1992 007e FB18     		adds	r3, r7, r3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 53
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 53
 
 
  1993 0080 1B78     		ldrb	r3, [r3]
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  949:Generated_Source\PSoC4/cy_em_eeprom.c **** * \param config
  950:Generated_Source\PSoC4/cy_em_eeprom.c **** * The pointer to a configuration structure. See \ref cy_stc_eeprom_config_t.
  951:Generated_Source\PSoC4/cy_em_eeprom.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 54
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 54
 
 
  952:Generated_Source\PSoC4/cy_em_eeprom.c **** * \return
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2077 0038 0132     		adds	r2, r2, #1
  2078 003a 5343     		muls	r3, r2
  2079 003c 1A02     		lsls	r2, r3, #8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 55
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 55
 
 
  2080 003e 3B69     		ldr	r3, [r7, #16]
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  976:Generated_Source\PSoC4/cy_em_eeprom.c **** * Writes one flash row starting from the specified row address.
  977:Generated_Source\PSoC4/cy_em_eeprom.c **** *
  978:Generated_Source\PSoC4/cy_em_eeprom.c **** * \param rowAdd
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 56
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 56
 
 
  979:Generated_Source\PSoC4/cy_em_eeprom.c **** * The address of the flash row.
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1013:Generated_Source\PSoC4/cy_em_eeprom.c ****     #if (CY_PSOC4)
 1014:Generated_Source\PSoC4/cy_em_eeprom.c ****         /* For PSoC 4 devices, the array ID is included in the row number */
 1015:Generated_Source\PSoC4/cy_em_eeprom.c ****         rowNum = rowAddr / CY_EM_EEPROM_FLASH_SIZEOF_ROW;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 57
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 57
 
 
  2139              		.loc 1 1015 0
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1048:Generated_Source\PSoC4/cy_em_eeprom.c ****     {
 1049:Generated_Source\PSoC4/cy_em_eeprom.c ****         /* Initiate write */
 1050:Generated_Source\PSoC4/cy_em_eeprom.c ****         if(CY_FLASH_DRV_OPERATION_STARTED == Cy_Flash_StartWrite(rowAddr, (const uint32 *)rowData))
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 58
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 58
 
 
 1051:Generated_Source\PSoC4/cy_em_eeprom.c ****         {
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1085:Generated_Source\PSoC4/cy_em_eeprom.c **** *
 1086:Generated_Source\PSoC4/cy_em_eeprom.c **** * \param ramBuffAddr
 1087:Generated_Source\PSoC4/cy_em_eeprom.c **** * The address of the RAM buffer that contains zeroed data (used only for
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 59
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 59
 
 
 1088:Generated_Source\PSoC4/cy_em_eeprom.c **** * non-PSoC 6 devices).
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1118:Generated_Source\PSoC4/cy_em_eeprom.c ****             if(CY_FLASH_DRV_SUCCESS == Cy_Flash_EraseRow(emEepromRowAddr))
 1119:Generated_Source\PSoC4/cy_em_eeprom.c ****             {
 1120:Generated_Source\PSoC4/cy_em_eeprom.c ****                 ret = CY_EM_EEPROM_SUCCESS;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 60
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 60
 
 
 1121:Generated_Source\PSoC4/cy_em_eeprom.c ****             }
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2218 0030 1B78     		ldrb	r3, [r3]
  2219 0032 002B     		cmp	r3, #0
  2220 0034 15D1     		bne	.L112
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 61
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 61
 
 
  2221              		.loc 1 1161 0 is_stmt 0 discriminator 1
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2261              		.loc 1 1175 0
  2262 0078 1800     		movs	r0, r3
  2263 007a BD46     		mov	sp, r7
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 62
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 62
 
 
  2264 007c 07B0     		add	sp, sp, #28
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1217:Generated_Source\PSoC4/cy_em_eeprom.c ****                                                 cy_stc_eeprom_context_t * context)
 1218:Generated_Source\PSoC4/cy_em_eeprom.c **** {
  2277              		.loc 1 1218 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 63
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 63
 
 
  2278              		.cfi_startproc
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1226:Generated_Source\PSoC4/cy_em_eeprom.c ****         ((uint32) CalcChecksum((uint8 *)(startAddr + CY_EM_EEPROM_EEPROM_DATA_OFFSET),
  2323              		.loc 1 1226 0
  2324 0044 9C42     		cmp	r4, r3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 64
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 64
 
 
  2325 0046 0ED1     		bne	.L116
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1243:Generated_Source\PSoC4/cy_em_eeprom.c ****         (void)memcpy((void *)(writeRamBuffer), (void *)(rcStartRowAddr), CY_EM_EEPROM_FLASH_SIZEOF_
  2363              		.loc 1 1243 0
  2364 008a 8823     		movs	r3, #136
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 65
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 65
 
 
  2365 008c 5B00     		lsls	r3, r3, #1
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1255:Generated_Source\PSoC4/cy_em_eeprom.c ****         ret = CY_EM_EEPROM_BAD_CHECKSUM;
  2408              		.loc 1 1255 0
  2409 00e0 1823     		movs	r3, #24
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 66
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 66
 
 
  2410 00e2 FF33     		adds	r3, r3, #255
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1284:Generated_Source\PSoC4/cy_em_eeprom.c **** * The address of the EEPROM header data in the currently analyzed row that may
 1285:Generated_Source\PSoC4/cy_em_eeprom.c **** * concern to the row about to be written.
 1286:Generated_Source\PSoC4/cy_em_eeprom.c **** *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 67
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 67
 
 
 1287:Generated_Source\PSoC4/cy_em_eeprom.c **** * \param len
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2468 0026 DB01     		lsls	r3, r3, #7
  2469 0028 5A1E     		subs	r2, r3, #1
  2470 002a 3B6A     		ldr	r3, [r7, #32]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 68
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 68
 
 
  2471 002c 9A42     		cmp	r2, r3
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2519              		.loc 1 1314 0 is_stmt 1
  2520 0072 FB68     		ldr	r3, [r7, #12]
  2521 0074 1A68     		ldr	r2, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 69
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 69
 
 
  2522 0076 7B6A     		ldr	r3, [r7, #36]
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2564 00b4 FB68     		ldr	r3, [r7, #12]
  2565 00b6 8022     		movs	r2, #128
  2566 00b8 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 70
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 70
 
 
 1327:Generated_Source\PSoC4/cy_em_eeprom.c ****             *endAddr = (*startAddr + len) - (*startAddr - (addr % CY_EM_EEPROM_EEPROM_DATA_LEN));
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2610              		.align	2
  2611              		.code	16
  2612              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 71
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 71
 
 
  2613              		.type	FillChecksum, %function
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2631 0008 7B68     		ldr	r3, [r7, #4]
  2632 000a 9B68     		ldr	r3, [r3, #8]
  2633 000c BB60     		str	r3, [r7, #8]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 72
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 72
 
 
 1374:Generated_Source\PSoC4/cy_em_eeprom.c ****     uint32 tmpRowAddr;
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2675 0054 344B     		ldr	r3, .L138
  2676 0056 9022     		movs	r2, #144
  2677 0058 5200     		lsls	r2, r2, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 73
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 73
 
 
  2678 005a 9446     		mov	ip, r2
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2718 00a6 9B69     		ldr	r3, [r3, #24]
  2719 00a8 D21A     		subs	r2, r2, r3
  2720 00aa 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 74
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 74
 
 
  2721 00ac 1B68     		ldr	r3, [r3]
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
 1379:Generated_Source\PSoC4/cy_em_eeprom.c ****     {
  2765              		.loc 1 1379 0 is_stmt 0 discriminator 1
  2766 0100 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 75
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 75
 
 
  2767 0102 5A68     		ldr	r2, [r3, #4]
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2817 002c 02       		.uleb128 0x2
  2818 002d 01       		.byte	0x1
  2819 002e 08       		.byte	0x8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 76
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 76
 
 
  2820 002f 20040000 		.4byte	.LASF1
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2874 0098 04       		.byte	0x4
  2875 0099 32010000 		.4byte	.LASF13
  2876 009d 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 77
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 77
 
 
  2877 009e 01       		.byte	0x1
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2931 0109 04       		.uleb128 0x4
  2932 010a 08050000 		.4byte	.LASF23
  2933 010e 03       		.byte	0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 78
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 78
 
 
  2934 010f 0F01     		.2byte	0x10f
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  2988 0185 18       		.byte	0x18
  2989 0186 00       		.byte	0
  2990 0187 04       		.uleb128 0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 79
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 79
 
 
  2991 0188 A2030000 		.4byte	.LASF27
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3045 01fd 02       		.uleb128 0x2
  3046 01fe 91       		.byte	0x91
  3047 01ff 60       		.sleb128 -32
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 80
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 80
 
 
  3048 0200 0E       		.uleb128 0xe
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3102 026c 03       		.uleb128 0x3
  3103 026d 91       		.byte	0x91
  3104 026e 907F     		.sleb128 -112
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 81
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 81
 
 
  3105 0270 0E       		.uleb128 0xe
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3159 02d0 91       		.byte	0x91
  3160 02d1 B87F     		.sleb128 -72
  3161 02d3 10       		.uleb128 0x10
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 82
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 82
 
 
  3162 02d4 C1050000 		.4byte	.LASF46
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3216 0337 83000000 		.4byte	0x83
  3217 033b 02       		.uleb128 0x2
  3218 033c 91       		.byte	0x91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 83
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 83
 
 
  3219 033d 48       		.sleb128 -56
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3273 03b0 01       		.byte	0x1
  3274 03b1 4201     		.2byte	0x142
  3275 03b3 83000000 		.4byte	0x83
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 84
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 84
 
 
  3276 03b7 03       		.uleb128 0x3
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3330 0425 02       		.uleb128 0x2
  3331 0426 91       		.byte	0x91
  3332 0427 6F       		.sleb128 -17
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 85
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 85
 
 
  3333 0428 16       		.uleb128 0x16
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3387 0490 91       		.byte	0x91
  3388 0491 60       		.sleb128 -32
  3389 0492 13       		.uleb128 0x13
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 86
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 86
 
 
  3390 0493 FD050000 		.4byte	.LASF64
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3444 0502 01       		.byte	0x1
  3445 0503 B501     		.2byte	0x1b5
  3446 0505 83000000 		.4byte	0x83
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 87
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 87
 
 
  3447 0509 02       		.uleb128 0x2
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3501 0575 7702     		.2byte	0x277
  3502 0577 83000000 		.4byte	0x83
  3503 057b 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 88
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 88
 
 
  3504 057c 91       		.byte	0x91
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3558 05e3 00       		.byte	0
  3559 05e4 1A       		.uleb128 0x1a
  3560 05e5 F9000000 		.4byte	.LASF72
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 89
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 89
 
 
  3561 05e9 01       		.byte	0x1
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3615 0659 83000000 		.4byte	0x83
  3616 065d 02       		.uleb128 0x2
  3617 065e 91       		.byte	0x91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 90
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 90
 
 
  3618 065f 74       		.sleb128 -12
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3672 06cb 74       		.sleb128 -12
  3673 06cc 00       		.byte	0
  3674 06cd 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 91
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 91
 
 
  3675 06ce BA030000 		.4byte	.LASF78
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3729 0740 9B03     		.2byte	0x39b
  3730 0742 84070000 		.4byte	0x784
  3731 0746 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 92
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 92
 
 
  3732 0747 91       		.byte	0x91
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3786 07b1 91       		.byte	0x91
  3787 07b2 64       		.sleb128 -28
  3788 07b3 16       		.uleb128 0x16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 93
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 93
 
 
  3789 07b4 72657400 		.ascii	"ret\000"
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3843 0821 15020000 		.4byte	0x215
  3844 0825 02       		.uleb128 0x2
  3845 0826 91       		.byte	0x91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 94
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 94
 
 
  3846 0827 5C       		.sleb128 -36
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3900 0892 01       		.byte	0x1
  3901 0893 4B04     		.2byte	0x44b
  3902 0895 15020000 		.4byte	0x215
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 95
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 95
 
 
  3903 0899 02       		.uleb128 0x2
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  3957 0905 15       		.uleb128 0x15
  3958 0906 CB010000 		.4byte	.LASF93
  3959 090a 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 96
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 96
 
 
  3960 090b C004     		.2byte	0x4c0
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4014 097a 91       		.byte	0x91
  4015 097b 6C       		.sleb128 -20
  4016 097c 15       		.uleb128 0x15
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 97
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 97
 
 
  4017 097d F8030000 		.4byte	.LASF56
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4071 09e7 2C010000 		.4byte	.LFE15-.LFB15
  4072 09eb 01       		.uleb128 0x1
  4073 09ec 9C       		.byte	0x9c
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 98
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 98
 
 
  4074 09ed 15       		.uleb128 0x15
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4128 0a55 91       		.byte	0x91
  4129 0a56 68       		.sleb128 -24
  4130 0a57 16       		.uleb128 0x16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 99
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 99
 
 
  4131 0a58 72657400 		.ascii	"ret\000"
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4185 002b 00       		.byte	0
  4186 002c 03       		.uleb128 0x3
  4187 002d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 100
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 100
 
 
  4188 002e 3A       		.uleb128 0x3a
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4242 0064 38       		.uleb128 0x38
  4243 0065 0B       		.uleb128 0xb
  4244 0066 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 101
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 101
 
 
  4245 0067 00       		.byte	0
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4299 009d 01       		.uleb128 0x1
  4300 009e 12       		.uleb128 0x12
  4301 009f 06       		.uleb128 0x6
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 102
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 102
 
 
  4302 00a0 40       		.uleb128 0x40
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4356 00d7 3B       		.uleb128 0x3b
  4357 00d8 0B       		.uleb128 0xb
  4358 00d9 49       		.uleb128 0x49
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 103
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 103
 
 
  4359 00da 13       		.uleb128 0x13
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4413 0110 13       		.uleb128 0x13
  4414 0111 11       		.uleb128 0x11
  4415 0112 01       		.uleb128 0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 104
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 104
 
 
  4416 0113 12       		.uleb128 0x12
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4470 014a 00       		.byte	0
  4471 014b 00       		.byte	0
  4472 014c 19       		.uleb128 0x19
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 105
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 105
 
 
  4473 014d 21       		.uleb128 0x21
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4527 0185 01       		.uleb128 0x1
  4528 0186 13       		.uleb128 0x13
  4529 0187 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 106
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 106
 
 
  4530 0188 00       		.byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4584 01bf 11       		.uleb128 0x11
  4585 01c0 01       		.uleb128 0x1
  4586 01c1 12       		.uleb128 0x12
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 107
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 107
 
 
  4587 01c2 06       		.uleb128 0x6
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4641 0044 3E000000 		.4byte	.LFE7-.LFB7
  4642 0048 00000000 		.4byte	.LFB8
  4643 004c B0000000 		.4byte	.LFE8-.LFB8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 108
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 108
 
 
  4644 0050 00000000 		.4byte	.LFB9
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4698 0090 00000000 		.4byte	0
  4699 0094 00000000 		.4byte	0
  4700              		.section	.debug_line,"",%progbits
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 109
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 109
 
 
  4701              	.Ldebug_line0:
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4726      206C6F6E 
  4726      6720696E 
  4726      7400
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 110
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 110
 
 
  4727              	.LASF0:
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4750 0146 75696E74 		.ascii	"uint32\000"
  4750      333200
  4751              	.LASF45:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 111
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 111
 
 
  4752 014d 61637445 		.ascii	"actEepromRowNum\000"
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4774      64647265 
  4774      73736573 
  4774      00
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 112
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 112
 
 
  4775              	.LASF37:
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4798      43313120 
  4798      352E342E 
  4798      31203230 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 113
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 113
 
 
  4798      31363036 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4818 039b 7365714E 		.ascii	"seqNum\000"
  4818      756D00
  4819              	.LASF27:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 114
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 114
 
 
  4820 03a2 63795F73 		.ascii	"cy_stc_eeprom_context_t\000"
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4845              	.LASF74:
  4846 0440 70726576 		.ascii	"prevSeqNum\000"
  4846      5365714E 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 115
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 115
 
 
  4846      756D00
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4872 04da 636F6E74 		.ascii	"context\000"
  4872      65787400 
  4873              	.LASF26:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 116
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 116
 
 
  4874 04e2 6C617374 		.ascii	"lastWrRowAddr\000"
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 1
  4895      4D5F4545 
  4895      50524F4D 
  4895      5F535543 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccbCEOog.s 			page 117
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccjbNv8j.s 			page 117
 
 
  4895      43455353 

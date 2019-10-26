@@ -1,0 +1,6 @@
+\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\GPIB USB 1.cyprj|fbc43287-2e23-4b45-b691-2325af133f57
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|034bb694-da22-4e0b-8ccc-35198501d9da
+\\Mac\Home\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|805cf1d2-e86e-48a7-acf1-7ce52d21d099
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|9a1f9f0e-1130-44a5-839f-4c01fd40be10
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|171fd52f-1769-4c40-aab6-e67fc6a19a86
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|86d18bdd-fc56-4b7d-9d8e-8f6d80fb32b7

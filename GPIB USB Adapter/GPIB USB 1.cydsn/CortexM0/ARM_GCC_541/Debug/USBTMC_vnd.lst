@@ -1,0 +1,629 @@
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"USBTMC_vnd.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.USBTMC_HandleVendorRqst,"ax",%progbits
+  20              		.align	2
+  21              		.global	USBTMC_HandleVendorRqst
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	USBTMC_HandleVendorRqst, %function
+  25              	USBTMC_HandleVendorRqst:
+  26              	.LFB1:
+  27              		.file 1 "Generated_Source\\PSoC4\\USBTMC_vnd.c"
+   1:Generated_Source\PSoC4/USBTMC_vnd.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC4/USBTMC_vnd.c **** * \file USBTMC_vnd.c
+   3:Generated_Source\PSoC4/USBTMC_vnd.c **** * \version 3.20
+   4:Generated_Source\PSoC4/USBTMC_vnd.c **** *
+   5:Generated_Source\PSoC4/USBTMC_vnd.c **** * \brief
+   6:Generated_Source\PSoC4/USBTMC_vnd.c **** *  This file contains the  USB vendor request handler.
+   7:Generated_Source\PSoC4/USBTMC_vnd.c **** *
+   8:Generated_Source\PSoC4/USBTMC_vnd.c **** ********************************************************************************
+   9:Generated_Source\PSoC4/USBTMC_vnd.c **** * \copyright
+  10:Generated_Source\PSoC4/USBTMC_vnd.c **** * Copyright 2008-2016, Cypress Semiconductor Corporation.  All rights reserved.
+  11:Generated_Source\PSoC4/USBTMC_vnd.c **** * You may use this file only in accordance with the license, terms, conditions,
+  12:Generated_Source\PSoC4/USBTMC_vnd.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  13:Generated_Source\PSoC4/USBTMC_vnd.c **** * the software package with which this file was provided.
+  14:Generated_Source\PSoC4/USBTMC_vnd.c **** *******************************************************************************/
+  15:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  16:Generated_Source\PSoC4/USBTMC_vnd.c **** #include "USBTMC_pvt.h"
+  17:Generated_Source\PSoC4/USBTMC_vnd.c **** #include "cyapicallbacks.h"
+  18:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  19:Generated_Source\PSoC4/USBTMC_vnd.c **** #if(USBTMC_EXTERN_VND == USBTMC_FALSE)
+  20:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  21:Generated_Source\PSoC4/USBTMC_vnd.c **** /***************************************
+  22:Generated_Source\PSoC4/USBTMC_vnd.c **** * Vendor Specific Declarations
+  23:Generated_Source\PSoC4/USBTMC_vnd.c **** ***************************************/
+  24:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  25:Generated_Source\PSoC4/USBTMC_vnd.c **** /* `#START VENDOR_SPECIFIC_DECLARATIONS` Place your declaration here */
+  26:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  27:Generated_Source\PSoC4/USBTMC_vnd.c **** /* `#END` */
+  28:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  29:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  30:Generated_Source\PSoC4/USBTMC_vnd.c **** /*******************************************************************************
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 2
+
+
+  31:Generated_Source\PSoC4/USBTMC_vnd.c **** * Function Name: USBTMC_HandleVendorRqst
+  32:Generated_Source\PSoC4/USBTMC_vnd.c **** ****************************************************************************//**
+  33:Generated_Source\PSoC4/USBTMC_vnd.c **** *
+  34:Generated_Source\PSoC4/USBTMC_vnd.c **** *  This routine provide users with a method to implement vendor specific
+  35:Generated_Source\PSoC4/USBTMC_vnd.c **** *  requests.
+  36:Generated_Source\PSoC4/USBTMC_vnd.c **** *
+  37:Generated_Source\PSoC4/USBTMC_vnd.c **** *  To implement vendor specific requests, add your code in this function to
+  38:Generated_Source\PSoC4/USBTMC_vnd.c **** *  decode and disposition the request.  If the request is handled, your code
+  39:Generated_Source\PSoC4/USBTMC_vnd.c **** *  must set the variable "requestHandled" to TRUE, indicating that the
+  40:Generated_Source\PSoC4/USBTMC_vnd.c **** *  request has been handled.
+  41:Generated_Source\PSoC4/USBTMC_vnd.c **** *
+  42:Generated_Source\PSoC4/USBTMC_vnd.c **** * \return
+  43:Generated_Source\PSoC4/USBTMC_vnd.c **** *  requestHandled.
+  44:Generated_Source\PSoC4/USBTMC_vnd.c **** *
+  45:Generated_Source\PSoC4/USBTMC_vnd.c **** * \reentrant
+  46:Generated_Source\PSoC4/USBTMC_vnd.c **** *  No.
+  47:Generated_Source\PSoC4/USBTMC_vnd.c **** *
+  48:Generated_Source\PSoC4/USBTMC_vnd.c **** *******************************************************************************/
+  49:Generated_Source\PSoC4/USBTMC_vnd.c **** uint8 USBTMC_HandleVendorRqst(void) 
+  50:Generated_Source\PSoC4/USBTMC_vnd.c **** {
+  28              		.loc 1 50 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 8
+  31              		@ frame_needed = 1, uses_anonymous_args = 0
+  32 0000 80B5     		push	{r7, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 7, -8
+  35              		.cfi_offset 14, -4
+  36 0002 82B0     		sub	sp, sp, #8
+  37              		.cfi_def_cfa_offset 16
+  38 0004 00AF     		add	r7, sp, #0
+  39              		.cfi_def_cfa_register 7
+  51:Generated_Source\PSoC4/USBTMC_vnd.c ****     uint8 requestHandled = USBTMC_FALSE;
+  40              		.loc 1 51 0
+  41 0006 FB1D     		adds	r3, r7, #7
+  42 0008 0022     		movs	r2, #0
+  43 000a 1A70     		strb	r2, [r3]
+  52:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  53:Generated_Source\PSoC4/USBTMC_vnd.c ****     /* Check request direction: D2H or H2D. */
+  54:Generated_Source\PSoC4/USBTMC_vnd.c ****     if (0u != (USBTMC_bmRequestTypeReg & USBTMC_RQST_DIR_D2H))
+  44              		.loc 1 54 0
+  45 000c 084B     		ldr	r3, .L7
+  46 000e 1B68     		ldr	r3, [r3]
+  47 0010 8022     		movs	r2, #128
+  48 0012 1340     		ands	r3, r2
+  49 0014 05D0     		beq	.L2
+  55:Generated_Source\PSoC4/USBTMC_vnd.c ****     {
+  56:Generated_Source\PSoC4/USBTMC_vnd.c ****         /* Handle direction from device to host. */
+  57:Generated_Source\PSoC4/USBTMC_vnd.c ****         
+  58:Generated_Source\PSoC4/USBTMC_vnd.c ****         switch (USBTMC_bRequestReg)
+  50              		.loc 1 58 0
+  51 0016 064B     		ldr	r3, .L7
+  52 0018 5B68     		ldr	r3, [r3, #4]
+  53 001a 012B     		cmp	r3, #1
+  54 001c 00D0     		beq	.L6
+  59:Generated_Source\PSoC4/USBTMC_vnd.c ****         {
+  60:Generated_Source\PSoC4/USBTMC_vnd.c ****             case USBTMC_GET_EXTENDED_CONFIG_DESCRIPTOR:
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 3
+
+
+  61:Generated_Source\PSoC4/USBTMC_vnd.c ****             #if defined(USBTMC_ENABLE_MSOS_STRING)
+  62:Generated_Source\PSoC4/USBTMC_vnd.c ****                 USBTMC_currentTD.pData = (volatile uint8 *) &USBTMC_MSOS_CONFIGURATION_DESCR[0u];
+  63:Generated_Source\PSoC4/USBTMC_vnd.c ****                 USBTMC_currentTD.count = USBTMC_MSOS_CONFIGURATION_DESCR[0u];
+  64:Generated_Source\PSoC4/USBTMC_vnd.c ****                 requestHandled  = USBTMC_InitControlRead();
+  65:Generated_Source\PSoC4/USBTMC_vnd.c ****             #endif /* (USBTMC_ENABLE_MSOS_STRING) */
+  66:Generated_Source\PSoC4/USBTMC_vnd.c ****                 break;
+  67:Generated_Source\PSoC4/USBTMC_vnd.c ****             
+  68:Generated_Source\PSoC4/USBTMC_vnd.c ****             default:
+  69:Generated_Source\PSoC4/USBTMC_vnd.c ****                 break;
+  55              		.loc 1 69 0
+  56 001e 00E0     		b	.L2
+  57              	.L6:
+  66:Generated_Source\PSoC4/USBTMC_vnd.c ****             
+  58              		.loc 1 66 0
+  59 0020 C046     		nop
+  60              	.L2:
+  70:Generated_Source\PSoC4/USBTMC_vnd.c ****         }
+  71:Generated_Source\PSoC4/USBTMC_vnd.c ****     }
+  72:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  73:Generated_Source\PSoC4/USBTMC_vnd.c ****     /* `#START VENDOR_SPECIFIC_CODE` Place your vendor specific request here */
+  74:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  75:Generated_Source\PSoC4/USBTMC_vnd.c ****     /* `#END` */
+  76:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  77:Generated_Source\PSoC4/USBTMC_vnd.c **** #ifdef USBTMC_HANDLE_VENDOR_RQST_CALLBACK
+  78:Generated_Source\PSoC4/USBTMC_vnd.c ****     if (USBTMC_FALSE == requestHandled)
+  79:Generated_Source\PSoC4/USBTMC_vnd.c ****     {
+  80:Generated_Source\PSoC4/USBTMC_vnd.c ****         requestHandled = USBTMC_HandleVendorRqst_Callback();
+  81:Generated_Source\PSoC4/USBTMC_vnd.c ****     }
+  82:Generated_Source\PSoC4/USBTMC_vnd.c **** #endif /* (USBTMC_HANDLE_VENDOR_RQST_CALLBACK) */
+  83:Generated_Source\PSoC4/USBTMC_vnd.c **** 
+  84:Generated_Source\PSoC4/USBTMC_vnd.c ****     return (requestHandled);
+  61              		.loc 1 84 0
+  62 0022 FB1D     		adds	r3, r7, #7
+  63 0024 1B78     		ldrb	r3, [r3]
+  85:Generated_Source\PSoC4/USBTMC_vnd.c **** }
+  64              		.loc 1 85 0
+  65 0026 1800     		movs	r0, r3
+  66 0028 BD46     		mov	sp, r7
+  67 002a 02B0     		add	sp, sp, #8
+  68              		@ sp needed
+  69 002c 80BD     		pop	{r7, pc}
+  70              	.L8:
+  71 002e C046     		.align	2
+  72              	.L7:
+  73 0030 00002C40 		.word	1076625408
+  74              		.cfi_endproc
+  75              	.LFE1:
+  76              		.size	USBTMC_HandleVendorRqst, .-USBTMC_HandleVendorRqst
+  77              		.text
+  78              	.Letext0:
+  79              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+  80              		.file 3 "Generated_Source\\PSoC4\\USBTMC.h"
+  81              		.section	.debug_info,"",%progbits
+  82              	.Ldebug_info0:
+  83 0000 F7000000 		.4byte	0xf7
+  84 0004 0400     		.2byte	0x4
+  85 0006 00000000 		.4byte	.Ldebug_abbrev0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 4
+
+
+  86 000a 04       		.byte	0x4
+  87 000b 01       		.uleb128 0x1
+  88 000c 18010000 		.4byte	.LASF17
+  89 0010 0C       		.byte	0xc
+  90 0011 29000000 		.4byte	.LASF18
+  91 0015 A6010000 		.4byte	.LASF19
+  92 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  93 001d 00000000 		.4byte	0
+  94 0021 00000000 		.4byte	.Ldebug_line0
+  95 0025 02       		.uleb128 0x2
+  96 0026 01       		.byte	0x1
+  97 0027 06       		.byte	0x6
+  98 0028 DF000000 		.4byte	.LASF0
+  99 002c 02       		.uleb128 0x2
+ 100 002d 01       		.byte	0x1
+ 101 002e 08       		.byte	0x8
+ 102 002f 91000000 		.4byte	.LASF1
+ 103 0033 02       		.uleb128 0x2
+ 104 0034 02       		.byte	0x2
+ 105 0035 05       		.byte	0x5
+ 106 0036 0E010000 		.4byte	.LASF2
+ 107 003a 02       		.uleb128 0x2
+ 108 003b 02       		.byte	0x2
+ 109 003c 07       		.byte	0x7
+ 110 003d CC000000 		.4byte	.LASF3
+ 111 0041 02       		.uleb128 0x2
+ 112 0042 04       		.byte	0x4
+ 113 0043 05       		.byte	0x5
+ 114 0044 BC000000 		.4byte	.LASF4
+ 115 0048 02       		.uleb128 0x2
+ 116 0049 04       		.byte	0x4
+ 117 004a 07       		.byte	0x7
+ 118 004b 53000000 		.4byte	.LASF5
+ 119 004f 02       		.uleb128 0x2
+ 120 0050 08       		.byte	0x8
+ 121 0051 05       		.byte	0x5
+ 122 0052 00000000 		.4byte	.LASF6
+ 123 0056 02       		.uleb128 0x2
+ 124 0057 08       		.byte	0x8
+ 125 0058 07       		.byte	0x7
+ 126 0059 74000000 		.4byte	.LASF7
+ 127 005d 03       		.uleb128 0x3
+ 128 005e 04       		.byte	0x4
+ 129 005f 05       		.byte	0x5
+ 130 0060 696E7400 		.ascii	"int\000"
+ 131 0064 02       		.uleb128 0x2
+ 132 0065 04       		.byte	0x4
+ 133 0066 07       		.byte	0x7
+ 134 0067 1C000000 		.4byte	.LASF8
+ 135 006b 04       		.uleb128 0x4
+ 136 006c 4D000000 		.4byte	.LASF9
+ 137 0070 02       		.byte	0x2
+ 138 0071 E401     		.2byte	0x1e4
+ 139 0073 2C000000 		.4byte	0x2c
+ 140 0077 04       		.uleb128 0x4
+ 141 0078 0E000000 		.4byte	.LASF10
+ 142 007c 02       		.byte	0x2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 5
+
+
+ 143 007d E601     		.2byte	0x1e6
+ 144 007f 48000000 		.4byte	0x48
+ 145 0083 02       		.uleb128 0x2
+ 146 0084 04       		.byte	0x4
+ 147 0085 04       		.byte	0x4
+ 148 0086 8B000000 		.4byte	.LASF11
+ 149 008a 02       		.uleb128 0x2
+ 150 008b 08       		.byte	0x8
+ 151 008c 04       		.byte	0x4
+ 152 008d C5000000 		.4byte	.LASF12
+ 153 0091 02       		.uleb128 0x2
+ 154 0092 01       		.byte	0x1
+ 155 0093 08       		.byte	0x8
+ 156 0094 9F000000 		.4byte	.LASF13
+ 157 0098 02       		.uleb128 0x2
+ 158 0099 08       		.byte	0x8
+ 159 009a 04       		.byte	0x4
+ 160 009b 02010000 		.4byte	.LASF14
+ 161 009f 02       		.uleb128 0x2
+ 162 00a0 04       		.byte	0x4
+ 163 00a1 07       		.byte	0x7
+ 164 00a2 E7010000 		.4byte	.LASF15
+ 165 00a6 05       		.uleb128 0x5
+ 166 00a7 20       		.byte	0x20
+ 167 00a8 03       		.byte	0x3
+ 168 00a9 C4       		.byte	0xc4
+ 169 00aa BB000000 		.4byte	0xbb
+ 170 00ae 06       		.uleb128 0x6
+ 171 00af 15000000 		.4byte	.LASF20
+ 172 00b3 03       		.byte	0x3
+ 173 00b4 C6       		.byte	0xc6
+ 174 00b5 BB000000 		.4byte	0xbb
+ 175 00b9 00       		.byte	0
+ 176 00ba 00       		.byte	0
+ 177 00bb 07       		.uleb128 0x7
+ 178 00bc 77000000 		.4byte	0x77
+ 179 00c0 CB000000 		.4byte	0xcb
+ 180 00c4 08       		.uleb128 0x8
+ 181 00c5 9F000000 		.4byte	0x9f
+ 182 00c9 07       		.byte	0x7
+ 183 00ca 00       		.byte	0
+ 184 00cb 09       		.uleb128 0x9
+ 185 00cc EB000000 		.4byte	.LASF16
+ 186 00d0 03       		.byte	0x3
+ 187 00d1 C7       		.byte	0xc7
+ 188 00d2 A6000000 		.4byte	0xa6
+ 189 00d6 0A       		.uleb128 0xa
+ 190 00d7 A4000000 		.4byte	.LASF21
+ 191 00db 01       		.byte	0x1
+ 192 00dc 31       		.byte	0x31
+ 193 00dd 6B000000 		.4byte	0x6b
+ 194 00e1 00000000 		.4byte	.LFB1
+ 195 00e5 34000000 		.4byte	.LFE1-.LFB1
+ 196 00e9 01       		.uleb128 0x1
+ 197 00ea 9C       		.byte	0x9c
+ 198 00eb 0B       		.uleb128 0xb
+ 199 00ec 65000000 		.4byte	.LASF22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 6
+
+
+ 200 00f0 01       		.byte	0x1
+ 201 00f1 33       		.byte	0x33
+ 202 00f2 6B000000 		.4byte	0x6b
+ 203 00f6 02       		.uleb128 0x2
+ 204 00f7 91       		.byte	0x91
+ 205 00f8 77       		.sleb128 -9
+ 206 00f9 00       		.byte	0
+ 207 00fa 00       		.byte	0
+ 208              		.section	.debug_abbrev,"",%progbits
+ 209              	.Ldebug_abbrev0:
+ 210 0000 01       		.uleb128 0x1
+ 211 0001 11       		.uleb128 0x11
+ 212 0002 01       		.byte	0x1
+ 213 0003 25       		.uleb128 0x25
+ 214 0004 0E       		.uleb128 0xe
+ 215 0005 13       		.uleb128 0x13
+ 216 0006 0B       		.uleb128 0xb
+ 217 0007 03       		.uleb128 0x3
+ 218 0008 0E       		.uleb128 0xe
+ 219 0009 1B       		.uleb128 0x1b
+ 220 000a 0E       		.uleb128 0xe
+ 221 000b 55       		.uleb128 0x55
+ 222 000c 17       		.uleb128 0x17
+ 223 000d 11       		.uleb128 0x11
+ 224 000e 01       		.uleb128 0x1
+ 225 000f 10       		.uleb128 0x10
+ 226 0010 17       		.uleb128 0x17
+ 227 0011 00       		.byte	0
+ 228 0012 00       		.byte	0
+ 229 0013 02       		.uleb128 0x2
+ 230 0014 24       		.uleb128 0x24
+ 231 0015 00       		.byte	0
+ 232 0016 0B       		.uleb128 0xb
+ 233 0017 0B       		.uleb128 0xb
+ 234 0018 3E       		.uleb128 0x3e
+ 235 0019 0B       		.uleb128 0xb
+ 236 001a 03       		.uleb128 0x3
+ 237 001b 0E       		.uleb128 0xe
+ 238 001c 00       		.byte	0
+ 239 001d 00       		.byte	0
+ 240 001e 03       		.uleb128 0x3
+ 241 001f 24       		.uleb128 0x24
+ 242 0020 00       		.byte	0
+ 243 0021 0B       		.uleb128 0xb
+ 244 0022 0B       		.uleb128 0xb
+ 245 0023 3E       		.uleb128 0x3e
+ 246 0024 0B       		.uleb128 0xb
+ 247 0025 03       		.uleb128 0x3
+ 248 0026 08       		.uleb128 0x8
+ 249 0027 00       		.byte	0
+ 250 0028 00       		.byte	0
+ 251 0029 04       		.uleb128 0x4
+ 252 002a 16       		.uleb128 0x16
+ 253 002b 00       		.byte	0
+ 254 002c 03       		.uleb128 0x3
+ 255 002d 0E       		.uleb128 0xe
+ 256 002e 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 7
+
+
+ 257 002f 0B       		.uleb128 0xb
+ 258 0030 3B       		.uleb128 0x3b
+ 259 0031 05       		.uleb128 0x5
+ 260 0032 49       		.uleb128 0x49
+ 261 0033 13       		.uleb128 0x13
+ 262 0034 00       		.byte	0
+ 263 0035 00       		.byte	0
+ 264 0036 05       		.uleb128 0x5
+ 265 0037 13       		.uleb128 0x13
+ 266 0038 01       		.byte	0x1
+ 267 0039 0B       		.uleb128 0xb
+ 268 003a 0B       		.uleb128 0xb
+ 269 003b 3A       		.uleb128 0x3a
+ 270 003c 0B       		.uleb128 0xb
+ 271 003d 3B       		.uleb128 0x3b
+ 272 003e 0B       		.uleb128 0xb
+ 273 003f 01       		.uleb128 0x1
+ 274 0040 13       		.uleb128 0x13
+ 275 0041 00       		.byte	0
+ 276 0042 00       		.byte	0
+ 277 0043 06       		.uleb128 0x6
+ 278 0044 0D       		.uleb128 0xd
+ 279 0045 00       		.byte	0
+ 280 0046 03       		.uleb128 0x3
+ 281 0047 0E       		.uleb128 0xe
+ 282 0048 3A       		.uleb128 0x3a
+ 283 0049 0B       		.uleb128 0xb
+ 284 004a 3B       		.uleb128 0x3b
+ 285 004b 0B       		.uleb128 0xb
+ 286 004c 49       		.uleb128 0x49
+ 287 004d 13       		.uleb128 0x13
+ 288 004e 38       		.uleb128 0x38
+ 289 004f 0B       		.uleb128 0xb
+ 290 0050 00       		.byte	0
+ 291 0051 00       		.byte	0
+ 292 0052 07       		.uleb128 0x7
+ 293 0053 01       		.uleb128 0x1
+ 294 0054 01       		.byte	0x1
+ 295 0055 49       		.uleb128 0x49
+ 296 0056 13       		.uleb128 0x13
+ 297 0057 01       		.uleb128 0x1
+ 298 0058 13       		.uleb128 0x13
+ 299 0059 00       		.byte	0
+ 300 005a 00       		.byte	0
+ 301 005b 08       		.uleb128 0x8
+ 302 005c 21       		.uleb128 0x21
+ 303 005d 00       		.byte	0
+ 304 005e 49       		.uleb128 0x49
+ 305 005f 13       		.uleb128 0x13
+ 306 0060 2F       		.uleb128 0x2f
+ 307 0061 0B       		.uleb128 0xb
+ 308 0062 00       		.byte	0
+ 309 0063 00       		.byte	0
+ 310 0064 09       		.uleb128 0x9
+ 311 0065 16       		.uleb128 0x16
+ 312 0066 00       		.byte	0
+ 313 0067 03       		.uleb128 0x3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 8
+
+
+ 314 0068 0E       		.uleb128 0xe
+ 315 0069 3A       		.uleb128 0x3a
+ 316 006a 0B       		.uleb128 0xb
+ 317 006b 3B       		.uleb128 0x3b
+ 318 006c 0B       		.uleb128 0xb
+ 319 006d 49       		.uleb128 0x49
+ 320 006e 13       		.uleb128 0x13
+ 321 006f 00       		.byte	0
+ 322 0070 00       		.byte	0
+ 323 0071 0A       		.uleb128 0xa
+ 324 0072 2E       		.uleb128 0x2e
+ 325 0073 01       		.byte	0x1
+ 326 0074 3F       		.uleb128 0x3f
+ 327 0075 19       		.uleb128 0x19
+ 328 0076 03       		.uleb128 0x3
+ 329 0077 0E       		.uleb128 0xe
+ 330 0078 3A       		.uleb128 0x3a
+ 331 0079 0B       		.uleb128 0xb
+ 332 007a 3B       		.uleb128 0x3b
+ 333 007b 0B       		.uleb128 0xb
+ 334 007c 27       		.uleb128 0x27
+ 335 007d 19       		.uleb128 0x19
+ 336 007e 49       		.uleb128 0x49
+ 337 007f 13       		.uleb128 0x13
+ 338 0080 11       		.uleb128 0x11
+ 339 0081 01       		.uleb128 0x1
+ 340 0082 12       		.uleb128 0x12
+ 341 0083 06       		.uleb128 0x6
+ 342 0084 40       		.uleb128 0x40
+ 343 0085 18       		.uleb128 0x18
+ 344 0086 9742     		.uleb128 0x2117
+ 345 0088 19       		.uleb128 0x19
+ 346 0089 00       		.byte	0
+ 347 008a 00       		.byte	0
+ 348 008b 0B       		.uleb128 0xb
+ 349 008c 34       		.uleb128 0x34
+ 350 008d 00       		.byte	0
+ 351 008e 03       		.uleb128 0x3
+ 352 008f 0E       		.uleb128 0xe
+ 353 0090 3A       		.uleb128 0x3a
+ 354 0091 0B       		.uleb128 0xb
+ 355 0092 3B       		.uleb128 0x3b
+ 356 0093 0B       		.uleb128 0xb
+ 357 0094 49       		.uleb128 0x49
+ 358 0095 13       		.uleb128 0x13
+ 359 0096 02       		.uleb128 0x2
+ 360 0097 18       		.uleb128 0x18
+ 361 0098 00       		.byte	0
+ 362 0099 00       		.byte	0
+ 363 009a 00       		.byte	0
+ 364              		.section	.debug_aranges,"",%progbits
+ 365 0000 1C000000 		.4byte	0x1c
+ 366 0004 0200     		.2byte	0x2
+ 367 0006 00000000 		.4byte	.Ldebug_info0
+ 368 000a 04       		.byte	0x4
+ 369 000b 00       		.byte	0
+ 370 000c 0000     		.2byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 9
+
+
+ 371 000e 0000     		.2byte	0
+ 372 0010 00000000 		.4byte	.LFB1
+ 373 0014 34000000 		.4byte	.LFE1-.LFB1
+ 374 0018 00000000 		.4byte	0
+ 375 001c 00000000 		.4byte	0
+ 376              		.section	.debug_ranges,"",%progbits
+ 377              	.Ldebug_ranges0:
+ 378 0000 00000000 		.4byte	.LFB1
+ 379 0004 34000000 		.4byte	.LFE1
+ 380 0008 00000000 		.4byte	0
+ 381 000c 00000000 		.4byte	0
+ 382              		.section	.debug_line,"",%progbits
+ 383              	.Ldebug_line0:
+ 384 0000 73000000 		.section	.debug_str,"MS",%progbits,1
+ 384      02005300 
+ 384      00000201 
+ 384      FB0E0D00 
+ 384      01010101 
+ 385              	.LASF6:
+ 386 0000 6C6F6E67 		.ascii	"long long int\000"
+ 386      206C6F6E 
+ 386      6720696E 
+ 386      7400
+ 387              	.LASF10:
+ 388 000e 75696E74 		.ascii	"uint32\000"
+ 388      333200
+ 389              	.LASF20:
+ 390 0015 65704461 		.ascii	"epData\000"
+ 390      746100
+ 391              	.LASF8:
+ 392 001c 756E7369 		.ascii	"unsigned int\000"
+ 392      676E6564 
+ 392      20696E74 
+ 392      00
+ 393              	.LASF18:
+ 394 0029 47656E65 		.ascii	"Generated_Source\\PSoC4\\USBTMC_vnd.c\000"
+ 394      72617465 
+ 394      645F536F 
+ 394      75726365 
+ 394      5C50536F 
+ 395              	.LASF9:
+ 396 004d 75696E74 		.ascii	"uint8\000"
+ 396      3800
+ 397              	.LASF5:
+ 398 0053 6C6F6E67 		.ascii	"long unsigned int\000"
+ 398      20756E73 
+ 398      69676E65 
+ 398      6420696E 
+ 398      7400
+ 399              	.LASF22:
+ 400 0065 72657175 		.ascii	"requestHandled\000"
+ 400      65737448 
+ 400      616E646C 
+ 400      656400
+ 401              	.LASF7:
+ 402 0074 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 402      206C6F6E 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 10
+
+
+ 402      6720756E 
+ 402      7369676E 
+ 402      65642069 
+ 403              	.LASF11:
+ 404 008b 666C6F61 		.ascii	"float\000"
+ 404      7400
+ 405              	.LASF1:
+ 406 0091 756E7369 		.ascii	"unsigned char\000"
+ 406      676E6564 
+ 406      20636861 
+ 406      7200
+ 407              	.LASF13:
+ 408 009f 63686172 		.ascii	"char\000"
+ 408      00
+ 409              	.LASF21:
+ 410 00a4 55534254 		.ascii	"USBTMC_HandleVendorRqst\000"
+ 410      4D435F48 
+ 410      616E646C 
+ 410      6556656E 
+ 410      646F7252 
+ 411              	.LASF4:
+ 412 00bc 6C6F6E67 		.ascii	"long int\000"
+ 412      20696E74 
+ 412      00
+ 413              	.LASF12:
+ 414 00c5 646F7562 		.ascii	"double\000"
+ 414      6C6500
+ 415              	.LASF3:
+ 416 00cc 73686F72 		.ascii	"short unsigned int\000"
+ 416      7420756E 
+ 416      7369676E 
+ 416      65642069 
+ 416      6E7400
+ 417              	.LASF0:
+ 418 00df 7369676E 		.ascii	"signed char\000"
+ 418      65642063 
+ 418      68617200 
+ 419              	.LASF16:
+ 420 00eb 55534254 		.ascii	"USBTMC_ep0_data_struct\000"
+ 420      4D435F65 
+ 420      70305F64 
+ 420      6174615F 
+ 420      73747275 
+ 421              	.LASF14:
+ 422 0102 6C6F6E67 		.ascii	"long double\000"
+ 422      20646F75 
+ 422      626C6500 
+ 423              	.LASF2:
+ 424 010e 73686F72 		.ascii	"short int\000"
+ 424      7420696E 
+ 424      7400
+ 425              	.LASF17:
+ 426 0118 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 426      43313120 
+ 426      352E342E 
+ 426      31203230 
+ 426      31363036 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccAI8n7i.s 			page 11
+
+
+ 427 014b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 427      20726576 
+ 427      6973696F 
+ 427      6E203233 
+ 427      37373135 
+ 428 017e 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 428      66756E63 
+ 428      74696F6E 
+ 428      2D736563 
+ 428      74696F6E 
+ 429              	.LASF19:
+ 430 01a6 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\dev\\yaugi\\GPIB USB Adap"
+ 430      635C486F 
+ 430      6D655C44 
+ 430      6F63756D 
+ 430      656E7473 
+ 431 01d2 7465725C 		.ascii	"ter\\GPIB USB 1.cydsn\000"
+ 431      47504942 
+ 431      20555342 
+ 431      20312E63 
+ 431      7964736E 
+ 432              	.LASF15:
+ 433 01e7 73697A65 		.ascii	"sizetype\000"
+ 433      74797065 
+ 433      00
+ 434              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

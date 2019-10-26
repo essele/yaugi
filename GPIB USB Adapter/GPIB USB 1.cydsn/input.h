@@ -17,6 +17,8 @@ uint8_t *input_getbuffer();
 unsigned int input_getlength();
 void input_start();
 void input_show_output(uint8_t *output, int len);
+void input_remove_cmdline();
+void input_redraw_cmdline();
 void input_printf(char *fmt, ...);
 
 /* [] END OF FILE */
