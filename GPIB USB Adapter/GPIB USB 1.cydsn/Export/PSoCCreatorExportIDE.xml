@@ -49,8 +49,8 @@
           <File BuildType="BUILD" Toolchain="">settings.h</File>
           <File BuildType="BUILD" Toolchain="">utils.c</File>
           <File BuildType="BUILD" Toolchain="">utils.h</File>
-          <File BuildType="BUILD" Toolchain="">usbtmc.c</File>
-          <File BuildType="BUILD" Toolchain="">usbtmc.h</File>
+          <File BuildType="BUILD" Toolchain="">usb_tmc.c</File>
+          <File BuildType="BUILD" Toolchain="">usb_tmc.h</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
         </Files>
       </Folder>
@@ -101,36 +101,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\cycodeshareimport.scat</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_audio.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_audio.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_boot.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_cdc.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_cdc.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_cls.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_descr.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_drv.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_episr.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_hid.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_hid.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_pm.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_std.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_vnd.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_midi.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_midi.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_pvt.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_cydmac.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_msc.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_msc.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_Dp.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_Dp.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_Dp_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_Dp_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_Dm.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_Dm.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_Dm_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBUART_Dm_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\LED1_aliases.h</File>
@@ -163,6 +133,36 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Timer1_PM.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_2.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\Clock_2.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_audio.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_audio.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_boot.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_cdc.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_cdc.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_cls.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_descr.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_drv.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_episr.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_hid.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_hid.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_pm.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_std.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_vnd.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_midi.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_midi.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_pvt.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_cydmac.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_msc.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_msc.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_Dp.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_Dp.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_Dp_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_Dp_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_Dm.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_Dm.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_Dm_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC4\USBTMC_Dm_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">

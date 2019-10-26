@@ -17,7 +17,7 @@
 #include "command.h"
 #include "settings.h"
 #include "utils.h"
-#include "usbtmc.h"
+#include "usb_tmc.h"
 
 
 #define USBFS_DEVICE    (0u)
@@ -53,7 +53,7 @@ int main(void)
         #define USB_GetConfiguration(args...)           USBTMC_GetConfiguration(args)
 
         USBTMC_Start(USBFS_DEVICE, USBTMC_5V_OPERATION);
-        USBTMC_SetPowerStatus(USBUART_DEVICE_STATUS_BUS_POWERED );    
+        USBTMC_SetPowerStatus(USBTMC_DEVICE_STATUS_BUS_POWERED );    
     #endif
 
     #ifdef USBUART_TRUE
@@ -116,7 +116,7 @@ int main(void)
         // Check for state changes with GPIB
         if (gpib_poll() == 1) {
             // TODO: make this user friendly (what does state mean)
-            serial_printf("<gpib state change: state is now %d\r\n", gpib_get_mode());
+//            serial_printf("<gpib state change: state is now %d\r\n", gpib_get_mode());
         }
         
         // Main processing (if we are configured

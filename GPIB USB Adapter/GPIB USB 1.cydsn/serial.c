@@ -151,14 +151,14 @@ void usbuart_reconfig() {
  * mode... otherwise just move data as quickly as possible.
  */
 #define CMD_BUF_SIZE        64
-uint8_t cmdbuf[CMD_BUF_SIZE];
+uint8_t cmdbuf[CMD_BUF_SIZE];       // command buffer
 int     cmdbuf_len = 0;
 
 #define WAITING         0
 #define FROM_HOST       1
 #define TO_HOST         2
 
-int     mode = WAITING;
+int     mode = WAITING;             // state machine for in/out processing
 
 
 #define NORMAL          0
@@ -166,16 +166,20 @@ int     mode = WAITING;
 #define ESCAPE          2
 #define CMD             3
 
-int     charmode = NORMAL;
-uint8_t last = 0;
-int     was_query = 0;
+int     charmode = NORMAL;          // state machine for char processing
+uint8_t last = 0;                   // for mulitiple CRLF removal
+int     was_query = 0;              // did it contain a '?'
 
 // Used to walk through the buffer...
 uint8_t *s;
 uint8_t *d;
 uint8_t *end;
 
-
+/**
+ * Non-interactive mode is really about processing as quickly as possible and
+ * transferring data in chunks. We avoid any serial output processing and write directly to
+ * the buffer, and send as quickly as we can.
+ */
 void non_interactive() {
     // First check to see if we are reading, but have processed the current
     // block, then we can trigger a read of more data
@@ -262,6 +266,7 @@ void non_interactive() {
                         gpib_address_listener(settings.address);
                         if (len == 0) {
                             // We can add a NL if we really have to (shouldn't really happen in non interactive)
+                            // TODO: settings based termination
                             gpib_send_bytes((uint8_t *)"\n", 1, 1);
                         } else {
                             gpib_send_bytes(input_buffer, len, 1);

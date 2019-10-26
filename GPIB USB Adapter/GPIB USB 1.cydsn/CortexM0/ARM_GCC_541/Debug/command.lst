@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
   45              	.LC5:
   46 0068 53656E64 		.ascii	"Send a selected device clear (SDC) message\000"
   46      20612073 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 2
 
 
   46      656C6563 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
   76              	.LC15:
   77 0170 44697370 		.ascii	"Display command list\000"
   77      6C617920 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 3
 
 
   77      636F6D6D 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  107      2076616C 
  107      75652069 
  108 0249 000000   		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 4
 
 
  109              	.LC26:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  151 0308 0000     		.short	0
  152 030a 0000     		.short	0
  153 030c 68000000 		.word	.LC5
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 5
 
 
  154 0310 00000000 		.word	no_usage_args
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  208 03d0 00000000 		.word	no_usage_args
  209 03d4 00000000 		.word	0
  210 03d8 00000000 		.word	helper_ifc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 6
 
 
  211 03dc B4010000 		.word	.LC18
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  265 049c A8020000 		.word	.LC30
  266 04a0 00000000 		.word	cmd_noargs
  267 04a4 00000000 		.word	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 7
 
 
  268 04a8 0000     		.short	0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
   21:command.c     **** 
   22:command.c     **** #define MAX_TOKS 20
   23:command.c     **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 8
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 8
 
 
   24:command.c     **** char    *toks[MAX_TOKS];
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
   78:command.c     **** int tokenise(uint8_t *buf, int len) {
  298              		.loc 1 78 0
  299              		.cfi_startproc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 9
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 9
 
 
  300              		@ args = 0, pretend = 0, frame = 16
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
   86:command.c     ****             if (strchr(" \t", *buf) == NULL) {
  341              		.loc 1 86 0
  342 0036 FA68     		ldr	r2, [r7, #12]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 10
 
 
  343 0038 3B68     		ldr	r3, [r7]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  381              		.loc 1 106 0
  382 0072 FB68     		ldr	r3, [r7, #12]
  383 0074 0133     		adds	r3, r3, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 11
 
 
  384 0076 FB60     		str	r3, [r7, #12]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  426 00b4 0023     		movs	r3, #0
  427 00b6 05E0     		b	.L8
  428              	.L2:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 12
 
 
   83:command.c     ****         
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  471              		.cfi_def_cfa_offset 8
  472              		.cfi_offset 7, -8
  473              		.cfi_offset 14, -4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 13
 
 
  474 0002 82B0     		sub	sp, sp, #8
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  519              		.cfi_endproc
  520              	.LFE36:
  521              		.size	is_int, .-is_int
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 14
 
 
  522              		.section	.text.to_int,"ax",%progbits
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  569 002e 002B     		cmp	r3, #0
  570 0030 EDD1     		bne	.L27
  140:command.c     ****     }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 15
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 15
 
 
  141:command.c     ****     return i;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  610 000c 7B68     		ldr	r3, [r7, #4]
  611 000e 1100     		movs	r1, r2
  612 0010 1800     		movs	r0, r3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 16
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 16
 
 
  613 0012 FFF7FEFF 		bl	tokenise
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  165:command.c     ****         i++;
  654              		.loc 1 165 0
  655 0058 FB68     		ldr	r3, [r7, #12]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 17
 
 
  656 005a 0133     		adds	r3, r3, #1
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  701      00
  702 0545 000000   		.align	2
  703              	.LC52:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 18
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 18
 
 
  704 0548 09256420 		.ascii	"\011%d - %s\015\012\000"
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  745 0024 002B     		cmp	r3, #0
  746 0026 08D0     		beq	.L39
  176:command.c     ****         serial_printf(" %s", *p++);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 19
 
 
  747              		.loc 1 176 0
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  188:command.c     ****         while (m->meaning != NULL) {
  789              		.loc 1 188 0
  790 006c 0AE0     		b	.L43
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 20
 
 
  791              	.L44:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  198:command.c     ****     }
  199:command.c     ****    
  200:command.c     ****     // Send it...
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 21
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 21
 
 
  201:command.c     ****     serial_flush();
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  881 000a 7A60     		str	r2, [r7, #4]
  208:command.c     ****     if (argc == 1) {
  882              		.loc 1 208 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 22
 
 
  883 000c BB68     		ldr	r3, [r7, #8]
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  928 005a 0300     		movs	r3, r0
  929 005c 7B61     		str	r3, [r7, #20]
  218:command.c     ****     if (byte < cmd->min || byte > cmd->max) {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 23
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 23
 
 
  930              		.loc 1 218 0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  227:command.c     ****     }
  228:command.c     ****     return 0;
  976              		.loc 1 228 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 24
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 24
 
 
  977 00a8 0023     		movs	r3, #0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1022 0016 1100     		movs	r1, r2
  1023 0018 1800     		movs	r0, r3
  1024 001a FFF7FEFF 		bl	cmd_usage
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 25
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 25
 
 
  238:command.c     ****         return 1;
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1065              		.global	cmd_help
  1066              		.code	16
  1067              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 26
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 26
 
 
  1068              		.type	cmd_help, %function
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1108              		.loc 1 258 0
  1109 002c 10E0     		b	.L66
  1110              	.L67:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 27
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 27
 
 
  259:command.c     ****             serial_printf("++%-12.12s\t%s\r\n", commands[i].name, commands[i].help);
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1155 0072 D358     		ldr	r3, [r2, r3]
  1156 0074 1900     		movs	r1, r3
  1157 0076 FFF7FEFF 		bl	strcmp
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 28
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 28
 
 
  1158 007a 031E     		subs	r3, r0, #0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1203              		.align	2
  1204              	.L71:
  1205 00c0 00000000 		.word	commands
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 29
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 29
 
 
  1206 00c4 78050000 		.word	.LC59
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  286:command.c     ****     if (argc > 2) {
  1249              		.loc 1 286 0
  1250 001a BB68     		ldr	r3, [r7, #8]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 30
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 30
 
 
  1251 001c 022B     		cmp	r3, #2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  295:command.c     ****             return 1;
  1297              		.loc 1 295 0
  1298 006e 0123     		movs	r3, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 31
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 31
 
 
  1299 0070 3AE0     		b	.L82
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  308:command.c     ****     do {
  309:command.c     ****         len = gpib_read(until, &ended);
  1341              		.loc 1 309 0 discriminator 1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 32
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 32
 
 
  1342 00ae 1423     		movs	r3, #20
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1389              		.section	.rodata
  1390 05b3 00       		.align	2
  1391              	.LC70:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 33
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 33
 
 
  1392 05b4 252D3130 		.ascii	"%-10.10s = %d\000"
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  326:command.c     ****     // Now look through the commands, finding ones referencing the config
  327:command.c     ****     int i = 0;
  1433              		.loc 1 327 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 34
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 34
 
 
  1434 0022 0023     		movs	r3, #0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  335:command.c     ****                 while (m->meaning != NULL) {
  1481              		.loc 1 335 0
  1482 006e 0DE0     		b	.L91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 35
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 35
 
 
  1483              	.L93:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1526              		.loc 1 345 0
  1527 00b0 BA69     		ldr	r2, [r7, #24]
  1528 00b2 0D4B     		ldr	r3, .L96+8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 36
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 36
 
 
  1529 00b4 1100     		movs	r1, r2
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1573      2E256420 
  1573      6279204C 
  1573      65652045 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 37
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 37
 
 
  1574              		.section	.text.helper_version,"ax",%progbits
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1618              		.global	helper_gpiball
  1619              		.code	16
  1620              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 38
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 38
 
 
  1621              		.type	helper_gpiball, %function
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1668              		.thumb_func
  1669              		.type	helper_clr, %function
  1670              	helper_clr:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 39
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 39
 
 
  1671              	.LFB47:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1714              		.loc 1 376 0
  1715 0008 0023     		movs	r3, #0
  377:command.c     **** }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 40
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 40
 
 
  1716              		.loc 1 377 0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1765              		@ frame_needed = 1, uses_anonymous_args = 0
  1766 0000 80B5     		push	{r7, lr}
  1767              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 41
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 41
 
 
  1768              		.cfi_offset 7, -8
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1807 065a 0000     		.align	2
  1808              		.type	auto_means, %object
  1809              		.size	auto_means, 32
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 42
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 42
 
 
  1810              	auto_means:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1848      6F742061 
  1848      7070656E 
  1848      6420746F 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 43
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 43
 
 
  1848      20475049 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1895              		.type	__compound_literal.1, %object
  1896              		.size	__compound_literal.1, 8
  1897              	__compound_literal.1:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 44
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 44
 
 
  1898 001c 74070000 		.word	.LC92
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1940      00
  1941              		.data
  1942              		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 45
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 45
 
 
  1943              		.type	__compound_literal.5, %object
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  1992 0037 02       		.uleb128 0x2
  1993 0038 01       		.byte	0x1
  1994 0039 08       		.byte	0x8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 46
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 46
 
 
  1995 003a 53010000 		.4byte	.LASF1
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2049 00a3 45020000 		.4byte	.LASF14
  2050 00a7 03       		.byte	0x3
  2051 00a8 30       		.byte	0x30
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 47
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 47
 
 
  2052 00a9 5E000000 		.4byte	0x5e
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2106 0112 C4000000 		.4byte	.LASF23
  2107 0116 04       		.byte	0x4
  2108 0117 11       		.byte	0x11
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 48
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 48
 
 
  2109 0118 97000000 		.4byte	0x97
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2163 0184 00       		.byte	0
  2164 0185 0A       		.uleb128 0xa
  2165 0186 636D6400 		.ascii	"cmd\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 49
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 49
 
 
  2166 018a 20       		.byte	0x20
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2220 01f6 01       		.byte	0x1
  2221 01f7 44       		.byte	0x44
  2222 01f8 53020000 		.4byte	0x253
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 50
 
 
  2223 01fc 1C       		.byte	0x1c
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2277 0277 01       		.byte	0x1
  2278 0278 4E       		.byte	0x4e
  2279 0279 9B020000 		.4byte	0x29b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 51
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 51
 
 
  2280 027d 02       		.uleb128 0x2
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2334 02e3 01       		.byte	0x1
  2335 02e4 87       		.byte	0x87
  2336 02e5 D0000000 		.4byte	0xd0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 52
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 52
 
 
  2337 02e9 02       		.uleb128 0x2
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2391 0345 11       		.uleb128 0x11
  2392 0346 E5020000 		.4byte	.LASF43
  2393 034a 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 53
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 53
 
 
  2394 034b AC       		.byte	0xac
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2448 03b3 00       		.byte	0
  2449 03b4 00       		.byte	0
  2450 03b5 0D       		.uleb128 0xd
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 54
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 54
 
 
  2451 03b6 66030000 		.4byte	.LASF45
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2505 0425 01       		.byte	0x1
  2506 0426 EB       		.byte	0xeb
  2507 0427 17020000 		.4byte	0x217
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 55
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 55
 
 
  2508 042b 02       		.uleb128 0x2
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2562 048e 16       		.uleb128 0x16
  2563 048f 6900     		.ascii	"i\000"
  2564 0491 01       		.byte	0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 56
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 56
 
 
  2565 0492 0901     		.2byte	0x109
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2619 04ff 01       		.byte	0x1
  2620 0500 1901     		.2byte	0x119
  2621 0502 7E000000 		.4byte	0x7e
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 57
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 57
 
 
  2622 0506 02       		.uleb128 0x2
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2676 0571 17020000 		.4byte	0x217
  2677 0575 02       		.uleb128 0x2
  2678 0576 91       		.byte	0x91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 58
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 58
 
 
  2679 0577 64       		.sleb128 -28
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2733 05df 6C       		.sleb128 -20
  2734 05e0 00       		.byte	0
  2735 05e1 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 59
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 59
 
 
  2736 05e2 00       		.byte	0
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2790 0661 01       		.uleb128 0x1
  2791 0662 9C       		.byte	0x9c
  2792 0663 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 60
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 60
 
 
  2793 0664 F4010000 		.4byte	.LASF58
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2847 06de D6000000 		.4byte	0xd6
  2848 06e2 ED060000 		.4byte	0x6ed
  2849 06e6 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 61
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 61
 
 
  2850 06e7 C9000000 		.4byte	0xc9
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2904 0762 01       		.byte	0x1
  2905 0763 A301     		.2byte	0x1a3
  2906 0765 6F070000 		.4byte	0x76f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 62
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 62
 
 
  2907 0769 05       		.uleb128 0x5
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  2961 0026 0B       		.uleb128 0xb
  2962 0027 49       		.uleb128 0x49
  2963 0028 13       		.uleb128 0x13
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 63
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 63
 
 
  2964 0029 00       		.byte	0
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3018 005f 13       		.uleb128 0x13
  3019 0060 38       		.uleb128 0x38
  3020 0061 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 64
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 64
 
 
  3021 0062 00       		.byte	0
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3075 0098 19       		.uleb128 0x19
  3076 0099 03       		.uleb128 0x3
  3077 009a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 65
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 65
 
 
  3078 009b 3A       		.uleb128 0x3a
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3132 00d2 19       		.uleb128 0x19
  3133 00d3 03       		.uleb128 0x3
  3134 00d4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 66
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 66
 
 
  3135 00d5 3A       		.uleb128 0x3a
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3189 010d 49       		.uleb128 0x49
  3190 010e 13       		.uleb128 0x13
  3191 010f 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 67
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 67
 
 
  3192 0110 18       		.uleb128 0x18
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3246 0146 2E       		.uleb128 0x2e
  3247 0147 01       		.byte	0x1
  3248 0148 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 68
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 68
 
 
  3249 0149 19       		.uleb128 0x19
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3303 0180 34       		.uleb128 0x34
  3304 0181 00       		.byte	0
  3305 0182 03       		.uleb128 0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 69
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 69
 
 
  3306 0183 0E       		.uleb128 0xe
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3360 01bb 19       		.uleb128 0x19
  3361 01bc 01       		.uleb128 0x1
  3362 01bd 13       		.uleb128 0x13
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 70
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 70
 
 
  3363 01be 00       		.byte	0
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3417 01f4 21       		.uleb128 0x21
  3418 01f5 34       		.uleb128 0x34
  3419 01f6 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 71
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 71
 
 
  3420 01f7 03       		.uleb128 0x3
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3474 008c 10000000 		.4byte	.LFE50-.LFB50
  3475 0090 00000000 		.4byte	0
  3476 0094 00000000 		.4byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 72
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 72
 
 
  3477              		.section	.debug_ranges,"",%progbits
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3523 0019 73657474 		.ascii	"setting\000"
  3523      696E6700 
  3524              	.LASF2:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 73
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 73
 
 
  3525 0021 73686F72 		.ascii	"short int\000"
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3552      72656164 
  3552      00
  3553              	.LASF36:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 74
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 74
 
 
  3554 00cd 6D65616E 		.ascii	"meanings\000"
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3580      676E6564 
  3580      20636861 
  3580      7200
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 75
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 75
 
 
  3581              	.LASF67:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3604      676E6564 
  3604      20696E74 
  3604      00
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 76
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 76
 
 
  3605              	.LASF13:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 1
  3633              	.LASF43:
  3634 02e5 636D645F 		.ascii	"cmd_usage\000"
  3634      75736167 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccnyoXQF.s 			page 77
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc0sK6vQ.s 			page 77
 
 
  3634      6500

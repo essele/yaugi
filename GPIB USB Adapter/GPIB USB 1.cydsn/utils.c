@@ -11,8 +11,6 @@
 #include "utils.h"
 
 int contains_byte(uint8_t *buf, int len, uint8_t byte) {
-    uint8_t *p = buf;
-    
     for (int i=0; i < len; i++) {
         if (*buf++ == byte) {
             return 1;

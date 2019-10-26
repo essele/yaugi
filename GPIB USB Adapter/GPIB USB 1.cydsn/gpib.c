@@ -399,8 +399,6 @@ bool gpib_talking() {
 // TODO: should separate the address listener and the send, so we can send
 //       multiple chunks??
 void gpib_send(uint8_t address, const uint8_t *buf, int len) {
-    char *p = (char *)buf;
-    
     int eoipos = (settings.eoi ? len-1 : -1);
     
     gpib_address_listener(address);
@@ -430,7 +428,6 @@ void gpib_send_bytes(const uint8_t *buf, int len, int last) {
  */
 int gpib_read(int until, int *end) {
     int         i = 0;
-    int         ok;
     int         eoi;
     uint8_t     *buf;
     
