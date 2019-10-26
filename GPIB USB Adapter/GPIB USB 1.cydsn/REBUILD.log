@@ -1,4 +1,4 @@
---------------- Rebuild Started: 10/25/2019 10:24:51 Project: GPIB USB 1, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 10/26/2019 09:26:11 Project: GPIB USB 1, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\main.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\gpib.o"
 Deleting file ".\CortexM0\ARM_GCC_541\Debug\serial.o"
@@ -154,4 +154,4 @@ Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S "\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.elf"
 Flash used: 28790 of 65536 bytes (43.9%).
 SRAM used: 4292 of 8192 bytes (52.4%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 10/25/2019 10:25:21 ---------------
+--------------- Rebuild Succeeded: 10/26/2019 09:26:39 ---------------

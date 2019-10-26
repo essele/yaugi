@@ -256,12 +256,18 @@
 <OpenDocs>
 <name v=".\GPIB USB 1.cydsn\command.c" />
 <name v=".\GPIB USB 1.cydsn\input.c" />
+<name v=".\GPIB USB 1.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\GPIB USB 1.cydsn\main.c" />
+<name v=".\GPIB USB 1.cydsn\usbtmc.c" />
+<name v=".\GPIB USB 1.cydsn\usbtmc.h" />
+<name v=".\GPIB USB 1.cydsn\gpib.c" />
+<name v=".\GPIB USB 1.cydsn\gpib.h" />
+<name v=".\GPIB USB 1.cydsn\Generated_Source\PSoC4\project.h" />
+<name v=".\GPIB USB 1.cydsn\Generated_Source\PSoC4\cyfitter_cfg.c" />
+<name v=".\GPIB USB 1.cydsn\Generated_Source\PSoC4\cyfitter.h" />
+<name v=".\GPIB USB 1.cydsn\serial.h" />
 <name v=".\GPIB USB 1.cydsn\serial.c" />
-<name v=".\GPIB USB 1.cydsn\Generated_Source\PSoC4\USBUART_cdc.h" />
-<name v=".\GPIB USB 1.cydsn\Generated_Source\PSoC4\USBUART_cdc.c" />
-<name v=".\GPIB USB 1.cydsn\Generated_Source\PSoC4\USBUART.h" />
-<name v=".\GPIB USB 1.cydsn\Generated_Source\PSoC4\USBUART.c" />
-<name v=".\GPIB USB 1.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+<name v=".\GPIB USB 1.cydsn\utils.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -269,7 +275,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1311, 831" SelectedTabbedMdiWindow="580a3075-8df3-4856-b31e-394cab869310"><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\command.c" Guid="56fbc5c7-303b-4105-b9ee-65c6ba1fee7f" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\input.c" Guid="5435d5cb-366c-4409-b28e-69db2a39dd5c" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\serial.c" Guid="44809589-0a0c-4756-8e92-356b67fdfe74" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\Generated_Source\PSoC4\USBUART_cdc.h" Guid="435f2922-5262-40ce-97ce-eac14c125bfc" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\Generated_Source\PSoC4\USBUART_cdc.c" Guid="be8fc67d-44f5-4bee-9244-bc5e5b3564f4" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\Generated_Source\PSoC4\USBUART.h" Guid="fbfb1f72-3e4b-4fd2-97f0-ed26d5a9177d" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\Generated_Source\PSoC4\USBUART.c" Guid="580a3075-8df3-4856-b31e-394cab869310" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\Generated_Source\PSoC4\CyBootAsmGnu.s" Guid="9579f623-41e6-436f-ab60-fda527e81f07" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6b4ece5d-c0ac-4f04-965d-dcd2b0bb4b7f" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1311, 831" SelectedTabbedMdiWindow="0f134d7e-1ad5-4885-8c02-1948c98c14db"><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\command.c" Guid="56fbc5c7-303b-4105-b9ee-65c6ba1fee7f" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\input.c" Guid="5435d5cb-366c-4409-b28e-69db2a39dd5c" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\TopDesign\TopDesign.cysch" Guid="036fd057-7b08-46cf-b749-b793b6e30cfa" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\main.c" Guid="20975c0f-8da4-43e4-9e07-d200839316c9" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\usbtmc.c" Guid="0f134d7e-1ad5-4885-8c02-1948c98c14db" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\usbtmc.h" Guid="f2b18d14-ca74-4b53-a970-1ed95aa1b439" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\gpib.c" Guid="c296d79b-174b-4025-85b5-0c308643c257" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\gpib.h" Guid="bb355a57-6ec2-4426-900c-0910e115ea3c" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="6b4ece5d-c0ac-4f04-965d-dcd2b0bb4b7f" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\Generated_Source\PSoC4\project.h" Guid="3603fedc-c822-4e83-a18b-0dfcaab1b0d0" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\Generated_Source\PSoC4\cyfitter_cfg.c" Guid="1b3071ea-a9e0-4ad6-9852-c28375990713" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\Generated_Source\PSoC4\cyfitter.h" Guid="1b368855-9159-4d43-8ca1-53d67e2f1eb1" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\serial.h" Guid="6de1b166-6498-4eeb-b9ba-f8ba9cac8445" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\serial.c" Guid="09e828db-fa43-4bb4-b3d0-7f56579e3f0a" /><DocumentWindow Key="\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\utils.c" Guid="403735fd-d779-4950-9c64-7cc75a4734b4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

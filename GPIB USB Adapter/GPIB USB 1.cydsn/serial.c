@@ -146,10 +146,198 @@ void usbuart_reconfig() {
 }    
 
 /**
+ * For non-interactive mode we need to read the serial port, we need to catch "+" and
+ * do the right thing, we need to un-escape certain characters depending on the escaping
+ * mode... otherwise just move data as quickly as possible.
+ */
+#define CMD_BUF_SIZE        64
+uint8_t cmdbuf[CMD_BUF_SIZE];
+int     cmdbuf_len = 0;
+
+#define WAITING         0
+#define FROM_HOST       1
+#define TO_HOST         2
+
+int     mode = WAITING;
+
+
+#define NORMAL          0
+#define PLUS            1
+#define ESCAPE          2
+#define CMD             3
+
+int     charmode = NORMAL;
+uint8_t last = 0;
+int     was_query = 0;
+
+// Used to walk through the buffer...
+uint8_t *s;
+uint8_t *d;
+uint8_t *end;
+
+
+void non_interactive() {
+    // First check to see if we are reading, but have processed the current
+    // block, then we can trigger a read of more data
+    if (mode == FROM_HOST && s == end) {
+        mode = WAITING;
+    }
+    
+    // Are we waiting for incoming data...
+    if (mode == WAITING) {
+        if (USBUART_DataIsReady()) {
+            int len = USBUART_GetAll(input_buffer);
+            
+            if (len > 0) {
+                end = input_buffer + len;
+                s = input_buffer;
+                d = input_buffer;
+                mode = FROM_HOST;
+            }
+        } else {
+            return;
+        }
+    }
+    
+    // We pass anything from the serial port to GPIB, but we need to process
+    // escapes to ensure we properly detect the end, and detect ++
+    if (mode == FROM_HOST) {
+        while (s < end) {
+            // If we are in command mode, then keep going until we get NL
+            // if we overrun the buffer, we just eat chars until NL
+            if (charmode == CMD) {
+                if (*s == '\r' || *s == '\n') {
+                    if (cmdbuf_len == CMD_BUF_SIZE) {
+                        // this is an overrun
+                        serial_printf("CMD overrun\r\n");
+                        serial_flush();                        
+                    } else {
+                        // process a command
+                        serial_printf("got cmd=");
+                        serial_add(cmdbuf, cmdbuf_len);
+                        serial_printf("*\r\n");
+                        serial_flush();
+                        cmd_process(cmdbuf, cmdbuf_len);
+                    }
+                    charmode = NORMAL;
+                    cmdbuf_len = 0;
+                    d = input_buffer;
+                    last = '\r';                // make sure we chomp any left over
+                    continue;
+                }
+                if (cmdbuf_len < CMD_BUF_SIZE) {
+                    cmdbuf[cmdbuf_len++] = *s++;
+                } else {
+                    s++;
+                }
+                continue;
+            }
+            
+            // If we were escaped, then we always keep the next char
+            if (charmode == ESCAPE) {
+                *d++ = *s++;
+                charmode = NORMAL;
+                continue;
+            }
+            
+            uint8_t     ch = *s;
+            
+            switch(*s) {
+                // Need to track for two plusses, and remove them anyway...
+                case '+':
+                    if (charmode == PLUS) {
+                        charmode = CMD;
+                    } else {
+                        charmode = PLUS;
+                    }
+                    s++;
+                    break;
+                    
+                // Thia is the line terminator, so process unless we are following
+                // a prior one (to remove CRLF dups etc)
+                case '\r':
+                case '\n':
+                    if (last != '\r' && last != '\n') {
+                        int len = d - input_buffer;
+                        gpib_address_listener(settings.address);
+                        if (len == 0) {
+                            // We can add a NL if we really have to (shouldn't really happen in non interactive)
+                            gpib_send_bytes((uint8_t *)"\n", 1, 1);
+                        } else {
+                            gpib_send_bytes(input_buffer, len, 1);
+                        }
+                        
+                        if (settings.autoread == 1 || (settings.autoread == 2 && was_query)) {                        
+                            gpib_address_talker(settings.address);
+                            mode = TO_HOST;
+                        }
+                        was_query = 0;
+                        // Maybe more data to process...
+                        d = input_buffer;
+                    }
+                    s++;
+                    charmode = NORMAL;
+                    break;
+                    
+                // Escape ... we ignore this and allow the next..
+                case 0x1b:
+                    charmode = ESCAPE;
+                    s++;
+                    break;
+                    
+                default:
+                    if (*s == '?') {
+                        was_query = 1;
+                    }
+                    charmode = NORMAL;
+                    *d++ = *s++;
+            }
+            last = ch;
+        }
+        
+        // We will have non-ending data to send if we didn't contain a
+        // terminated line...
+        int len = d - input_buffer;
+        if (len > 0) {
+            gpib_address_listener(settings.address);
+            gpib_send_bytes(input_buffer, len, 0);
+        }
+    }
+    
+    // If we are TO_HOST then we need to read from GPIB and send it back to
+    // the host
+    if (mode == TO_HOST) {
+        // If we have pending serial data to send then flush, so we can use the whole
+        // serial output buffer
+        if (output_free != MAX_BUF) {
+            serial_flush();
+        }
+        
+        // Now read GPIB into the output buffer and send it...
+        int ended = 0;
+        
+        // Read data from GPIB...
+        int gpiblen = gpib_read_bytes(output_buffer, MAX_BUF, &ended);
+        if (gpiblen > 0) {
+            output_free -= gpiblen;
+            serial_flush();
+        }
+        if (ended) {
+            mode = FROM_HOST;
+        }
+    }
+}
+
+/**
  * Main poll function for uart support
  */
 void usbuart_poll() {
     // Process all the incoming serial data...
+    
+    non_interactive();
+    return;
+    
+    
     while (serial_available()) {
         // Do we have a full line of input?
         if (input_data() == 1) {

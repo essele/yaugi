@@ -40,6 +40,13 @@ typedef enum {
 uint8_t my_address = 21;
 
 /**
+ * Track who is listening and who is talking so we only send commands
+ * when we need to
+ */
+int listening = -1;
+int talking = -1;
+
+/**
  * Ensure the pin settings are correct for all of the pins. This should be
  * open drain, with a drive low. (This will be done by the design)
  *
@@ -313,6 +320,11 @@ void gpib_send_GTL() {
 }
 
 void gpib_address_listener(uint8_t address) {
+    
+    if (listening == address) {
+        return;
+    }
+    
     // Need to enable "REMOTE" so devices will enter remote mode
     // TODO: this should probably be an option??
     // TODO: do we need to undo this for a talker??
@@ -333,9 +345,17 @@ void gpib_address_listener(uint8_t address) {
     
     gpib_unassert_line(ATN);
     gpib_settle();              // do we need this?
+    
+    listening = address;
+    talking = my_address;
 }
 
 void gpib_address_talker(uint8_t address) {
+
+    if (talking == address) {
+        return;
+    }
+    
     // Make sure we are not asserting any handshake stuff...
     gpib_unassert_line(NRFD);
     gpib_unassert_line(NDAC);
@@ -358,6 +378,9 @@ void gpib_address_talker(uint8_t address) {
     
     // Signal our readiness...
     gpib_unassert_line(NRFD);
+    
+    talking = address;
+    listening = my_address;
 }
 
 /**

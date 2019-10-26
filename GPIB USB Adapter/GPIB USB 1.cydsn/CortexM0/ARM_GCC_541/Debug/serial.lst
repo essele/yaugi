@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
   55              		.type	serial_printf, %function
   56              	serial_printf:
   57              	.LFB35:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 2
 
 
   58              		.file 1 "serial.c"
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
   54:serial.c      **** uint8_t general_buffer[GEN_BUF_SIZE];
   55:serial.c      **** 
   56:serial.c      **** void serial_printf(char *fmt, ...) {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 3
 
 
   59              		.loc 1 56 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  107              		.align	2
  108              		.global	serial_vprintf
  109              		.code	16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 4
 
 
  110              		.thumb_func
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  157              		.code	16
  158              		.thumb_func
  159              		.type	serial_add, %function
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 5
 
 
  160              	serial_add:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  195 0024 124B     		ldr	r3, .L11+4
  196 0026 D318     		adds	r3, r2, r3
  197 0028 BB60     		str	r3, [r7, #8]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 6
 
 
   89:serial.c      ****         
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  238              		@ sp needed
  239 006a 80BD     		pop	{r7, pc}
  240              	.L12:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 7
 
 
  241              		.align	2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  292              		.thumb_func
  293              		.type	serial_flush, %function
  294              	serial_flush:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 8
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 8
 
 
  295              	.LFB39:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  338              		.cfi_endproc
  339              	.LFE39:
  340              		.size	serial_flush, .-serial_flush
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 9
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 9
 
 
  341              		.section	.text.serial_available,"ax",%progbits
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  387              		.section	.text.serial_getbyte,"ax",%progbits
  388              		.align	2
  389              		.global	serial_getbyte
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 10
 
 
  390              		.code	16
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  134:serial.c      ****     input_avail--;
  433              		.loc 1 134 0
  434 002e 084B     		ldr	r3, .L28+4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 11
 
 
  435 0030 1B68     		ldr	r3, [r3]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  478              		.loc 1 145 0
  479 0004 FFF7FEFF 		bl	USBUART_CDC_Init
  146:serial.c      **** }    
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 12
 
 
  480              		.loc 1 146 0
@@ -669,1603 +669,2372 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 1
  485              		.cfi_endproc
  486              	.LFE42:
  487              		.size	usbuart_reconfig, .-usbuart_reconfig
- 488 000e C046     		.section	.rodata
- 489              		.align	2
- 490              	.LC12:
- 491 0000 3C6E6F20 		.ascii	"<no GPIB device connected>\015\012\000"
- 491      47504942 
- 491      20646576 
- 491      69636520 
- 491      636F6E6E 
- 492              		.section	.text.usbuart_poll,"ax",%progbits
- 493              		.align	2
- 494              		.global	usbuart_poll
- 495              		.code	16
- 496              		.thumb_func
- 497              		.type	usbuart_poll, %function
- 498              	usbuart_poll:
- 499              	.LFB43:
+ 488              		.comm	cmdbuf,64,4
+ 489              		.global	cmdbuf_len
+ 490 000e C046     		.bss
+ 491              		.align	2
+ 492              		.type	cmdbuf_len, %object
+ 493              		.size	cmdbuf_len, 4
+ 494              	cmdbuf_len:
+ 495 0008 00000000 		.space	4
+ 496              		.global	mode
+ 497              		.align	2
+ 498              		.type	mode, %object
+ 499              		.size	mode, 4
+ 500              	mode:
+ 501 000c 00000000 		.space	4
+ 502              		.global	charmode
+ 503              		.align	2
+ 504              		.type	charmode, %object
+ 505              		.size	charmode, 4
+ 506              	charmode:
+ 507 0010 00000000 		.space	4
+ 508              		.global	last
+ 509              		.type	last, %object
+ 510              		.size	last, 1
+ 511              	last:
+ 512 0014 00       		.space	1
+ 513              		.global	was_query
+ 514 0015 000000   		.align	2
+ 515              		.type	was_query, %object
+ 516              		.size	was_query, 4
+ 517              	was_query:
+ 518 0018 00000000 		.space	4
+ 519              		.comm	s,4,4
+ 520              		.comm	d,4,4
+ 521              		.comm	end,4,4
+ 522              		.section	.rodata
+ 523              		.align	2
+ 524              	.LC17:
+ 525 0000 434D4420 		.ascii	"CMD overrun\015\012\000"
+ 525      6F766572 
+ 525      72756E0D 
+ 525      0A00
+ 526 000e 0000     		.align	2
+ 527              	.LC19:
+ 528 0010 676F7420 		.ascii	"got cmd=\000"
+ 528      636D643D 
+ 528      00
+ 529 0019 000000   		.align	2
+ 530              	.LC22:
+ 531 001c 2A0D0A00 		.ascii	"*\015\012\000"
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 13
+
+
+ 532              		.align	2
+ 533              	.LC26:
+ 534 0020 0A00     		.ascii	"\012\000"
+ 535              		.section	.text.non_interactive,"ax",%progbits
+ 536              		.align	2
+ 537              		.global	non_interactive
+ 538              		.code	16
+ 539              		.thumb_func
+ 540              		.type	non_interactive, %function
+ 541              	non_interactive:
+ 542              	.LFB43:
  147:serial.c      **** 
  148:serial.c      **** /**
- 149:serial.c      ****  * Main poll function for uart support
- 150:serial.c      ****  */
- 151:serial.c      **** void usbuart_poll() {
- 500              		.loc 1 151 0
- 501              		.cfi_startproc
- 502              		@ args = 0, pretend = 0, frame = 24
- 503              		@ frame_needed = 1, uses_anonymous_args = 0
- 504 0000 80B5     		push	{r7, lr}
- 505              		.cfi_def_cfa_offset 8
- 506              		.cfi_offset 7, -8
- 507              		.cfi_offset 14, -4
- 508 0002 86B0     		sub	sp, sp, #24
- 509              		.cfi_def_cfa_offset 32
- 510 0004 00AF     		add	r7, sp, #0
- 511              		.cfi_def_cfa_register 7
- 152:serial.c      ****     // Process all the incoming serial data...
- 153:serial.c      ****     while (serial_available()) {
- 512              		.loc 1 153 0
- 513 0006 82E0     		b	.L32
- 514              	.L44:
- 154:serial.c      ****         // Do we have a full line of input?
- 155:serial.c      ****         if (input_data() == 1) {
- 515              		.loc 1 155 0
- 516 0008 FFF7FEFF 		bl	input_data
- 517 000c 0300     		movs	r3, r0
- 518 000e 012B     		cmp	r3, #1
- 519 0010 00D0     		beq	.LCB386
- 520 0012 7CE0     		b	.L32	@long jump
- 521              	.LCB386:
- 522              	.LBB3:
- 156:serial.c      ****             uint8_t *buf = input_getbuffer();
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 13
+ 149:serial.c      ****  * For non-interactive mode we need to read the serial port, we need to catch "+" and
+ 150:serial.c      ****  * do the right thing, we need to un-escape certain characters depending on the escaping
+ 151:serial.c      ****  * mode... otherwise just move data as quickly as possible.
+ 152:serial.c      ****  */
+ 153:serial.c      **** #define CMD_BUF_SIZE        64
+ 154:serial.c      **** uint8_t cmdbuf[CMD_BUF_SIZE];
+ 155:serial.c      **** int     cmdbuf_len = 0;
+ 156:serial.c      **** 
+ 157:serial.c      **** #define WAITING         0
+ 158:serial.c      **** #define FROM_HOST       1
+ 159:serial.c      **** #define TO_HOST         2
+ 160:serial.c      **** 
+ 161:serial.c      **** int     mode = WAITING;
+ 162:serial.c      **** 
+ 163:serial.c      **** 
+ 164:serial.c      **** #define NORMAL          0
+ 165:serial.c      **** #define PLUS            1
+ 166:serial.c      **** #define ESCAPE          2
+ 167:serial.c      **** #define CMD             3
+ 168:serial.c      **** 
+ 169:serial.c      **** int     charmode = NORMAL;
+ 170:serial.c      **** uint8_t last = 0;
+ 171:serial.c      **** int     was_query = 0;
+ 172:serial.c      **** 
+ 173:serial.c      **** // Used to walk through the buffer...
+ 174:serial.c      **** uint8_t *s;
+ 175:serial.c      **** uint8_t *d;
+ 176:serial.c      **** uint8_t *end;
+ 177:serial.c      **** 
+ 178:serial.c      **** 
+ 179:serial.c      **** void non_interactive() {
+ 543              		.loc 1 179 0
+ 544              		.cfi_startproc
+ 545              		@ args = 0, pretend = 0, frame = 24
+ 546              		@ frame_needed = 1, uses_anonymous_args = 0
+ 547 0000 80B5     		push	{r7, lr}
+ 548              		.cfi_def_cfa_offset 8
+ 549              		.cfi_offset 7, -8
+ 550              		.cfi_offset 14, -4
+ 551 0002 86B0     		sub	sp, sp, #24
+ 552              		.cfi_def_cfa_offset 32
+ 553 0004 00AF     		add	r7, sp, #0
+ 554              		.cfi_def_cfa_register 7
+ 180:serial.c      ****     // First check to see if we are reading, but have processed the current
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 14
 
 
- 523              		.loc 1 156 0
- 524 0014 FFF7FEFF 		bl	input_getbuffer
- 525 0018 0300     		movs	r3, r0
- 526 001a 3B61     		str	r3, [r7, #16]
- 157:serial.c      ****             unsigned int len = input_getlength();
- 527              		.loc 1 157 0
- 528 001c FFF7FEFF 		bl	input_getlength
- 529 0020 0300     		movs	r3, r0
- 530 0022 7B61     		str	r3, [r7, #20]
- 158:serial.c      ****                     
- 159:serial.c      ****             if (len == 0) {
- 531              		.loc 1 159 0
- 532 0024 7B69     		ldr	r3, [r7, #20]
- 533 0026 002B     		cmp	r3, #0
- 534 0028 00D1     		bne	.LCB396
- 535 002a 6EE0     		b	.L33	@long jump
- 536              	.LCB396:
- 160:serial.c      ****                 // Empty ... just reprompt
- 161:serial.c      ****             } else if (len >= 2 && buf[0] == '+' && buf[1] == '+') {
- 537              		.loc 1 161 0
- 538 002c 7B69     		ldr	r3, [r7, #20]
- 539 002e 012B     		cmp	r3, #1
- 540 0030 0FD9     		bls	.L34
- 541              		.loc 1 161 0 is_stmt 0 discriminator 1
- 542 0032 3B69     		ldr	r3, [r7, #16]
- 543 0034 1B78     		ldrb	r3, [r3]
- 544 0036 2B2B     		cmp	r3, #43
- 545 0038 0BD1     		bne	.L34
- 546              		.loc 1 161 0 discriminator 2
- 547 003a 3B69     		ldr	r3, [r7, #16]
- 548 003c 0133     		adds	r3, r3, #1
- 549 003e 1B78     		ldrb	r3, [r3]
- 550 0040 2B2B     		cmp	r3, #43
- 551 0042 06D1     		bne	.L34
- 162:serial.c      ****                 cmd_process(buf, len);
- 552              		.loc 1 162 0 is_stmt 1
- 553 0044 7A69     		ldr	r2, [r7, #20]
- 554 0046 3B69     		ldr	r3, [r7, #16]
- 555 0048 1100     		movs	r1, r2
- 556 004a 1800     		movs	r0, r3
- 557 004c FFF7FEFF 		bl	cmd_process
- 558 0050 5BE0     		b	.L33
- 559              	.L34:
- 163:serial.c      ****                         
- 164:serial.c      ****                 // TODO: if this was a ++auto command we need to change autoread????
- 165:serial.c      ****             } else {
- 166:serial.c      ****                 
- 167:serial.c      ****                 // We've already stripped CR/NL from the input, so now we can just add
- 168:serial.c      ****                 // whatever is needed...
- 169:serial.c      ****                 switch (settings.eos) {
- 560              		.loc 1 169 0
- 561 0052 494B     		ldr	r3, .L48
- 562 0054 9B89     		ldrh	r3, [r3, #12]
- 563 0056 012B     		cmp	r3, #1
- 564 0058 15D0     		beq	.L36
- 565 005a 02DC     		bgt	.L37
- 566 005c 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 14
+ 181:serial.c      ****     // block, then we can trigger a read of more data
+ 182:serial.c      ****     if (mode == FROM_HOST && s == end) {
+ 555              		.loc 1 182 0
+ 556 0006 BA4B     		ldr	r3, .L66
+ 557 0008 1B68     		ldr	r3, [r3]
+ 558 000a 012B     		cmp	r3, #1
+ 559 000c 08D1     		bne	.L32
+ 560              		.loc 1 182 0 is_stmt 0 discriminator 1
+ 561 000e B94B     		ldr	r3, .L66+4
+ 562 0010 1A68     		ldr	r2, [r3]
+ 563 0012 B94B     		ldr	r3, .L66+8
+ 564 0014 1B68     		ldr	r3, [r3]
+ 565 0016 9A42     		cmp	r2, r3
+ 566 0018 02D1     		bne	.L32
+ 183:serial.c      ****         mode = WAITING;
+ 567              		.loc 1 183 0 is_stmt 1
+ 568 001a B54B     		ldr	r3, .L66
+ 569 001c 0022     		movs	r2, #0
+ 570 001e 1A60     		str	r2, [r3]
+ 571              	.L32:
+ 184:serial.c      ****     }
+ 185:serial.c      ****     
+ 186:serial.c      ****     // Are we waiting for incoming data...
+ 187:serial.c      ****     if (mode == WAITING) {
+ 572              		.loc 1 187 0
+ 573 0020 B34B     		ldr	r3, .L66
+ 574 0022 1B68     		ldr	r3, [r3]
+ 575 0024 002B     		cmp	r3, #0
+ 576 0026 1BD1     		bne	.L33
+ 188:serial.c      ****         if (USBUART_DataIsReady()) {
+ 577              		.loc 1 188 0
+ 578 0028 FFF7FEFF 		bl	USBUART_DataIsReady
+ 579 002c 031E     		subs	r3, r0, #0
+ 580 002e 00D1     		bne	.LCB401
+ 581 0030 59E1     		b	.L65	@long jump
+ 582              	.LCB401:
+ 583              	.LBB3:
+ 189:serial.c      ****             int len = USBUART_GetAll(input_buffer);
+ 584              		.loc 1 189 0
+ 585 0032 B24B     		ldr	r3, .L66+12
+ 586 0034 1800     		movs	r0, r3
+ 587 0036 FFF7FEFF 		bl	USBUART_GetAll
+ 588 003a 0300     		movs	r3, r0
+ 589 003c 7B61     		str	r3, [r7, #20]
+ 190:serial.c      ****             
+ 191:serial.c      ****             if (len > 0) {
+ 590              		.loc 1 191 0
+ 591 003e 7B69     		ldr	r3, [r7, #20]
+ 592 0040 002B     		cmp	r3, #0
+ 593 0042 0DDD     		ble	.L33
+ 192:serial.c      ****                 end = input_buffer + len;
+ 594              		.loc 1 192 0
+ 595 0044 7A69     		ldr	r2, [r7, #20]
+ 596 0046 AD4B     		ldr	r3, .L66+12
+ 597 0048 D218     		adds	r2, r2, r3
+ 598 004a AB4B     		ldr	r3, .L66+8
+ 599 004c 1A60     		str	r2, [r3]
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 15
 
 
- 567 005e 03D0     		beq	.L38
- 568 0060 21E0     		b	.L35
- 569              	.L37:
- 570 0062 022B     		cmp	r3, #2
- 571 0064 17D0     		beq	.L39
- 170:serial.c      ****                     case 0:     // add CR + LF
- 171:serial.c      ****                                 buf[len++] = 13;
- 172:serial.c      ****                                 buf[len++] = 10;
- 173:serial.c      ****                                 break;
- 174:serial.c      ****                                 
- 175:serial.c      ****                     case 1:     // add CR
- 176:serial.c      ****                                 buf[len++] = 13;
- 177:serial.c      ****                                 break;
- 178:serial.c      ****                                 
- 179:serial.c      ****                     case 2:     // add LF
- 180:serial.c      ****                                 buf[len++] = 10;
- 181:serial.c      ****                                 break;
- 182:serial.c      ****                                 
- 183:serial.c      ****                     case 3:     // do nothing
- 184:serial.c      ****                                 break;
- 572              		.loc 1 184 0
- 573 0066 1EE0     		b	.L35
- 574              	.L38:
- 171:serial.c      ****                                 buf[len++] = 10;
- 575              		.loc 1 171 0
- 576 0068 7B69     		ldr	r3, [r7, #20]
- 577 006a 5A1C     		adds	r2, r3, #1
- 578 006c 7A61     		str	r2, [r7, #20]
- 579 006e 3A69     		ldr	r2, [r7, #16]
- 580 0070 D318     		adds	r3, r2, r3
- 581 0072 0D22     		movs	r2, #13
- 582 0074 1A70     		strb	r2, [r3]
- 172:serial.c      ****                                 break;
- 583              		.loc 1 172 0
- 584 0076 7B69     		ldr	r3, [r7, #20]
- 585 0078 5A1C     		adds	r2, r3, #1
- 586 007a 7A61     		str	r2, [r7, #20]
- 587 007c 3A69     		ldr	r2, [r7, #16]
- 588 007e D318     		adds	r3, r2, r3
- 589 0080 0A22     		movs	r2, #10
- 590 0082 1A70     		strb	r2, [r3]
- 173:serial.c      ****                                 
- 591              		.loc 1 173 0
- 592 0084 0FE0     		b	.L35
- 593              	.L36:
- 176:serial.c      ****                                 break;
- 594              		.loc 1 176 0
- 595 0086 7B69     		ldr	r3, [r7, #20]
- 596 0088 5A1C     		adds	r2, r3, #1
- 597 008a 7A61     		str	r2, [r7, #20]
- 598 008c 3A69     		ldr	r2, [r7, #16]
- 599 008e D318     		adds	r3, r2, r3
- 600 0090 0D22     		movs	r2, #13
- 601 0092 1A70     		strb	r2, [r3]
- 177:serial.c      ****                                 
- 602              		.loc 1 177 0
- 603 0094 07E0     		b	.L35
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 15
+ 193:serial.c      ****                 s = input_buffer;
+ 600              		.loc 1 193 0
+ 601 004e A94B     		ldr	r3, .L66+4
+ 602 0050 AA4A     		ldr	r2, .L66+12
+ 603 0052 1A60     		str	r2, [r3]
+ 194:serial.c      ****                 d = input_buffer;
+ 604              		.loc 1 194 0
+ 605 0054 AA4B     		ldr	r3, .L66+16
+ 606 0056 A94A     		ldr	r2, .L66+12
+ 607 0058 1A60     		str	r2, [r3]
+ 195:serial.c      ****                 mode = FROM_HOST;
+ 608              		.loc 1 195 0
+ 609 005a A54B     		ldr	r3, .L66
+ 610 005c 0122     		movs	r2, #1
+ 611 005e 1A60     		str	r2, [r3]
+ 612              	.L33:
+ 613              	.LBE3:
+ 196:serial.c      ****             }
+ 197:serial.c      ****         } else {
+ 198:serial.c      ****             return;
+ 199:serial.c      ****         }
+ 200:serial.c      ****     }
+ 201:serial.c      ****     
+ 202:serial.c      ****     // We pass anything from the serial port to GPIB, but we need to process
+ 203:serial.c      ****     // escapes to ensure we properly detect the end, and detect ++
+ 204:serial.c      ****     if (mode == FROM_HOST) {
+ 614              		.loc 1 204 0
+ 615 0060 A34B     		ldr	r3, .L66
+ 616 0062 1B68     		ldr	r3, [r3]
+ 617 0064 012B     		cmp	r3, #1
+ 618 0066 00D0     		beq	.LCB431
+ 619 0068 17E1     		b	.L37	@long jump
+ 620              	.LCB431:
+ 621              	.LBB4:
+ 205:serial.c      ****         while (s < end) {
+ 622              		.loc 1 205 0
+ 623 006a FAE0     		b	.L38
+ 624              	.L61:
+ 625              	.LBB5:
+ 206:serial.c      ****             // If we are in command mode, then keep going until we get NL
+ 207:serial.c      ****             // if we overrun the buffer, we just eat chars until NL
+ 208:serial.c      ****             if (charmode == CMD) {
+ 626              		.loc 1 208 0
+ 627 006c A54B     		ldr	r3, .L66+20
+ 628 006e 1B68     		ldr	r3, [r3]
+ 629 0070 032B     		cmp	r3, #3
+ 630 0072 51D1     		bne	.L39
+ 209:serial.c      ****                 if (*s == '\r' || *s == '\n') {
+ 631              		.loc 1 209 0
+ 632 0074 9F4B     		ldr	r3, .L66+4
+ 633 0076 1B68     		ldr	r3, [r3]
+ 634 0078 1B78     		ldrb	r3, [r3]
+ 635 007a 0D2B     		cmp	r3, #13
+ 636 007c 04D0     		beq	.L40
+ 637              		.loc 1 209 0 is_stmt 0 discriminator 1
+ 638 007e 9D4B     		ldr	r3, .L66+4
+ 639 0080 1B68     		ldr	r3, [r3]
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 16
 
 
- 604              	.L39:
- 180:serial.c      ****                                 break;
- 605              		.loc 1 180 0
- 606 0096 7B69     		ldr	r3, [r7, #20]
- 607 0098 5A1C     		adds	r2, r3, #1
- 608 009a 7A61     		str	r2, [r7, #20]
- 609 009c 3A69     		ldr	r2, [r7, #16]
- 610 009e D318     		adds	r3, r2, r3
- 611 00a0 0A22     		movs	r2, #10
- 612 00a2 1A70     		strb	r2, [r3]
- 181:serial.c      ****                                 
- 613              		.loc 1 181 0
- 614 00a4 C046     		nop
- 615              	.L35:
- 185:serial.c      ****                 }               
- 186:serial.c      ****                 
- 187:serial.c      ****                 if (gpib_get_mode() == GPIB_RUNNING) {
- 616              		.loc 1 187 0
- 617 00a6 FFF7FEFF 		bl	gpib_get_mode
- 618 00aa 0300     		movs	r3, r0
- 619 00ac 022B     		cmp	r3, #2
- 620 00ae 28D1     		bne	.L41
- 188:serial.c      ****                     //buf[len] = 0;
- 189:serial.c      ****                     gpib_send(settings.address, buf, len);
- 621              		.loc 1 189 0
- 622 00b0 314B     		ldr	r3, .L48
- 623 00b2 DB88     		ldrh	r3, [r3, #6]
- 624 00b4 DBB2     		uxtb	r3, r3
- 625 00b6 7A69     		ldr	r2, [r7, #20]
- 626 00b8 3969     		ldr	r1, [r7, #16]
- 627 00ba 1800     		movs	r0, r3
- 628 00bc FFF7FEFF 		bl	gpib_send
- 190:serial.c      ****                     
- 191:serial.c      ****                     // Only auto-query if we should
- 192:serial.c      ****                     autoread = 0;
- 629              		.loc 1 192 0
- 630 00c0 2E4B     		ldr	r3, .L48+4
- 631 00c2 0022     		movs	r2, #0
- 632 00c4 1A60     		str	r2, [r3]
- 193:serial.c      ****                     if (settings.autoread) {
- 633              		.loc 1 193 0
- 634 00c6 2C4B     		ldr	r3, .L48
- 635 00c8 1B89     		ldrh	r3, [r3, #8]
- 636 00ca 002B     		cmp	r3, #0
- 637 00cc 1DD0     		beq	.L33
- 194:serial.c      ****                         if (settings.autoread == 1 || (settings.autoread == 2 && contains_byte(buf,
- 638              		.loc 1 194 0
- 639 00ce 2A4B     		ldr	r3, .L48
- 640 00d0 1B89     		ldrh	r3, [r3, #8]
- 641 00d2 012B     		cmp	r3, #1
- 642 00d4 0BD0     		beq	.L43
- 643              		.loc 1 194 0 is_stmt 0 discriminator 1
- 644 00d6 284B     		ldr	r3, .L48
- 645 00d8 1B89     		ldrh	r3, [r3, #8]
- 646 00da 022B     		cmp	r3, #2
- 647 00dc 15D1     		bne	.L33
- 648              		.loc 1 194 0 discriminator 2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 16
+ 640 0082 1B78     		ldrb	r3, [r3]
+ 641 0084 0A2B     		cmp	r3, #10
+ 642 0086 2FD1     		bne	.L41
+ 643              	.L40:
+ 210:serial.c      ****                     if (cmdbuf_len == CMD_BUF_SIZE) {
+ 644              		.loc 1 210 0 is_stmt 1
+ 645 0088 9F4B     		ldr	r3, .L66+24
+ 646 008a 1B68     		ldr	r3, [r3]
+ 647 008c 402B     		cmp	r3, #64
+ 648 008e 06D1     		bne	.L42
+ 211:serial.c      ****                         // this is an overrun
+ 212:serial.c      ****                         serial_printf("CMD overrun\r\n");
+ 649              		.loc 1 212 0
+ 650 0090 9E4B     		ldr	r3, .L66+28
+ 651 0092 1800     		movs	r0, r3
+ 652 0094 FFF7FEFF 		bl	serial_printf
+ 213:serial.c      ****                         serial_flush();                        
+ 653              		.loc 1 213 0
+ 654 0098 FFF7FEFF 		bl	serial_flush
+ 655 009c 17E0     		b	.L43
+ 656              	.L42:
+ 214:serial.c      ****                     } else {
+ 215:serial.c      ****                         // process a command
+ 216:serial.c      ****                         serial_printf("got cmd=");
+ 657              		.loc 1 216 0
+ 658 009e 9C4B     		ldr	r3, .L66+32
+ 659 00a0 1800     		movs	r0, r3
+ 660 00a2 FFF7FEFF 		bl	serial_printf
+ 217:serial.c      ****                         serial_add(cmdbuf, cmdbuf_len);
+ 661              		.loc 1 217 0
+ 662 00a6 984B     		ldr	r3, .L66+24
+ 663 00a8 1A68     		ldr	r2, [r3]
+ 664 00aa 9A4B     		ldr	r3, .L66+36
+ 665 00ac 1100     		movs	r1, r2
+ 666 00ae 1800     		movs	r0, r3
+ 667 00b0 FFF7FEFF 		bl	serial_add
+ 218:serial.c      ****                         serial_printf("*\r\n");
+ 668              		.loc 1 218 0
+ 669 00b4 984B     		ldr	r3, .L66+40
+ 670 00b6 1800     		movs	r0, r3
+ 671 00b8 FFF7FEFF 		bl	serial_printf
+ 219:serial.c      ****                         serial_flush();
+ 672              		.loc 1 219 0
+ 673 00bc FFF7FEFF 		bl	serial_flush
+ 220:serial.c      ****                         cmd_process(cmdbuf, cmdbuf_len);
+ 674              		.loc 1 220 0
+ 675 00c0 914B     		ldr	r3, .L66+24
+ 676 00c2 1A68     		ldr	r2, [r3]
+ 677 00c4 934B     		ldr	r3, .L66+36
+ 678 00c6 1100     		movs	r1, r2
+ 679 00c8 1800     		movs	r0, r3
+ 680 00ca FFF7FEFF 		bl	cmd_process
+ 681              	.L43:
+ 221:serial.c      ****                     }
+ 222:serial.c      ****                     charmode = NORMAL;
+ 682              		.loc 1 222 0
+ 683 00ce 8D4B     		ldr	r3, .L66+20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 17
 
 
- 649 00de 7969     		ldr	r1, [r7, #20]
- 650 00e0 3B69     		ldr	r3, [r7, #16]
- 651 00e2 3F22     		movs	r2, #63
- 652 00e4 1800     		movs	r0, r3
- 653 00e6 FFF7FEFF 		bl	contains_byte
- 654 00ea 031E     		subs	r3, r0, #0
- 655 00ec 0DD0     		beq	.L33
- 656              	.L43:
- 195:serial.c      ****                             gpib_address_talker(settings.address);
- 657              		.loc 1 195 0 is_stmt 1
- 658 00ee 224B     		ldr	r3, .L48
- 659 00f0 DB88     		ldrh	r3, [r3, #6]
- 660 00f2 DBB2     		uxtb	r3, r3
- 661 00f4 1800     		movs	r0, r3
- 662 00f6 FFF7FEFF 		bl	gpib_address_talker
- 196:serial.c      ****                             autoread = 1;
- 663              		.loc 1 196 0
- 664 00fa 204B     		ldr	r3, .L48+4
- 665 00fc 0122     		movs	r2, #1
- 666 00fe 1A60     		str	r2, [r3]
- 667 0100 03E0     		b	.L33
- 668              	.L41:
- 197:serial.c      ****                         }
- 198:serial.c      ****                     }                            
- 199:serial.c      ****                 } else {
- 200:serial.c      ****                     serial_printf("<no GPIB device connected>\r\n");
- 669              		.loc 1 200 0
- 670 0102 1F4B     		ldr	r3, .L48+8
- 671 0104 1800     		movs	r0, r3
- 672 0106 FFF7FEFF 		bl	serial_printf
- 673              	.L33:
- 201:serial.c      ****                 }
- 202:serial.c      ****             }
- 203:serial.c      ****             input_start();
- 674              		.loc 1 203 0
- 675 010a FFF7FEFF 		bl	input_start
- 676              	.L32:
- 677              	.LBE3:
- 153:serial.c      ****         // Do we have a full line of input?
- 678              		.loc 1 153 0
- 679 010e FFF7FEFF 		bl	serial_available
- 680 0112 031E     		subs	r3, r0, #0
- 681 0114 00D0     		beq	.LCB534
- 682 0116 77E7     		b	.L44	@long jump
- 683              	.LCB534:
- 204:serial.c      ****         }    
- 205:serial.c      ****     }
- 206:serial.c      ****             
- 207:serial.c      ****     if (autoread && gpib_get_mode() == GPIB_RUNNING && gpib_talking()) {                
- 684              		.loc 1 207 0
- 685 0118 184B     		ldr	r3, .L48+4
- 686 011a 1B68     		ldr	r3, [r3]
- 687 011c 002B     		cmp	r3, #0
- 688 011e 26D0     		beq	.L47
- 689              		.loc 1 207 0 is_stmt 0 discriminator 1
- 690 0120 FFF7FEFF 		bl	gpib_get_mode
- 691 0124 0300     		movs	r3, r0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 17
+ 684 00d0 0022     		movs	r2, #0
+ 685 00d2 1A60     		str	r2, [r3]
+ 223:serial.c      ****                     cmdbuf_len = 0;
+ 686              		.loc 1 223 0
+ 687 00d4 8C4B     		ldr	r3, .L66+24
+ 688 00d6 0022     		movs	r2, #0
+ 689 00d8 1A60     		str	r2, [r3]
+ 224:serial.c      ****                     d = input_buffer;
+ 690              		.loc 1 224 0
+ 691 00da 894B     		ldr	r3, .L66+16
+ 692 00dc 874A     		ldr	r2, .L66+12
+ 693 00de 1A60     		str	r2, [r3]
+ 225:serial.c      ****                     last = '\r';                // make sure we chomp any left over
+ 694              		.loc 1 225 0
+ 695 00e0 8E4B     		ldr	r3, .L66+44
+ 696 00e2 0D22     		movs	r2, #13
+ 697 00e4 1A70     		strb	r2, [r3]
+ 226:serial.c      ****                     continue;
+ 698              		.loc 1 226 0
+ 699 00e6 BCE0     		b	.L38
+ 700              	.L41:
+ 227:serial.c      ****                 }
+ 228:serial.c      ****                 if (cmdbuf_len < CMD_BUF_SIZE) {
+ 701              		.loc 1 228 0
+ 702 00e8 874B     		ldr	r3, .L66+24
+ 703 00ea 1B68     		ldr	r3, [r3]
+ 704 00ec 3F2B     		cmp	r3, #63
+ 705 00ee 0DDC     		bgt	.L44
+ 229:serial.c      ****                     cmdbuf[cmdbuf_len++] = *s++;
+ 706              		.loc 1 229 0
+ 707 00f0 854B     		ldr	r3, .L66+24
+ 708 00f2 1B68     		ldr	r3, [r3]
+ 709 00f4 591C     		adds	r1, r3, #1
+ 710 00f6 844A     		ldr	r2, .L66+24
+ 711 00f8 1160     		str	r1, [r2]
+ 712 00fa 7E4A     		ldr	r2, .L66+4
+ 713 00fc 1268     		ldr	r2, [r2]
+ 714 00fe 501C     		adds	r0, r2, #1
+ 715 0100 7C49     		ldr	r1, .L66+4
+ 716 0102 0860     		str	r0, [r1]
+ 717 0104 1178     		ldrb	r1, [r2]
+ 718 0106 834A     		ldr	r2, .L66+36
+ 719 0108 D154     		strb	r1, [r2, r3]
+ 720 010a AAE0     		b	.L38
+ 721              	.L44:
+ 230:serial.c      ****                 } else {
+ 231:serial.c      ****                     s++;
+ 722              		.loc 1 231 0
+ 723 010c 794B     		ldr	r3, .L66+4
+ 724 010e 1B68     		ldr	r3, [r3]
+ 725 0110 5A1C     		adds	r2, r3, #1
+ 726 0112 784B     		ldr	r3, .L66+4
+ 727 0114 1A60     		str	r2, [r3]
+ 232:serial.c      ****                 }
+ 233:serial.c      ****                 continue;
+ 728              		.loc 1 233 0
+ 729 0116 A4E0     		b	.L38
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 18
 
 
- 692 0126 022B     		cmp	r3, #2
- 693 0128 21D1     		bne	.L47
- 694              		.loc 1 207 0 discriminator 2
- 695 012a FFF7FEFF 		bl	gpib_talking
- 696 012e 031E     		subs	r3, r0, #0
- 697 0130 1DD0     		beq	.L47
- 698              	.LBB4:
- 208:serial.c      ****         uint8_t *buf;
- 209:serial.c      ****         int     len;
- 210:serial.c      ****         int     ended;
- 211:serial.c      ****         
- 212:serial.c      ****         buf = gpib_get_buffer();
- 699              		.loc 1 212 0 is_stmt 1
- 700 0132 FFF7FEFF 		bl	gpib_get_buffer
- 701 0136 0300     		movs	r3, r0
- 702 0138 FB60     		str	r3, [r7, #12]
- 703              	.L46:
- 213:serial.c      ****         
- 214:serial.c      ****         do {
- 215:serial.c      ****             len = gpib_read(GPIB_EOI, &ended);
- 704              		.loc 1 215 0 discriminator 1
- 705 013a 3A1D     		adds	r2, r7, #4
- 706 013c 8023     		movs	r3, #128
- 707 013e 5B00     		lsls	r3, r3, #1
- 708 0140 1100     		movs	r1, r2
- 709 0142 1800     		movs	r0, r3
- 710 0144 FFF7FEFF 		bl	gpib_read
- 711 0148 0300     		movs	r3, r0
- 712 014a BB60     		str	r3, [r7, #8]
- 216:serial.c      **** 
- 217:serial.c      ****             // Remove CR/LF's...
- 218:serial.c      ****             len = chomp(buf, len);
- 713              		.loc 1 218 0 discriminator 1
- 714 014c BA68     		ldr	r2, [r7, #8]
- 715 014e FB68     		ldr	r3, [r7, #12]
- 716 0150 1100     		movs	r1, r2
- 717 0152 1800     		movs	r0, r3
- 718 0154 FFF7FEFF 		bl	chomp
- 719 0158 0300     		movs	r3, r0
- 720 015a BB60     		str	r3, [r7, #8]
- 219:serial.c      ****                               
- 220:serial.c      ****             input_show_output(buf, len);
- 721              		.loc 1 220 0 discriminator 1
- 722 015c BA68     		ldr	r2, [r7, #8]
- 723 015e FB68     		ldr	r3, [r7, #12]
- 724 0160 1100     		movs	r1, r2
- 725 0162 1800     		movs	r0, r3
- 726 0164 FFF7FEFF 		bl	input_show_output
- 221:serial.c      ****             
- 222:serial.c      ****         } while(ended == GPIB_NOT_ENDED);   
- 727              		.loc 1 222 0 discriminator 1
- 728 0168 7B68     		ldr	r3, [r7, #4]
- 729 016a 002B     		cmp	r3, #0
- 730 016c E5D0     		beq	.L46
- 731              	.L47:
- 732              	.LBE4:
- 223:serial.c      ****     }        
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 18
+ 730              	.L39:
+ 234:serial.c      ****             }
+ 235:serial.c      ****             
+ 236:serial.c      ****             // If we were escaped, then we always keep the next char
+ 237:serial.c      ****             if (charmode == ESCAPE) {
+ 731              		.loc 1 237 0
+ 732 0118 7A4B     		ldr	r3, .L66+20
+ 733 011a 1B68     		ldr	r3, [r3]
+ 734 011c 022B     		cmp	r3, #2
+ 735 011e 0FD1     		bne	.L46
+ 238:serial.c      ****                 *d++ = *s++;
+ 736              		.loc 1 238 0
+ 737 0120 774B     		ldr	r3, .L66+16
+ 738 0122 1B68     		ldr	r3, [r3]
+ 739 0124 591C     		adds	r1, r3, #1
+ 740 0126 764A     		ldr	r2, .L66+16
+ 741 0128 1160     		str	r1, [r2]
+ 742 012a 724A     		ldr	r2, .L66+4
+ 743 012c 1268     		ldr	r2, [r2]
+ 744 012e 501C     		adds	r0, r2, #1
+ 745 0130 7049     		ldr	r1, .L66+4
+ 746 0132 0860     		str	r0, [r1]
+ 747 0134 1278     		ldrb	r2, [r2]
+ 748 0136 1A70     		strb	r2, [r3]
+ 239:serial.c      ****                 charmode = NORMAL;
+ 749              		.loc 1 239 0
+ 750 0138 724B     		ldr	r3, .L66+20
+ 751 013a 0022     		movs	r2, #0
+ 752 013c 1A60     		str	r2, [r3]
+ 240:serial.c      ****                 continue;
+ 753              		.loc 1 240 0
+ 754 013e 90E0     		b	.L38
+ 755              	.L46:
+ 241:serial.c      ****             }
+ 242:serial.c      ****             
+ 243:serial.c      ****             uint8_t     ch = *s;
+ 756              		.loc 1 243 0
+ 757 0140 6C4B     		ldr	r3, .L66+4
+ 758 0142 1A68     		ldr	r2, [r3]
+ 759 0144 1323     		movs	r3, #19
+ 760 0146 FB18     		adds	r3, r7, r3
+ 761 0148 1278     		ldrb	r2, [r2]
+ 762 014a 1A70     		strb	r2, [r3]
+ 244:serial.c      ****             
+ 245:serial.c      ****             switch(*s) {
+ 763              		.loc 1 245 0
+ 764 014c 694B     		ldr	r3, .L66+4
+ 765 014e 1B68     		ldr	r3, [r3]
+ 766 0150 1B78     		ldrb	r3, [r3]
+ 767 0152 0D2B     		cmp	r3, #13
+ 768 0154 18D0     		beq	.L48
+ 769 0156 02DC     		bgt	.L49
+ 770 0158 0A2B     		cmp	r3, #10
+ 771 015a 15D0     		beq	.L48
+ 772 015c 65E0     		b	.L47
+ 773              	.L49:
+ 774 015e 1B2B     		cmp	r3, #27
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 19
 
 
- 224:serial.c      **** }
- 733              		.loc 1 224 0
- 734 016e C046     		nop
- 735 0170 BD46     		mov	sp, r7
- 736 0172 06B0     		add	sp, sp, #24
- 737              		@ sp needed
- 738 0174 80BD     		pop	{r7, pc}
- 739              	.L49:
- 740 0176 C046     		.align	2
- 741              	.L48:
- 742 0178 00000000 		.word	settings
- 743 017c 00000000 		.word	autoread
- 744 0180 00000000 		.word	.LC12
- 745              		.cfi_endproc
- 746              	.LFE43:
- 747              		.size	usbuart_poll, .-usbuart_poll
- 748              		.text
- 749              	.Letext0:
- 750              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 751              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 752              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
- 753              		.file 5 "<built-in>"
- 754              		.file 6 "settings.h"
- 755              		.section	.debug_info,"",%progbits
- 756              	.Ldebug_info0:
- 757 0000 CC030000 		.4byte	0x3cc
- 758 0004 0400     		.2byte	0x4
- 759 0006 00000000 		.4byte	.Ldebug_abbrev0
- 760 000a 04       		.byte	0x4
- 761 000b 01       		.uleb128 0x1
- 762 000c 2A010000 		.4byte	.LASF51
- 763 0010 0C       		.byte	0xc
- 764 0011 CB010000 		.4byte	.LASF52
- 765 0015 E9000000 		.4byte	.LASF53
- 766 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 767 001d 00000000 		.4byte	0
- 768 0021 00000000 		.4byte	.Ldebug_line0
- 769 0025 02       		.uleb128 0x2
- 770 0026 01       		.byte	0x1
- 771 0027 06       		.byte	0x6
- 772 0028 F0020000 		.4byte	.LASF0
- 773 002c 03       		.uleb128 0x3
- 774 002d 23000000 		.4byte	.LASF3
- 775 0031 02       		.byte	0x2
- 776 0032 1D       		.byte	0x1d
- 777 0033 37000000 		.4byte	0x37
- 778 0037 02       		.uleb128 0x2
- 779 0038 01       		.byte	0x1
- 780 0039 08       		.byte	0x8
- 781 003a 9D000000 		.4byte	.LASF1
- 782 003e 02       		.uleb128 0x2
- 783 003f 02       		.byte	0x2
- 784 0040 05       		.byte	0x5
- 785 0041 AC020000 		.4byte	.LASF2
- 786 0045 03       		.uleb128 0x3
- 787 0046 C0010000 		.4byte	.LASF4
- 788 004a 02       		.byte	0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 19
+ 775 0160 5AD0     		beq	.L50
+ 776 0162 2B2B     		cmp	r3, #43
+ 777 0164 61D1     		bne	.L47
+ 246:serial.c      ****                 // Need to track for two plusses, and remove them anyway...
+ 247:serial.c      ****                 case '+':
+ 248:serial.c      ****                     if (charmode == PLUS) {
+ 778              		.loc 1 248 0
+ 779 0166 674B     		ldr	r3, .L66+20
+ 780 0168 1B68     		ldr	r3, [r3]
+ 781 016a 012B     		cmp	r3, #1
+ 782 016c 03D1     		bne	.L52
+ 249:serial.c      ****                         charmode = CMD;
+ 783              		.loc 1 249 0
+ 784 016e 654B     		ldr	r3, .L66+20
+ 785 0170 0322     		movs	r2, #3
+ 786 0172 1A60     		str	r2, [r3]
+ 787 0174 02E0     		b	.L53
+ 788              	.L52:
+ 250:serial.c      ****                     } else {
+ 251:serial.c      ****                         charmode = PLUS;
+ 789              		.loc 1 251 0
+ 790 0176 634B     		ldr	r3, .L66+20
+ 791 0178 0122     		movs	r2, #1
+ 792 017a 1A60     		str	r2, [r3]
+ 793              	.L53:
+ 252:serial.c      ****                     }
+ 253:serial.c      ****                     s++;
+ 794              		.loc 1 253 0
+ 795 017c 5D4B     		ldr	r3, .L66+4
+ 796 017e 1B68     		ldr	r3, [r3]
+ 797 0180 5A1C     		adds	r2, r3, #1
+ 798 0182 5C4B     		ldr	r3, .L66+4
+ 799 0184 1A60     		str	r2, [r3]
+ 254:serial.c      ****                     break;
+ 800              		.loc 1 254 0
+ 801 0186 67E0     		b	.L54
+ 802              	.L48:
+ 255:serial.c      ****                     
+ 256:serial.c      ****                 // Thia is the line terminator, so process unless we are following
+ 257:serial.c      ****                 // a prior one (to remove CRLF dups etc)
+ 258:serial.c      ****                 case '\r':
+ 259:serial.c      ****                 case '\n':
+ 260:serial.c      ****                     if (last != '\r' && last != '\n') {
+ 803              		.loc 1 260 0
+ 804 0188 644B     		ldr	r3, .L66+44
+ 805 018a 1B78     		ldrb	r3, [r3]
+ 806 018c 0D2B     		cmp	r3, #13
+ 807 018e 3AD0     		beq	.L55
+ 808              		.loc 1 260 0 is_stmt 0 discriminator 1
+ 809 0190 624B     		ldr	r3, .L66+44
+ 810 0192 1B78     		ldrb	r3, [r3]
+ 811 0194 0A2B     		cmp	r3, #10
+ 812 0196 36D0     		beq	.L55
+ 813              	.LBB6:
+ 261:serial.c      ****                         int len = d - input_buffer;
+ 814              		.loc 1 261 0 is_stmt 1
+ 815 0198 594B     		ldr	r3, .L66+16
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 20
 
 
- 789 004b 2B       		.byte	0x2b
- 790 004c 50000000 		.4byte	0x50
- 791 0050 02       		.uleb128 0x2
- 792 0051 02       		.byte	0x2
- 793 0052 07       		.byte	0x7
- 794 0053 4F000000 		.4byte	.LASF5
- 795 0057 02       		.uleb128 0x2
- 796 0058 04       		.byte	0x4
- 797 0059 05       		.byte	0x5
- 798 005a DB020000 		.4byte	.LASF6
- 799 005e 03       		.uleb128 0x3
- 800 005f D4010000 		.4byte	.LASF7
- 801 0063 02       		.byte	0x2
- 802 0064 41       		.byte	0x41
- 803 0065 69000000 		.4byte	0x69
- 804 0069 02       		.uleb128 0x2
- 805 006a 04       		.byte	0x4
- 806 006b 07       		.byte	0x7
- 807 006c CB000000 		.4byte	.LASF8
- 808 0070 02       		.uleb128 0x2
- 809 0071 08       		.byte	0x8
- 810 0072 05       		.byte	0x5
- 811 0073 67020000 		.4byte	.LASF9
- 812 0077 02       		.uleb128 0x2
- 813 0078 08       		.byte	0x8
- 814 0079 07       		.byte	0x7
- 815 007a 0D020000 		.4byte	.LASF10
- 816 007e 04       		.uleb128 0x4
- 817 007f 04       		.byte	0x4
- 818 0080 05       		.byte	0x5
- 819 0081 696E7400 		.ascii	"int\000"
- 820 0085 02       		.uleb128 0x2
- 821 0086 04       		.byte	0x4
- 822 0087 07       		.byte	0x7
- 823 0088 F0010000 		.4byte	.LASF11
- 824 008c 03       		.uleb128 0x3
- 825 008d 24020000 		.4byte	.LASF12
- 826 0091 03       		.byte	0x3
- 827 0092 18       		.byte	0x18
- 828 0093 2C000000 		.4byte	0x2c
- 829 0097 03       		.uleb128 0x3
- 830 0098 BB020000 		.4byte	.LASF13
- 831 009c 03       		.byte	0x3
- 832 009d 24       		.byte	0x24
- 833 009e 45000000 		.4byte	0x45
- 834 00a2 03       		.uleb128 0x3
- 835 00a3 D2020000 		.4byte	.LASF14
- 836 00a7 03       		.byte	0x3
- 837 00a8 30       		.byte	0x30
- 838 00a9 5E000000 		.4byte	0x5e
- 839 00ad 02       		.uleb128 0x2
- 840 00ae 04       		.byte	0x4
- 841 00af 04       		.byte	0x4
- 842 00b0 88000000 		.4byte	.LASF15
- 843 00b4 02       		.uleb128 0x2
- 844 00b5 08       		.byte	0x8
- 845 00b6 04       		.byte	0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 20
+ 816 019a 1B68     		ldr	r3, [r3]
+ 817 019c 1A00     		movs	r2, r3
+ 818 019e 574B     		ldr	r3, .L66+12
+ 819 01a0 D31A     		subs	r3, r2, r3
+ 820 01a2 FB60     		str	r3, [r7, #12]
+ 262:serial.c      ****                         gpib_address_listener(settings.address);
+ 821              		.loc 1 262 0
+ 822 01a4 5E4B     		ldr	r3, .L66+48
+ 823 01a6 DB88     		ldrh	r3, [r3, #6]
+ 824 01a8 DBB2     		uxtb	r3, r3
+ 825 01aa 1800     		movs	r0, r3
+ 826 01ac FFF7FEFF 		bl	gpib_address_listener
+ 263:serial.c      ****                         if (len == 0) {
+ 827              		.loc 1 263 0
+ 828 01b0 FB68     		ldr	r3, [r7, #12]
+ 829 01b2 002B     		cmp	r3, #0
+ 830 01b4 06D1     		bne	.L56
+ 264:serial.c      ****                             // We can add a NL if we really have to (shouldn't really happen in non
+ 265:serial.c      ****                             gpib_send_bytes((uint8_t *)"\n", 1, 1);
+ 831              		.loc 1 265 0
+ 832 01b6 5B4B     		ldr	r3, .L66+52
+ 833 01b8 0122     		movs	r2, #1
+ 834 01ba 0121     		movs	r1, #1
+ 835 01bc 1800     		movs	r0, r3
+ 836 01be FFF7FEFF 		bl	gpib_send_bytes
+ 837 01c2 05E0     		b	.L57
+ 838              	.L56:
+ 266:serial.c      ****                         } else {
+ 267:serial.c      ****                             gpib_send_bytes(input_buffer, len, 1);
+ 839              		.loc 1 267 0
+ 840 01c4 F968     		ldr	r1, [r7, #12]
+ 841 01c6 4D4B     		ldr	r3, .L66+12
+ 842 01c8 0122     		movs	r2, #1
+ 843 01ca 1800     		movs	r0, r3
+ 844 01cc FFF7FEFF 		bl	gpib_send_bytes
+ 845              	.L57:
+ 268:serial.c      ****                         }
+ 269:serial.c      ****                         
+ 270:serial.c      ****                         if (settings.autoread == 1 || (settings.autoread == 2 && was_query)) {     
+ 846              		.loc 1 270 0
+ 847 01d0 534B     		ldr	r3, .L66+48
+ 848 01d2 1B89     		ldrh	r3, [r3, #8]
+ 849 01d4 012B     		cmp	r3, #1
+ 850 01d6 07D0     		beq	.L58
+ 851              		.loc 1 270 0 is_stmt 0 discriminator 1
+ 852 01d8 514B     		ldr	r3, .L66+48
+ 853 01da 1B89     		ldrh	r3, [r3, #8]
+ 854 01dc 022B     		cmp	r3, #2
+ 855 01de 0CD1     		bne	.L59
+ 856              		.loc 1 270 0 discriminator 2
+ 857 01e0 514B     		ldr	r3, .L66+56
+ 858 01e2 1B68     		ldr	r3, [r3]
+ 859 01e4 002B     		cmp	r3, #0
+ 860 01e6 08D0     		beq	.L59
+ 861              	.L58:
+ 271:serial.c      ****                             gpib_address_talker(settings.address);
+ 862              		.loc 1 271 0 is_stmt 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 21
 
 
- 846 00b7 7A000000 		.4byte	.LASF16
- 847 00bb 02       		.uleb128 0x2
- 848 00bc 01       		.byte	0x1
- 849 00bd 08       		.byte	0x8
- 850 00be 84020000 		.4byte	.LASF17
- 851 00c2 02       		.uleb128 0x2
- 852 00c3 08       		.byte	0x8
- 853 00c4 04       		.byte	0x4
- 854 00c5 42020000 		.4byte	.LASF18
- 855 00c9 02       		.uleb128 0x2
- 856 00ca 04       		.byte	0x4
- 857 00cb 07       		.byte	0x7
- 858 00cc 97020000 		.4byte	.LASF19
- 859 00d0 05       		.uleb128 0x5
- 860 00d1 04       		.byte	0x4
- 861 00d2 06       		.uleb128 0x6
- 862 00d3 04       		.byte	0x4
- 863 00d4 BB000000 		.4byte	0xbb
- 864 00d8 03       		.uleb128 0x3
- 865 00d9 8E000000 		.4byte	.LASF20
- 866 00dd 04       		.byte	0x4
- 867 00de 28       		.byte	0x28
- 868 00df E3000000 		.4byte	0xe3
- 869 00e3 07       		.uleb128 0x7
- 870 00e4 5D020000 		.4byte	.LASF22
- 871 00e8 04       		.byte	0x4
- 872 00e9 05       		.byte	0x5
- 873 00ea 00       		.byte	0
- 874 00eb FA000000 		.4byte	0xfa
- 875 00ef 08       		.uleb128 0x8
- 876 00f0 2C020000 		.4byte	.LASF54
- 877 00f4 D0000000 		.4byte	0xd0
- 878 00f8 00       		.byte	0
- 879 00f9 00       		.byte	0
- 880 00fa 03       		.uleb128 0x3
- 881 00fb B8010000 		.4byte	.LASF21
- 882 00ff 04       		.byte	0x4
- 883 0100 62       		.byte	0x62
- 884 0101 D8000000 		.4byte	0xd8
- 885 0105 07       		.uleb128 0x7
- 886 0106 AB000000 		.4byte	.LASF23
- 887 010a 14       		.byte	0x14
- 888 010b 06       		.byte	0x6
- 889 010c 0D       		.byte	0xd
- 890 010d 7E010000 		.4byte	0x17e
- 891 0111 09       		.uleb128 0x9
- 892 0112 3A000000 		.4byte	.LASF24
- 893 0116 06       		.byte	0x6
- 894 0117 0E       		.byte	0xe
- 895 0118 A2000000 		.4byte	0xa2
- 896 011c 00       		.byte	0
- 897 011d 09       		.uleb128 0x9
- 898 011e DF010000 		.4byte	.LASF25
- 899 0122 06       		.byte	0x6
- 900 0123 0F       		.byte	0xf
- 901 0124 97000000 		.4byte	0x97
- 902 0128 04       		.byte	0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 21
+ 863 01e8 4D4B     		ldr	r3, .L66+48
+ 864 01ea DB88     		ldrh	r3, [r3, #6]
+ 865 01ec DBB2     		uxtb	r3, r3
+ 866 01ee 1800     		movs	r0, r3
+ 867 01f0 FFF7FEFF 		bl	gpib_address_talker
+ 272:serial.c      ****                             mode = TO_HOST;
+ 868              		.loc 1 272 0
+ 869 01f4 3E4B     		ldr	r3, .L66
+ 870 01f6 0222     		movs	r2, #2
+ 871 01f8 1A60     		str	r2, [r3]
+ 872              	.L59:
+ 273:serial.c      ****                         }
+ 274:serial.c      ****                         was_query = 0;
+ 873              		.loc 1 274 0
+ 874 01fa 4B4B     		ldr	r3, .L66+56
+ 875 01fc 0022     		movs	r2, #0
+ 876 01fe 1A60     		str	r2, [r3]
+ 275:serial.c      ****                         // Maybe more data to process...
+ 276:serial.c      ****                         d = input_buffer;
+ 877              		.loc 1 276 0
+ 878 0200 3F4B     		ldr	r3, .L66+16
+ 879 0202 3E4A     		ldr	r2, .L66+12
+ 880 0204 1A60     		str	r2, [r3]
+ 881              	.L55:
+ 882              	.LBE6:
+ 277:serial.c      ****                     }
+ 278:serial.c      ****                     s++;
+ 883              		.loc 1 278 0
+ 884 0206 3B4B     		ldr	r3, .L66+4
+ 885 0208 1B68     		ldr	r3, [r3]
+ 886 020a 5A1C     		adds	r2, r3, #1
+ 887 020c 394B     		ldr	r3, .L66+4
+ 888 020e 1A60     		str	r2, [r3]
+ 279:serial.c      ****                     charmode = NORMAL;
+ 889              		.loc 1 279 0
+ 890 0210 3C4B     		ldr	r3, .L66+20
+ 891 0212 0022     		movs	r2, #0
+ 892 0214 1A60     		str	r2, [r3]
+ 280:serial.c      ****                     break;
+ 893              		.loc 1 280 0
+ 894 0216 1FE0     		b	.L54
+ 895              	.L50:
+ 281:serial.c      ****                     
+ 282:serial.c      ****                 // Escape ... we ignore this and allow the next..
+ 283:serial.c      ****                 case 0x1b:
+ 284:serial.c      ****                     charmode = ESCAPE;
+ 896              		.loc 1 284 0
+ 897 0218 3A4B     		ldr	r3, .L66+20
+ 898 021a 0222     		movs	r2, #2
+ 899 021c 1A60     		str	r2, [r3]
+ 285:serial.c      ****                     s++;
+ 900              		.loc 1 285 0
+ 901 021e 354B     		ldr	r3, .L66+4
+ 902 0220 1B68     		ldr	r3, [r3]
+ 903 0222 5A1C     		adds	r2, r3, #1
+ 904 0224 334B     		ldr	r3, .L66+4
+ 905 0226 1A60     		str	r2, [r3]
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 22
 
 
- 903 0129 09       		.uleb128 0x9
- 904 012a 05020000 		.4byte	.LASF26
- 905 012e 06       		.byte	0x6
- 906 012f 10       		.byte	0x10
- 907 0130 97000000 		.4byte	0x97
- 908 0134 06       		.byte	0x6
- 909 0135 09       		.uleb128 0x9
- 910 0136 13030000 		.4byte	.LASF27
- 911 013a 06       		.byte	0x6
- 912 013b 11       		.byte	0x11
- 913 013c 97000000 		.4byte	0x97
- 914 0140 08       		.byte	0x8
- 915 0141 0A       		.uleb128 0xa
- 916 0142 656F6900 		.ascii	"eoi\000"
- 917 0146 06       		.byte	0x6
- 918 0147 12       		.byte	0x12
- 919 0148 97000000 		.4byte	0x97
- 920 014c 0A       		.byte	0xa
- 921 014d 0A       		.uleb128 0xa
- 922 014e 656F7300 		.ascii	"eos\000"
- 923 0152 06       		.byte	0x6
- 924 0153 13       		.byte	0x13
- 925 0154 97000000 		.4byte	0x97
- 926 0158 0C       		.byte	0xc
- 927 0159 09       		.uleb128 0x9
- 928 015a 71000000 		.4byte	.LASF28
- 929 015e 06       		.byte	0x6
- 930 015f 14       		.byte	0x14
- 931 0160 97000000 		.4byte	0x97
- 932 0164 0E       		.byte	0xe
- 933 0165 09       		.uleb128 0x9
- 934 0166 44000000 		.4byte	.LASF29
- 935 016a 06       		.byte	0x6
- 936 016b 15       		.byte	0x15
- 937 016c 97000000 		.4byte	0x97
- 938 0170 10       		.byte	0x10
- 939 0171 09       		.uleb128 0x9
- 940 0172 DD000000 		.4byte	.LASF30
- 941 0176 06       		.byte	0x6
- 942 0177 16       		.byte	0x16
- 943 0178 97000000 		.4byte	0x97
- 944 017c 12       		.byte	0x12
- 945 017d 00       		.byte	0
- 946 017e 0B       		.uleb128 0xb
- 947 017f 89020000 		.4byte	.LASF31
- 948 0183 01       		.byte	0x1
- 949 0184 38       		.byte	0x38
- 950 0185 00000000 		.4byte	.LFB35
- 951 0189 3C000000 		.4byte	.LFE35-.LFB35
- 952 018d 01       		.uleb128 0x1
- 953 018e 9C       		.byte	0x9c
- 954 018f B1010000 		.4byte	0x1b1
- 955 0193 0C       		.uleb128 0xc
- 956 0194 666D7400 		.ascii	"fmt\000"
- 957 0198 01       		.byte	0x1
- 958 0199 38       		.byte	0x38
- 959 019a D2000000 		.4byte	0xd2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 22
+ 286:serial.c      ****                     break;
+ 906              		.loc 1 286 0
+ 907 0228 16E0     		b	.L54
+ 908              	.L47:
+ 287:serial.c      ****                     
+ 288:serial.c      ****                 default:
+ 289:serial.c      ****                     if (*s == '?') {
+ 909              		.loc 1 289 0
+ 910 022a 324B     		ldr	r3, .L66+4
+ 911 022c 1B68     		ldr	r3, [r3]
+ 912 022e 1B78     		ldrb	r3, [r3]
+ 913 0230 3F2B     		cmp	r3, #63
+ 914 0232 02D1     		bne	.L60
+ 290:serial.c      ****                         was_query = 1;
+ 915              		.loc 1 290 0
+ 916 0234 3C4B     		ldr	r3, .L66+56
+ 917 0236 0122     		movs	r2, #1
+ 918 0238 1A60     		str	r2, [r3]
+ 919              	.L60:
+ 291:serial.c      ****                     }
+ 292:serial.c      ****                     charmode = NORMAL;
+ 920              		.loc 1 292 0
+ 921 023a 324B     		ldr	r3, .L66+20
+ 922 023c 0022     		movs	r2, #0
+ 923 023e 1A60     		str	r2, [r3]
+ 293:serial.c      ****                     *d++ = *s++;
+ 924              		.loc 1 293 0
+ 925 0240 2F4B     		ldr	r3, .L66+16
+ 926 0242 1B68     		ldr	r3, [r3]
+ 927 0244 591C     		adds	r1, r3, #1
+ 928 0246 2E4A     		ldr	r2, .L66+16
+ 929 0248 1160     		str	r1, [r2]
+ 930 024a 2A4A     		ldr	r2, .L66+4
+ 931 024c 1268     		ldr	r2, [r2]
+ 932 024e 501C     		adds	r0, r2, #1
+ 933 0250 2849     		ldr	r1, .L66+4
+ 934 0252 0860     		str	r0, [r1]
+ 935 0254 1278     		ldrb	r2, [r2]
+ 936 0256 1A70     		strb	r2, [r3]
+ 937              	.L54:
+ 294:serial.c      ****             }
+ 295:serial.c      ****             last = ch;
+ 938              		.loc 1 295 0
+ 939 0258 304B     		ldr	r3, .L66+44
+ 940 025a 1322     		movs	r2, #19
+ 941 025c BA18     		adds	r2, r7, r2
+ 942 025e 1278     		ldrb	r2, [r2]
+ 943 0260 1A70     		strb	r2, [r3]
+ 944              	.L38:
+ 945              	.LBE5:
+ 205:serial.c      ****             // If we are in command mode, then keep going until we get NL
+ 946              		.loc 1 205 0
+ 947 0262 244B     		ldr	r3, .L66+4
+ 948 0264 1A68     		ldr	r2, [r3]
+ 949 0266 244B     		ldr	r3, .L66+8
+ 950 0268 1B68     		ldr	r3, [r3]
+ 951 026a 9A42     		cmp	r2, r3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 23
 
 
- 960 019e 02       		.uleb128 0x2
- 961 019f 91       		.byte	0x91
- 962 01a0 70       		.sleb128 -16
- 963 01a1 0D       		.uleb128 0xd
- 964 01a2 0E       		.uleb128 0xe
- 965 01a3 B6020000 		.4byte	.LASF33
- 966 01a7 01       		.byte	0x1
- 967 01a8 39       		.byte	0x39
- 968 01a9 FA000000 		.4byte	0xfa
- 969 01ad 02       		.uleb128 0x2
- 970 01ae 91       		.byte	0x91
- 971 01af 64       		.sleb128 -28
- 972 01b0 00       		.byte	0
- 973 01b1 0B       		.uleb128 0xb
- 974 01b2 75020000 		.4byte	.LASF32
- 975 01b6 01       		.byte	0x1
- 976 01b7 3F       		.byte	0x3f
- 977 01b8 00000000 		.4byte	.LFB36
- 978 01bc 34000000 		.4byte	.LFE36-.LFB36
- 979 01c0 01       		.uleb128 0x1
- 980 01c1 9C       		.byte	0x9c
- 981 01c2 E3010000 		.4byte	0x1e3
- 982 01c6 0C       		.uleb128 0xc
- 983 01c7 666D7400 		.ascii	"fmt\000"
- 984 01cb 01       		.byte	0x1
- 985 01cc 3F       		.byte	0x3f
- 986 01cd D2000000 		.4byte	0xd2
- 987 01d1 02       		.uleb128 0x2
- 988 01d2 91       		.byte	0x91
- 989 01d3 74       		.sleb128 -12
- 990 01d4 0F       		.uleb128 0xf
- 991 01d5 B6020000 		.4byte	.LASF33
- 992 01d9 01       		.byte	0x1
- 993 01da 3F       		.byte	0x3f
- 994 01db FA000000 		.4byte	0xfa
- 995 01df 02       		.uleb128 0x2
- 996 01e0 91       		.byte	0x91
- 997 01e1 70       		.sleb128 -16
- 998 01e2 00       		.byte	0
- 999 01e3 0B       		.uleb128 0xb
- 1000 01e4 37020000 		.4byte	.LASF34
- 1001 01e8 01       		.byte	0x1
- 1002 01e9 54       		.byte	0x54
- 1003 01ea 00000000 		.4byte	.LFB37
- 1004 01ee 74000000 		.4byte	.LFE37-.LFB37
- 1005 01f2 01       		.uleb128 0x1
- 1006 01f3 9C       		.byte	0x9c
- 1007 01f4 3B020000 		.4byte	0x23b
- 1008 01f8 0C       		.uleb128 0xc
- 1009 01f9 62756600 		.ascii	"buf\000"
- 1010 01fd 01       		.byte	0x1
- 1011 01fe 54       		.byte	0x54
- 1012 01ff 3B020000 		.4byte	0x23b
- 1013 0203 02       		.uleb128 0x2
- 1014 0204 91       		.byte	0x91
- 1015 0205 6C       		.sleb128 -20
- 1016 0206 0C       		.uleb128 0xc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 23
+ 952 026c 00D2     		bcs	.LCB738
+ 953 026e FDE6     		b	.L61	@long jump
+ 954              	.LCB738:
+ 296:serial.c      ****         }
+ 297:serial.c      ****         
+ 298:serial.c      ****         // We will have non-ending data to send if we didn't contain a
+ 299:serial.c      ****         // terminated line...
+ 300:serial.c      ****         int len = d - input_buffer;
+ 955              		.loc 1 300 0
+ 956 0270 234B     		ldr	r3, .L66+16
+ 957 0272 1B68     		ldr	r3, [r3]
+ 958 0274 1A00     		movs	r2, r3
+ 959 0276 214B     		ldr	r3, .L66+12
+ 960 0278 D31A     		subs	r3, r2, r3
+ 961 027a BB60     		str	r3, [r7, #8]
+ 301:serial.c      ****         if (len > 0) {
+ 962              		.loc 1 301 0
+ 963 027c BB68     		ldr	r3, [r7, #8]
+ 964 027e 002B     		cmp	r3, #0
+ 965 0280 0BDD     		ble	.L37
+ 302:serial.c      ****             gpib_address_listener(settings.address);
+ 966              		.loc 1 302 0
+ 967 0282 274B     		ldr	r3, .L66+48
+ 968 0284 DB88     		ldrh	r3, [r3, #6]
+ 969 0286 DBB2     		uxtb	r3, r3
+ 970 0288 1800     		movs	r0, r3
+ 971 028a FFF7FEFF 		bl	gpib_address_listener
+ 303:serial.c      ****             gpib_send_bytes(input_buffer, len, 0);
+ 972              		.loc 1 303 0
+ 973 028e B968     		ldr	r1, [r7, #8]
+ 974 0290 1A4B     		ldr	r3, .L66+12
+ 975 0292 0022     		movs	r2, #0
+ 976 0294 1800     		movs	r0, r3
+ 977 0296 FFF7FEFF 		bl	gpib_send_bytes
+ 978              	.L37:
+ 979              	.LBE4:
+ 304:serial.c      ****         }
+ 305:serial.c      ****     }
+ 306:serial.c      ****     
+ 307:serial.c      ****     // If we are TO_HOST then we need to read from GPIB and send it back to
+ 308:serial.c      ****     // the host
+ 309:serial.c      ****     if (mode == TO_HOST) {
+ 980              		.loc 1 309 0
+ 981 029a 154B     		ldr	r3, .L66
+ 982 029c 1B68     		ldr	r3, [r3]
+ 983 029e 022B     		cmp	r3, #2
+ 984 02a0 22D1     		bne	.L31
+ 985              	.LBB7:
+ 310:serial.c      ****         // If we have pending serial data to send then flush, so we can use the whole
+ 311:serial.c      ****         // serial output buffer
+ 312:serial.c      ****         if (output_free != MAX_BUF) {
+ 986              		.loc 1 312 0
+ 987 02a2 224B     		ldr	r3, .L66+60
+ 988 02a4 1B68     		ldr	r3, [r3]
+ 989 02a6 402B     		cmp	r3, #64
+ 990 02a8 01D0     		beq	.L62
+ 313:serial.c      ****             serial_flush();
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 24
 
 
- 1017 0207 6C656E00 		.ascii	"len\000"
- 1018 020b 01       		.byte	0x1
- 1019 020c 54       		.byte	0x54
- 1020 020d 7E000000 		.4byte	0x7e
- 1021 0211 02       		.uleb128 0x2
- 1022 0212 91       		.byte	0x91
- 1023 0213 68       		.sleb128 -24
- 1024 0214 10       		.uleb128 0x10
- 1025 0215 0C000000 		.4byte	.LBB2
- 1026 0219 52000000 		.4byte	.LBE2-.LBB2
- 1027 021d 0E       		.uleb128 0xe
- 1028 021e C1000000 		.4byte	.LASF35
- 1029 0222 01       		.byte	0x1
- 1030 0223 57       		.byte	0x57
- 1031 0224 7E000000 		.4byte	0x7e
- 1032 0228 02       		.uleb128 0x2
- 1033 0229 91       		.byte	0x91
- 1034 022a 74       		.sleb128 -12
- 1035 022b 0E       		.uleb128 0xe
- 1036 022c E7010000 		.4byte	.LASF36
- 1037 0230 01       		.byte	0x1
- 1038 0231 58       		.byte	0x58
- 1039 0232 3B020000 		.4byte	0x23b
- 1040 0236 02       		.uleb128 0x2
- 1041 0237 91       		.byte	0x91
- 1042 0238 70       		.sleb128 -16
- 1043 0239 00       		.byte	0
- 1044 023a 00       		.byte	0
- 1045 023b 06       		.uleb128 0x6
- 1046 023c 04       		.byte	0x4
- 1047 023d 8C000000 		.4byte	0x8c
- 1048 0241 0B       		.uleb128 0xb
- 1049 0242 00000000 		.4byte	.LASF37
- 1050 0246 01       		.byte	0x1
- 1051 0247 66       		.byte	0x66
- 1052 0248 00000000 		.4byte	.LFB38
- 1053 024c 26000000 		.4byte	.LFE38-.LFB38
- 1054 0250 01       		.uleb128 0x1
- 1055 0251 9C       		.byte	0x9c
- 1056 0252 65020000 		.4byte	0x265
- 1057 0256 0F       		.uleb128 0xf
- 1058 0257 81000000 		.4byte	.LASF38
- 1059 025b 01       		.byte	0x1
- 1060 025c 66       		.byte	0x66
- 1061 025d D2000000 		.4byte	0xd2
- 1062 0261 02       		.uleb128 0x2
- 1063 0262 91       		.byte	0x91
- 1064 0263 74       		.sleb128 -12
- 1065 0264 00       		.byte	0
- 1066 0265 11       		.uleb128 0x11
- 1067 0266 1C030000 		.4byte	.LASF42
- 1068 026a 01       		.byte	0x1
- 1069 026b 6F       		.byte	0x6f
- 1070 026c 00000000 		.4byte	.LFB39
- 1071 0270 38000000 		.4byte	.LFE39-.LFB39
- 1072 0274 01       		.uleb128 0x1
- 1073 0275 9C       		.byte	0x9c
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 24
+ 991              		.loc 1 313 0
+ 992 02aa FFF7FEFF 		bl	serial_flush
+ 993              	.L62:
+ 314:serial.c      ****         }
+ 315:serial.c      ****         
+ 316:serial.c      ****         // Now read GPIB into the output buffer and send it...
+ 317:serial.c      ****         int ended = 0;
+ 994              		.loc 1 317 0
+ 995 02ae 0023     		movs	r3, #0
+ 996 02b0 3B60     		str	r3, [r7]
+ 318:serial.c      ****         
+ 319:serial.c      ****         // Read data from GPIB...
+ 320:serial.c      ****         int gpiblen = gpib_read_bytes(output_buffer, MAX_BUF, &ended);
+ 997              		.loc 1 320 0
+ 998 02b2 3A00     		movs	r2, r7
+ 999 02b4 1E4B     		ldr	r3, .L66+64
+ 1000 02b6 4021     		movs	r1, #64
+ 1001 02b8 1800     		movs	r0, r3
+ 1002 02ba FFF7FEFF 		bl	gpib_read_bytes
+ 1003 02be 0300     		movs	r3, r0
+ 1004 02c0 7B60     		str	r3, [r7, #4]
+ 321:serial.c      ****         if (gpiblen > 0) {
+ 1005              		.loc 1 321 0
+ 1006 02c2 7B68     		ldr	r3, [r7, #4]
+ 1007 02c4 002B     		cmp	r3, #0
+ 1008 02c6 07DD     		ble	.L63
+ 322:serial.c      ****             output_free -= gpiblen;
+ 1009              		.loc 1 322 0
+ 1010 02c8 184B     		ldr	r3, .L66+60
+ 1011 02ca 1A68     		ldr	r2, [r3]
+ 1012 02cc 7B68     		ldr	r3, [r7, #4]
+ 1013 02ce D21A     		subs	r2, r2, r3
+ 1014 02d0 164B     		ldr	r3, .L66+60
+ 1015 02d2 1A60     		str	r2, [r3]
+ 323:serial.c      ****             serial_flush();
+ 1016              		.loc 1 323 0
+ 1017 02d4 FFF7FEFF 		bl	serial_flush
+ 1018              	.L63:
+ 324:serial.c      ****         }
+ 325:serial.c      ****         if (ended) {
+ 1019              		.loc 1 325 0
+ 1020 02d8 3B68     		ldr	r3, [r7]
+ 1021 02da 002B     		cmp	r3, #0
+ 1022 02dc 04D0     		beq	.L31
+ 326:serial.c      ****             mode = FROM_HOST;
+ 1023              		.loc 1 326 0
+ 1024 02de 044B     		ldr	r3, .L66
+ 1025 02e0 0122     		movs	r2, #1
+ 1026 02e2 1A60     		str	r2, [r3]
+ 1027 02e4 00E0     		b	.L31
+ 1028              	.L65:
+ 1029              	.LBE7:
+ 198:serial.c      ****         }
+ 1030              		.loc 1 198 0
+ 1031 02e6 C046     		nop
+ 1032              	.L31:
+ 327:serial.c      ****         }
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 25
 
 
- 1074 0276 12       		.uleb128 0x12
- 1075 0277 FC020000 		.4byte	.LASF40
- 1076 027b 01       		.byte	0x1
- 1077 027c 76       		.byte	0x76
- 1078 027d 8B020000 		.4byte	0x28b
- 1079 0281 00000000 		.4byte	.LFB40
- 1080 0285 28000000 		.4byte	.LFE40-.LFB40
- 1081 0289 01       		.uleb128 0x1
- 1082 028a 9C       		.byte	0x9c
- 1083 028b 02       		.uleb128 0x2
- 1084 028c 01       		.byte	0x1
- 1085 028d 02       		.byte	0x2
- 1086 028e 0D030000 		.4byte	.LASF39
- 1087 0292 12       		.uleb128 0x12
- 1088 0293 62000000 		.4byte	.LASF41
- 1089 0297 01       		.byte	0x1
- 1090 0298 7D       		.byte	0x7d
- 1091 0299 8C000000 		.4byte	0x8c
- 1092 029d 00000000 		.4byte	.LFB41
- 1093 02a1 58000000 		.4byte	.LFE41-.LFB41
- 1094 02a5 01       		.uleb128 0x1
- 1095 02a6 9C       		.byte	0x9c
- 1096 02a7 11       		.uleb128 0x11
- 1097 02a8 12000000 		.4byte	.LASF43
- 1098 02ac 01       		.byte	0x1
- 1099 02ad 90       		.byte	0x90
- 1100 02ae 00000000 		.4byte	.LFB42
- 1101 02b2 0E000000 		.4byte	.LFE42-.LFB42
- 1102 02b6 01       		.uleb128 0x1
- 1103 02b7 9C       		.byte	0x9c
- 1104 02b8 13       		.uleb128 0x13
- 1105 02b9 B4000000 		.4byte	.LASF55
- 1106 02bd 01       		.byte	0x1
- 1107 02be 97       		.byte	0x97
- 1108 02bf 00000000 		.4byte	.LFB43
- 1109 02c3 84010000 		.4byte	.LFE43-.LFB43
- 1110 02c7 01       		.uleb128 0x1
- 1111 02c8 9C       		.byte	0x9c
- 1112 02c9 2C030000 		.4byte	0x32c
- 1113 02cd 14       		.uleb128 0x14
- 1114 02ce 14000000 		.4byte	.LBB3
- 1115 02d2 FA000000 		.4byte	.LBE3-.LBB3
- 1116 02d6 F7020000 		.4byte	0x2f7
- 1117 02da 15       		.uleb128 0x15
- 1118 02db 62756600 		.ascii	"buf\000"
- 1119 02df 01       		.byte	0x1
- 1120 02e0 9C       		.byte	0x9c
- 1121 02e1 3B020000 		.4byte	0x23b
- 1122 02e5 02       		.uleb128 0x2
- 1123 02e6 91       		.byte	0x91
- 1124 02e7 70       		.sleb128 -16
- 1125 02e8 15       		.uleb128 0x15
- 1126 02e9 6C656E00 		.ascii	"len\000"
- 1127 02ed 01       		.byte	0x1
- 1128 02ee 9D       		.byte	0x9d
- 1129 02ef 85000000 		.4byte	0x85
- 1130 02f3 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 25
+ 328:serial.c      ****     }
+ 329:serial.c      **** }
+ 1033              		.loc 1 329 0
+ 1034 02e8 BD46     		mov	sp, r7
+ 1035 02ea 06B0     		add	sp, sp, #24
+ 1036              		@ sp needed
+ 1037 02ec 80BD     		pop	{r7, pc}
+ 1038              	.L67:
+ 1039 02ee C046     		.align	2
+ 1040              	.L66:
+ 1041 02f0 00000000 		.word	mode
+ 1042 02f4 00000000 		.word	s
+ 1043 02f8 00000000 		.word	end
+ 1044 02fc 00000000 		.word	input_buffer
+ 1045 0300 00000000 		.word	d
+ 1046 0304 00000000 		.word	charmode
+ 1047 0308 00000000 		.word	cmdbuf_len
+ 1048 030c 00000000 		.word	.LC17
+ 1049 0310 10000000 		.word	.LC19
+ 1050 0314 00000000 		.word	cmdbuf
+ 1051 0318 1C000000 		.word	.LC22
+ 1052 031c 00000000 		.word	last
+ 1053 0320 00000000 		.word	settings
+ 1054 0324 20000000 		.word	.LC26
+ 1055 0328 00000000 		.word	was_query
+ 1056 032c 00000000 		.word	output_free
+ 1057 0330 00000000 		.word	output_buffer
+ 1058              		.cfi_endproc
+ 1059              	.LFE43:
+ 1060              		.size	non_interactive, .-non_interactive
+ 1061              		.section	.text.usbuart_poll,"ax",%progbits
+ 1062              		.align	2
+ 1063              		.global	usbuart_poll
+ 1064              		.code	16
+ 1065              		.thumb_func
+ 1066              		.type	usbuart_poll, %function
+ 1067              	usbuart_poll:
+ 1068              	.LFB44:
+ 330:serial.c      **** 
+ 331:serial.c      **** /**
+ 332:serial.c      ****  * Main poll function for uart support
+ 333:serial.c      ****  */
+ 334:serial.c      **** void usbuart_poll() {
+ 1069              		.loc 1 334 0
+ 1070              		.cfi_startproc
+ 1071              		@ args = 0, pretend = 0, frame = 8
+ 1072              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1073 0000 80B5     		push	{r7, lr}
+ 1074              		.cfi_def_cfa_offset 8
+ 1075              		.cfi_offset 7, -8
+ 1076              		.cfi_offset 14, -4
+ 1077 0002 82B0     		sub	sp, sp, #8
+ 1078              		.cfi_def_cfa_offset 16
+ 1079 0004 00AF     		add	r7, sp, #0
+ 1080              		.cfi_def_cfa_register 7
+ 335:serial.c      ****     // Process all the incoming serial data...
+ 336:serial.c      ****     
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 26
 
 
- 1131 02f4 91       		.byte	0x91
- 1132 02f5 74       		.sleb128 -12
- 1133 02f6 00       		.byte	0
- 1134 02f7 10       		.uleb128 0x10
- 1135 02f8 32010000 		.4byte	.LBB4
- 1136 02fc 3C000000 		.4byte	.LBE4-.LBB4
- 1137 0300 15       		.uleb128 0x15
- 1138 0301 62756600 		.ascii	"buf\000"
- 1139 0305 01       		.byte	0x1
- 1140 0306 D0       		.byte	0xd0
- 1141 0307 3B020000 		.4byte	0x23b
- 1142 030b 02       		.uleb128 0x2
- 1143 030c 91       		.byte	0x91
- 1144 030d 6C       		.sleb128 -20
- 1145 030e 15       		.uleb128 0x15
- 1146 030f 6C656E00 		.ascii	"len\000"
- 1147 0313 01       		.byte	0x1
- 1148 0314 D1       		.byte	0xd1
- 1149 0315 7E000000 		.4byte	0x7e
- 1150 0319 02       		.uleb128 0x2
- 1151 031a 91       		.byte	0x91
- 1152 031b 68       		.sleb128 -24
- 1153 031c 0E       		.uleb128 0xe
- 1154 031d 31020000 		.4byte	.LASF44
- 1155 0321 01       		.byte	0x1
- 1156 0322 D2       		.byte	0xd2
- 1157 0323 7E000000 		.4byte	0x7e
- 1158 0327 02       		.uleb128 0x2
- 1159 0328 91       		.byte	0x91
- 1160 0329 64       		.sleb128 -28
- 1161 032a 00       		.byte	0
- 1162 032b 00       		.byte	0
- 1163 032c 16       		.uleb128 0x16
- 1164 032d AB000000 		.4byte	.LASF23
- 1165 0331 06       		.byte	0x6
- 1166 0332 1A       		.byte	0x1a
- 1167 0333 05010000 		.4byte	0x105
- 1168 0337 17       		.uleb128 0x17
- 1169 0338 8C000000 		.4byte	0x8c
- 1170 033c 47030000 		.4byte	0x347
- 1171 0340 18       		.uleb128 0x18
- 1172 0341 C9000000 		.4byte	0xc9
- 1173 0345 3F       		.byte	0x3f
- 1174 0346 00       		.byte	0
- 1175 0347 19       		.uleb128 0x19
- 1176 0348 C4020000 		.4byte	.LASF45
- 1177 034c 01       		.byte	0x1
- 1178 034d 29       		.byte	0x29
- 1179 034e 37030000 		.4byte	0x337
- 1180 0352 05       		.uleb128 0x5
- 1181 0353 03       		.byte	0x3
- 1182 0354 00000000 		.4byte	output_buffer
- 1183 0358 19       		.uleb128 0x19
- 1184 0359 E4020000 		.4byte	.LASF46
- 1185 035d 01       		.byte	0x1
- 1186 035e 2A       		.byte	0x2a
- 1187 035f 7E000000 		.4byte	0x7e
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 26
+ 337:serial.c      ****     non_interactive();
+ 1081              		.loc 1 337 0
+ 1082 0006 FFF7FEFF 		bl	non_interactive
+ 338:serial.c      ****     return;
+ 1083              		.loc 1 338 0
+ 1084 000a C046     		nop
+ 339:serial.c      ****     
+ 340:serial.c      ****     
+ 341:serial.c      ****     while (serial_available()) {
+ 342:serial.c      ****         // Do we have a full line of input?
+ 343:serial.c      ****         if (input_data() == 1) {
+ 344:serial.c      ****             uint8_t *buf = input_getbuffer();
+ 345:serial.c      ****             unsigned int len = input_getlength();
+ 346:serial.c      ****                     
+ 347:serial.c      ****             if (len == 0) {
+ 348:serial.c      ****                 // Empty ... just reprompt
+ 349:serial.c      ****             } else if (len >= 2 && buf[0] == '+' && buf[1] == '+') {
+ 350:serial.c      ****                 cmd_process(buf, len);
+ 351:serial.c      ****                         
+ 352:serial.c      ****                 // TODO: if this was a ++auto command we need to change autoread????
+ 353:serial.c      ****             } else {
+ 354:serial.c      ****                 
+ 355:serial.c      ****                 // We've already stripped CR/NL from the input, so now we can just add
+ 356:serial.c      ****                 // whatever is needed...
+ 357:serial.c      ****                 switch (settings.eos) {
+ 358:serial.c      ****                     case 0:     // add CR + LF
+ 359:serial.c      ****                                 buf[len++] = 13;
+ 360:serial.c      ****                                 buf[len++] = 10;
+ 361:serial.c      ****                                 break;
+ 362:serial.c      ****                                 
+ 363:serial.c      ****                     case 1:     // add CR
+ 364:serial.c      ****                                 buf[len++] = 13;
+ 365:serial.c      ****                                 break;
+ 366:serial.c      ****                                 
+ 367:serial.c      ****                     case 2:     // add LF
+ 368:serial.c      ****                                 buf[len++] = 10;
+ 369:serial.c      ****                                 break;
+ 370:serial.c      ****                                 
+ 371:serial.c      ****                     case 3:     // do nothing
+ 372:serial.c      ****                                 break;
+ 373:serial.c      ****                 }               
+ 374:serial.c      ****                 
+ 375:serial.c      ****                 if (gpib_get_mode() == GPIB_RUNNING) {
+ 376:serial.c      ****                     //buf[len] = 0;
+ 377:serial.c      ****                     gpib_send(settings.address, buf, len);
+ 378:serial.c      ****                     
+ 379:serial.c      ****                     // Only auto-query if we should
+ 380:serial.c      ****                     autoread = 0;
+ 381:serial.c      ****                     if (settings.autoread) {
+ 382:serial.c      ****                         if (settings.autoread == 1 || (settings.autoread == 2 && contains_byte(buf,
+ 383:serial.c      ****                             gpib_address_talker(settings.address);
+ 384:serial.c      ****                             autoread = 1;
+ 385:serial.c      ****                         }
+ 386:serial.c      ****                     }                            
+ 387:serial.c      ****                 } else {
+ 388:serial.c      ****                     serial_printf("<no GPIB device connected>\r\n");
+ 389:serial.c      ****                 }
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 27
 
 
- 1188 0363 05       		.uleb128 0x5
- 1189 0364 03       		.byte	0x3
- 1190 0365 00000000 		.4byte	output_free
- 1191 0369 19       		.uleb128 0x19
- 1192 036a 2D000000 		.4byte	.LASF47
- 1193 036e 01       		.byte	0x1
- 1194 036f 2C       		.byte	0x2c
- 1195 0370 37030000 		.4byte	0x337
- 1196 0374 05       		.uleb128 0x5
- 1197 0375 03       		.byte	0x3
- 1198 0376 00000000 		.4byte	input_buffer
- 1199 037a 19       		.uleb128 0x19
- 1200 037b A0020000 		.4byte	.LASF48
- 1201 037f 01       		.byte	0x1
- 1202 0380 2D       		.byte	0x2d
- 1203 0381 7E000000 		.4byte	0x7e
- 1204 0385 05       		.uleb128 0x5
- 1205 0386 03       		.byte	0x3
- 1206 0387 00000000 		.4byte	input_avail
- 1207 038b 19       		.uleb128 0x19
- 1208 038c FD010000 		.4byte	.LASF49
- 1209 0390 01       		.byte	0x1
- 1210 0391 2E       		.byte	0x2e
- 1211 0392 3B020000 		.4byte	0x23b
- 1212 0396 05       		.uleb128 0x5
- 1213 0397 03       		.byte	0x3
- 1214 0398 00000000 		.4byte	input_p
- 1215 039c 19       		.uleb128 0x19
- 1216 039d 13030000 		.4byte	.LASF27
- 1217 03a1 01       		.byte	0x1
- 1218 03a2 31       		.byte	0x31
- 1219 03a3 7E000000 		.4byte	0x7e
- 1220 03a7 05       		.uleb128 0x5
- 1221 03a8 03       		.byte	0x3
- 1222 03a9 00000000 		.4byte	autoread
- 1223 03ad 17       		.uleb128 0x17
- 1224 03ae 8C000000 		.4byte	0x8c
- 1225 03b2 BE030000 		.4byte	0x3be
- 1226 03b6 1A       		.uleb128 0x1a
- 1227 03b7 C9000000 		.4byte	0xc9
- 1228 03bb FF01     		.2byte	0x1ff
- 1229 03bd 00       		.byte	0
- 1230 03be 19       		.uleb128 0x19
- 1231 03bf 4E020000 		.4byte	.LASF50
- 1232 03c3 01       		.byte	0x1
- 1233 03c4 36       		.byte	0x36
- 1234 03c5 AD030000 		.4byte	0x3ad
- 1235 03c9 05       		.uleb128 0x5
- 1236 03ca 03       		.byte	0x3
- 1237 03cb 00000000 		.4byte	general_buffer
- 1238 03cf 00       		.byte	0
- 1239              		.section	.debug_abbrev,"",%progbits
- 1240              	.Ldebug_abbrev0:
- 1241 0000 01       		.uleb128 0x1
- 1242 0001 11       		.uleb128 0x11
- 1243 0002 01       		.byte	0x1
- 1244 0003 25       		.uleb128 0x25
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 27
+ 390:serial.c      ****             }
+ 391:serial.c      ****             input_start();
+ 392:serial.c      ****         }    
+ 393:serial.c      ****     }
+ 394:serial.c      ****             
+ 395:serial.c      ****     if (autoread && gpib_get_mode() == GPIB_RUNNING && gpib_talking()) {                
+ 396:serial.c      ****         uint8_t *buf;
+ 397:serial.c      ****         int     len;
+ 398:serial.c      ****         int     ended;
+ 399:serial.c      ****         
+ 400:serial.c      ****         buf = gpib_get_buffer();
+ 401:serial.c      ****         
+ 402:serial.c      ****         do {
+ 403:serial.c      ****             len = gpib_read(GPIB_EOI, &ended);
+ 404:serial.c      **** 
+ 405:serial.c      ****             // Remove CR/LF's...
+ 406:serial.c      ****             len = chomp(buf, len);
+ 407:serial.c      ****                               
+ 408:serial.c      ****             input_show_output(buf, len);
+ 409:serial.c      ****             
+ 410:serial.c      ****         } while(ended == GPIB_NOT_ENDED);   
+ 411:serial.c      ****     }        
+ 412:serial.c      **** }
+ 1085              		.loc 1 412 0
+ 1086 000c BD46     		mov	sp, r7
+ 1087 000e 02B0     		add	sp, sp, #8
+ 1088              		@ sp needed
+ 1089 0010 80BD     		pop	{r7, pc}
+ 1090              		.cfi_endproc
+ 1091              	.LFE44:
+ 1092              		.size	usbuart_poll, .-usbuart_poll
+ 1093 0012 C046     		.text
+ 1094              	.Letext0:
+ 1095              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1096              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1097              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 1098              		.file 5 "<built-in>"
+ 1099              		.file 6 "settings.h"
+ 1100              		.section	.debug_info,"",%progbits
+ 1101              	.Ldebug_info0:
+ 1102 0000 A6040000 		.4byte	0x4a6
+ 1103 0004 0400     		.2byte	0x4
+ 1104 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1105 000a 04       		.byte	0x4
+ 1106 000b 01       		.uleb128 0x1
+ 1107 000c 40010000 		.4byte	.LASF59
+ 1108 0010 0C       		.byte	0xc
+ 1109 0011 DA010000 		.4byte	.LASF60
+ 1110 0015 3E000000 		.4byte	.LASF61
+ 1111 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 1112 001d 00000000 		.4byte	0
+ 1113 0021 00000000 		.4byte	.Ldebug_line0
+ 1114 0025 02       		.uleb128 0x2
+ 1115 0026 01       		.byte	0x1
+ 1116 0027 06       		.byte	0x6
+ 1117 0028 F1010000 		.4byte	.LASF0
+ 1118 002c 03       		.uleb128 0x3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 28
 
 
- 1245 0004 0E       		.uleb128 0xe
- 1246 0005 13       		.uleb128 0x13
- 1247 0006 0B       		.uleb128 0xb
- 1248 0007 03       		.uleb128 0x3
- 1249 0008 0E       		.uleb128 0xe
- 1250 0009 1B       		.uleb128 0x1b
- 1251 000a 0E       		.uleb128 0xe
- 1252 000b 55       		.uleb128 0x55
- 1253 000c 17       		.uleb128 0x17
- 1254 000d 11       		.uleb128 0x11
- 1255 000e 01       		.uleb128 0x1
- 1256 000f 10       		.uleb128 0x10
- 1257 0010 17       		.uleb128 0x17
- 1258 0011 00       		.byte	0
- 1259 0012 00       		.byte	0
- 1260 0013 02       		.uleb128 0x2
- 1261 0014 24       		.uleb128 0x24
- 1262 0015 00       		.byte	0
- 1263 0016 0B       		.uleb128 0xb
- 1264 0017 0B       		.uleb128 0xb
- 1265 0018 3E       		.uleb128 0x3e
- 1266 0019 0B       		.uleb128 0xb
- 1267 001a 03       		.uleb128 0x3
- 1268 001b 0E       		.uleb128 0xe
- 1269 001c 00       		.byte	0
- 1270 001d 00       		.byte	0
- 1271 001e 03       		.uleb128 0x3
- 1272 001f 16       		.uleb128 0x16
- 1273 0020 00       		.byte	0
- 1274 0021 03       		.uleb128 0x3
- 1275 0022 0E       		.uleb128 0xe
- 1276 0023 3A       		.uleb128 0x3a
- 1277 0024 0B       		.uleb128 0xb
- 1278 0025 3B       		.uleb128 0x3b
- 1279 0026 0B       		.uleb128 0xb
- 1280 0027 49       		.uleb128 0x49
- 1281 0028 13       		.uleb128 0x13
- 1282 0029 00       		.byte	0
- 1283 002a 00       		.byte	0
- 1284 002b 04       		.uleb128 0x4
- 1285 002c 24       		.uleb128 0x24
- 1286 002d 00       		.byte	0
- 1287 002e 0B       		.uleb128 0xb
- 1288 002f 0B       		.uleb128 0xb
- 1289 0030 3E       		.uleb128 0x3e
- 1290 0031 0B       		.uleb128 0xb
- 1291 0032 03       		.uleb128 0x3
- 1292 0033 08       		.uleb128 0x8
- 1293 0034 00       		.byte	0
- 1294 0035 00       		.byte	0
- 1295 0036 05       		.uleb128 0x5
- 1296 0037 0F       		.uleb128 0xf
- 1297 0038 00       		.byte	0
- 1298 0039 0B       		.uleb128 0xb
- 1299 003a 0B       		.uleb128 0xb
- 1300 003b 00       		.byte	0
- 1301 003c 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 28
+ 1119 002d 36010000 		.4byte	.LASF3
+ 1120 0031 02       		.byte	0x2
+ 1121 0032 1D       		.byte	0x1d
+ 1122 0033 37000000 		.4byte	0x37
+ 1123 0037 02       		.uleb128 0x2
+ 1124 0038 01       		.byte	0x1
+ 1125 0039 08       		.byte	0x8
+ 1126 003a E3010000 		.4byte	.LASF1
+ 1127 003e 02       		.uleb128 0x2
+ 1128 003f 02       		.byte	0x2
+ 1129 0040 05       		.byte	0x5
+ 1130 0041 2B000000 		.4byte	.LASF2
+ 1131 0045 03       		.uleb128 0x3
+ 1132 0046 84000000 		.4byte	.LASF4
+ 1133 004a 02       		.byte	0x2
+ 1134 004b 2B       		.byte	0x2b
+ 1135 004c 50000000 		.4byte	0x50
+ 1136 0050 02       		.uleb128 0x2
+ 1137 0051 02       		.byte	0x2
+ 1138 0052 07       		.byte	0x7
+ 1139 0053 59020000 		.4byte	.LASF5
+ 1140 0057 02       		.uleb128 0x2
+ 1141 0058 04       		.byte	0x4
+ 1142 0059 05       		.byte	0x5
+ 1143 005a F7000000 		.4byte	.LASF6
+ 1144 005e 03       		.uleb128 0x3
+ 1145 005f E9020000 		.4byte	.LASF7
+ 1146 0063 02       		.byte	0x2
+ 1147 0064 41       		.byte	0x41
+ 1148 0065 69000000 		.4byte	0x69
+ 1149 0069 02       		.uleb128 0x2
+ 1150 006a 04       		.byte	0x4
+ 1151 006b 07       		.byte	0x7
+ 1152 006c 19010000 		.4byte	.LASF8
+ 1153 0070 02       		.uleb128 0x2
+ 1154 0071 08       		.byte	0x8
+ 1155 0072 05       		.byte	0x5
+ 1156 0073 CF000000 		.4byte	.LASF9
+ 1157 0077 02       		.uleb128 0x2
+ 1158 0078 08       		.byte	0x8
+ 1159 0079 07       		.byte	0x7
+ 1160 007a FD010000 		.4byte	.LASF10
+ 1161 007e 04       		.uleb128 0x4
+ 1162 007f 04       		.byte	0x4
+ 1163 0080 05       		.byte	0x5
+ 1164 0081 696E7400 		.ascii	"int\000"
+ 1165 0085 02       		.uleb128 0x2
+ 1166 0086 04       		.byte	0x4
+ 1167 0087 07       		.byte	0x7
+ 1168 0088 1D020000 		.4byte	.LASF11
+ 1169 008c 03       		.uleb128 0x3
+ 1170 008d AD000000 		.4byte	.LASF12
+ 1171 0091 03       		.byte	0x3
+ 1172 0092 18       		.byte	0x18
+ 1173 0093 2C000000 		.4byte	0x2c
+ 1174 0097 03       		.uleb128 0x3
+ 1175 0098 2A020000 		.4byte	.LASF13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 29
 
 
- 1302 003d 06       		.uleb128 0x6
- 1303 003e 0F       		.uleb128 0xf
- 1304 003f 00       		.byte	0
- 1305 0040 0B       		.uleb128 0xb
- 1306 0041 0B       		.uleb128 0xb
- 1307 0042 49       		.uleb128 0x49
- 1308 0043 13       		.uleb128 0x13
- 1309 0044 00       		.byte	0
- 1310 0045 00       		.byte	0
- 1311 0046 07       		.uleb128 0x7
- 1312 0047 13       		.uleb128 0x13
- 1313 0048 01       		.byte	0x1
- 1314 0049 03       		.uleb128 0x3
- 1315 004a 0E       		.uleb128 0xe
- 1316 004b 0B       		.uleb128 0xb
- 1317 004c 0B       		.uleb128 0xb
- 1318 004d 3A       		.uleb128 0x3a
- 1319 004e 0B       		.uleb128 0xb
- 1320 004f 3B       		.uleb128 0x3b
- 1321 0050 0B       		.uleb128 0xb
- 1322 0051 01       		.uleb128 0x1
- 1323 0052 13       		.uleb128 0x13
- 1324 0053 00       		.byte	0
- 1325 0054 00       		.byte	0
- 1326 0055 08       		.uleb128 0x8
- 1327 0056 0D       		.uleb128 0xd
- 1328 0057 00       		.byte	0
- 1329 0058 03       		.uleb128 0x3
- 1330 0059 0E       		.uleb128 0xe
- 1331 005a 49       		.uleb128 0x49
- 1332 005b 13       		.uleb128 0x13
- 1333 005c 38       		.uleb128 0x38
- 1334 005d 0B       		.uleb128 0xb
- 1335 005e 34       		.uleb128 0x34
- 1336 005f 19       		.uleb128 0x19
- 1337 0060 00       		.byte	0
- 1338 0061 00       		.byte	0
- 1339 0062 09       		.uleb128 0x9
- 1340 0063 0D       		.uleb128 0xd
- 1341 0064 00       		.byte	0
- 1342 0065 03       		.uleb128 0x3
- 1343 0066 0E       		.uleb128 0xe
- 1344 0067 3A       		.uleb128 0x3a
- 1345 0068 0B       		.uleb128 0xb
- 1346 0069 3B       		.uleb128 0x3b
- 1347 006a 0B       		.uleb128 0xb
- 1348 006b 49       		.uleb128 0x49
- 1349 006c 13       		.uleb128 0x13
- 1350 006d 38       		.uleb128 0x38
- 1351 006e 0B       		.uleb128 0xb
- 1352 006f 00       		.byte	0
- 1353 0070 00       		.byte	0
- 1354 0071 0A       		.uleb128 0xa
- 1355 0072 0D       		.uleb128 0xd
- 1356 0073 00       		.byte	0
- 1357 0074 03       		.uleb128 0x3
- 1358 0075 08       		.uleb128 0x8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 29
+ 1176 009c 03       		.byte	0x3
+ 1177 009d 24       		.byte	0x24
+ 1178 009e 45000000 		.4byte	0x45
+ 1179 00a2 03       		.uleb128 0x3
+ 1180 00a3 14020000 		.4byte	.LASF14
+ 1181 00a7 03       		.byte	0x3
+ 1182 00a8 30       		.byte	0x30
+ 1183 00a9 5E000000 		.4byte	0x5e
+ 1184 00ad 02       		.uleb128 0x2
+ 1185 00ae 04       		.byte	0x4
+ 1186 00af 04       		.byte	0x4
+ 1187 00b0 00000000 		.4byte	.LASF15
+ 1188 00b4 02       		.uleb128 0x2
+ 1189 00b5 08       		.byte	0x8
+ 1190 00b6 04       		.byte	0x4
+ 1191 00b7 E2020000 		.4byte	.LASF16
+ 1192 00bb 02       		.uleb128 0x2
+ 1193 00bc 01       		.byte	0x1
+ 1194 00bd 08       		.byte	0x8
+ 1195 00be 98020000 		.4byte	.LASF17
+ 1196 00c2 02       		.uleb128 0x2
+ 1197 00c3 08       		.byte	0x8
+ 1198 00c4 04       		.byte	0x4
+ 1199 00c5 CE010000 		.4byte	.LASF18
+ 1200 00c9 02       		.uleb128 0x2
+ 1201 00ca 04       		.byte	0x4
+ 1202 00cb 07       		.byte	0x7
+ 1203 00cc 35000000 		.4byte	.LASF19
+ 1204 00d0 05       		.uleb128 0x5
+ 1205 00d1 04       		.byte	0x4
+ 1206 00d2 06       		.uleb128 0x6
+ 1207 00d3 04       		.byte	0x4
+ 1208 00d4 BB000000 		.4byte	0xbb
+ 1209 00d8 03       		.uleb128 0x3
+ 1210 00d9 0F030000 		.4byte	.LASF20
+ 1211 00dd 04       		.byte	0x4
+ 1212 00de 28       		.byte	0x28
+ 1213 00df E3000000 		.4byte	0xe3
+ 1214 00e3 07       		.uleb128 0x7
+ 1215 00e4 0F010000 		.4byte	.LASF22
+ 1216 00e8 04       		.byte	0x4
+ 1217 00e9 05       		.byte	0x5
+ 1218 00ea 00       		.byte	0
+ 1219 00eb FA000000 		.4byte	0xfa
+ 1220 00ef 08       		.uleb128 0x8
+ 1221 00f0 93020000 		.4byte	.LASF62
+ 1222 00f4 D0000000 		.4byte	0xd0
+ 1223 00f8 00       		.byte	0
+ 1224 00f9 00       		.byte	0
+ 1225 00fa 03       		.uleb128 0x3
+ 1226 00fb 8F000000 		.4byte	.LASF21
+ 1227 00ff 04       		.byte	0x4
+ 1228 0100 62       		.byte	0x62
+ 1229 0101 D8000000 		.4byte	0xd8
+ 1230 0105 07       		.uleb128 0x7
+ 1231 0106 C6000000 		.4byte	.LASF23
+ 1232 010a 14       		.byte	0x14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 30
 
 
- 1359 0076 3A       		.uleb128 0x3a
- 1360 0077 0B       		.uleb128 0xb
- 1361 0078 3B       		.uleb128 0x3b
- 1362 0079 0B       		.uleb128 0xb
- 1363 007a 49       		.uleb128 0x49
- 1364 007b 13       		.uleb128 0x13
- 1365 007c 38       		.uleb128 0x38
- 1366 007d 0B       		.uleb128 0xb
- 1367 007e 00       		.byte	0
- 1368 007f 00       		.byte	0
- 1369 0080 0B       		.uleb128 0xb
- 1370 0081 2E       		.uleb128 0x2e
- 1371 0082 01       		.byte	0x1
- 1372 0083 3F       		.uleb128 0x3f
- 1373 0084 19       		.uleb128 0x19
- 1374 0085 03       		.uleb128 0x3
- 1375 0086 0E       		.uleb128 0xe
- 1376 0087 3A       		.uleb128 0x3a
- 1377 0088 0B       		.uleb128 0xb
- 1378 0089 3B       		.uleb128 0x3b
- 1379 008a 0B       		.uleb128 0xb
- 1380 008b 27       		.uleb128 0x27
- 1381 008c 19       		.uleb128 0x19
- 1382 008d 11       		.uleb128 0x11
- 1383 008e 01       		.uleb128 0x1
- 1384 008f 12       		.uleb128 0x12
- 1385 0090 06       		.uleb128 0x6
- 1386 0091 40       		.uleb128 0x40
- 1387 0092 18       		.uleb128 0x18
- 1388 0093 9642     		.uleb128 0x2116
- 1389 0095 19       		.uleb128 0x19
- 1390 0096 01       		.uleb128 0x1
- 1391 0097 13       		.uleb128 0x13
- 1392 0098 00       		.byte	0
- 1393 0099 00       		.byte	0
- 1394 009a 0C       		.uleb128 0xc
- 1395 009b 05       		.uleb128 0x5
- 1396 009c 00       		.byte	0
- 1397 009d 03       		.uleb128 0x3
- 1398 009e 08       		.uleb128 0x8
- 1399 009f 3A       		.uleb128 0x3a
- 1400 00a0 0B       		.uleb128 0xb
- 1401 00a1 3B       		.uleb128 0x3b
- 1402 00a2 0B       		.uleb128 0xb
- 1403 00a3 49       		.uleb128 0x49
- 1404 00a4 13       		.uleb128 0x13
- 1405 00a5 02       		.uleb128 0x2
- 1406 00a6 18       		.uleb128 0x18
- 1407 00a7 00       		.byte	0
- 1408 00a8 00       		.byte	0
- 1409 00a9 0D       		.uleb128 0xd
- 1410 00aa 18       		.uleb128 0x18
- 1411 00ab 00       		.byte	0
- 1412 00ac 00       		.byte	0
- 1413 00ad 00       		.byte	0
- 1414 00ae 0E       		.uleb128 0xe
- 1415 00af 34       		.uleb128 0x34
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 30
+ 1233 010b 06       		.byte	0x6
+ 1234 010c 0D       		.byte	0xd
+ 1235 010d 7E010000 		.4byte	0x17e
+ 1236 0111 09       		.uleb128 0x9
+ 1237 0112 05030000 		.4byte	.LASF24
+ 1238 0116 06       		.byte	0x6
+ 1239 0117 0E       		.byte	0xe
+ 1240 0118 A2000000 		.4byte	0xa2
+ 1241 011c 00       		.byte	0
+ 1242 011d 09       		.uleb128 0x9
+ 1243 011e 12000000 		.4byte	.LASF25
+ 1244 0122 06       		.byte	0x6
+ 1245 0123 0F       		.byte	0xf
+ 1246 0124 97000000 		.4byte	0x97
+ 1247 0128 04       		.byte	0x4
+ 1248 0129 09       		.uleb128 0x9
+ 1249 012a 07010000 		.4byte	.LASF26
+ 1250 012e 06       		.byte	0x6
+ 1251 012f 10       		.byte	0x10
+ 1252 0130 97000000 		.4byte	0x97
+ 1253 0134 06       		.byte	0x6
+ 1254 0135 09       		.uleb128 0x9
+ 1255 0136 BD000000 		.4byte	.LASF27
+ 1256 013a 06       		.byte	0x6
+ 1257 013b 11       		.byte	0x11
+ 1258 013c 97000000 		.4byte	0x97
+ 1259 0140 08       		.byte	0x8
+ 1260 0141 0A       		.uleb128 0xa
+ 1261 0142 656F6900 		.ascii	"eoi\000"
+ 1262 0146 06       		.byte	0x6
+ 1263 0147 12       		.byte	0x12
+ 1264 0148 97000000 		.4byte	0x97
+ 1265 014c 0A       		.byte	0xa
+ 1266 014d 0A       		.uleb128 0xa
+ 1267 014e 656F7300 		.ascii	"eos\000"
+ 1268 0152 06       		.byte	0x6
+ 1269 0153 13       		.byte	0x13
+ 1270 0154 97000000 		.4byte	0x97
+ 1271 0158 0C       		.byte	0xc
+ 1272 0159 09       		.uleb128 0x9
+ 1273 015a 44020000 		.4byte	.LASF28
+ 1274 015e 06       		.byte	0x6
+ 1275 015f 14       		.byte	0x14
+ 1276 0160 97000000 		.4byte	0x97
+ 1277 0164 0E       		.byte	0xe
+ 1278 0165 09       		.uleb128 0x9
+ 1279 0166 6C020000 		.4byte	.LASF29
+ 1280 016a 06       		.byte	0x6
+ 1281 016b 15       		.byte	0x15
+ 1282 016c 97000000 		.4byte	0x97
+ 1283 0170 10       		.byte	0x10
+ 1284 0171 09       		.uleb128 0x9
+ 1285 0172 DD000000 		.4byte	.LASF30
+ 1286 0176 06       		.byte	0x6
+ 1287 0177 16       		.byte	0x16
+ 1288 0178 97000000 		.4byte	0x97
+ 1289 017c 12       		.byte	0x12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 31
 
 
- 1416 00b0 00       		.byte	0
- 1417 00b1 03       		.uleb128 0x3
- 1418 00b2 0E       		.uleb128 0xe
- 1419 00b3 3A       		.uleb128 0x3a
- 1420 00b4 0B       		.uleb128 0xb
- 1421 00b5 3B       		.uleb128 0x3b
- 1422 00b6 0B       		.uleb128 0xb
- 1423 00b7 49       		.uleb128 0x49
- 1424 00b8 13       		.uleb128 0x13
- 1425 00b9 02       		.uleb128 0x2
- 1426 00ba 18       		.uleb128 0x18
- 1427 00bb 00       		.byte	0
- 1428 00bc 00       		.byte	0
- 1429 00bd 0F       		.uleb128 0xf
- 1430 00be 05       		.uleb128 0x5
- 1431 00bf 00       		.byte	0
- 1432 00c0 03       		.uleb128 0x3
- 1433 00c1 0E       		.uleb128 0xe
- 1434 00c2 3A       		.uleb128 0x3a
- 1435 00c3 0B       		.uleb128 0xb
- 1436 00c4 3B       		.uleb128 0x3b
- 1437 00c5 0B       		.uleb128 0xb
- 1438 00c6 49       		.uleb128 0x49
- 1439 00c7 13       		.uleb128 0x13
- 1440 00c8 02       		.uleb128 0x2
- 1441 00c9 18       		.uleb128 0x18
- 1442 00ca 00       		.byte	0
- 1443 00cb 00       		.byte	0
- 1444 00cc 10       		.uleb128 0x10
- 1445 00cd 0B       		.uleb128 0xb
- 1446 00ce 01       		.byte	0x1
- 1447 00cf 11       		.uleb128 0x11
- 1448 00d0 01       		.uleb128 0x1
- 1449 00d1 12       		.uleb128 0x12
- 1450 00d2 06       		.uleb128 0x6
- 1451 00d3 00       		.byte	0
- 1452 00d4 00       		.byte	0
- 1453 00d5 11       		.uleb128 0x11
- 1454 00d6 2E       		.uleb128 0x2e
- 1455 00d7 00       		.byte	0
- 1456 00d8 3F       		.uleb128 0x3f
- 1457 00d9 19       		.uleb128 0x19
- 1458 00da 03       		.uleb128 0x3
- 1459 00db 0E       		.uleb128 0xe
- 1460 00dc 3A       		.uleb128 0x3a
- 1461 00dd 0B       		.uleb128 0xb
- 1462 00de 3B       		.uleb128 0x3b
- 1463 00df 0B       		.uleb128 0xb
- 1464 00e0 11       		.uleb128 0x11
- 1465 00e1 01       		.uleb128 0x1
- 1466 00e2 12       		.uleb128 0x12
- 1467 00e3 06       		.uleb128 0x6
- 1468 00e4 40       		.uleb128 0x40
- 1469 00e5 18       		.uleb128 0x18
- 1470 00e6 9642     		.uleb128 0x2116
- 1471 00e8 19       		.uleb128 0x19
- 1472 00e9 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 31
+ 1290 017d 00       		.byte	0
+ 1291 017e 0B       		.uleb128 0xb
+ 1292 017f 9D020000 		.4byte	.LASF31
+ 1293 0183 01       		.byte	0x1
+ 1294 0184 38       		.byte	0x38
+ 1295 0185 00000000 		.4byte	.LFB35
+ 1296 0189 3C000000 		.4byte	.LFE35-.LFB35
+ 1297 018d 01       		.uleb128 0x1
+ 1298 018e 9C       		.byte	0x9c
+ 1299 018f B1010000 		.4byte	0x1b1
+ 1300 0193 0C       		.uleb128 0xc
+ 1301 0194 666D7400 		.ascii	"fmt\000"
+ 1302 0198 01       		.byte	0x1
+ 1303 0199 38       		.byte	0x38
+ 1304 019a D2000000 		.4byte	0xd2
+ 1305 019e 02       		.uleb128 0x2
+ 1306 019f 91       		.byte	0x91
+ 1307 01a0 70       		.sleb128 -16
+ 1308 01a1 0D       		.uleb128 0xd
+ 1309 01a2 0E       		.uleb128 0xe
+ 1310 01a3 33020000 		.4byte	.LASF33
+ 1311 01a7 01       		.byte	0x1
+ 1312 01a8 39       		.byte	0x39
+ 1313 01a9 FA000000 		.4byte	0xfa
+ 1314 01ad 02       		.uleb128 0x2
+ 1315 01ae 91       		.byte	0x91
+ 1316 01af 64       		.sleb128 -28
+ 1317 01b0 00       		.byte	0
+ 1318 01b1 0B       		.uleb128 0xb
+ 1319 01b2 77020000 		.4byte	.LASF32
+ 1320 01b6 01       		.byte	0x1
+ 1321 01b7 3F       		.byte	0x3f
+ 1322 01b8 00000000 		.4byte	.LFB36
+ 1323 01bc 34000000 		.4byte	.LFE36-.LFB36
+ 1324 01c0 01       		.uleb128 0x1
+ 1325 01c1 9C       		.byte	0x9c
+ 1326 01c2 E3010000 		.4byte	0x1e3
+ 1327 01c6 0C       		.uleb128 0xc
+ 1328 01c7 666D7400 		.ascii	"fmt\000"
+ 1329 01cb 01       		.byte	0x1
+ 1330 01cc 3F       		.byte	0x3f
+ 1331 01cd D2000000 		.4byte	0xd2
+ 1332 01d1 02       		.uleb128 0x2
+ 1333 01d2 91       		.byte	0x91
+ 1334 01d3 74       		.sleb128 -12
+ 1335 01d4 0F       		.uleb128 0xf
+ 1336 01d5 33020000 		.4byte	.LASF33
+ 1337 01d9 01       		.byte	0x1
+ 1338 01da 3F       		.byte	0x3f
+ 1339 01db FA000000 		.4byte	0xfa
+ 1340 01df 02       		.uleb128 0x2
+ 1341 01e0 91       		.byte	0x91
+ 1342 01e1 70       		.sleb128 -16
+ 1343 01e2 00       		.byte	0
+ 1344 01e3 0B       		.uleb128 0xb
+ 1345 01e4 2B010000 		.4byte	.LASF34
+ 1346 01e8 01       		.byte	0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 32
 
 
- 1473 00ea 00       		.byte	0
- 1474 00eb 12       		.uleb128 0x12
- 1475 00ec 2E       		.uleb128 0x2e
- 1476 00ed 00       		.byte	0
- 1477 00ee 3F       		.uleb128 0x3f
- 1478 00ef 19       		.uleb128 0x19
- 1479 00f0 03       		.uleb128 0x3
- 1480 00f1 0E       		.uleb128 0xe
- 1481 00f2 3A       		.uleb128 0x3a
- 1482 00f3 0B       		.uleb128 0xb
- 1483 00f4 3B       		.uleb128 0x3b
- 1484 00f5 0B       		.uleb128 0xb
- 1485 00f6 49       		.uleb128 0x49
- 1486 00f7 13       		.uleb128 0x13
- 1487 00f8 11       		.uleb128 0x11
- 1488 00f9 01       		.uleb128 0x1
- 1489 00fa 12       		.uleb128 0x12
- 1490 00fb 06       		.uleb128 0x6
- 1491 00fc 40       		.uleb128 0x40
- 1492 00fd 18       		.uleb128 0x18
- 1493 00fe 9642     		.uleb128 0x2116
- 1494 0100 19       		.uleb128 0x19
- 1495 0101 00       		.byte	0
- 1496 0102 00       		.byte	0
- 1497 0103 13       		.uleb128 0x13
- 1498 0104 2E       		.uleb128 0x2e
- 1499 0105 01       		.byte	0x1
- 1500 0106 3F       		.uleb128 0x3f
- 1501 0107 19       		.uleb128 0x19
- 1502 0108 03       		.uleb128 0x3
- 1503 0109 0E       		.uleb128 0xe
- 1504 010a 3A       		.uleb128 0x3a
- 1505 010b 0B       		.uleb128 0xb
- 1506 010c 3B       		.uleb128 0x3b
- 1507 010d 0B       		.uleb128 0xb
- 1508 010e 11       		.uleb128 0x11
- 1509 010f 01       		.uleb128 0x1
- 1510 0110 12       		.uleb128 0x12
- 1511 0111 06       		.uleb128 0x6
- 1512 0112 40       		.uleb128 0x40
- 1513 0113 18       		.uleb128 0x18
- 1514 0114 9642     		.uleb128 0x2116
- 1515 0116 19       		.uleb128 0x19
- 1516 0117 01       		.uleb128 0x1
- 1517 0118 13       		.uleb128 0x13
- 1518 0119 00       		.byte	0
- 1519 011a 00       		.byte	0
- 1520 011b 14       		.uleb128 0x14
- 1521 011c 0B       		.uleb128 0xb
- 1522 011d 01       		.byte	0x1
- 1523 011e 11       		.uleb128 0x11
- 1524 011f 01       		.uleb128 0x1
- 1525 0120 12       		.uleb128 0x12
- 1526 0121 06       		.uleb128 0x6
- 1527 0122 01       		.uleb128 0x1
- 1528 0123 13       		.uleb128 0x13
- 1529 0124 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 32
+ 1347 01e9 54       		.byte	0x54
+ 1348 01ea 00000000 		.4byte	.LFB37
+ 1349 01ee 74000000 		.4byte	.LFE37-.LFB37
+ 1350 01f2 01       		.uleb128 0x1
+ 1351 01f3 9C       		.byte	0x9c
+ 1352 01f4 3B020000 		.4byte	0x23b
+ 1353 01f8 0C       		.uleb128 0xc
+ 1354 01f9 62756600 		.ascii	"buf\000"
+ 1355 01fd 01       		.byte	0x1
+ 1356 01fe 54       		.byte	0x54
+ 1357 01ff 3B020000 		.4byte	0x23b
+ 1358 0203 02       		.uleb128 0x2
+ 1359 0204 91       		.byte	0x91
+ 1360 0205 6C       		.sleb128 -20
+ 1361 0206 0C       		.uleb128 0xc
+ 1362 0207 6C656E00 		.ascii	"len\000"
+ 1363 020b 01       		.byte	0x1
+ 1364 020c 54       		.byte	0x54
+ 1365 020d 7E000000 		.4byte	0x7e
+ 1366 0211 02       		.uleb128 0x2
+ 1367 0212 91       		.byte	0x91
+ 1368 0213 68       		.sleb128 -24
+ 1369 0214 10       		.uleb128 0x10
+ 1370 0215 0C000000 		.4byte	.LBB2
+ 1371 0219 52000000 		.4byte	.LBE2-.LBB2
+ 1372 021d 0E       		.uleb128 0xe
+ 1373 021e C0020000 		.4byte	.LASF35
+ 1374 0222 01       		.byte	0x1
+ 1375 0223 57       		.byte	0x57
+ 1376 0224 7E000000 		.4byte	0x7e
+ 1377 0228 02       		.uleb128 0x2
+ 1378 0229 91       		.byte	0x91
+ 1379 022a 74       		.sleb128 -12
+ 1380 022b 0E       		.uleb128 0xe
+ 1381 022c 97000000 		.4byte	.LASF36
+ 1382 0230 01       		.byte	0x1
+ 1383 0231 58       		.byte	0x58
+ 1384 0232 3B020000 		.4byte	0x23b
+ 1385 0236 02       		.uleb128 0x2
+ 1386 0237 91       		.byte	0x91
+ 1387 0238 70       		.sleb128 -16
+ 1388 0239 00       		.byte	0
+ 1389 023a 00       		.byte	0
+ 1390 023b 06       		.uleb128 0x6
+ 1391 023c 04       		.byte	0x4
+ 1392 023d 8C000000 		.4byte	0x8c
+ 1393 0241 0B       		.uleb128 0xb
+ 1394 0242 5E030000 		.4byte	.LASF37
+ 1395 0246 01       		.byte	0x1
+ 1396 0247 66       		.byte	0x66
+ 1397 0248 00000000 		.4byte	.LFB38
+ 1398 024c 26000000 		.4byte	.LFE38-.LFB38
+ 1399 0250 01       		.uleb128 0x1
+ 1400 0251 9C       		.byte	0x9c
+ 1401 0252 65020000 		.4byte	0x265
+ 1402 0256 0F       		.uleb128 0xf
+ 1403 0257 00010000 		.4byte	.LASF38
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 33
 
 
- 1530 0125 00       		.byte	0
- 1531 0126 15       		.uleb128 0x15
- 1532 0127 34       		.uleb128 0x34
- 1533 0128 00       		.byte	0
- 1534 0129 03       		.uleb128 0x3
- 1535 012a 08       		.uleb128 0x8
- 1536 012b 3A       		.uleb128 0x3a
- 1537 012c 0B       		.uleb128 0xb
- 1538 012d 3B       		.uleb128 0x3b
- 1539 012e 0B       		.uleb128 0xb
- 1540 012f 49       		.uleb128 0x49
- 1541 0130 13       		.uleb128 0x13
- 1542 0131 02       		.uleb128 0x2
- 1543 0132 18       		.uleb128 0x18
- 1544 0133 00       		.byte	0
- 1545 0134 00       		.byte	0
- 1546 0135 16       		.uleb128 0x16
- 1547 0136 34       		.uleb128 0x34
- 1548 0137 00       		.byte	0
- 1549 0138 03       		.uleb128 0x3
- 1550 0139 0E       		.uleb128 0xe
- 1551 013a 3A       		.uleb128 0x3a
- 1552 013b 0B       		.uleb128 0xb
- 1553 013c 3B       		.uleb128 0x3b
- 1554 013d 0B       		.uleb128 0xb
- 1555 013e 49       		.uleb128 0x49
- 1556 013f 13       		.uleb128 0x13
- 1557 0140 3F       		.uleb128 0x3f
- 1558 0141 19       		.uleb128 0x19
- 1559 0142 3C       		.uleb128 0x3c
- 1560 0143 19       		.uleb128 0x19
- 1561 0144 00       		.byte	0
- 1562 0145 00       		.byte	0
- 1563 0146 17       		.uleb128 0x17
- 1564 0147 01       		.uleb128 0x1
- 1565 0148 01       		.byte	0x1
- 1566 0149 49       		.uleb128 0x49
- 1567 014a 13       		.uleb128 0x13
- 1568 014b 01       		.uleb128 0x1
- 1569 014c 13       		.uleb128 0x13
- 1570 014d 00       		.byte	0
- 1571 014e 00       		.byte	0
- 1572 014f 18       		.uleb128 0x18
- 1573 0150 21       		.uleb128 0x21
- 1574 0151 00       		.byte	0
- 1575 0152 49       		.uleb128 0x49
- 1576 0153 13       		.uleb128 0x13
- 1577 0154 2F       		.uleb128 0x2f
- 1578 0155 0B       		.uleb128 0xb
- 1579 0156 00       		.byte	0
- 1580 0157 00       		.byte	0
- 1581 0158 19       		.uleb128 0x19
- 1582 0159 34       		.uleb128 0x34
- 1583 015a 00       		.byte	0
- 1584 015b 03       		.uleb128 0x3
- 1585 015c 0E       		.uleb128 0xe
- 1586 015d 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 33
+ 1404 025b 01       		.byte	0x1
+ 1405 025c 66       		.byte	0x66
+ 1406 025d D2000000 		.4byte	0xd2
+ 1407 0261 02       		.uleb128 0x2
+ 1408 0262 91       		.byte	0x91
+ 1409 0263 74       		.sleb128 -12
+ 1410 0264 00       		.byte	0
+ 1411 0265 11       		.uleb128 0x11
+ 1412 0266 86020000 		.4byte	.LASF42
+ 1413 026a 01       		.byte	0x1
+ 1414 026b 6F       		.byte	0x6f
+ 1415 026c 00000000 		.4byte	.LFB39
+ 1416 0270 38000000 		.4byte	.LFE39-.LFB39
+ 1417 0274 01       		.uleb128 0x1
+ 1418 0275 9C       		.byte	0x9c
+ 1419 0276 12       		.uleb128 0x12
+ 1420 0277 F4020000 		.4byte	.LASF40
+ 1421 027b 01       		.byte	0x1
+ 1422 027c 76       		.byte	0x76
+ 1423 027d 8B020000 		.4byte	0x28b
+ 1424 0281 00000000 		.4byte	.LFB40
+ 1425 0285 28000000 		.4byte	.LFE40-.LFB40
+ 1426 0289 01       		.uleb128 0x1
+ 1427 028a 9C       		.byte	0x9c
+ 1428 028b 02       		.uleb128 0x2
+ 1429 028c 01       		.byte	0x1
+ 1430 028d 02       		.byte	0x2
+ 1431 028e BA020000 		.4byte	.LASF39
+ 1432 0292 12       		.uleb128 0x12
+ 1433 0293 AB020000 		.4byte	.LASF41
+ 1434 0297 01       		.byte	0x1
+ 1435 0298 7D       		.byte	0x7d
+ 1436 0299 8C000000 		.4byte	0x8c
+ 1437 029d 00000000 		.4byte	.LFB41
+ 1438 02a1 58000000 		.4byte	.LFE41-.LFB41
+ 1439 02a5 01       		.uleb128 0x1
+ 1440 02a6 9C       		.byte	0x9c
+ 1441 02a7 11       		.uleb128 0x11
+ 1442 02a8 1A000000 		.4byte	.LASF43
+ 1443 02ac 01       		.byte	0x1
+ 1444 02ad 90       		.byte	0x90
+ 1445 02ae 00000000 		.4byte	.LFB42
+ 1446 02b2 0E000000 		.4byte	.LFE42-.LFB42
+ 1447 02b6 01       		.uleb128 0x1
+ 1448 02b7 9C       		.byte	0x9c
+ 1449 02b8 13       		.uleb128 0x13
+ 1450 02b9 3A030000 		.4byte	.LASF63
+ 1451 02bd 01       		.byte	0x1
+ 1452 02be B3       		.byte	0xb3
+ 1453 02bf 00000000 		.4byte	.LFB43
+ 1454 02c3 34030000 		.4byte	.LFE43-.LFB43
+ 1455 02c7 01       		.uleb128 0x1
+ 1456 02c8 9C       		.byte	0x9c
+ 1457 02c9 5F030000 		.4byte	0x35f
+ 1458 02cd 14       		.uleb128 0x14
+ 1459 02ce 32000000 		.4byte	.LBB3
+ 1460 02d2 2E000000 		.4byte	.LBE3-.LBB3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 34
 
 
- 1587 015e 0B       		.uleb128 0xb
- 1588 015f 3B       		.uleb128 0x3b
- 1589 0160 0B       		.uleb128 0xb
- 1590 0161 49       		.uleb128 0x49
- 1591 0162 13       		.uleb128 0x13
- 1592 0163 3F       		.uleb128 0x3f
- 1593 0164 19       		.uleb128 0x19
- 1594 0165 02       		.uleb128 0x2
- 1595 0166 18       		.uleb128 0x18
- 1596 0167 00       		.byte	0
- 1597 0168 00       		.byte	0
- 1598 0169 1A       		.uleb128 0x1a
- 1599 016a 21       		.uleb128 0x21
- 1600 016b 00       		.byte	0
- 1601 016c 49       		.uleb128 0x49
- 1602 016d 13       		.uleb128 0x13
- 1603 016e 2F       		.uleb128 0x2f
- 1604 016f 05       		.uleb128 0x5
- 1605 0170 00       		.byte	0
- 1606 0171 00       		.byte	0
- 1607 0172 00       		.byte	0
- 1608              		.section	.debug_aranges,"",%progbits
- 1609 0000 5C000000 		.4byte	0x5c
- 1610 0004 0200     		.2byte	0x2
- 1611 0006 00000000 		.4byte	.Ldebug_info0
- 1612 000a 04       		.byte	0x4
- 1613 000b 00       		.byte	0
- 1614 000c 0000     		.2byte	0
- 1615 000e 0000     		.2byte	0
- 1616 0010 00000000 		.4byte	.LFB35
- 1617 0014 3C000000 		.4byte	.LFE35-.LFB35
- 1618 0018 00000000 		.4byte	.LFB36
- 1619 001c 34000000 		.4byte	.LFE36-.LFB36
- 1620 0020 00000000 		.4byte	.LFB37
- 1621 0024 74000000 		.4byte	.LFE37-.LFB37
- 1622 0028 00000000 		.4byte	.LFB38
- 1623 002c 26000000 		.4byte	.LFE38-.LFB38
- 1624 0030 00000000 		.4byte	.LFB39
- 1625 0034 38000000 		.4byte	.LFE39-.LFB39
- 1626 0038 00000000 		.4byte	.LFB40
- 1627 003c 28000000 		.4byte	.LFE40-.LFB40
- 1628 0040 00000000 		.4byte	.LFB41
- 1629 0044 58000000 		.4byte	.LFE41-.LFB41
- 1630 0048 00000000 		.4byte	.LFB42
- 1631 004c 0E000000 		.4byte	.LFE42-.LFB42
- 1632 0050 00000000 		.4byte	.LFB43
- 1633 0054 84010000 		.4byte	.LFE43-.LFB43
- 1634 0058 00000000 		.4byte	0
- 1635 005c 00000000 		.4byte	0
- 1636              		.section	.debug_ranges,"",%progbits
- 1637              	.Ldebug_ranges0:
- 1638 0000 00000000 		.4byte	.LFB35
- 1639 0004 3C000000 		.4byte	.LFE35
- 1640 0008 00000000 		.4byte	.LFB36
- 1641 000c 34000000 		.4byte	.LFE36
- 1642 0010 00000000 		.4byte	.LFB37
- 1643 0014 74000000 		.4byte	.LFE37
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 34
+ 1461 02d6 E9020000 		.4byte	0x2e9
+ 1462 02da 15       		.uleb128 0x15
+ 1463 02db 6C656E00 		.ascii	"len\000"
+ 1464 02df 01       		.byte	0x1
+ 1465 02e0 BD       		.byte	0xbd
+ 1466 02e1 7E000000 		.4byte	0x7e
+ 1467 02e5 02       		.uleb128 0x2
+ 1468 02e6 91       		.byte	0x91
+ 1469 02e7 74       		.sleb128 -12
+ 1470 02e8 00       		.byte	0
+ 1471 02e9 14       		.uleb128 0x14
+ 1472 02ea 6A000000 		.4byte	.LBB4
+ 1473 02ee 30020000 		.4byte	.LBE4-.LBB4
+ 1474 02f2 36030000 		.4byte	0x336
+ 1475 02f6 16       		.uleb128 0x16
+ 1476 02f7 6C656E00 		.ascii	"len\000"
+ 1477 02fb 01       		.byte	0x1
+ 1478 02fc 2C01     		.2byte	0x12c
+ 1479 02fe 7E000000 		.4byte	0x7e
+ 1480 0302 02       		.uleb128 0x2
+ 1481 0303 91       		.byte	0x91
+ 1482 0304 68       		.sleb128 -24
+ 1483 0305 10       		.uleb128 0x10
+ 1484 0306 6C000000 		.4byte	.LBB5
+ 1485 030a F6010000 		.4byte	.LBE5-.LBB5
+ 1486 030e 15       		.uleb128 0x15
+ 1487 030f 636800   		.ascii	"ch\000"
+ 1488 0312 01       		.byte	0x1
+ 1489 0313 F3       		.byte	0xf3
+ 1490 0314 8C000000 		.4byte	0x8c
+ 1491 0318 02       		.uleb128 0x2
+ 1492 0319 91       		.byte	0x91
+ 1493 031a 73       		.sleb128 -13
+ 1494 031b 10       		.uleb128 0x10
+ 1495 031c 98010000 		.4byte	.LBB6
+ 1496 0320 6E000000 		.4byte	.LBE6-.LBB6
+ 1497 0324 16       		.uleb128 0x16
+ 1498 0325 6C656E00 		.ascii	"len\000"
+ 1499 0329 01       		.byte	0x1
+ 1500 032a 0501     		.2byte	0x105
+ 1501 032c 7E000000 		.4byte	0x7e
+ 1502 0330 02       		.uleb128 0x2
+ 1503 0331 91       		.byte	0x91
+ 1504 0332 6C       		.sleb128 -20
+ 1505 0333 00       		.byte	0
+ 1506 0334 00       		.byte	0
+ 1507 0335 00       		.byte	0
+ 1508 0336 10       		.uleb128 0x10
+ 1509 0337 A2020000 		.4byte	.LBB7
+ 1510 033b 44000000 		.4byte	.LBE7-.LBB7
+ 1511 033f 17       		.uleb128 0x17
+ 1512 0340 DC020000 		.4byte	.LASF44
+ 1513 0344 01       		.byte	0x1
+ 1514 0345 3D01     		.2byte	0x13d
+ 1515 0347 7E000000 		.4byte	0x7e
+ 1516 034b 02       		.uleb128 0x2
+ 1517 034c 91       		.byte	0x91
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 35
 
 
- 1644 0018 00000000 		.4byte	.LFB38
- 1645 001c 26000000 		.4byte	.LFE38
- 1646 0020 00000000 		.4byte	.LFB39
- 1647 0024 38000000 		.4byte	.LFE39
- 1648 0028 00000000 		.4byte	.LFB40
- 1649 002c 28000000 		.4byte	.LFE40
- 1650 0030 00000000 		.4byte	.LFB41
- 1651 0034 58000000 		.4byte	.LFE41
- 1652 0038 00000000 		.4byte	.LFB42
- 1653 003c 0E000000 		.4byte	.LFE42
- 1654 0040 00000000 		.4byte	.LFB43
- 1655 0044 84010000 		.4byte	.LFE43
- 1656 0048 00000000 		.4byte	0
- 1657 004c 00000000 		.4byte	0
- 1658              		.section	.debug_line,"",%progbits
- 1659              	.Ldebug_line0:
- 1660 0000 E5020000 		.section	.debug_str,"MS",%progbits,1
- 1660      0200BA01 
- 1660      00000201 
- 1660      FB0E0D00 
- 1660      01010101 
- 1661              	.LASF37:
- 1662 0000 73657269 		.ascii	"serial_add_string\000"
- 1662      616C5F61 
- 1662      64645F73 
- 1662      7472696E 
- 1662      6700
- 1663              	.LASF43:
- 1664 0012 75736275 		.ascii	"usbuart_reconfig\000"
- 1664      6172745F 
- 1664      7265636F 
- 1664      6E666967 
- 1664      00
- 1665              	.LASF3:
- 1666 0023 5F5F7569 		.ascii	"__uint8_t\000"
- 1666      6E74385F 
- 1666      7400
- 1667              	.LASF47:
- 1668 002d 696E7075 		.ascii	"input_buffer\000"
- 1668      745F6275 
- 1668      66666572 
- 1668      00
- 1669              	.LASF24:
- 1670 003a 7369676E 		.ascii	"signature\000"
- 1670      61747572 
- 1670      6500
- 1671              	.LASF29:
- 1672 0044 656F745F 		.ascii	"eot_enable\000"
- 1672      656E6162 
- 1672      6C6500
- 1673              	.LASF5:
- 1674 004f 73686F72 		.ascii	"short unsigned int\000"
- 1674      7420756E 
- 1674      7369676E 
- 1674      65642069 
- 1674      6E7400
- 1675              	.LASF41:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 35
+ 1518 034d 60       		.sleb128 -32
+ 1519 034e 17       		.uleb128 0x17
+ 1520 034f B5000000 		.4byte	.LASF45
+ 1521 0353 01       		.byte	0x1
+ 1522 0354 4001     		.2byte	0x140
+ 1523 0356 7E000000 		.4byte	0x7e
+ 1524 035a 02       		.uleb128 0x2
+ 1525 035b 91       		.byte	0x91
+ 1526 035c 64       		.sleb128 -28
+ 1527 035d 00       		.byte	0
+ 1528 035e 00       		.byte	0
+ 1529 035f 18       		.uleb128 0x18
+ 1530 0360 2D030000 		.4byte	.LASF46
+ 1531 0364 01       		.byte	0x1
+ 1532 0365 4E01     		.2byte	0x14e
+ 1533 0367 00000000 		.4byte	.LFB44
+ 1534 036b 12000000 		.4byte	.LFE44-.LFB44
+ 1535 036f 01       		.uleb128 0x1
+ 1536 0370 9C       		.byte	0x9c
+ 1537 0371 19       		.uleb128 0x19
+ 1538 0372 C6000000 		.4byte	.LASF23
+ 1539 0376 06       		.byte	0x6
+ 1540 0377 1A       		.byte	0x1a
+ 1541 0378 05010000 		.4byte	0x105
+ 1542 037c 1A       		.uleb128 0x1a
+ 1543 037d 8C000000 		.4byte	0x8c
+ 1544 0381 8C030000 		.4byte	0x38c
+ 1545 0385 1B       		.uleb128 0x1b
+ 1546 0386 C9000000 		.4byte	0xc9
+ 1547 038a 3F       		.byte	0x3f
+ 1548 038b 00       		.byte	0
+ 1549 038c 1C       		.uleb128 0x1c
+ 1550 038d E9000000 		.4byte	.LASF47
+ 1551 0391 01       		.byte	0x1
+ 1552 0392 29       		.byte	0x29
+ 1553 0393 7C030000 		.4byte	0x37c
+ 1554 0397 05       		.uleb128 0x5
+ 1555 0398 03       		.byte	0x3
+ 1556 0399 00000000 		.4byte	output_buffer
+ 1557 039d 1C       		.uleb128 0x1c
+ 1558 039e 4D020000 		.4byte	.LASF48
+ 1559 03a2 01       		.byte	0x1
+ 1560 03a3 2A       		.byte	0x2a
+ 1561 03a4 7E000000 		.4byte	0x7e
+ 1562 03a8 05       		.uleb128 0x5
+ 1563 03a9 03       		.byte	0x3
+ 1564 03aa 00000000 		.4byte	output_free
+ 1565 03ae 1C       		.uleb128 0x1c
+ 1566 03af A0000000 		.4byte	.LASF49
+ 1567 03b3 01       		.byte	0x1
+ 1568 03b4 2C       		.byte	0x2c
+ 1569 03b5 7C030000 		.4byte	0x37c
+ 1570 03b9 05       		.uleb128 0x5
+ 1571 03ba 03       		.byte	0x3
+ 1572 03bb 00000000 		.4byte	input_buffer
+ 1573 03bf 1C       		.uleb128 0x1c
+ 1574 03c0 06000000 		.4byte	.LASF50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 36
 
 
- 1676 0062 73657269 		.ascii	"serial_getbyte\000"
- 1676      616C5F67 
- 1676      65746279 
- 1676      746500
- 1677              	.LASF28:
- 1678 0071 656F745F 		.ascii	"eot_char\000"
- 1678      63686172 
- 1678      00
- 1679              	.LASF16:
- 1680 007a 646F7562 		.ascii	"double\000"
- 1680      6C6500
- 1681              	.LASF38:
- 1682 0081 73747269 		.ascii	"string\000"
- 1682      6E6700
- 1683              	.LASF15:
- 1684 0088 666C6F61 		.ascii	"float\000"
- 1684      7400
- 1685              	.LASF20:
- 1686 008e 5F5F676E 		.ascii	"__gnuc_va_list\000"
- 1686      75635F76 
- 1686      615F6C69 
- 1686      737400
- 1687              	.LASF1:
- 1688 009d 756E7369 		.ascii	"unsigned char\000"
- 1688      676E6564 
- 1688      20636861 
- 1688      7200
- 1689              	.LASF23:
- 1690 00ab 73657474 		.ascii	"settings\000"
- 1690      696E6773 
- 1690      00
- 1691              	.LASF55:
- 1692 00b4 75736275 		.ascii	"usbuart_poll\000"
- 1692      6172745F 
- 1692      706F6C6C 
- 1692      00
- 1693              	.LASF35:
- 1694 00c1 636F7079 		.ascii	"copy_size\000"
- 1694      5F73697A 
- 1694      6500
- 1695              	.LASF8:
- 1696 00cb 6C6F6E67 		.ascii	"long unsigned int\000"
- 1696      20756E73 
- 1696      69676E65 
- 1696      6420696E 
- 1696      7400
- 1697              	.LASF30:
- 1698 00dd 72656164 		.ascii	"read_tmo_ms\000"
- 1698      5F746D6F 
- 1698      5F6D7300 
- 1699              	.LASF53:
- 1700 00e9 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\dev\\yaugi\\GPIB USB Adap"
- 1700      635C486F 
- 1700      6D655C44 
- 1700      6F63756D 
- 1700      656E7473 
- 1701 0115 7465725C 		.ascii	"ter\\GPIB USB 1.cydsn\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 36
+ 1575 03c4 01       		.byte	0x1
+ 1576 03c5 2D       		.byte	0x2d
+ 1577 03c6 7E000000 		.4byte	0x7e
+ 1578 03ca 05       		.uleb128 0x5
+ 1579 03cb 03       		.byte	0x3
+ 1580 03cc 00000000 		.4byte	input_avail
+ 1581 03d0 1C       		.uleb128 0x1c
+ 1582 03d1 CA020000 		.4byte	.LASF51
+ 1583 03d5 01       		.byte	0x1
+ 1584 03d6 2E       		.byte	0x2e
+ 1585 03d7 3B020000 		.4byte	0x23b
+ 1586 03db 05       		.uleb128 0x5
+ 1587 03dc 03       		.byte	0x3
+ 1588 03dd 00000000 		.4byte	input_p
+ 1589 03e1 1C       		.uleb128 0x1c
+ 1590 03e2 BD000000 		.4byte	.LASF27
+ 1591 03e6 01       		.byte	0x1
+ 1592 03e7 31       		.byte	0x31
+ 1593 03e8 7E000000 		.4byte	0x7e
+ 1594 03ec 05       		.uleb128 0x5
+ 1595 03ed 03       		.byte	0x3
+ 1596 03ee 00000000 		.4byte	autoread
+ 1597 03f2 1A       		.uleb128 0x1a
+ 1598 03f3 8C000000 		.4byte	0x8c
+ 1599 03f7 03040000 		.4byte	0x403
+ 1600 03fb 1D       		.uleb128 0x1d
+ 1601 03fc C9000000 		.4byte	0xc9
+ 1602 0400 FF01     		.2byte	0x1ff
+ 1603 0402 00       		.byte	0
+ 1604 0403 1C       		.uleb128 0x1c
+ 1605 0404 1E030000 		.4byte	.LASF52
+ 1606 0408 01       		.byte	0x1
+ 1607 0409 36       		.byte	0x36
+ 1608 040a F2030000 		.4byte	0x3f2
+ 1609 040e 05       		.uleb128 0x5
+ 1610 040f 03       		.byte	0x3
+ 1611 0410 00000000 		.4byte	general_buffer
+ 1612 0414 1C       		.uleb128 0x1c
+ 1613 0415 38020000 		.4byte	.LASF53
+ 1614 0419 01       		.byte	0x1
+ 1615 041a 9A       		.byte	0x9a
+ 1616 041b 7C030000 		.4byte	0x37c
+ 1617 041f 05       		.uleb128 0x5
+ 1618 0420 03       		.byte	0x3
+ 1619 0421 00000000 		.4byte	cmdbuf
+ 1620 0425 1C       		.uleb128 0x1c
+ 1621 0426 4A030000 		.4byte	.LASF54
+ 1622 042a 01       		.byte	0x1
+ 1623 042b 9B       		.byte	0x9b
+ 1624 042c 7E000000 		.4byte	0x7e
+ 1625 0430 05       		.uleb128 0x5
+ 1626 0431 03       		.byte	0x3
+ 1627 0432 00000000 		.4byte	cmdbuf_len
+ 1628 0436 1C       		.uleb128 0x1c
+ 1629 0437 7F000000 		.4byte	.LASF55
+ 1630 043b 01       		.byte	0x1
+ 1631 043c A1       		.byte	0xa1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 37
 
 
- 1701      47504942 
- 1701      20555342 
- 1701      20312E63 
- 1701      7964736E 
- 1702              	.LASF51:
- 1703 012a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1703      43313120 
- 1703      352E342E 
- 1703      31203230 
- 1703      31363036 
- 1704 015d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1704      20726576 
- 1704      6973696F 
- 1704      6E203233 
- 1704      37373135 
- 1705 0190 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 1705      66756E63 
- 1705      74696F6E 
- 1705      2D736563 
- 1705      74696F6E 
- 1706              	.LASF21:
- 1707 01b8 76615F6C 		.ascii	"va_list\000"
- 1707      69737400 
- 1708              	.LASF4:
- 1709 01c0 5F5F7569 		.ascii	"__uint16_t\000"
- 1709      6E743136 
- 1709      5F7400
- 1710              	.LASF52:
- 1711 01cb 73657269 		.ascii	"serial.c\000"
- 1711      616C2E63 
- 1711      00
- 1712              	.LASF7:
- 1713 01d4 5F5F7569 		.ascii	"__uint32_t\000"
- 1713      6E743332 
- 1713      5F7400
- 1714              	.LASF25:
- 1715 01df 76657273 		.ascii	"version\000"
- 1715      696F6E00 
- 1716              	.LASF36:
- 1717 01e7 6F75745F 		.ascii	"out_dest\000"
- 1717      64657374 
- 1717      00
- 1718              	.LASF11:
- 1719 01f0 756E7369 		.ascii	"unsigned int\000"
- 1719      676E6564 
- 1719      20696E74 
- 1719      00
- 1720              	.LASF49:
- 1721 01fd 696E7075 		.ascii	"input_p\000"
- 1721      745F7000 
- 1722              	.LASF26:
- 1723 0205 61646472 		.ascii	"address\000"
- 1723      65737300 
- 1724              	.LASF10:
- 1725 020d 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1725      206C6F6E 
- 1725      6720756E 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 37
+ 1632 043d 7E000000 		.4byte	0x7e
+ 1633 0441 05       		.uleb128 0x5
+ 1634 0442 03       		.byte	0x3
+ 1635 0443 00000000 		.4byte	mode
+ 1636 0447 1C       		.uleb128 0x1c
+ 1637 0448 55030000 		.4byte	.LASF56
+ 1638 044c 01       		.byte	0x1
+ 1639 044d A9       		.byte	0xa9
+ 1640 044e 7E000000 		.4byte	0x7e
+ 1641 0452 05       		.uleb128 0x5
+ 1642 0453 03       		.byte	0x3
+ 1643 0454 00000000 		.4byte	charmode
+ 1644 0458 1C       		.uleb128 0x1c
+ 1645 0459 3F020000 		.4byte	.LASF57
+ 1646 045d 01       		.byte	0x1
+ 1647 045e AA       		.byte	0xaa
+ 1648 045f 8C000000 		.4byte	0x8c
+ 1649 0463 05       		.uleb128 0x5
+ 1650 0464 03       		.byte	0x3
+ 1651 0465 00000000 		.4byte	last
+ 1652 0469 1C       		.uleb128 0x1c
+ 1653 046a D2020000 		.4byte	.LASF58
+ 1654 046e 01       		.byte	0x1
+ 1655 046f AB       		.byte	0xab
+ 1656 0470 7E000000 		.4byte	0x7e
+ 1657 0474 05       		.uleb128 0x5
+ 1658 0475 03       		.byte	0x3
+ 1659 0476 00000000 		.4byte	was_query
+ 1660 047a 1E       		.uleb128 0x1e
+ 1661 047b 7300     		.ascii	"s\000"
+ 1662 047d 01       		.byte	0x1
+ 1663 047e AE       		.byte	0xae
+ 1664 047f 3B020000 		.4byte	0x23b
+ 1665 0483 05       		.uleb128 0x5
+ 1666 0484 03       		.byte	0x3
+ 1667 0485 00000000 		.4byte	s
+ 1668 0489 1E       		.uleb128 0x1e
+ 1669 048a 6400     		.ascii	"d\000"
+ 1670 048c 01       		.byte	0x1
+ 1671 048d AF       		.byte	0xaf
+ 1672 048e 3B020000 		.4byte	0x23b
+ 1673 0492 05       		.uleb128 0x5
+ 1674 0493 03       		.byte	0x3
+ 1675 0494 00000000 		.4byte	d
+ 1676 0498 1E       		.uleb128 0x1e
+ 1677 0499 656E6400 		.ascii	"end\000"
+ 1678 049d 01       		.byte	0x1
+ 1679 049e B0       		.byte	0xb0
+ 1680 049f 3B020000 		.4byte	0x23b
+ 1681 04a3 05       		.uleb128 0x5
+ 1682 04a4 03       		.byte	0x3
+ 1683 04a5 00000000 		.4byte	end
+ 1684 04a9 00       		.byte	0
+ 1685              		.section	.debug_abbrev,"",%progbits
+ 1686              	.Ldebug_abbrev0:
+ 1687 0000 01       		.uleb128 0x1
+ 1688 0001 11       		.uleb128 0x11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 38
 
 
- 1725      7369676E 
- 1725      65642069 
- 1726              	.LASF12:
- 1727 0224 75696E74 		.ascii	"uint8_t\000"
- 1727      385F7400 
- 1728              	.LASF54:
- 1729 022c 5F5F6170 		.ascii	"__ap\000"
- 1729      00
- 1730              	.LASF44:
- 1731 0231 656E6465 		.ascii	"ended\000"
- 1731      6400
- 1732              	.LASF34:
- 1733 0237 73657269 		.ascii	"serial_add\000"
- 1733      616C5F61 
- 1733      646400
- 1734              	.LASF18:
- 1735 0242 6C6F6E67 		.ascii	"long double\000"
- 1735      20646F75 
- 1735      626C6500 
- 1736              	.LASF50:
- 1737 024e 67656E65 		.ascii	"general_buffer\000"
- 1737      72616C5F 
- 1737      62756666 
- 1737      657200
- 1738              	.LASF22:
- 1739 025d 5F5F7661 		.ascii	"__va_list\000"
- 1739      5F6C6973 
- 1739      7400
- 1740              	.LASF9:
- 1741 0267 6C6F6E67 		.ascii	"long long int\000"
- 1741      206C6F6E 
- 1741      6720696E 
- 1741      7400
- 1742              	.LASF32:
- 1743 0275 73657269 		.ascii	"serial_vprintf\000"
- 1743      616C5F76 
- 1743      7072696E 
- 1743      746600
- 1744              	.LASF17:
- 1745 0284 63686172 		.ascii	"char\000"
- 1745      00
- 1746              	.LASF31:
- 1747 0289 73657269 		.ascii	"serial_printf\000"
- 1747      616C5F70 
- 1747      72696E74 
- 1747      6600
- 1748              	.LASF19:
- 1749 0297 73697A65 		.ascii	"sizetype\000"
- 1749      74797065 
- 1749      00
- 1750              	.LASF48:
- 1751 02a0 696E7075 		.ascii	"input_avail\000"
- 1751      745F6176 
- 1751      61696C00 
- 1752              	.LASF2:
- 1753 02ac 73686F72 		.ascii	"short int\000"
- 1753      7420696E 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\cccYHLms.s 			page 38
+ 1689 0002 01       		.byte	0x1
+ 1690 0003 25       		.uleb128 0x25
+ 1691 0004 0E       		.uleb128 0xe
+ 1692 0005 13       		.uleb128 0x13
+ 1693 0006 0B       		.uleb128 0xb
+ 1694 0007 03       		.uleb128 0x3
+ 1695 0008 0E       		.uleb128 0xe
+ 1696 0009 1B       		.uleb128 0x1b
+ 1697 000a 0E       		.uleb128 0xe
+ 1698 000b 55       		.uleb128 0x55
+ 1699 000c 17       		.uleb128 0x17
+ 1700 000d 11       		.uleb128 0x11
+ 1701 000e 01       		.uleb128 0x1
+ 1702 000f 10       		.uleb128 0x10
+ 1703 0010 17       		.uleb128 0x17
+ 1704 0011 00       		.byte	0
+ 1705 0012 00       		.byte	0
+ 1706 0013 02       		.uleb128 0x2
+ 1707 0014 24       		.uleb128 0x24
+ 1708 0015 00       		.byte	0
+ 1709 0016 0B       		.uleb128 0xb
+ 1710 0017 0B       		.uleb128 0xb
+ 1711 0018 3E       		.uleb128 0x3e
+ 1712 0019 0B       		.uleb128 0xb
+ 1713 001a 03       		.uleb128 0x3
+ 1714 001b 0E       		.uleb128 0xe
+ 1715 001c 00       		.byte	0
+ 1716 001d 00       		.byte	0
+ 1717 001e 03       		.uleb128 0x3
+ 1718 001f 16       		.uleb128 0x16
+ 1719 0020 00       		.byte	0
+ 1720 0021 03       		.uleb128 0x3
+ 1721 0022 0E       		.uleb128 0xe
+ 1722 0023 3A       		.uleb128 0x3a
+ 1723 0024 0B       		.uleb128 0xb
+ 1724 0025 3B       		.uleb128 0x3b
+ 1725 0026 0B       		.uleb128 0xb
+ 1726 0027 49       		.uleb128 0x49
+ 1727 0028 13       		.uleb128 0x13
+ 1728 0029 00       		.byte	0
+ 1729 002a 00       		.byte	0
+ 1730 002b 04       		.uleb128 0x4
+ 1731 002c 24       		.uleb128 0x24
+ 1732 002d 00       		.byte	0
+ 1733 002e 0B       		.uleb128 0xb
+ 1734 002f 0B       		.uleb128 0xb
+ 1735 0030 3E       		.uleb128 0x3e
+ 1736 0031 0B       		.uleb128 0xb
+ 1737 0032 03       		.uleb128 0x3
+ 1738 0033 08       		.uleb128 0x8
+ 1739 0034 00       		.byte	0
+ 1740 0035 00       		.byte	0
+ 1741 0036 05       		.uleb128 0x5
+ 1742 0037 0F       		.uleb128 0xf
+ 1743 0038 00       		.byte	0
+ 1744 0039 0B       		.uleb128 0xb
+ 1745 003a 0B       		.uleb128 0xb
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 39
 
 
- 1753      7400
- 1754              	.LASF33:
- 1755 02b6 61726773 		.ascii	"args\000"
- 1755      00
- 1756              	.LASF13:
- 1757 02bb 75696E74 		.ascii	"uint16_t\000"
- 1757      31365F74 
- 1757      00
- 1758              	.LASF45:
- 1759 02c4 6F757470 		.ascii	"output_buffer\000"
- 1759      75745F62 
- 1759      75666665 
- 1759      7200
- 1760              	.LASF14:
- 1761 02d2 75696E74 		.ascii	"uint32_t\000"
- 1761      33325F74 
- 1761      00
- 1762              	.LASF6:
- 1763 02db 6C6F6E67 		.ascii	"long int\000"
- 1763      20696E74 
- 1763      00
- 1764              	.LASF46:
- 1765 02e4 6F757470 		.ascii	"output_free\000"
- 1765      75745F66 
- 1765      72656500 
- 1766              	.LASF0:
- 1767 02f0 7369676E 		.ascii	"signed char\000"
- 1767      65642063 
- 1767      68617200 
- 1768              	.LASF40:
- 1769 02fc 73657269 		.ascii	"serial_available\000"
- 1769      616C5F61 
- 1769      7661696C 
- 1769      61626C65 
- 1769      00
- 1770              	.LASF39:
- 1771 030d 5F426F6F 		.ascii	"_Bool\000"
- 1771      6C00
- 1772              	.LASF27:
- 1773 0313 6175746F 		.ascii	"autoread\000"
- 1773      72656164 
- 1773      00
- 1774              	.LASF42:
- 1775 031c 73657269 		.ascii	"serial_flush\000"
- 1775      616C5F66 
- 1775      6C757368 
- 1775      00
- 1776              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1746 003b 00       		.byte	0
+ 1747 003c 00       		.byte	0
+ 1748 003d 06       		.uleb128 0x6
+ 1749 003e 0F       		.uleb128 0xf
+ 1750 003f 00       		.byte	0
+ 1751 0040 0B       		.uleb128 0xb
+ 1752 0041 0B       		.uleb128 0xb
+ 1753 0042 49       		.uleb128 0x49
+ 1754 0043 13       		.uleb128 0x13
+ 1755 0044 00       		.byte	0
+ 1756 0045 00       		.byte	0
+ 1757 0046 07       		.uleb128 0x7
+ 1758 0047 13       		.uleb128 0x13
+ 1759 0048 01       		.byte	0x1
+ 1760 0049 03       		.uleb128 0x3
+ 1761 004a 0E       		.uleb128 0xe
+ 1762 004b 0B       		.uleb128 0xb
+ 1763 004c 0B       		.uleb128 0xb
+ 1764 004d 3A       		.uleb128 0x3a
+ 1765 004e 0B       		.uleb128 0xb
+ 1766 004f 3B       		.uleb128 0x3b
+ 1767 0050 0B       		.uleb128 0xb
+ 1768 0051 01       		.uleb128 0x1
+ 1769 0052 13       		.uleb128 0x13
+ 1770 0053 00       		.byte	0
+ 1771 0054 00       		.byte	0
+ 1772 0055 08       		.uleb128 0x8
+ 1773 0056 0D       		.uleb128 0xd
+ 1774 0057 00       		.byte	0
+ 1775 0058 03       		.uleb128 0x3
+ 1776 0059 0E       		.uleb128 0xe
+ 1777 005a 49       		.uleb128 0x49
+ 1778 005b 13       		.uleb128 0x13
+ 1779 005c 38       		.uleb128 0x38
+ 1780 005d 0B       		.uleb128 0xb
+ 1781 005e 34       		.uleb128 0x34
+ 1782 005f 19       		.uleb128 0x19
+ 1783 0060 00       		.byte	0
+ 1784 0061 00       		.byte	0
+ 1785 0062 09       		.uleb128 0x9
+ 1786 0063 0D       		.uleb128 0xd
+ 1787 0064 00       		.byte	0
+ 1788 0065 03       		.uleb128 0x3
+ 1789 0066 0E       		.uleb128 0xe
+ 1790 0067 3A       		.uleb128 0x3a
+ 1791 0068 0B       		.uleb128 0xb
+ 1792 0069 3B       		.uleb128 0x3b
+ 1793 006a 0B       		.uleb128 0xb
+ 1794 006b 49       		.uleb128 0x49
+ 1795 006c 13       		.uleb128 0x13
+ 1796 006d 38       		.uleb128 0x38
+ 1797 006e 0B       		.uleb128 0xb
+ 1798 006f 00       		.byte	0
+ 1799 0070 00       		.byte	0
+ 1800 0071 0A       		.uleb128 0xa
+ 1801 0072 0D       		.uleb128 0xd
+ 1802 0073 00       		.byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 40
+
+
+ 1803 0074 03       		.uleb128 0x3
+ 1804 0075 08       		.uleb128 0x8
+ 1805 0076 3A       		.uleb128 0x3a
+ 1806 0077 0B       		.uleb128 0xb
+ 1807 0078 3B       		.uleb128 0x3b
+ 1808 0079 0B       		.uleb128 0xb
+ 1809 007a 49       		.uleb128 0x49
+ 1810 007b 13       		.uleb128 0x13
+ 1811 007c 38       		.uleb128 0x38
+ 1812 007d 0B       		.uleb128 0xb
+ 1813 007e 00       		.byte	0
+ 1814 007f 00       		.byte	0
+ 1815 0080 0B       		.uleb128 0xb
+ 1816 0081 2E       		.uleb128 0x2e
+ 1817 0082 01       		.byte	0x1
+ 1818 0083 3F       		.uleb128 0x3f
+ 1819 0084 19       		.uleb128 0x19
+ 1820 0085 03       		.uleb128 0x3
+ 1821 0086 0E       		.uleb128 0xe
+ 1822 0087 3A       		.uleb128 0x3a
+ 1823 0088 0B       		.uleb128 0xb
+ 1824 0089 3B       		.uleb128 0x3b
+ 1825 008a 0B       		.uleb128 0xb
+ 1826 008b 27       		.uleb128 0x27
+ 1827 008c 19       		.uleb128 0x19
+ 1828 008d 11       		.uleb128 0x11
+ 1829 008e 01       		.uleb128 0x1
+ 1830 008f 12       		.uleb128 0x12
+ 1831 0090 06       		.uleb128 0x6
+ 1832 0091 40       		.uleb128 0x40
+ 1833 0092 18       		.uleb128 0x18
+ 1834 0093 9642     		.uleb128 0x2116
+ 1835 0095 19       		.uleb128 0x19
+ 1836 0096 01       		.uleb128 0x1
+ 1837 0097 13       		.uleb128 0x13
+ 1838 0098 00       		.byte	0
+ 1839 0099 00       		.byte	0
+ 1840 009a 0C       		.uleb128 0xc
+ 1841 009b 05       		.uleb128 0x5
+ 1842 009c 00       		.byte	0
+ 1843 009d 03       		.uleb128 0x3
+ 1844 009e 08       		.uleb128 0x8
+ 1845 009f 3A       		.uleb128 0x3a
+ 1846 00a0 0B       		.uleb128 0xb
+ 1847 00a1 3B       		.uleb128 0x3b
+ 1848 00a2 0B       		.uleb128 0xb
+ 1849 00a3 49       		.uleb128 0x49
+ 1850 00a4 13       		.uleb128 0x13
+ 1851 00a5 02       		.uleb128 0x2
+ 1852 00a6 18       		.uleb128 0x18
+ 1853 00a7 00       		.byte	0
+ 1854 00a8 00       		.byte	0
+ 1855 00a9 0D       		.uleb128 0xd
+ 1856 00aa 18       		.uleb128 0x18
+ 1857 00ab 00       		.byte	0
+ 1858 00ac 00       		.byte	0
+ 1859 00ad 00       		.byte	0
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 41
+
+
+ 1860 00ae 0E       		.uleb128 0xe
+ 1861 00af 34       		.uleb128 0x34
+ 1862 00b0 00       		.byte	0
+ 1863 00b1 03       		.uleb128 0x3
+ 1864 00b2 0E       		.uleb128 0xe
+ 1865 00b3 3A       		.uleb128 0x3a
+ 1866 00b4 0B       		.uleb128 0xb
+ 1867 00b5 3B       		.uleb128 0x3b
+ 1868 00b6 0B       		.uleb128 0xb
+ 1869 00b7 49       		.uleb128 0x49
+ 1870 00b8 13       		.uleb128 0x13
+ 1871 00b9 02       		.uleb128 0x2
+ 1872 00ba 18       		.uleb128 0x18
+ 1873 00bb 00       		.byte	0
+ 1874 00bc 00       		.byte	0
+ 1875 00bd 0F       		.uleb128 0xf
+ 1876 00be 05       		.uleb128 0x5
+ 1877 00bf 00       		.byte	0
+ 1878 00c0 03       		.uleb128 0x3
+ 1879 00c1 0E       		.uleb128 0xe
+ 1880 00c2 3A       		.uleb128 0x3a
+ 1881 00c3 0B       		.uleb128 0xb
+ 1882 00c4 3B       		.uleb128 0x3b
+ 1883 00c5 0B       		.uleb128 0xb
+ 1884 00c6 49       		.uleb128 0x49
+ 1885 00c7 13       		.uleb128 0x13
+ 1886 00c8 02       		.uleb128 0x2
+ 1887 00c9 18       		.uleb128 0x18
+ 1888 00ca 00       		.byte	0
+ 1889 00cb 00       		.byte	0
+ 1890 00cc 10       		.uleb128 0x10
+ 1891 00cd 0B       		.uleb128 0xb
+ 1892 00ce 01       		.byte	0x1
+ 1893 00cf 11       		.uleb128 0x11
+ 1894 00d0 01       		.uleb128 0x1
+ 1895 00d1 12       		.uleb128 0x12
+ 1896 00d2 06       		.uleb128 0x6
+ 1897 00d3 00       		.byte	0
+ 1898 00d4 00       		.byte	0
+ 1899 00d5 11       		.uleb128 0x11
+ 1900 00d6 2E       		.uleb128 0x2e
+ 1901 00d7 00       		.byte	0
+ 1902 00d8 3F       		.uleb128 0x3f
+ 1903 00d9 19       		.uleb128 0x19
+ 1904 00da 03       		.uleb128 0x3
+ 1905 00db 0E       		.uleb128 0xe
+ 1906 00dc 3A       		.uleb128 0x3a
+ 1907 00dd 0B       		.uleb128 0xb
+ 1908 00de 3B       		.uleb128 0x3b
+ 1909 00df 0B       		.uleb128 0xb
+ 1910 00e0 11       		.uleb128 0x11
+ 1911 00e1 01       		.uleb128 0x1
+ 1912 00e2 12       		.uleb128 0x12
+ 1913 00e3 06       		.uleb128 0x6
+ 1914 00e4 40       		.uleb128 0x40
+ 1915 00e5 18       		.uleb128 0x18
+ 1916 00e6 9642     		.uleb128 0x2116
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 42
+
+
+ 1917 00e8 19       		.uleb128 0x19
+ 1918 00e9 00       		.byte	0
+ 1919 00ea 00       		.byte	0
+ 1920 00eb 12       		.uleb128 0x12
+ 1921 00ec 2E       		.uleb128 0x2e
+ 1922 00ed 00       		.byte	0
+ 1923 00ee 3F       		.uleb128 0x3f
+ 1924 00ef 19       		.uleb128 0x19
+ 1925 00f0 03       		.uleb128 0x3
+ 1926 00f1 0E       		.uleb128 0xe
+ 1927 00f2 3A       		.uleb128 0x3a
+ 1928 00f3 0B       		.uleb128 0xb
+ 1929 00f4 3B       		.uleb128 0x3b
+ 1930 00f5 0B       		.uleb128 0xb
+ 1931 00f6 49       		.uleb128 0x49
+ 1932 00f7 13       		.uleb128 0x13
+ 1933 00f8 11       		.uleb128 0x11
+ 1934 00f9 01       		.uleb128 0x1
+ 1935 00fa 12       		.uleb128 0x12
+ 1936 00fb 06       		.uleb128 0x6
+ 1937 00fc 40       		.uleb128 0x40
+ 1938 00fd 18       		.uleb128 0x18
+ 1939 00fe 9642     		.uleb128 0x2116
+ 1940 0100 19       		.uleb128 0x19
+ 1941 0101 00       		.byte	0
+ 1942 0102 00       		.byte	0
+ 1943 0103 13       		.uleb128 0x13
+ 1944 0104 2E       		.uleb128 0x2e
+ 1945 0105 01       		.byte	0x1
+ 1946 0106 3F       		.uleb128 0x3f
+ 1947 0107 19       		.uleb128 0x19
+ 1948 0108 03       		.uleb128 0x3
+ 1949 0109 0E       		.uleb128 0xe
+ 1950 010a 3A       		.uleb128 0x3a
+ 1951 010b 0B       		.uleb128 0xb
+ 1952 010c 3B       		.uleb128 0x3b
+ 1953 010d 0B       		.uleb128 0xb
+ 1954 010e 11       		.uleb128 0x11
+ 1955 010f 01       		.uleb128 0x1
+ 1956 0110 12       		.uleb128 0x12
+ 1957 0111 06       		.uleb128 0x6
+ 1958 0112 40       		.uleb128 0x40
+ 1959 0113 18       		.uleb128 0x18
+ 1960 0114 9642     		.uleb128 0x2116
+ 1961 0116 19       		.uleb128 0x19
+ 1962 0117 01       		.uleb128 0x1
+ 1963 0118 13       		.uleb128 0x13
+ 1964 0119 00       		.byte	0
+ 1965 011a 00       		.byte	0
+ 1966 011b 14       		.uleb128 0x14
+ 1967 011c 0B       		.uleb128 0xb
+ 1968 011d 01       		.byte	0x1
+ 1969 011e 11       		.uleb128 0x11
+ 1970 011f 01       		.uleb128 0x1
+ 1971 0120 12       		.uleb128 0x12
+ 1972 0121 06       		.uleb128 0x6
+ 1973 0122 01       		.uleb128 0x1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 43
+
+
+ 1974 0123 13       		.uleb128 0x13
+ 1975 0124 00       		.byte	0
+ 1976 0125 00       		.byte	0
+ 1977 0126 15       		.uleb128 0x15
+ 1978 0127 34       		.uleb128 0x34
+ 1979 0128 00       		.byte	0
+ 1980 0129 03       		.uleb128 0x3
+ 1981 012a 08       		.uleb128 0x8
+ 1982 012b 3A       		.uleb128 0x3a
+ 1983 012c 0B       		.uleb128 0xb
+ 1984 012d 3B       		.uleb128 0x3b
+ 1985 012e 0B       		.uleb128 0xb
+ 1986 012f 49       		.uleb128 0x49
+ 1987 0130 13       		.uleb128 0x13
+ 1988 0131 02       		.uleb128 0x2
+ 1989 0132 18       		.uleb128 0x18
+ 1990 0133 00       		.byte	0
+ 1991 0134 00       		.byte	0
+ 1992 0135 16       		.uleb128 0x16
+ 1993 0136 34       		.uleb128 0x34
+ 1994 0137 00       		.byte	0
+ 1995 0138 03       		.uleb128 0x3
+ 1996 0139 08       		.uleb128 0x8
+ 1997 013a 3A       		.uleb128 0x3a
+ 1998 013b 0B       		.uleb128 0xb
+ 1999 013c 3B       		.uleb128 0x3b
+ 2000 013d 05       		.uleb128 0x5
+ 2001 013e 49       		.uleb128 0x49
+ 2002 013f 13       		.uleb128 0x13
+ 2003 0140 02       		.uleb128 0x2
+ 2004 0141 18       		.uleb128 0x18
+ 2005 0142 00       		.byte	0
+ 2006 0143 00       		.byte	0
+ 2007 0144 17       		.uleb128 0x17
+ 2008 0145 34       		.uleb128 0x34
+ 2009 0146 00       		.byte	0
+ 2010 0147 03       		.uleb128 0x3
+ 2011 0148 0E       		.uleb128 0xe
+ 2012 0149 3A       		.uleb128 0x3a
+ 2013 014a 0B       		.uleb128 0xb
+ 2014 014b 3B       		.uleb128 0x3b
+ 2015 014c 05       		.uleb128 0x5
+ 2016 014d 49       		.uleb128 0x49
+ 2017 014e 13       		.uleb128 0x13
+ 2018 014f 02       		.uleb128 0x2
+ 2019 0150 18       		.uleb128 0x18
+ 2020 0151 00       		.byte	0
+ 2021 0152 00       		.byte	0
+ 2022 0153 18       		.uleb128 0x18
+ 2023 0154 2E       		.uleb128 0x2e
+ 2024 0155 00       		.byte	0
+ 2025 0156 3F       		.uleb128 0x3f
+ 2026 0157 19       		.uleb128 0x19
+ 2027 0158 03       		.uleb128 0x3
+ 2028 0159 0E       		.uleb128 0xe
+ 2029 015a 3A       		.uleb128 0x3a
+ 2030 015b 0B       		.uleb128 0xb
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 44
+
+
+ 2031 015c 3B       		.uleb128 0x3b
+ 2032 015d 05       		.uleb128 0x5
+ 2033 015e 11       		.uleb128 0x11
+ 2034 015f 01       		.uleb128 0x1
+ 2035 0160 12       		.uleb128 0x12
+ 2036 0161 06       		.uleb128 0x6
+ 2037 0162 40       		.uleb128 0x40
+ 2038 0163 18       		.uleb128 0x18
+ 2039 0164 9642     		.uleb128 0x2116
+ 2040 0166 19       		.uleb128 0x19
+ 2041 0167 00       		.byte	0
+ 2042 0168 00       		.byte	0
+ 2043 0169 19       		.uleb128 0x19
+ 2044 016a 34       		.uleb128 0x34
+ 2045 016b 00       		.byte	0
+ 2046 016c 03       		.uleb128 0x3
+ 2047 016d 0E       		.uleb128 0xe
+ 2048 016e 3A       		.uleb128 0x3a
+ 2049 016f 0B       		.uleb128 0xb
+ 2050 0170 3B       		.uleb128 0x3b
+ 2051 0171 0B       		.uleb128 0xb
+ 2052 0172 49       		.uleb128 0x49
+ 2053 0173 13       		.uleb128 0x13
+ 2054 0174 3F       		.uleb128 0x3f
+ 2055 0175 19       		.uleb128 0x19
+ 2056 0176 3C       		.uleb128 0x3c
+ 2057 0177 19       		.uleb128 0x19
+ 2058 0178 00       		.byte	0
+ 2059 0179 00       		.byte	0
+ 2060 017a 1A       		.uleb128 0x1a
+ 2061 017b 01       		.uleb128 0x1
+ 2062 017c 01       		.byte	0x1
+ 2063 017d 49       		.uleb128 0x49
+ 2064 017e 13       		.uleb128 0x13
+ 2065 017f 01       		.uleb128 0x1
+ 2066 0180 13       		.uleb128 0x13
+ 2067 0181 00       		.byte	0
+ 2068 0182 00       		.byte	0
+ 2069 0183 1B       		.uleb128 0x1b
+ 2070 0184 21       		.uleb128 0x21
+ 2071 0185 00       		.byte	0
+ 2072 0186 49       		.uleb128 0x49
+ 2073 0187 13       		.uleb128 0x13
+ 2074 0188 2F       		.uleb128 0x2f
+ 2075 0189 0B       		.uleb128 0xb
+ 2076 018a 00       		.byte	0
+ 2077 018b 00       		.byte	0
+ 2078 018c 1C       		.uleb128 0x1c
+ 2079 018d 34       		.uleb128 0x34
+ 2080 018e 00       		.byte	0
+ 2081 018f 03       		.uleb128 0x3
+ 2082 0190 0E       		.uleb128 0xe
+ 2083 0191 3A       		.uleb128 0x3a
+ 2084 0192 0B       		.uleb128 0xb
+ 2085 0193 3B       		.uleb128 0x3b
+ 2086 0194 0B       		.uleb128 0xb
+ 2087 0195 49       		.uleb128 0x49
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 45
+
+
+ 2088 0196 13       		.uleb128 0x13
+ 2089 0197 3F       		.uleb128 0x3f
+ 2090 0198 19       		.uleb128 0x19
+ 2091 0199 02       		.uleb128 0x2
+ 2092 019a 18       		.uleb128 0x18
+ 2093 019b 00       		.byte	0
+ 2094 019c 00       		.byte	0
+ 2095 019d 1D       		.uleb128 0x1d
+ 2096 019e 21       		.uleb128 0x21
+ 2097 019f 00       		.byte	0
+ 2098 01a0 49       		.uleb128 0x49
+ 2099 01a1 13       		.uleb128 0x13
+ 2100 01a2 2F       		.uleb128 0x2f
+ 2101 01a3 05       		.uleb128 0x5
+ 2102 01a4 00       		.byte	0
+ 2103 01a5 00       		.byte	0
+ 2104 01a6 1E       		.uleb128 0x1e
+ 2105 01a7 34       		.uleb128 0x34
+ 2106 01a8 00       		.byte	0
+ 2107 01a9 03       		.uleb128 0x3
+ 2108 01aa 08       		.uleb128 0x8
+ 2109 01ab 3A       		.uleb128 0x3a
+ 2110 01ac 0B       		.uleb128 0xb
+ 2111 01ad 3B       		.uleb128 0x3b
+ 2112 01ae 0B       		.uleb128 0xb
+ 2113 01af 49       		.uleb128 0x49
+ 2114 01b0 13       		.uleb128 0x13
+ 2115 01b1 3F       		.uleb128 0x3f
+ 2116 01b2 19       		.uleb128 0x19
+ 2117 01b3 02       		.uleb128 0x2
+ 2118 01b4 18       		.uleb128 0x18
+ 2119 01b5 00       		.byte	0
+ 2120 01b6 00       		.byte	0
+ 2121 01b7 00       		.byte	0
+ 2122              		.section	.debug_aranges,"",%progbits
+ 2123 0000 64000000 		.4byte	0x64
+ 2124 0004 0200     		.2byte	0x2
+ 2125 0006 00000000 		.4byte	.Ldebug_info0
+ 2126 000a 04       		.byte	0x4
+ 2127 000b 00       		.byte	0
+ 2128 000c 0000     		.2byte	0
+ 2129 000e 0000     		.2byte	0
+ 2130 0010 00000000 		.4byte	.LFB35
+ 2131 0014 3C000000 		.4byte	.LFE35-.LFB35
+ 2132 0018 00000000 		.4byte	.LFB36
+ 2133 001c 34000000 		.4byte	.LFE36-.LFB36
+ 2134 0020 00000000 		.4byte	.LFB37
+ 2135 0024 74000000 		.4byte	.LFE37-.LFB37
+ 2136 0028 00000000 		.4byte	.LFB38
+ 2137 002c 26000000 		.4byte	.LFE38-.LFB38
+ 2138 0030 00000000 		.4byte	.LFB39
+ 2139 0034 38000000 		.4byte	.LFE39-.LFB39
+ 2140 0038 00000000 		.4byte	.LFB40
+ 2141 003c 28000000 		.4byte	.LFE40-.LFB40
+ 2142 0040 00000000 		.4byte	.LFB41
+ 2143 0044 58000000 		.4byte	.LFE41-.LFB41
+ 2144 0048 00000000 		.4byte	.LFB42
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 46
+
+
+ 2145 004c 0E000000 		.4byte	.LFE42-.LFB42
+ 2146 0050 00000000 		.4byte	.LFB43
+ 2147 0054 34030000 		.4byte	.LFE43-.LFB43
+ 2148 0058 00000000 		.4byte	.LFB44
+ 2149 005c 12000000 		.4byte	.LFE44-.LFB44
+ 2150 0060 00000000 		.4byte	0
+ 2151 0064 00000000 		.4byte	0
+ 2152              		.section	.debug_ranges,"",%progbits
+ 2153              	.Ldebug_ranges0:
+ 2154 0000 00000000 		.4byte	.LFB35
+ 2155 0004 3C000000 		.4byte	.LFE35
+ 2156 0008 00000000 		.4byte	.LFB36
+ 2157 000c 34000000 		.4byte	.LFE36
+ 2158 0010 00000000 		.4byte	.LFB37
+ 2159 0014 74000000 		.4byte	.LFE37
+ 2160 0018 00000000 		.4byte	.LFB38
+ 2161 001c 26000000 		.4byte	.LFE38
+ 2162 0020 00000000 		.4byte	.LFB39
+ 2163 0024 38000000 		.4byte	.LFE39
+ 2164 0028 00000000 		.4byte	.LFB40
+ 2165 002c 28000000 		.4byte	.LFE40
+ 2166 0030 00000000 		.4byte	.LFB41
+ 2167 0034 58000000 		.4byte	.LFE41
+ 2168 0038 00000000 		.4byte	.LFB42
+ 2169 003c 0E000000 		.4byte	.LFE42
+ 2170 0040 00000000 		.4byte	.LFB43
+ 2171 0044 34030000 		.4byte	.LFE43
+ 2172 0048 00000000 		.4byte	.LFB44
+ 2173 004c 12000000 		.4byte	.LFE44
+ 2174 0050 00000000 		.4byte	0
+ 2175 0054 00000000 		.4byte	0
+ 2176              		.section	.debug_line,"",%progbits
+ 2177              	.Ldebug_line0:
+ 2178 0000 1E030000 		.section	.debug_str,"MS",%progbits,1
+ 2178      0200BA01 
+ 2178      00000201 
+ 2178      FB0E0D00 
+ 2178      01010101 
+ 2179              	.LASF15:
+ 2180 0000 666C6F61 		.ascii	"float\000"
+ 2180      7400
+ 2181              	.LASF50:
+ 2182 0006 696E7075 		.ascii	"input_avail\000"
+ 2182      745F6176 
+ 2182      61696C00 
+ 2183              	.LASF25:
+ 2184 0012 76657273 		.ascii	"version\000"
+ 2184      696F6E00 
+ 2185              	.LASF43:
+ 2186 001a 75736275 		.ascii	"usbuart_reconfig\000"
+ 2186      6172745F 
+ 2186      7265636F 
+ 2186      6E666967 
+ 2186      00
+ 2187              	.LASF2:
+ 2188 002b 73686F72 		.ascii	"short int\000"
+ 2188      7420696E 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 47
+
+
+ 2188      7400
+ 2189              	.LASF19:
+ 2190 0035 73697A65 		.ascii	"sizetype\000"
+ 2190      74797065 
+ 2190      00
+ 2191              	.LASF61:
+ 2192 003e 5C5C4D61 		.ascii	"\\\\Mac\\Home\\Documents\\dev\\yaugi\\GPIB USB Adap"
+ 2192      635C486F 
+ 2192      6D655C44 
+ 2192      6F63756D 
+ 2192      656E7473 
+ 2193 006a 7465725C 		.ascii	"ter\\GPIB USB 1.cydsn\000"
+ 2193      47504942 
+ 2193      20555342 
+ 2193      20312E63 
+ 2193      7964736E 
+ 2194              	.LASF55:
+ 2195 007f 6D6F6465 		.ascii	"mode\000"
+ 2195      00
+ 2196              	.LASF4:
+ 2197 0084 5F5F7569 		.ascii	"__uint16_t\000"
+ 2197      6E743136 
+ 2197      5F7400
+ 2198              	.LASF21:
+ 2199 008f 76615F6C 		.ascii	"va_list\000"
+ 2199      69737400 
+ 2200              	.LASF36:
+ 2201 0097 6F75745F 		.ascii	"out_dest\000"
+ 2201      64657374 
+ 2201      00
+ 2202              	.LASF49:
+ 2203 00a0 696E7075 		.ascii	"input_buffer\000"
+ 2203      745F6275 
+ 2203      66666572 
+ 2203      00
+ 2204              	.LASF12:
+ 2205 00ad 75696E74 		.ascii	"uint8_t\000"
+ 2205      385F7400 
+ 2206              	.LASF45:
+ 2207 00b5 67706962 		.ascii	"gpiblen\000"
+ 2207      6C656E00 
+ 2208              	.LASF27:
+ 2209 00bd 6175746F 		.ascii	"autoread\000"
+ 2209      72656164 
+ 2209      00
+ 2210              	.LASF23:
+ 2211 00c6 73657474 		.ascii	"settings\000"
+ 2211      696E6773 
+ 2211      00
+ 2212              	.LASF9:
+ 2213 00cf 6C6F6E67 		.ascii	"long long int\000"
+ 2213      206C6F6E 
+ 2213      6720696E 
+ 2213      7400
+ 2214              	.LASF30:
+ 2215 00dd 72656164 		.ascii	"read_tmo_ms\000"
+ 2215      5F746D6F 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 48
+
+
+ 2215      5F6D7300 
+ 2216              	.LASF47:
+ 2217 00e9 6F757470 		.ascii	"output_buffer\000"
+ 2217      75745F62 
+ 2217      75666665 
+ 2217      7200
+ 2218              	.LASF6:
+ 2219 00f7 6C6F6E67 		.ascii	"long int\000"
+ 2219      20696E74 
+ 2219      00
+ 2220              	.LASF38:
+ 2221 0100 73747269 		.ascii	"string\000"
+ 2221      6E6700
+ 2222              	.LASF26:
+ 2223 0107 61646472 		.ascii	"address\000"
+ 2223      65737300 
+ 2224              	.LASF22:
+ 2225 010f 5F5F7661 		.ascii	"__va_list\000"
+ 2225      5F6C6973 
+ 2225      7400
+ 2226              	.LASF8:
+ 2227 0119 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2227      20756E73 
+ 2227      69676E65 
+ 2227      6420696E 
+ 2227      7400
+ 2228              	.LASF34:
+ 2229 012b 73657269 		.ascii	"serial_add\000"
+ 2229      616C5F61 
+ 2229      646400
+ 2230              	.LASF3:
+ 2231 0136 5F5F7569 		.ascii	"__uint8_t\000"
+ 2231      6E74385F 
+ 2231      7400
+ 2232              	.LASF59:
+ 2233 0140 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2233      43313120 
+ 2233      352E342E 
+ 2233      31203230 
+ 2233      31363036 
+ 2234 0173 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 2234      20726576 
+ 2234      6973696F 
+ 2234      6E203233 
+ 2234      37373135 
+ 2235 01a6 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 2235      66756E63 
+ 2235      74696F6E 
+ 2235      2D736563 
+ 2235      74696F6E 
+ 2236              	.LASF18:
+ 2237 01ce 6C6F6E67 		.ascii	"long double\000"
+ 2237      20646F75 
+ 2237      626C6500 
+ 2238              	.LASF60:
+ 2239 01da 73657269 		.ascii	"serial.c\000"
+ 2239      616C2E63 
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 49
+
+
+ 2239      00
+ 2240              	.LASF1:
+ 2241 01e3 756E7369 		.ascii	"unsigned char\000"
+ 2241      676E6564 
+ 2241      20636861 
+ 2241      7200
+ 2242              	.LASF0:
+ 2243 01f1 7369676E 		.ascii	"signed char\000"
+ 2243      65642063 
+ 2243      68617200 
+ 2244              	.LASF10:
+ 2245 01fd 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2245      206C6F6E 
+ 2245      6720756E 
+ 2245      7369676E 
+ 2245      65642069 
+ 2246              	.LASF14:
+ 2247 0214 75696E74 		.ascii	"uint32_t\000"
+ 2247      33325F74 
+ 2247      00
+ 2248              	.LASF11:
+ 2249 021d 756E7369 		.ascii	"unsigned int\000"
+ 2249      676E6564 
+ 2249      20696E74 
+ 2249      00
+ 2250              	.LASF13:
+ 2251 022a 75696E74 		.ascii	"uint16_t\000"
+ 2251      31365F74 
+ 2251      00
+ 2252              	.LASF33:
+ 2253 0233 61726773 		.ascii	"args\000"
+ 2253      00
+ 2254              	.LASF53:
+ 2255 0238 636D6462 		.ascii	"cmdbuf\000"
+ 2255      756600
+ 2256              	.LASF57:
+ 2257 023f 6C617374 		.ascii	"last\000"
+ 2257      00
+ 2258              	.LASF28:
+ 2259 0244 656F745F 		.ascii	"eot_char\000"
+ 2259      63686172 
+ 2259      00
+ 2260              	.LASF48:
+ 2261 024d 6F757470 		.ascii	"output_free\000"
+ 2261      75745F66 
+ 2261      72656500 
+ 2262              	.LASF5:
+ 2263 0259 73686F72 		.ascii	"short unsigned int\000"
+ 2263      7420756E 
+ 2263      7369676E 
+ 2263      65642069 
+ 2263      6E7400
+ 2264              	.LASF29:
+ 2265 026c 656F745F 		.ascii	"eot_enable\000"
+ 2265      656E6162 
+ 2265      6C6500
+ 2266              	.LASF32:
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 50
+
+
+ 2267 0277 73657269 		.ascii	"serial_vprintf\000"
+ 2267      616C5F76 
+ 2267      7072696E 
+ 2267      746600
+ 2268              	.LASF42:
+ 2269 0286 73657269 		.ascii	"serial_flush\000"
+ 2269      616C5F66 
+ 2269      6C757368 
+ 2269      00
+ 2270              	.LASF62:
+ 2271 0293 5F5F6170 		.ascii	"__ap\000"
+ 2271      00
+ 2272              	.LASF17:
+ 2273 0298 63686172 		.ascii	"char\000"
+ 2273      00
+ 2274              	.LASF31:
+ 2275 029d 73657269 		.ascii	"serial_printf\000"
+ 2275      616C5F70 
+ 2275      72696E74 
+ 2275      6600
+ 2276              	.LASF41:
+ 2277 02ab 73657269 		.ascii	"serial_getbyte\000"
+ 2277      616C5F67 
+ 2277      65746279 
+ 2277      746500
+ 2278              	.LASF39:
+ 2279 02ba 5F426F6F 		.ascii	"_Bool\000"
+ 2279      6C00
+ 2280              	.LASF35:
+ 2281 02c0 636F7079 		.ascii	"copy_size\000"
+ 2281      5F73697A 
+ 2281      6500
+ 2282              	.LASF51:
+ 2283 02ca 696E7075 		.ascii	"input_p\000"
+ 2283      745F7000 
+ 2284              	.LASF58:
+ 2285 02d2 7761735F 		.ascii	"was_query\000"
+ 2285      71756572 
+ 2285      7900
+ 2286              	.LASF44:
+ 2287 02dc 656E6465 		.ascii	"ended\000"
+ 2287      6400
+ 2288              	.LASF16:
+ 2289 02e2 646F7562 		.ascii	"double\000"
+ 2289      6C6500
+ 2290              	.LASF7:
+ 2291 02e9 5F5F7569 		.ascii	"__uint32_t\000"
+ 2291      6E743332 
+ 2291      5F7400
+ 2292              	.LASF40:
+ 2293 02f4 73657269 		.ascii	"serial_available\000"
+ 2293      616C5F61 
+ 2293      7661696C 
+ 2293      61626C65 
+ 2293      00
+ 2294              	.LASF24:
+ 2295 0305 7369676E 		.ascii	"signature\000"
+ARM GAS  C:\Users\essele\AppData\Local\Temp\cc47R33J.s 			page 51
+
+
+ 2295      61747572 
+ 2295      6500
+ 2296              	.LASF20:
+ 2297 030f 5F5F676E 		.ascii	"__gnuc_va_list\000"
+ 2297      75635F76 
+ 2297      615F6C69 
+ 2297      737400
+ 2298              	.LASF52:
+ 2299 031e 67656E65 		.ascii	"general_buffer\000"
+ 2299      72616C5F 
+ 2299      62756666 
+ 2299      657200
+ 2300              	.LASF46:
+ 2301 032d 75736275 		.ascii	"usbuart_poll\000"
+ 2301      6172745F 
+ 2301      706F6C6C 
+ 2301      00
+ 2302              	.LASF63:
+ 2303 033a 6E6F6E5F 		.ascii	"non_interactive\000"
+ 2303      696E7465 
+ 2303      72616374 
+ 2303      69766500 
+ 2304              	.LASF54:
+ 2305 034a 636D6462 		.ascii	"cmdbuf_len\000"
+ 2305      75665F6C 
+ 2305      656E00
+ 2306              	.LASF56:
+ 2307 0355 63686172 		.ascii	"charmode\000"
+ 2307      6D6F6465 
+ 2307      00
+ 2308              	.LASF37:
+ 2309 035e 73657269 		.ascii	"serial_add_string\000"
+ 2309      616C5F61 
+ 2309      64645F73 
+ 2309      7472696E 
+ 2309      6700
+ 2310              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

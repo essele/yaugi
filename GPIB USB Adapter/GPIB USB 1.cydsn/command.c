@@ -146,8 +146,8 @@ int to_int(char *v) {
  * called only when the first two characters are ++, so we can skip those here
  */
 void cmd_process(uint8_t *buf, int len) {
-    buf += 2;
-    len -= 2;
+//    buf += 2;
+//    len -= 2;
     int argc = tokenise(buf, len);
 
     // We will always have the command a minimum, so return if 0
