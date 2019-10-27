@@ -387,6 +387,11 @@ int helper_loc() {
     gpib_send_GTL();
     return 0;
 }
+int helper_spoll() {
+    uint8_t v = gpib_serial_poll();
+    serial_printf("got poll=%d\r\n", v);
+    return 0;
+}
 
 
 
@@ -557,7 +562,13 @@ const struct cmd commands[] = {
         no_item_meanings,
         no_helper,
     },
-
+    { "spoll", cmd_noargs,
+        no_setting,
+        "Send a serial poll request to the current address",
+        no_usage_args,
+        no_item_meanings,
+        helper_spoll
+    },
     { "ver", cmd_noargs,
         no_setting,
         "Return the version of the yaugi firmware",

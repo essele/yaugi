@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
   29:Generated_Source\PSoC4/CyLFClk.h **** } cy_sys_timer_delaytype_enum;
   30:Generated_Source\PSoC4/CyLFClk.h **** 
   31:Generated_Source\PSoC4/CyLFClk.h **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 2
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 2
 
 
   32:Generated_Source\PSoC4/CyLFClk.h **** /***************************************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
   86:Generated_Source\PSoC4/CyLFClk.h **** #endif /* (CY_IP_WCO) */
   87:Generated_Source\PSoC4/CyLFClk.h **** 
   88:Generated_Source\PSoC4/CyLFClk.h **** typedef void (*cyWdtCallback)(void);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 3
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 3
 
 
   89:Generated_Source\PSoC4/CyLFClk.h **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  143:Generated_Source\PSoC4/CyLFClk.h ****     void   CySysWdtClearInterrupt(void);
  144:Generated_Source\PSoC4/CyLFClk.h ****     void   CySysWdtMaskInterrupt(void);
  145:Generated_Source\PSoC4/CyLFClk.h ****     void   CySysWdtUnmaskInterrupt(void);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 4
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 4
 
 
  146:Generated_Source\PSoC4/CyLFClk.h ****     cyWdtCallback CySysWdtSetInterruptCallback(cyWdtCallback function);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  200:Generated_Source\PSoC4/CyLFClk.h **** #define CY_SYS_CLK_DFT_SELECT_DEFAULT_MASK              ((uint32)(( uint32 )0x0fu << 8u ))
  201:Generated_Source\PSoC4/CyLFClk.h **** 
  202:Generated_Source\PSoC4/CyLFClk.h **** /* CySysClkIloCompensate() - one ILO clock in uS multiplied on thousand */
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 5
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 5
 
 
  203:Generated_Source\PSoC4/CyLFClk.h **** #if (CY_IP_SRSSV2)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  257:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_CLK_TIMER_SEL_MASK                   ((uint32)(( uint32 )0x03u << 30u))
  258:Generated_Source\PSoC4/CyLFClk.h **** #endif /* (CY_IP_SRSSLT && CY_IP_WCO && CY_IP_WCO_WDT_EN) */
  259:Generated_Source\PSoC4/CyLFClk.h **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 6
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 6
 
 
  260:Generated_Source\PSoC4/CyLFClk.h **** /* CySysClkSetTimerSource() - parameter definitions */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  314:Generated_Source\PSoC4/CyLFClk.h ****     /* WCO Status Register */
  315:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_CLK_WCO_STATUS_OUT_BLNK_A            (( uint32 )(( uint32 )0x01u <<  0u))
  316:Generated_Source\PSoC4/CyLFClk.h **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 7
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 7
 
 
  317:Generated_Source\PSoC4/CyLFClk.h ****     /* WCO Trim Register */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  371:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_COUNTER0_OFFSET          (0x00u)
  372:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_COUNTER1_OFFSET          (0x02u)
  373:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_COUNTER2_OFFSET          (0x04u)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 8
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 8
 
 
  374:Generated_Source\PSoC4/CyLFClk.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  428:Generated_Source\PSoC4/CyLFClk.h **** 
  429:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_TIMER_MODE_NONE              (0u)
  430:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_TIMER_MODE_INT               (1u)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 9
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 9
 
 
  431:Generated_Source\PSoC4/CyLFClk.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  485:Generated_Source\PSoC4/CyLFClk.h ****                                             (CY_SYS_TIMER_1WCO_DELAY_US))
  486:Generated_Source\PSoC4/CyLFClk.h **** 
  487:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_4TIMER_DELAY_US      \
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 10
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 10
 
 
  488:Generated_Source\PSoC4/CyLFClk.h ****         ((CY_SYS_CLK_TIMER_SRC_ILO == (CY_SYS_WCO_WDT_CONFIG_REG & CY_SYS_CLK_TIMER_SEL_MASK)) ? \
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  542:Generated_Source\PSoC4/CyLFClk.h **** #define CY_SYS_CNT_REG1_PTR                              ( (reg32*) CYREG_TST_TRIM_CNTR1)
  543:Generated_Source\PSoC4/CyLFClk.h **** 
  544:Generated_Source\PSoC4/CyLFClk.h **** /* DFT TST Counter 2 Register*/
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 11
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 11
 
 
  545:Generated_Source\PSoC4/CyLFClk.h **** #define CY_SYS_CNT_REG2_REG                              (*(reg32*) CYREG_TST_TRIM_CNTR2)
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  599:Generated_Source\PSoC4/CyLFClk.h **** 
  600:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_CTRHIGH_REG              (*(reg32 *) CYREG_WDT_CTRHIGH)
  601:Generated_Source\PSoC4/CyLFClk.h ****     #define CY_SYS_WDT_CTRHIGH_PTR              ( (reg32 *) CYREG_WDT_CTRHIGH)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 12
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 12
 
 
  602:Generated_Source\PSoC4/CyLFClk.h **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  656:Generated_Source\PSoC4/CyLFClk.h ****     *
  657:Generated_Source\PSoC4/CyLFClk.h ****     *******************************************************************************/
  658:Generated_Source\PSoC4/CyLFClk.h ****     static CY_INLINE void CySysClkWcoSetHighPowerMode(void)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 13
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 13
 
 
  659:Generated_Source\PSoC4/CyLFClk.h ****     {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
   68              		.loc 1 670 0
   69 0036 0121     		movs	r1, #1
   70 0038 0A43     		orrs	r2, r1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 14
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 14
 
 
  669:Generated_Source\PSoC4/CyLFClk.h ****         CY_SYS_CLK_WCO_TRIM_REG = (CY_SYS_CLK_WCO_TRIM_REG & (uint32)(~CY_SYS_CLK_WCO_TRIM_XGM_MASK
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  121              		.align	2
  122              		.global	CySysClkIloStart
  123              		.code	16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 15
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 15
 
 
  124              		.thumb_func
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
   50:Generated_Source\PSoC4/CyLFClk.c ****     static uint32 CySysClkIloEnabled(void);
   51:Generated_Source\PSoC4/CyLFClk.c **** #endif /* (CY_IP_SRSSV2) */
   52:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 16
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 16
 
 
   53:Generated_Source\PSoC4/CyLFClk.c **** #if (CY_IP_SRSSLT && CY_IP_WCO && CY_IP_WCO_WDT_EN)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  149 0014 BD46     		mov	sp, r7
  150              		@ sp needed
  151 0016 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 17
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 17
 
 
  152              	.L6:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  113:Generated_Source\PSoC4/CyLFClk.c ****         /* Do nothing if WDT is locked or ILO is disabled */
  114:Generated_Source\PSoC4/CyLFClk.c ****         if (0u == CySysWdtLocked())
  180              		.loc 2 114 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 18
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 18
 
 
  181 0006 FFF7FEFF 		bl	CySysWdtLocked
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  137:Generated_Source\PSoC4/CyLFClk.c **** 
  138:Generated_Source\PSoC4/CyLFClk.c ****             }
  139:Generated_Source\PSoC4/CyLFClk.c ****         }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 19
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 19
 
 
  140:Generated_Source\PSoC4/CyLFClk.c ****     #else
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  161:Generated_Source\PSoC4/CyLFClk.c **** * In addition, this API stores the factory ILO trim settings on the first call 
  162:Generated_Source\PSoC4/CyLFClk.c **** * after reset. This stored factory setting is used by the 
  163:Generated_Source\PSoC4/CyLFClk.c **** * CySysClkIloRestoreFactoryTrim() API to restore the ILO factory trim. 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 20
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 20
 
 
  164:Generated_Source\PSoC4/CyLFClk.c **** * Hence, it is important to call this API before restoring the ILO 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  280 002c 0A40     		ands	r2, r1
  281 002e 8021     		movs	r1, #128
  282 0030 4900     		lsls	r1, r1, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 21
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 21
 
 
  283 0032 0A43     		orrs	r2, r1
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  199:Generated_Source\PSoC4/CyLFClk.c **** *
  200:Generated_Source\PSoC4/CyLFClk.c **** ******************************************************************************/
  201:Generated_Source\PSoC4/CyLFClk.c **** void CySysClkIloStopMeasurement(void)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 22
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 22
 
 
  202:Generated_Source\PSoC4/CyLFClk.c **** {
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  217:Generated_Source\PSoC4/CyLFClk.c **** * Basing on the measured frequency the required number of ILO cycles for a 
  218:Generated_Source\PSoC4/CyLFClk.c **** * given delay (in microseconds) is obtained. The desired delay that needs to 
  219:Generated_Source\PSoC4/CyLFClk.c **** * be compensated is passed through the desiredDelay parameter. The compensated 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 23
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 23
 
 
  220:Generated_Source\PSoC4/CyLFClk.c **** * cycle count is returned through the compesatedCycles pointer.
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  365              		.cfi_def_cfa_offset 12
  366              		.cfi_offset 4, -12
  367              		.cfi_offset 7, -8
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 24
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 24
 
 
  368              		.cfi_offset 14, -4
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  281:Generated_Source\PSoC4/CyLFClk.c ****        (CY_SYS_CLK_MIN_DELAY_US <= desiredDelay) &&
  409              		.loc 2 281 0
  410 003c 3B68     		ldr	r3, [r7]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 25
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 25
 
 
  411 003e 002B     		cmp	r3, #0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  449 0080 1900     		movs	r1, r3
  450 0082 1000     		movs	r0, r2
  451 0084 FFF7FEFF 		bl	__aeabi_uidiv
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 26
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 26
 
 
  452 0088 0300     		movs	r3, r0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  495 00d4 BB68     		ldr	r3, [r7, #8]
  496 00d6 5A43     		muls	r2, r3
  305:Generated_Source\PSoC4/CyLFClk.c ****                                                      (cydelayFreqHz >> CY_SYS_CLK_SYS_CLK_DEVIDER))
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 27
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 27
 
 
  497              		.loc 2 305 0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  523 00fc 0FE0     		b	.L30
  524              	.L23:
  333:Generated_Source\PSoC4/CyLFClk.c ****                 }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 28
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 28
 
 
  334:Generated_Source\PSoC4/CyLFClk.c ****             }
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  556 0124 07B0     		add	sp, sp, #28
  557              		@ sp needed
  558 0126 90BD     		pop	{r4, r7, pc}
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 29
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 29
 
 
  559              	.L33:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  594              		.loc 2 373 0
  595 0004 044B     		ldr	r3, .L38
  596 0006 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 30
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 30
 
 
  374:Generated_Source\PSoC4/CyLFClk.c ****             (uint32) 1u :
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  396:Generated_Source\PSoC4/CyLFClk.c **** * The CySysClkIloStartMeasurement() API should be called prior to calling this 
  397:Generated_Source\PSoC4/CyLFClk.c **** * API. Otherwise it will return CYRET_INVALID_STATE as the measurement was not 
  398:Generated_Source\PSoC4/CyLFClk.c **** * started.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 31
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 31
 
 
  399:Generated_Source\PSoC4/CyLFClk.c **** *
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  630              		@ args = 0, pretend = 0, frame = 24
  631              		@ frame_needed = 1, uses_anonymous_args = 0
  632 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 32
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 32
 
 
  633              		.cfi_def_cfa_offset 8
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  672              		.loc 2 464 0
  673 0036 7B68     		ldr	r3, [r7, #4]
  674 0038 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 33
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 33
 
 
  675 003a 3DD1     		bne	.L42
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  711 0068 3B68     		ldr	r3, [r7]
  712 006a 1800     		movs	r0, r3
  713 006c FFF7FEFF 		bl	CySysClkIloUpdateTrimReg
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 34
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 34
 
 
  714 0070 0200     		movs	r2, r0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  750 00a0 7B69     		ldr	r3, [r7, #20]
  751 00a2 002B     		cmp	r3, #0
  752 00a4 05D1     		bne	.L50
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 35
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 35
 
 
  496:Generated_Source\PSoC4/CyLFClk.c ****                 {
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  785              		.loc 2 515 0
  786 00d4 124B     		ldr	r3, .L58+24
  787 00d6 0022     		movs	r2, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 36
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 36
 
 
  788 00d8 1A60     		str	r2, [r3]
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  818              		.loc 2 536 0
  819 00fc FB68     		ldr	r3, [r7, #12]
  537:Generated_Source\PSoC4/CyLFClk.c **** }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 37
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 37
 
 
  820              		.loc 2 537 0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  564:Generated_Source\PSoC4/CyLFClk.c **** * CY_SYS_CLK_ERROR_RANGE = 5.6%. Error value should take to account IMO error of 
  565:Generated_Source\PSoC4/CyLFClk.c **** * +/-2% (+/-0.64kHz), trim step of 2.36kHz (+/-1.18kHz) and error while ILO 
  566:Generated_Source\PSoC4/CyLFClk.c **** * frequency measuring.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 38
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 38
 
 
  567:Generated_Source\PSoC4/CyLFClk.c **** *
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  883 0030 9446     		mov	ip, r2
  884 0032 6344     		add	r3, r3, ip
  885 0034 FA22     		movs	r2, #250
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 39
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 39
 
 
  886 0036 9200     		lsls	r2, r2, #2
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  927 0082 FF3B     		subs	r3, r3, #255
  928 0084 1B49     		ldr	r1, .L70+12
  929 0086 1800     		movs	r0, r3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 40
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 40
 
 
  930 0088 FFF7FEFF 		bl	__aeabi_idiv
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  969 00c2 FA69     		ldr	r2, [r7, #28]
  612:Generated_Source\PSoC4/CyLFClk.c ****                                                                  ((uint32) trimStep);
  970              		.loc 2 612 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 41
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 41
 
 
  971 00c4 0A43     		orrs	r2, r1
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1010              		.section	.text.CySysClkIloRestoreFactoryTrim,"ax",%progbits
  1011              		.align	2
  1012              		.global	CySysClkIloRestoreFactoryTrim
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 42
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 42
 
 
  1013              		.code	16
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1040 0014 0C4B     		ldr	r3, .L76+4
  1041 0016 0C4A     		ldr	r2, .L76+4
  1042 0018 1268     		ldr	r2, [r2]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 43
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 43
 
 
  1043 001a 0F21     		movs	r1, #15
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  666:Generated_Source\PSoC4/CyLFClk.c **** 
  667:Generated_Source\PSoC4/CyLFClk.c **** 
  668:Generated_Source\PSoC4/CyLFClk.c **** #if (CY_IP_WCO && CY_IP_SRSSV2)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 44
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 44
 
 
  669:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1118              		.size	CySysClkGetLfclkSource, .-CySysClkGetLfclkSource
  1119              		.section	.text.CySysClkSetLfclkSource,"ax",%progbits
  1120              		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 45
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 45
 
 
  1121              		.global	CySysClkSetLfclkSource
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1130              		@ frame_needed = 1, uses_anonymous_args = 0
  1131 0000 90B5     		push	{r4, r7, lr}
  1132              		.cfi_def_cfa_offset 12
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 46
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 46
 
 
  1133              		.cfi_offset 4, -12
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1176              	.L84:
  746:Generated_Source\PSoC4/CyLFClk.c ****         }
  747:Generated_Source\PSoC4/CyLFClk.c ****     }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 47
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 47
 
 
  1177              		.loc 2 747 0
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1206 0002 00AF     		add	r7, sp, #0
  1207              		.cfi_def_cfa_register 7
  773:Generated_Source\PSoC4/CyLFClk.c ****         CySysClkWcoSetHighPowerMode();
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 48
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 48
 
 
  1208              		.loc 2 773 0
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1245              		.cfi_offset 7, -8
  1246              		.cfi_offset 14, -4
  1247 0002 83B0     		sub	sp, sp, #12
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 49
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 49
 
 
  1248              		.cfi_def_cfa_offset 24
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  810:Generated_Source\PSoC4/CyLFClk.c ****             }
  811:Generated_Source\PSoC4/CyLFClk.c ****         } /* Otherwise do nothing. WCO configuration cannot be changed. */
  812:Generated_Source\PSoC4/CyLFClk.c ****     }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 50
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 50
 
 
  1283              		.loc 2 812 0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1323 0002 00AF     		add	r7, sp, #0
  1324              		.cfi_def_cfa_register 7
  826:Generated_Source\PSoC4/CyLFClk.c ****         return ((0u != (CY_SYS_CLK_WCO_CONFIG_REG & (uint32)(CY_SYS_CLK_WCO_CONFIG_LPM_ENABLE))) ?
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 51
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 51
 
 
  1325              		.loc 2 826 0
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  846:Generated_Source\PSoC4/CyLFClk.c ****     *
  847:Generated_Source\PSoC4/CyLFClk.c ****     * \note
  848:Generated_Source\PSoC4/CyLFClk.c ****     * The WCO Low Power mode is applicable for PSoC 4100 BLE / PSoC 4200 BLE devices.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 52
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 52
 
 
  849:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1390              		.loc 2 871 0
  1391 0024 C046     		nop
  1392              	.L105:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 53
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 53
 
 
  872:Generated_Source\PSoC4/CyLFClk.c ****         }
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  903:Generated_Source\PSoC4/CyLFClk.c ****     * Do not use the oscillator output clock prior to a 15uS delay in your system.
  904:Generated_Source\PSoC4/CyLFClk.c ****     * There are no limitations on the external clock frequency.
  905:Generated_Source\PSoC4/CyLFClk.c ****     * \warning 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 54
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 54
 
 
  906:Generated_Source\PSoC4/CyLFClk.c ****     * When external clock source was selected to drive WCO block the IMO can be 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1449 0028 1A60     		str	r2, [r3]
  926:Generated_Source\PSoC4/CyLFClk.c ****             }
  927:Generated_Source\PSoC4/CyLFClk.c ****             else
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 55
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 55
 
 
  928:Generated_Source\PSoC4/CyLFClk.c ****             {
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1481              		@ frame_needed = 1, uses_anonymous_args = 0
  1482 0000 90B5     		push	{r4, r7, lr}
  1483              		.cfi_def_cfa_offset 12
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 56
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 56
 
 
  1484              		.cfi_offset 4, -12
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  959:Generated_Source\PSoC4/CyLFClk.c **** 
  960:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
  961:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtLocked
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 57
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 57
 
 
  962:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1571              	CySysWdtUnlock:
  1572              	.LFB19:
  974:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 58
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 58
 
 
  975:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1609 0030 0A43     		orrs	r2, r1
  1610 0032 1A60     		str	r2, [r3]
  993:Generated_Source\PSoC4/CyLFClk.c ****                 CY_SYS_WDT_CLK_LOCK_BIT1);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 59
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 59
 
 
  994:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1640              		@ args = 0, pretend = 0, frame = 8
  1641              		@ frame_needed = 1, uses_anonymous_args = 0
  1642 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 60
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 60
 
 
  1643              		.cfi_def_cfa_offset 8
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1026:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
 1027:Generated_Source\PSoC4/CyLFClk.c ****     * \brief
 1028:Generated_Source\PSoC4/CyLFClk.c ****     * Writes the mode of one of the three WDT counters.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 61
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 61
 
 
 1029:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1055:Generated_Source\PSoC4/CyLFClk.c ****             configRegValue = CY_SYS_WDT_CONFIG_REG &
  1718              		.loc 2 1055 0
  1719 0022 0D4B     		ldr	r3, .L137
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 62
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 62
 
 
  1720 0024 1B68     		ldr	r3, [r3]
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1061:Generated_Source\PSoC4/CyLFClk.c **** 
 1062:Generated_Source\PSoC4/CyLFClk.c **** 
 1063:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 63
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 63
 
 
 1064:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtGetMode
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1807              		.thumb_func
  1808              		.type	CySysWdtSetClearOnMatch, %function
  1809              	CySysWdtSetClearOnMatch:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 64
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 64
 
 
  1810              	.LFB23:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1834              		.loc 2 1108 0 discriminator 3
  1835 0016 0123     		movs	r3, #1
  1836 0018 00E0     		b	.L146
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 65
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 65
 
 
  1837              	.L145:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1879 005a 034B     		ldr	r3, .L150
  1880 005c FA68     		ldr	r2, [r7, #12]
  1881 005e 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 66
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 66
 
 
  1882              	.L149:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1139:Generated_Source\PSoC4/CyLFClk.c ****         CYASSERT((counterNum == CY_SYS_WDT_COUNTER0) ||
  1917              		.loc 2 1139 0
  1918 0008 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 67
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 67
 
 
  1919 000a 002B     		cmp	r3, #0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  1967              		.global	CySysWdtEnable
  1968              		.code	16
  1969              		.thumb_func
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 68
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 68
 
 
  1970              		.type	CySysWdtEnable, %function
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1183:Generated_Source\PSoC4/CyLFClk.c **** 
 1184:Generated_Source\PSoC4/CyLFClk.c ****         CY_SYS_WDT_CONTROL_REG |= counterMask;
  1986              		.loc 2 1184 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 69
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 69
 
 
  1987 0008 144B     		ldr	r3, .L168
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2023 003e 7A68     		ldr	r2, [r7, #4]
  2024 0040 8023     		movs	r3, #128
  2025 0042 5B02     		lsls	r3, r3, #9
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 70
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 70
 
 
  2026 0044 1340     		ands	r3, r2
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1225:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 1226:Generated_Source\PSoC4/CyLFClk.c ****     void CySysWdtDisable(uint32 counterMask)
 1227:Generated_Source\PSoC4/CyLFClk.c ****     {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 71
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 71
 
 
  2058              		.loc 2 1227 0
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2099 0034 8023     		movs	r3, #128
  2100 0036 5B00     		lsls	r3, r3, #1
  2101 0038 1340     		ands	r3, r2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 72
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 72
 
 
  2102 003a 05D0     		beq	.L174
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2140              		.section	.text.CySysWdtSetCascade,"ax",%progbits
  2141              		.align	2
  2142              		.global	CySysWdtSetCascade
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 73
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 73
 
 
  2143              		.code	16
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2163 0008 0020     		movs	r0, #0
  2164 000a FFF7FEFF 		bl	CySysWdtGetEnabledStatus
  2165 000e 0400     		movs	r4, r0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 74
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 74
 
 
 1291:Generated_Source\PSoC4/CyLFClk.c ****                             CySysWdtGetEnabledStatus(CY_SYS_WDT_COUNTER1) |
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2207 004e 90BD     		pop	{r4, r7, pc}
  2208              	.L184:
  2209              		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 75
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 75
 
 
  2210              	.L183:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2246              	.L187:
  2247 0014 0C020B40 		.word	1074463244
  2248 0018 08080000 		.word	2056
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 76
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 76
 
 
  2249              		.cfi_endproc
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2282              	.L190:
  2283              		.loc 2 1340 0 discriminator 3
  2284 0016 0123     		movs	r3, #1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 77
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 77
 
 
  2285 0018 00E0     		b	.L192
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2331 005a 3968     		ldr	r1, [r7]
  2332 005c 9140     		lsls	r1, r1, r2
  2333 005e FA68     		ldr	r2, [r7, #12]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 78
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 78
 
 
  2334 0060 0A43     		orrs	r2, r1
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1362:Generated_Source\PSoC4/CyLFClk.c ****     * enabled interrupts.
 1363:Generated_Source\PSoC4/CyLFClk.c ****     *
 1364:Generated_Source\PSoC4/CyLFClk.c ****     * \param bits Valid range [0-31].  Counter 2 bit to monitor for a toggle.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 79
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 79
 
 
 1365:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2410 002e FB60     		str	r3, [r7, #12]
 1384:Generated_Source\PSoC4/CyLFClk.c ****             CY_SYS_WDT_CONFIG_REG = configRegValue;
  2411              		.loc 2 1384 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 80
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 80
 
 
  2412 0030 034B     		ldr	r3, .L203
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2450 0006 1B68     		ldr	r3, [r3]
  2451 0008 1B0E     		lsrs	r3, r3, #24
  2452 000a 1F22     		movs	r2, #31
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 81
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 81
 
 
  2453 000c 1340     		ands	r3, r2
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2489 000a 002B     		cmp	r3, #0
  2490 000c 02D0     		beq	.L210
  2491              		.loc 2 1418 0 is_stmt 0 discriminator 2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 82
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 82
 
 
  2492 000e 7B68     		ldr	r3, [r7, #4]
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2540              	CySysWdtGetCount:
  2541              	.LFB33:
 1424:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 83
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 83
 
 
 1425:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2573              		.loc 2 1447 0
  2574 0024 0CE0     		b	.L222
  2575              	.L219:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 84
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 84
 
 
 1448:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2612              		.size	CySysWdtGetCount, .-CySysWdtGetCount
  2613              		.section	.text.CySysWdtGetInterruptSource,"ax",%progbits
  2614              		.align	2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 85
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 85
 
 
  2615              		.global	CySysWdtGetInterruptSource
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2650              		.align	2
  2651              		.global	CySysWdtClearInterrupt
  2652              		.code	16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 86
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 86
 
 
  2653              		.thumb_func
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2676 0012 2370     		strb	r3, [r4]
 1516:Generated_Source\PSoC4/CyLFClk.c **** 
 1517:Generated_Source\PSoC4/CyLFClk.c ****         if (0u != CySysWdtLocked())
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 87
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 87
 
 
  2677              		.loc 2 1517 0
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1540:Generated_Source\PSoC4/CyLFClk.c **** 
 1541:Generated_Source\PSoC4/CyLFClk.c ****         if (1u == wdtLockState)
  2709              		.loc 2 1541 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 88
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 88
 
 
  2710 0046 FB68     		ldr	r3, [r7, #12]
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1561:Generated_Source\PSoC4/CyLFClk.c ****     * \details
 1562:Generated_Source\PSoC4/CyLFClk.c ****     * This function does not reset counter values if the Watchdog is locked.
 1563:Generated_Source\PSoC4/CyLFClk.c ****     * This function waits while corresponding counters will be reset. This may
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 89
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 89
 
 
 1564:Generated_Source\PSoC4/CyLFClk.c ****     * take up to 3 LFCLK cycles.
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2785 002c 10020B40 		.word	1074463248
  2786 0030 08080800 		.word	526344
  2787              		.cfi_endproc
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 90
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 90
 
 
  2788              	.LFE36:
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2819              		.loc 2 1600 0
  2820 0014 094B     		ldr	r3, .L245
  2821 0016 7A68     		ldr	r2, [r7, #4]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 91
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 91
 
 
  2822 0018 9200     		lsls	r2, r2, #2
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1617:Generated_Source\PSoC4/CyLFClk.c ****     *
 1618:Generated_Source\PSoC4/CyLFClk.c ****     * \param counterNum The number of the WDT counter.
 1619:Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 92
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 92
 
 
 1620:Generated_Source\PSoC4/CyLFClk.c ****     * \return The pointer to the callback function registered for a particular WDT by
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2895 0026 1800     		movs	r0, r3
  2896 0028 BD46     		mov	sp, r7
  2897 002a 04B0     		add	sp, sp, #16
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 93
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 93
 
 
  2898              		@ sp needed
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2933 000e 0D4B     		ldr	r3, .L257
  2934 0010 7A68     		ldr	r2, [r7, #4]
  2935 0012 9200     		lsls	r2, r2, #2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 94
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 94
 
 
  2936 0014 D358     		ldr	r3, [r2, r3]
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  2982              	.LFB40:
 1665:Generated_Source\PSoC4/CyLFClk.c **** 
 1666:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 95
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 95
 
 
 1667:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3016 0026 FFF7FEFF 		bl	CyHalt
  3017              	.L262:
  3018              		.loc 2 1686 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 96
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 96
 
 
  3019 002a C046     		nop
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3049              		.cfi_def_cfa_register 7
 1711:Generated_Source\PSoC4/CyLFClk.c ****         if(0u != (CY_SYS_WDT_COUNTER0_INT & CY_SYS_WDT_CONTROL_REG))
  3050              		.loc 2 1711 0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 97
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 97
 
 
  3051 0004 344B     		ldr	r3, .L273
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3094              	.L266:
 1723:Generated_Source\PSoC4/CyLFClk.c ****         }
 1724:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 98
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 98
 
 
 1725:Generated_Source\PSoC4/CyLFClk.c ****         if(0u != (CY_SYS_WDT_COUNTER1_INT & CY_SYS_WDT_CONTROL_REG))
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1736:Generated_Source\PSoC4/CyLFClk.c ****             CySysWdtClearInterrupt(CY_SYS_WDT_COUNTER1_INT);
  3138              		.loc 2 1736 0
  3139 0096 8023     		movs	r3, #128
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 99
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 99
 
 
  3140 0098 DB00     		lsls	r3, r3, #3
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3180 00d6 C046     		.align	2
  3181              	.L273:
  3182 00d8 10020B40 		.word	1074463248
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 100
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 100
 
 
  3183 00dc 04000000 		.word	wdtIsrMask
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3211              		.loc 2 1776 0
  3212 0008 7B68     		ldr	r3, [r7, #4]
  3213 000a 002B     		cmp	r3, #0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 101
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 101
 
 
  3214 000c 18D1     		bne	.L276
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3231 0028 FFF7FEFF 		bl	CySysWdtGetMode
  3232 002c 0300     		movs	r3, r0
  3233 002e 022B     		cmp	r3, #2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 102
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 102
 
 
  3234 0030 27D1     		bne	.L280
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3280              	.L280:
  3281              		.loc 2 1812 0
  3282 0082 C046     		nop
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 103
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 103
 
 
  3283 0084 BD46     		mov	sp, r7
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3308              		.cfi_def_cfa_register 7
 1842:Generated_Source\PSoC4/CyLFClk.c ****         uint32 firstCount;
 1843:Generated_Source\PSoC4/CyLFClk.c ****         static uint32 lfclkPosedgeEnabledWdtCounter = 0u;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 104
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 104
 
 
 1844:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1861:Generated_Source\PSoC4/CyLFClk.c ****             lfclkPosedgeEnabledWdtCounter = CY_SYS_WDT_COUNTER0;
  3346              		.loc 2 1861 0
  3347 0042 124B     		ldr	r3, .L287
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 105
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 105
 
 
  3348 0044 0022     		movs	r2, #0
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3390              		.align	2
  3391              	.L287:
  3392 008c 24000000 		.word	lfclkPosedgeEnabledWdtCounter.5126
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 106
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 106
 
 
  3393 0090 00000000 		.word	lfclkPosedgeWdtCounter0Enabled
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3421 000c 094B     		ldr	r3, .L292+4
  3422 000e 094A     		ldr	r2, .L292+4
  3423 0010 1268     		ldr	r2, [r2]
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 107
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 107
 
 
  3424 0012 0121     		movs	r1, #1
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1918:Generated_Source\PSoC4/CyLFClk.c ****     uint32 CySysWdtGetEnabledStatus(void)
 1919:Generated_Source\PSoC4/CyLFClk.c ****     {
 1920:Generated_Source\PSoC4/CyLFClk.c ****         return ((CY_SYS_WDT_DISABLE_KEY_REG == CY_SYS_WDT_KEY) ? (uint32) 0u : (uint32) 1u);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 108
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 108
 
 
 1921:Generated_Source\PSoC4/CyLFClk.c ****     }
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 1975:Generated_Source\PSoC4/CyLFClk.c **** 
 1976:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
 1977:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtGetMatch
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 109
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 109
 
 
 1978:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2032:Generated_Source\PSoC4/CyLFClk.c ****     * Reads the number of the  MSB bits of the watchdog timer that are not
 2033:Generated_Source\PSoC4/CyLFClk.c ****     * checked against the match.
 2034:Generated_Source\PSoC4/CyLFClk.c ****     *
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 110
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 110
 
 
 2035:Generated_Source\PSoC4/CyLFClk.c ****     * \return The number of the MSB bits.
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2089:Generated_Source\PSoC4/CyLFClk.c **** 
 2090:Generated_Source\PSoC4/CyLFClk.c **** 
 2091:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 111
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 111
 
 
 2092:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysWdtSetIsrCallback
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2146:Generated_Source\PSoC4/CyLFClk.c ****     *
 2147:Generated_Source\PSoC4/CyLFClk.c ****     *******************************************************************************/
 2148:Generated_Source\PSoC4/CyLFClk.c ****     void CySysWdtIsr(void)
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 112
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 112
 
 
 2149:Generated_Source\PSoC4/CyLFClk.c ****     {
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2203:Generated_Source\PSoC4/CyLFClk.c **** * DeepSleep Timers were running. Call CySysTimerResetCounters() API after 
 2204:Generated_Source\PSoC4/CyLFClk.c **** * Timer source switching.
 2205:Generated_Source\PSoC4/CyLFClk.c **** * It is highly recommended to disable DeepSleep Timers before Timer source 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 113
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 113
 
 
 2206:Generated_Source\PSoC4/CyLFClk.c **** * switching. Changing the Timer source may change the functionality that uses 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2260:Generated_Source\PSoC4/CyLFClk.c **** 
 2261:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
 2262:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysTimerSetMode
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 114
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 114
 
 
 2263:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2317:Generated_Source\PSoC4/CyLFClk.c **** 
 2318:Generated_Source\PSoC4/CyLFClk.c ****     /*******************************************************************************
 2319:Generated_Source\PSoC4/CyLFClk.c ****     * Function Name: CySysTimerSetClearOnMatch
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 115
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 115
 
 
 2320:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2374:Generated_Source\PSoC4/CyLFClk.c ****     {
 2375:Generated_Source\PSoC4/CyLFClk.c ****         CYASSERT((counterNum == CY_SYS_TIMER0) ||
 2376:Generated_Source\PSoC4/CyLFClk.c ****                  (counterNum == CY_SYS_TIMER1));
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 116
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 116
 
 
 2377:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2431:Generated_Source\PSoC4/CyLFClk.c ****             {
 2432:Generated_Source\PSoC4/CyLFClk.c ****                 /* Wait for changes to come into effect */
 2433:Generated_Source\PSoC4/CyLFClk.c ****             }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 117
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 117
 
 
 2434:Generated_Source\PSoC4/CyLFClk.c ****         }
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2488:Generated_Source\PSoC4/CyLFClk.c ****     *
 2489:Generated_Source\PSoC4/CyLFClk.c ****     * \brief
 2490:Generated_Source\PSoC4/CyLFClk.c ****     * Writes the two DeepSleep Timers cascade values based on the combination of 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 118
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 118
 
 
 2491:Generated_Source\PSoC4/CyLFClk.c ****     * mask values specified.
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2545:Generated_Source\PSoC4/CyLFClk.c ****     {
 2546:Generated_Source\PSoC4/CyLFClk.c ****         return (CY_SYS_WCO_WDT_CONFIG_REG & (CY_SYS_TIMER_CASCADE_01 | CY_SYS_TIMER_CASCADE_12));
 2547:Generated_Source\PSoC4/CyLFClk.c ****     }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 119
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 119
 
 
 2548:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2602:Generated_Source\PSoC4/CyLFClk.c ****     {
 2603:Generated_Source\PSoC4/CyLFClk.c ****         uint32 configRegValue;
 2604:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 120
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 120
 
 
 2605:Generated_Source\PSoC4/CyLFClk.c ****         if (0u == CySysTimerGetEnabledStatus(CY_SYS_TIMER2))
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2659:Generated_Source\PSoC4/CyLFClk.c ****     *
 2660:Generated_Source\PSoC4/CyLFClk.c ****     * \return A live counter value. Counter 0 and Counter 1 are 16 bit counters 
 2661:Generated_Source\PSoC4/CyLFClk.c ****     * and counter 2 is a 32 bit counter.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 121
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 121
 
 
 2662:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2716:Generated_Source\PSoC4/CyLFClk.c ****     ****************************************************************************//**
 2717:Generated_Source\PSoC4/CyLFClk.c ****     *
 2718:Generated_Source\PSoC4/CyLFClk.c ****     * \brief Clears all the DeepSleep Timer counter interrupts set in the mask.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 122
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 122
 
 
 2719:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2773:Generated_Source\PSoC4/CyLFClk.c ****         {
 2774:Generated_Source\PSoC4/CyLFClk.c ****             prevCallback = cySysTimerCallback[counterNum];
 2775:Generated_Source\PSoC4/CyLFClk.c ****             cySysTimerCallback[counterNum] = function;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 123
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 123
 
 
 2776:Generated_Source\PSoC4/CyLFClk.c ****         }
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2830:Generated_Source\PSoC4/CyLFClk.c ****     {
 2831:Generated_Source\PSoC4/CyLFClk.c ****         if(counterNum <= CY_SYS_TIMER2)
 2832:Generated_Source\PSoC4/CyLFClk.c ****         {
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 124
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 124
 
 
 2833:Generated_Source\PSoC4/CyLFClk.c ****             disableTimerServicedIsr &= ~counterTimerIntMaskTbl[counterNum];
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2887:Generated_Source\PSoC4/CyLFClk.c ****             {
 2888:Generated_Source\PSoC4/CyLFClk.c ****                 timerIsrMask &= ~(disableTimerServicedIsr & CY_SYS_TIMER0_INT);
 2889:Generated_Source\PSoC4/CyLFClk.c ****                 disableTimerServicedIsr  &= ~CY_SYS_TIMER0_INT;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 125
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 125
 
 
 2890:Generated_Source\PSoC4/CyLFClk.c ****                 if(cySysTimerCallback[CY_SYS_TIMER0] != (void *) 0)
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 2944:Generated_Source\PSoC4/CyLFClk.c ****     {
 2945:Generated_Source\PSoC4/CyLFClk.c ****         /* Set new Timer reset value */
 2946:Generated_Source\PSoC4/CyLFClk.c ****         CY_SYS_WCO_WDT_CONTROL_REG |= (countersMask & CY_SYS_TIMER_RESET);
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 126
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 126
 
 
 2947:Generated_Source\PSoC4/CyLFClk.c **** 
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 3001:Generated_Source\PSoC4/CyLFClk.c ****     *
 3002:Generated_Source\PSoC4/CyLFClk.c ****     * - Through the CySysWdtSetMode() for WDT or CySysTimerSetMode() for DeepSleep
 3003:Generated_Source\PSoC4/CyLFClk.c ****     * Timer function. Call it with the appropriate "mode" parameter for the 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 127
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 127
 
 
 3004:Generated_Source\PSoC4/CyLFClk.c ****     * used WDT or DeepSleep Timer counter.
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3480 0014 012B     		cmp	r3, #1
  3481 0016 1ED8     		bhi	.L295
  3482              		.loc 2 3037 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 128
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 128
 
 
  3483 0018 FB68     		ldr	r3, [r7, #12]
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 3055:Generated_Source\PSoC4/CyLFClk.c ****                 regValue   = CySysTimerGetCount(counterNum);
 3056:Generated_Source\PSoC4/CyLFClk.c ****                 matchValue = (regValue + delay) & (uint32)CY_SYS_UINT16_MAX_VAL;
 3057:Generated_Source\PSoC4/CyLFClk.c **** 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 129
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 129
 
 
 3058:Generated_Source\PSoC4/CyLFClk.c ****                 CySysTimerDelayUntilMatch(counterNum, delayType, matchValue);
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 3091:Generated_Source\PSoC4/CyLFClk.c ****     * input clock ticks for Timer0/Timer1 counter's current value and the "match" 
 3092:Generated_Source\PSoC4/CyLFClk.c ****     * passed as the parameter to this function. The current DeepSleep Timer counter
 3093:Generated_Source\PSoC4/CyLFClk.c ****     * value can be obtained using the CySysWdtGetCount() function.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 130
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 130
 
 
 3094:Generated_Source\PSoC4/CyLFClk.c ****     *
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 3148:Generated_Source\PSoC4/CyLFClk.c ****     * counter (Timer0 or Timer1).
 3149:Generated_Source\PSoC4/CyLFClk.c ****     * \param delayType  CY_SYS_TIMER_WAIT - "WAIT" mode.<br>
 3150:Generated_Source\PSoC4/CyLFClk.c ****     * CY_SYS_TIMER_INTERRUPT - "INTERRUPT" mode.
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 131
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 131
 
 
 3151:Generated_Source\PSoC4/CyLFClk.c ****     * \param delay The delay value in the LFCLK ticks
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3577 0030 1B78     		ldrb	r3, [r3]
  3578 0032 002B     		cmp	r3, #0
  3579 0034 14D1     		bne	.L301
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 132
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 132
 
 
  3580              	.L302:
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3618 0072 FFF7FEFF 		bl	CySysWdtSetMatch
 3184:Generated_Source\PSoC4/CyLFClk.c **** 
 3185:Generated_Source\PSoC4/CyLFClk.c ****                     disableServicedIsr  |= tmpValue;
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 133
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 133
 
 
  3619              		.loc 2 3185 0
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
 3218:Generated_Source\PSoC4/CyLFClk.c ****                 timerIsrMask |= tmpValue;
 3219:Generated_Source\PSoC4/CyLFClk.c ****             }
 3220:Generated_Source\PSoC4/CyLFClk.c ****         }
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 134
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 134
 
 
 3221:Generated_Source\PSoC4/CyLFClk.c ****         else
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3688 0027 06       		.byte	0x6
  3689 0028 68010000 		.4byte	.LASF0
  3690 002c 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 135
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 135
 
 
  3691 002d 01       		.byte	0x1
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3745 0097 41000000 		.4byte	0x41
  3746 009b 02       		.uleb128 0x2
  3747 009c 04       		.byte	0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 136
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 136
 
 
  3748 009d 04       		.byte	0x4
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3802 010b 39050000 		.4byte	.LASF22
  3803 010f 02       		.uleb128 0x2
  3804 0110 04       		.byte	0x4
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 137
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 137
 
 
  3805 0111 07       		.byte	0x7
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3859 0184 0C       		.uleb128 0xc
  3860 0185 4C020000 		.4byte	.LASF29
  3861 0189 02       		.byte	0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 138
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 138
 
 
  3862 018a C9       		.byte	0xc9
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3916 01f9 1C000000 		.4byte	compensateRunningStatus.4941
  3917 01fd 12       		.uleb128 0x12
  3918 01fe 8C050000 		.4byte	.LASF35
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 139
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 139
 
 
  3919 0202 02       		.byte	0x2
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  3973 0271 AC070000 		.4byte	.LASF41
  3974 0275 02       		.byte	0x2
  3975 0276 C301     		.2byte	0x1c3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 140
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 140
 
 
  3976 0278 83000000 		.4byte	0x83
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4030 02e7 BF020000 		.4byte	0x2bf
  4031 02eb 02       		.uleb128 0x2
  4032 02ec 91       		.byte	0x91
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 141
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 141
 
 
  4033 02ed 5C       		.sleb128 -36
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4087 0359 02       		.byte	0x2
  4088 035a 8A02     		.2byte	0x28a
  4089 035c B0000000 		.4byte	0xb0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 142
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 142
 
 
  4090 0360 02       		.uleb128 0x2
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4144 03cf 20000000 		.4byte	.LFE12-.LFB12
  4145 03d3 01       		.uleb128 0x1
  4146 03d4 9C       		.byte	0x9c
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 143
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 143
 
 
  4147 03d5 16       		.uleb128 0x16
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4201 044a 16       		.uleb128 0x16
  4202 044b 16050000 		.4byte	.LASF58
  4203 044f 02       		.byte	0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 144
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 144
 
 
  4204 0450 9603     		.2byte	0x396
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4258 04c8 D903     		.2byte	0x3d9
  4259 04ca 6B000000 		.4byte	0x6b
  4260 04ce 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 145
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 145
 
 
  4261 04cf 91       		.byte	0x91
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4315 053e 74       		.sleb128 -12
  4316 053f 00       		.byte	0
  4317 0540 14       		.uleb128 0x14
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 146
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 146
 
 
  4318 0541 CC070000 		.4byte	.LASF68
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4372 05b3 02       		.byte	0x2
  4373 05b4 7104     		.2byte	0x471
  4374 05b6 83000000 		.4byte	0x83
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 147
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 147
 
 
  4375 05ba 00000000 		.4byte	.LFB24
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4429 062c 00000000 		.4byte	.LFB27
  4430 0630 58000000 		.4byte	.LFE27-.LFB27
  4431 0634 01       		.uleb128 0x1
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 148
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 148
 
 
  4432 0635 9C       		.byte	0x9c
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4486 06a4 56050000 		.4byte	.LASF81
  4487 06a8 02       		.byte	0x2
  4488 06a9 3805     		.2byte	0x538
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 149
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 149
 
 
  4489 06ab 83000000 		.4byte	0x83
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4543 071d 40000000 		.4byte	.LFE32-.LFB32
  4544 0721 01       		.uleb128 0x1
  4545 0722 9C       		.byte	0x9c
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 150
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 150
 
 
  4546 0723 37070000 		.4byte	0x737
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4600 0798 CA070000 		.4byte	0x7ca
  4601 079c 11       		.uleb128 0x11
  4602 079d D1020000 		.4byte	.LASF73
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 151
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 151
 
 
  4603 07a1 02       		.byte	0x2
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4657 0810 3A06     		.2byte	0x63a
  4658 0812 83000000 		.4byte	0x83
  4659 0816 02       		.uleb128 0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 152
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 152
 
 
  4660 0817 91       		.byte	0x91
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4714 0883 97080000 		.4byte	0x897
  4715 0887 11       		.uleb128 0x11
  4716 0888 65000000 		.4byte	.LASF65
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 153
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 153
 
 
  4717 088c 02       		.byte	0x2
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4771 08fb 3007     		.2byte	0x730
  4772 08fd 00000000 		.4byte	.LFB43
  4773 0901 98000000 		.4byte	.LFE43-.LFB43
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 154
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 154
 
 
  4774 0905 01       		.uleb128 0x1
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4828 0974 6A060000 		.4byte	.LASF108
  4829 0978 02       		.byte	0x2
  4830 0979 D70B     		.2byte	0xbd7
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 155
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 155
 
 
  4831 097b 83000000 		.4byte	0x83
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4885 09e4 12       		.uleb128 0x12
  4886 09e5 F9040000 		.4byte	.LASF111
  4887 09e9 02       		.byte	0x2
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 156
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 156
 
 
  4888 09ea 5A0C     		.2byte	0xc5a
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4942 0a5a 83000000 		.4byte	0x83
  4943 0a5e 0E       		.uleb128 0xe
  4944 0a5f 13000000 		.4byte	.LASF117
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 157
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 157
 
 
  4945 0a63 02       		.byte	0x2
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  4999 0017 0B       		.uleb128 0xb
  5000 0018 3E       		.uleb128 0x3e
  5001 0019 0B       		.uleb128 0xb
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 158
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 158
 
 
  5002 001a 03       		.uleb128 0x3
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5056 0050 0B       		.uleb128 0xb
  5057 0051 0B       		.uleb128 0xb
  5058 0052 49       		.uleb128 0x49
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 159
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 159
 
 
  5059 0053 13       		.uleb128 0x13
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5113 008a 00       		.byte	0
  5114 008b 3F       		.uleb128 0x3f
  5115 008c 19       		.uleb128 0x19
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 160
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 160
 
 
  5116 008d 03       		.uleb128 0x3
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5170 00c5 02       		.uleb128 0x2
  5171 00c6 18       		.uleb128 0x18
  5172 00c7 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 161
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 161
 
 
  5173 00c8 00       		.byte	0
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5227 0100 05       		.uleb128 0x5
  5228 0101 00       		.byte	0
  5229 0102 03       		.uleb128 0x3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 162
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 162
 
 
  5230 0103 0E       		.uleb128 0xe
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5284 013a 03       		.uleb128 0x3
  5285 013b 0E       		.uleb128 0xe
  5286 013c 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 163
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 163
 
 
  5287 013d 0B       		.uleb128 0xb
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5341 0175 05       		.uleb128 0x5
  5342 0176 27       		.uleb128 0x27
  5343 0177 19       		.uleb128 0x19
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 164
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 164
 
 
  5344 0178 11       		.uleb128 0x11
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5398 01b0 40       		.uleb128 0x40
  5399 01b1 18       		.uleb128 0x18
  5400 01b2 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 165
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 165
 
 
  5401 01b4 19       		.uleb128 0x19
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5455 01ec 03       		.uleb128 0x3
  5456 01ed 0E       		.uleb128 0xe
  5457 01ee 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 166
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 166
 
 
  5458 01ef 0B       		.uleb128 0xb
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5512 0226 19       		.uleb128 0x19
  5513 0227 00       		.byte	0
  5514 0228 00       		.byte	0
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 167
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 167
 
 
  5515 0229 00       		.byte	0
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5569 00c4 24000000 		.4byte	.LFE22-.LFB22
  5570 00c8 00000000 		.4byte	.LFB23
  5571 00cc 6C000000 		.4byte	.LFE23-.LFB23
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 168
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 168
 
 
  5572 00d0 00000000 		.4byte	.LFB24
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5626 0010 00000000 		.4byte	.LFB2
  5627 0014 60000000 		.4byte	.LFE2
  5628 0018 00000000 		.4byte	.LFB3
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 169
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 169
 
 
  5629 001c 6C000000 		.4byte	.LFE3
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5683 00f4 48000000 		.4byte	.LFE30
  5684 00f8 00000000 		.4byte	.LFB31
  5685 00fc 18000000 		.4byte	.LFE31
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 170
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 170
 
 
  5686 0100 00000000 		.4byte	.LFB32
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5728      73576474 
  5728      43616C6C 
  5728      6261636B 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 171
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 171
 
 
  5728      00
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5748      7369676E 
  5748      65642069 
  5749              	.LASF46:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 172
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 172
 
 
  5750 0106 63757272 		.ascii	"currentIloTrimValue\000"
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5770      00
  5771              	.LASF20:
  5772 01b1 63795F73 		.ascii	"cy_sys_timer_delaytype_enum\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 173
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 173
 
 
  5772      79735F74 
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5798 024c 43795379 		.ascii	"CySysClkIloStopMeasurement\000"
  5798      73436C6B 
  5798      496C6F53 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 174
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 174
 
 
  5798      746F704D 
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5818      536F7572 
  5819              	.LASF102:
  5820 0319 66697273 		.ascii	"firstCount\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 175
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 175
 
 
  5820      74436F75 
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5840      72757074 
  5841              	.LASF27:
  5842 03e1 696C6F54 		.ascii	"iloTrimTrig\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 176
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 176
 
 
  5842      72696D54 
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5860      696D5265 
  5860      6756616C 
  5861              	.LASF111:
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 177
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 177
 
 
  5862 04f9 746D7056 		.ascii	"tmpValue\000"
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5884      7A00
  5885              	.LASF91:
  5886 05a6 43795379 		.ascii	"CySysWdtResetCounters\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 178
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 178
 
 
  5886      73576474 
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5906      7900
  5907              	.LASF2:
  5908 0670 73686F72 		.ascii	"short int\000"
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 179
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 179
 
 
  5908      7420696E 
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5928      44697361 
  5928      626C6543 
  5928      6F756E74 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 180
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 180
 
 
  5929              	.LASF15:
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5950      656C6179 
  5950      496E436F 
  5950      756E7473 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 181
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 181
 
 
  5951              	.LASF54:
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 1
  5971      496C6F43 
  5971      6F6D7065 
  5971      6E736174 
-ARM GAS  C:\Users\essele\AppData\Local\Temp\ccCNtzfL.s 			page 182
+ARM GAS  C:\Users\essele\AppData\Local\Temp\ccJ9ivil.s 			page 182
 
 
  5972              	.LASF19:

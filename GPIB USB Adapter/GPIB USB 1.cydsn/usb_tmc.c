@@ -61,6 +61,13 @@ uint8_t     usb_buf[USB_BUF_SIZE];
 // Helper macro...
 #define MIN(a,b)                    (a < b ? a : b)
 
+// We need to keep state for multi-packet transfers...
+uint8_t     tag = 0;                // for matching request to reply
+uint32_t    size = 0;               // track how much still to send/receive
+uint8_t     last = 0;               // does this contain the last char
+uint8_t     *ptr;                   // for sending large buffers
+uint8_t     state = WAITING;        // the state machine
+
 // Response for the class request GET_CAPABILITIES
 struct get_cap_response {
     uint8   status;
@@ -72,36 +79,129 @@ struct get_cap_response {
     uint8   zero12[12];   
 };
 
-struct get_cap_response gcr;
+struct generic_response {
+    uint8_t status;
+    uint8_t b1;
+    uint8_t b2;
+    uint8_t b3;
+    uint8_t b4;
+    uint8_t b5;
+    uint8_t b6;
+    uint8_t b7;
+};
+
+uint8_t     buf[sizeof(struct get_cap_response)];
 
 
+
+//struct get_cap_response gcr;
+#define STATUS_SUCCESS                          0x01
+#define STATUS_PENDING                          0x02
+#define STATUS_FAILED                           0x80
+#define STATUS_TRANSFER_NOT_IN_PROGRESS         0x81
+#define STATUS_SPLIT_NOT_IN_PROGRESS            0x82
+#define STATUS_SPLIT_IN_PROGRESS                0x83
 
 /**
  * Process class requests...
  */
 uint8 USBTMC_DispatchClassRqst() {
+    struct get_cap_response *gcr = (struct get_cap_response *)buf;
+    struct generic_response *gr = (struct generic_response *)buf;    
+    
     switch (USBTMC_bRequestReg) {
+        case 1:         // INITIATE ABORT BULK OUT
+            // Need to do matching of bTag, otherwise we should be ok
+            // TODO: need to stop the GPIB transfer and record how many bytes have gone there!
+            if (state == FROM_HOST) {
+                // This is partially valid .. TODO: check the bTag
+                state = WAITING;
+                USBTMC_ReadOutEP(USBTMC_EP2, usb_buf, USB_BUF_SIZE);
+                gr->status = STATUS_SUCCESS;
+                gr->b1 = 0;         // bTag
+            } else {
+                USBTMC_ReadOutEP(USBTMC_EP2, usb_buf, USB_BUF_SIZE);
+                gr->status = STATUS_FAILED;
+                gr->b1 = 0;         // bTag
+            }            
+            USBTMC_currentTD.count = 2;
+            USBTMC_currentTD.pData = buf;
+            return USBTMC_InitControlRead();
+        
+        case 2:         // CHECK ABOUT OUT STATUS
+            // We will always be successful
+            gr->status = STATUS_SUCCESS;
+            gr->b1 = 0;
+            gr->b2 = 0;
+            gr->b3 = 0;
+            gr->b4 = 0;     // NBYTES_RXD
+            USBTMC_currentTD.count = 5;
+            USBTMC_currentTD.pData = buf;
+            return USBTMC_InitControlRead();            
+            
         case 3:         // INITIATE ABORT BULK IN
-   //         break;
-        
+            if (state == TO_HOST_FIRST || state == TO_HOST_CONT) {
+                state = WAITING;
+                // TODO: should wait for this to complete
+                USBTMC_LoadInEP(USBTMC_EP1, buf, 0);
+                gr->status = STATUS_SUCCESS;
+                gr->b1 = 0;             //bTag
+            } else {
+                gr->status = STATUS_FAILED;
+                gr->b1 = 0;             //bTag
+            }
+            USBTMC_currentTD.count = 2;
+            USBTMC_currentTD.pData = buf;
+            return USBTMC_InitControlRead();            
+                
         case 4:         // CHECK ABORT BULK IN STATUS
-    //        break;
-        
+            gr->status = STATUS_SUCCESS;
+            gr->b1 = 0;
+            gr->b2 = 0;
+            gr->b3 = 0;
+            gr->b4 = 0;     // NBYTES_RXD
+            gr->b5 = 0;     // NBYTES_RXD
+            gr->b6 = 0;     // NBYTES_RXD
+            gr->b7 = 0;     // NBYTES_RXD
+            USBTMC_currentTD.count = 8;
+            USBTMC_currentTD.pData = buf;
+            return USBTMC_InitControlRead();            
+            
+        case 5:         // INITIATE CLEAR        
+            USBTMC_ReadOutEP(USBTMC_EP2, usb_buf, USB_BUF_SIZE);
+            USBTMC_LoadInEP(USBTMC_EP1, buf, 0);
+            gr->status = STATUS_SUCCESS;
+            USBTMC_currentTD.count = 1;
+            USBTMC_currentTD.pData = buf;
+            return USBTMC_InitControlRead();            
+                        
         case 6:         // CHECK CLEAR STATUS
-   //         break;
-
+            gr->status = STATUS_SUCCESS;
+            gr->b1 = 0;
+            USBTMC_currentTD.count = 2;
+            USBTMC_currentTD.pData = buf;
+            return USBTMC_InitControlRead();            
+            
         case 7:      // GET CAPABILITIES
-            memset(&gcr, 0, sizeof(struct get_cap_response));
-            gcr.status = 1;
-            gcr.bcdUSBTMC = 0x0100;
-            gcr.intcap = 0;
-            gcr.devcap = 1;
+            memset(gcr, 0, sizeof(struct get_cap_response));
+            gcr->status = STATUS_SUCCESS;
+            gcr->bcdUSBTMC = 0x0100;
+            gcr->intcap = 0;
+            gcr->devcap = 1;
         
             USBTMC_currentTD.count = sizeof(struct get_cap_response);
-            USBTMC_currentTD.pData = (uint8 *)&gcr;
+            USBTMC_currentTD.pData = buf;
             return USBTMC_InitControlRead();
+
+        case 64:         // INDICATOR PULSE
+            gr->status = STATUS_FAILED;
+            USBTMC_currentTD.count = 1;
+            USBTMC_currentTD.pData = buf;
+            return USBTMC_InitControlRead();                        
             
-        
+        case 128:       // usb488???
+            return USBTMC_FALSE;
+            
         default:
             return USBTMC_FALSE;          
     }
@@ -133,15 +233,6 @@ struct dev_dep_msg_in {
     uint8_t     data[0];
 };
 
-// We need to keep state for multi-packet transfers...
-uint8_t     tag = 0;                // for matching request to reply
-uint32_t    size = 0;               // track how much still to send/receive
-uint8_t     last = 0;               // does this contain the last char
-uint8_t     *ptr;                   // for sending large buffers
-uint8_t     state = WAITING;        // the state machine
-
-// Hack for addressing talker - TODO: gpib.c should keep state
-int ttt = 0;
 
 /**
  * Process incoming data from USB...
@@ -178,8 +269,7 @@ void process_incoming_usb() {
                     len = MIN(usblen - sizeof(struct dev_dep_msg_out), size);
                 
                     // Prepare to talk to GPIB... 
-                    gpib_address_listener(1); // TODO
-                    ttt = 0;
+                    gpib_address_listener(1);
                     break;
                 
                 case REQUEST_DEV_DEP_MSG_IN:
@@ -187,10 +277,7 @@ void process_incoming_usb() {
                     size = mop->transferSize;
                     // todo term char stuff
                     state = TO_HOST_FIRST;
-                    if (ttt == 0) {
-                        gpib_address_talker(1);
-                        ttt = 1;
-                    }
+                    gpib_address_talker(1);
                     break;
                 default:
                     // TODO: error condition

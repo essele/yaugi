@@ -296,6 +296,32 @@ void gpib_send_GTL() {
     gpib_settle();                  // do we need this?
 }
 
+// Polls the current address only and gets the status byte
+uint8_t gpib_serial_poll() {
+    gpib_unassert_line(NRFD);
+    gpib_unassert_line(NDAC);
+    
+    gpib_assert_line(ATN);
+    gpib_UNL();
+    gpib_send_byte(0x18, 0);           // SPE
+
+    gpib_LAD(settings.address);
+    
+    uint8_t byte;
+    int eoi;
+    int st = gpib_receive_byte(&byte, &eoi);
+    
+    gpib_send_byte(0x19, 0);           // SPD    
+    gpib_unassert_line(ATN);
+    
+    gpib_settle();
+
+    listening = -1;
+    gpib_address_listener(settings.address);
+    
+    return byte;
+}
+
 void gpib_address_listener(uint8_t address) {
     
     if (listening == address) {

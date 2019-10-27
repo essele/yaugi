@@ -1,4 +1,4 @@
---------------- Build Started: 10/26/2019 15:24:51 Project: GPIB USB 1, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 10/27/2019 14:02:10 Project: GPIB USB 1, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/command.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -O0 -c command.c -o .\CortexM0\ARM_GCC_541\Debug\command.o
 command.c: In function 'cmd_read':
@@ -13,6 +13,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S "\\Mac\Home\Documents\dev\yaugi\GPIB USB Adapter\GPIB USB 1.cydsn\CortexM0\ARM_GCC_541\Debug\GPIB USB 1.elf"
-Flash used: 29662 of 65536 bytes (45.3%).
+Flash used: 30086 of 65536 bytes (45.9%).
 SRAM used: 4148 of 8192 bytes (50.6%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 10/26/2019 15:24:53 ---------------
+--------------- Build Succeeded: 10/27/2019 14:02:12 ---------------

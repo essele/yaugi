@@ -55,5 +55,7 @@ void gpib_send_SDC();
 void gpib_send_LLO();
 void gpib_send_GTL();
 
+uint8_t gpib_serial_poll();
+
 #endif
 /* [] END OF FILE */
